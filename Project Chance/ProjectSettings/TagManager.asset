@@ -3,18 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DamagingObsticle
+  - KillObsticle
+  - Enemy
+  - Boss
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 'Obsticle '
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Wall
+  - Ground
+  - Enemy
+  - Player
   - 
   - 
   - 
