@@ -3,7 +3,6 @@ public class Gooba : Enemy
 {
     protected override void Awake()
     {
-        GravityOn = true;
         isRanged = false; 
         MaxHealth = 5;
         CurrentHealth = MaxHealth; 

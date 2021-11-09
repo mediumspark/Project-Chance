@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem; 
 
 public class Player : Character
 {   
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work. 
-    [SerializeField]
     private Weapon CurrentWeapon;     
-    [SerializeField]
-    private List<Weapon> Weapons;
+    private List<Weapon> Weapons = new List<Weapon>();
 
     private bool Crouch;
+    private bool TouchingWall;
+    float Wall_Gravity = 0.5f;
+    float Normal_Gravity = 1.5f;
+
+    [SerializeField]
+    private GameObject WallDetectionObject; 
+
     public bool FacingRight;
 
     public bool canMove { get; set; }
@@ -46,12 +52,13 @@ public class Player : Character
         Controls.Basic.Crouch.performed += ctx => Crouch = true;
         Controls.Basic.Crouch.canceled += ctx => Crouch = false;
 
-        Controls.Basic.Attack.performed += ctx => CurrentWeapon.Fire(); 
+        Controls.Basic.Attack.performed += ctx => CurrentWeapon.Fire();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
+
         if (!invulnerable)
         {
             Interacts.PlayerHit(colliders, gameObject, 10);
@@ -62,6 +69,9 @@ public class Player : Character
     {
         if(grounded && canMove)
             StartCoroutine(Jump(0.5f));
+
+        if (TouchingWall)
+            StartCoroutine(WallJump(0.5f));
     }
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -72,13 +82,7 @@ public class Player : Character
             movementForce.x = obj.ReadValue<float>();
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             FacingRight = obj.ReadValue<float>() > 0;
-            if (!FacingRight)
-            {
-                transform.eulerAngles = new Vector3(0, 180);
-            }
-            else {
-                transform.eulerAngles = new Vector3(0, 0);
-            }
+
         }
     }
 
@@ -87,6 +91,19 @@ public class Player : Character
         jumping = true;
         yield return new WaitForSeconds(duration);
         jumping = false; 
+    }
+
+    private IEnumerator WallJump(float duration)
+    {
+        Vector2 tempMovementForce = MovementForce; 
+        Vector2 Jumpforce = new Vector2(0, jumpForce);
+        Jumpforce.x = FacingRight ? -1.5f : 1.5f;
+        FacingRight = Jumpforce.x > 0; 
+        movementForce = Jumpforce;
+        jumping = true;
+        yield return new WaitForSeconds(duration);
+        jumping = false;
+        MovementForce = tempMovementForce; 
     }
 
     public override void OnTakeDamage(int damage)
@@ -99,11 +116,47 @@ public class Player : Character
         Debug.Log("Took " + damage);        
     }
 
+    protected override void OnDeath()
+    {
+        GameManager.instance.LevelReload();
+        Destroy(gameObject); 
+    }
+
     IEnumerator InvolTimer()
     {
         invulnerable = true; 
         yield return new WaitForSeconds(1.2f);
         invulnerable = false; 
+    }
+
+    protected override void FixedUpdate()
+    {
+        Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
+        TouchingWall = Interacts.WallCling(BackgroundColliders);
+        if (TouchingWall)
+        {
+            gravity = Wall_Gravity;
+        }
+        else 
+        {
+            gravity = Normal_Gravity;
+        }
+
+        if (!FacingRight)
+        {
+            transform.eulerAngles = new Vector3(0, 180);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 0);
+        }
+
+        base.FixedUpdate();
+    }
+
+    public void addWeapon(Weapon newWeapon)
+    {
+        Weapons.Add(newWeapon);
     }
 
     private void OnEnable()
@@ -114,6 +167,12 @@ public class Player : Character
     private void OnDisable()
     {
         Controls.Disable();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(GroundedPlacer.transform.position, GroundDistance);
+        Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
 }

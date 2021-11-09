@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
 
     [SerializeField]
     protected GameObject GroundedPlacer;
-    private float GroundDistance = 0.09f;
+    protected float GroundDistance = 0.09f;
     [SerializeField]
     LayerMask GroundLayer; 
 
@@ -86,9 +86,13 @@ public class Character : MonoBehaviour
         }
     }
 
+    public void InstaDeath()
+    {
+        OnDeath(); 
+    }
+
     protected virtual void OnDeath()
     {
-
     }
 
     protected virtual void OnStun()
