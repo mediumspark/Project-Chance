@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : Character
 {   
@@ -15,6 +16,8 @@ public class Player : Character
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
+
+    public Slider healthBar;
 
     [SerializeField]
     private GameObject WallDetectionObject; 
@@ -112,6 +115,7 @@ public class Player : Character
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
+        healthBar.value = this.CurrentHealth;
 
         Debug.Log("Took " + damage);        
     }

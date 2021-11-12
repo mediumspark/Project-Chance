@@ -49,6 +49,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""DamageSelf"",
+                    ""type"": ""Button"",
+                    ""id"": ""9ce71f83-c1ef-4e03-91cf-7927775e103b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -216,6 +224,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c0d4e17a-66ba-466d-8331-6c0426329af6"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DamageSelf"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -228,6 +247,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Basic_Jump = m_Basic.FindAction("Jump", throwIfNotFound: true);
         m_Basic_Crouch = m_Basic.FindAction("Crouch", throwIfNotFound: true);
         m_Basic_Attack = m_Basic.FindAction("Attack", throwIfNotFound: true);
+        m_Basic_DamageSelf = m_Basic.FindAction("DamageSelf", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -281,6 +301,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Basic_Jump;
     private readonly InputAction m_Basic_Crouch;
     private readonly InputAction m_Basic_Attack;
+    private readonly InputAction m_Basic_DamageSelf;
     public struct BasicActions
     {
         private @PlayerControls m_Wrapper;
@@ -289,6 +310,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Basic_Jump;
         public InputAction @Crouch => m_Wrapper.m_Basic_Crouch;
         public InputAction @Attack => m_Wrapper.m_Basic_Attack;
+        public InputAction @DamageSelf => m_Wrapper.m_Basic_DamageSelf;
         public InputActionMap Get() { return m_Wrapper.m_Basic; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -310,6 +332,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
+                @DamageSelf.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnDamageSelf;
+                @DamageSelf.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnDamageSelf;
+                @DamageSelf.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnDamageSelf;
             }
             m_Wrapper.m_BasicActionsCallbackInterface = instance;
             if (instance != null)
@@ -326,6 +351,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @DamageSelf.started += instance.OnDamageSelf;
+                @DamageSelf.performed += instance.OnDamageSelf;
+                @DamageSelf.canceled += instance.OnDamageSelf;
             }
         }
     }
@@ -336,5 +364,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnDamageSelf(InputAction.CallbackContext context);
     }
 }
