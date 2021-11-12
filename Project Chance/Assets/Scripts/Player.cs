@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; 
 
 public class Player : Character
 {   
@@ -11,6 +10,8 @@ public class Player : Character
     private Weapon CurrentWeapon;     
     private List<Weapon> Weapons = new List<Weapon>();
 
+    private bool Healing;
+    private int HealSpeed = 1; 
     private bool Crouch;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
@@ -24,6 +25,10 @@ public class Player : Character
     public bool canMove { get; set; }
     public bool Moving => moving; 
     AnimatorMethods AniMethods; 
+
+    public bool isInvol { get => invulnerable; set => invulnerable = value; }
+
+    private int base_speed = 4; 
     
     protected override void Awake()
     {
@@ -38,13 +43,14 @@ public class Player : Character
         CurrentHealth = MaxHealth; 
 
         CurrentWeapon = new Default(this, 4f, 10, Color.black);
-        Weapons.Add(CurrentWeapon); 
+        Weapons.Add(CurrentWeapon);
+
+        Speed = base_speed; 
 
         Controls = new PlayerControls();
         Controls.Basic.Movement.performed += Movement_performed;
         Controls.Basic.Movement.canceled += ctx => movementForce.x = 0;
         Controls.Basic.Movement.canceled += ctx => moving = false; 
-
 
         Controls.Basic.Jump.performed += Jump_performed;
         Controls.Basic.Jump.canceled += ctx => jumping = false;   
@@ -52,18 +58,16 @@ public class Player : Character
         Controls.Basic.Crouch.performed += ctx => Crouch = true;
         Controls.Basic.Crouch.canceled += ctx => Crouch = false;
 
+        Controls.Basic.Heal.performed += ctx => Healing = true;
+        Controls.Basic.Heal.canceled += ctx => Healing = false;
+
         Controls.Basic.Attack.performed += ctx => CurrentWeapon.Fire();
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-
-        if (!invulnerable)
-        {
-            Interacts.PlayerHit(colliders, gameObject, 10);
-        }
-    }
+    [SerializeField]
+    private float Stamina;
+    [SerializeField]
+    private float MaxStamina = 100;
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
@@ -76,14 +80,17 @@ public class Player : Character
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (canMove)
+        if (canMove && !Crouch)
         {
             moving = true; 
             movementForce.x = obj.ReadValue<float>();
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             FacingRight = obj.ReadValue<float>() > 0;
-
-        }
+        } 
+        /*else if (Crouch)
+        {
+            movementForce.x = obj.ReadValue<float>() * 2.0f;
+        } If we ever want to create a crouch slide or crouch dash*/ 
     }
 
     protected override IEnumerator Jump(float duration)
@@ -101,8 +108,10 @@ public class Player : Character
         FacingRight = Jumpforce.x > 0; 
         movementForce = Jumpforce;
         jumping = true;
+        canMove = false; 
         yield return new WaitForSeconds(duration);
         jumping = false;
+        canMove = true; 
         MovementForce = tempMovementForce; 
     }
 
@@ -131,6 +140,7 @@ public class Player : Character
 
     protected override void FixedUpdate()
     {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
         TouchingWall = Interacts.WallCling(BackgroundColliders);
         if (TouchingWall)
@@ -149,6 +159,24 @@ public class Player : Character
         else
         {
             transform.eulerAngles = new Vector3(0, 0);
+        }
+
+        if (Healing)
+        {
+            if(CurrentHealth < MaxHealth)
+            {
+                CurrentHealth += HealSpeed * Time.deltaTime;
+            }
+
+            if (Stamina < MaxStamina)
+            {
+                Stamina += Time.deltaTime * HealSpeed;
+            }
+        }
+
+        if (!invulnerable)
+        {
+            Interacts.PlayerHit(colliders, gameObject, 10);
         }
 
         base.FixedUpdate();

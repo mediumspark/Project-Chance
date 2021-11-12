@@ -49,6 +49,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Heal"",
+                    ""type"": ""Button"",
+                    ""id"": ""631d462f-3ef5-4122-88c0-c1b17df87196"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -154,7 +162,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""fe07070a-cf7d-46bc-85d2-1a8f00bf6d72"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -165,7 +173,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""febe53f4-c3ec-438b-a63e-9be4ab327522"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -187,7 +195,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""5f3edfbf-91c8-4e4d-b344-736106c0840f"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -216,6 +224,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""34c68947-1919-42ca-9e3b-7b96f1d8371b"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9474934b-2233-4d17-ab22-7781e0cbcb86"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -228,6 +258,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Basic_Jump = m_Basic.FindAction("Jump", throwIfNotFound: true);
         m_Basic_Crouch = m_Basic.FindAction("Crouch", throwIfNotFound: true);
         m_Basic_Attack = m_Basic.FindAction("Attack", throwIfNotFound: true);
+        m_Basic_Heal = m_Basic.FindAction("Heal", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -281,6 +312,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Basic_Jump;
     private readonly InputAction m_Basic_Crouch;
     private readonly InputAction m_Basic_Attack;
+    private readonly InputAction m_Basic_Heal;
     public struct BasicActions
     {
         private @PlayerControls m_Wrapper;
@@ -289,6 +321,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Basic_Jump;
         public InputAction @Crouch => m_Wrapper.m_Basic_Crouch;
         public InputAction @Attack => m_Wrapper.m_Basic_Attack;
+        public InputAction @Heal => m_Wrapper.m_Basic_Heal;
         public InputActionMap Get() { return m_Wrapper.m_Basic; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -310,6 +343,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
+                @Heal.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
+                @Heal.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
+                @Heal.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
             }
             m_Wrapper.m_BasicActionsCallbackInterface = instance;
             if (instance != null)
@@ -326,6 +362,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @Heal.started += instance.OnHeal;
+                @Heal.performed += instance.OnHeal;
+                @Heal.canceled += instance.OnHeal;
             }
         }
     }
@@ -336,5 +375,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnHeal(InputAction.CallbackContext context);
     }
 }

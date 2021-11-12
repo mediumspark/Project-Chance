@@ -205,7 +205,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.05
-    functionName: set_Invulnerable
+    functionName: get_JumpForce
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

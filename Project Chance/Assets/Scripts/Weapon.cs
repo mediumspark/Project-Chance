@@ -13,7 +13,11 @@ public class Weapon
         {
             if(collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Boss"))
             {
-                collision.gameObject.GetComponentInParent<Enemy>().OnTakeDamage(damage); 
+                collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+                if(collision.gameObject.name == "New Game Object")
+                {
+                    Destroy(collision.gameObject); 
+                }
             }
         }
     }
@@ -52,6 +56,7 @@ public class Default : Weapon
         GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
+        Player.isInvol = true; 
         go.AddComponent<AttackEffect>();
 
         float gravityplaceholder = 1.5f;
@@ -64,6 +69,7 @@ public class Default : Weapon
         yield return new WaitForSeconds(0.25f);
         
         Object.Destroy(go);
+        Player.isInvol = false; 
         Player.Gravity = gravityplaceholder; 
         Player.MovementForce =  Player.Moving ? Player.MovementForce * 0.5f : Vector2.zero; 
         Player.canMove = true;

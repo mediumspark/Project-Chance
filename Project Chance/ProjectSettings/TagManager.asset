@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Boss
   - PlayerAttack
+  - Fake
+  - Threshold
   layers:
   - Default
   - TransparentFX
@@ -20,9 +22,9 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - 
-  - 
-  - 
+  - Boss
+  - Fake
+  - Threshold
   - 
   - 
   - 

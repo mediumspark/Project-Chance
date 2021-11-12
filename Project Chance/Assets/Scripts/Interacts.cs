@@ -11,14 +11,29 @@ public class Interacts
         {
             if (OnInteract(LayerMask.LayerToName(col.gameObject.layer)) && go.TryGetComponent(out Player P))
             {
-                if (col.tag.Equals("DamagingObsticle") || col.tag.Equals("Enemy"))
+                switch (col.tag)
                 {
-                    P.OnTakeDamage(damage);
-                }
+                    case "DamagingObsticle":
+                    case "Enemy":
+                        P.OnTakeDamage(damage);
+                        break;
 
-                if (col.tag.Equals("KillObsticle"))
-                {
-                    P.InstaDeath(); 
+                    case "KillObsticle":
+                        P.InstaDeath();
+                        break;
+
+                    case "Boss":
+                        P.OnTakeDamage(Mathf.RoundToInt(damage * 1.5f));
+                        GameObject.Destroy(col.gameObject);
+                        break;
+
+                    case "Fake":
+                        GameObject.Destroy(col.gameObject);
+                        break;
+
+                    case "Threshold":
+                        col.GetComponent<Threshold>().OnHittingThreshold();
+                        break; 
                 }
             }
         }
@@ -49,6 +64,17 @@ public class Interacts
 
             case "Wall":
                 Debug.Log("Wall");
+                return true;
+
+            case "Boss":
+                Debug.Log("Hit by Boss");
+                return true;
+
+            case "Fake":
+                Debug.Log("Boss Fake out");
+                return true;
+
+            case "Threshold":
                 return true; 
 
             default:
