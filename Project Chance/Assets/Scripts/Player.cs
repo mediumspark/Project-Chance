@@ -85,7 +85,6 @@ public class Player : Character
             movementForce.x = obj.ReadValue<float>();
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             FacingRight = obj.ReadValue<float>() > 0;
-
         }
     }
 

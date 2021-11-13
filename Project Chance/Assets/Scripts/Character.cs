@@ -74,6 +74,7 @@ public class Character : MonoBehaviour
         }
 
         grounded = Physics.CheckSphere(GroundedPlacer.transform.position, GroundDistance, GroundLayer);
+        Debug.Log("isGrounded: " + grounded);
         CharacterController.Move(movementForce * Speed * Time.deltaTime);
     }
 
