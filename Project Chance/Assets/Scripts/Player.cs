@@ -179,4 +179,9 @@ public class Player : Character
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
+    public void Update()
+    {
+        AniMethods.SetRun(moving);
+    }
+
 }
