@@ -18,4 +18,9 @@ public class AnimatorMethods : MonoBehaviour
             Ani.SetTrigger("Damaged");
     }
 
+    public void SetRun(bool moving)
+    {
+        Ani.SetBool("Run", moving);
+    }
+
 }

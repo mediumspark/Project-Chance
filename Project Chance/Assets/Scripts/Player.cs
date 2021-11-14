@@ -3,32 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : Character
-{   
+{
     private PlayerControls Controls;
 
-    //I wanted these to be viewable in the inspector to check that they work. 
-    private Weapon CurrentWeapon;     
+    //I wanted these to be viewable in the inspector to check that they work.
+    private Weapon CurrentWeapon;
     private List<Weapon> Weapons = new List<Weapon>();
 
     private bool Healing;
-    private int HealSpeed = 1; 
+    private int HealSpeed = 1;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
 
+    public Slider healthBar;
+
     [SerializeField]
-    private GameObject WallDetectionObject; 
+    private GameObject WallDetectionObject;
 
     public bool FacingRight;
 
     public bool canMove { get; set; }
-    public bool Moving => moving; 
-    AnimatorMethods AniMethods; 
+    public bool Moving => moving;
+    AnimatorMethods AniMethods;
 
     public bool isInvol { get => invulnerable; set => invulnerable = value; }
 
-    private int base_speed = 4; 
-    
+    private int base_speed = 4;
+
     protected override void Awake()
     {
         base.Awake();
@@ -36,23 +38,23 @@ public class Player : Character
         DontDestroyOnLoad(gameObject);
         canMove = true;
 
-        AniMethods = GetComponent<AnimatorMethods>(); 
+        AniMethods = GetComponent<AnimatorMethods>();
 
         MaxHealth = 100;
-        CurrentHealth = MaxHealth; 
+        CurrentHealth = MaxHealth;
 
         CurrentWeapon = new Default(this, 4f, 10, Color.black);
         Weapons.Add(CurrentWeapon);
 
-        Speed = base_speed; 
+        Speed = base_speed;
 
         Controls = new PlayerControls();
         Controls.Basic.Movement.performed += Movement_performed;
         Controls.Basic.Movement.canceled += ctx => movementForce.x = 0;
-        Controls.Basic.Movement.canceled += ctx => moving = false; 
+        Controls.Basic.Movement.canceled += ctx => moving = false;
 
         Controls.Basic.Jump.performed += Jump_performed;
-        Controls.Basic.Jump.canceled += ctx => jumping = false;   
+        Controls.Basic.Jump.canceled += ctx => jumping = false;
 
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
@@ -79,33 +81,33 @@ public class Player : Character
     {
         if (canMove && !Healing)
         {
-            moving = true; 
+            moving = true;
             movementForce.x = obj.ReadValue<float>();
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             FacingRight = obj.ReadValue<float>() > 0;
-        } 
+        }
     }
 
     protected override IEnumerator Jump(float duration)
     {
         jumping = true;
         yield return new WaitForSeconds(duration);
-        jumping = false; 
+        jumping = false;
     }
 
     private IEnumerator WallJump(float duration)
     {
-        Vector2 tempMovementForce = MovementForce; 
+        Vector2 tempMovementForce = MovementForce;
         Vector2 Jumpforce = new Vector2(0, jumpForce);
         Jumpforce.x = FacingRight ? -1.5f : 1.5f;
-        FacingRight = Jumpforce.x > 0; 
+        FacingRight = Jumpforce.x > 0;
         movementForce = Jumpforce;
         jumping = true;
-        canMove = false; 
+        canMove = false;
         yield return new WaitForSeconds(duration);
         jumping = false;
-        canMove = true; 
-        MovementForce = tempMovementForce; 
+        canMove = true;
+        MovementForce = tempMovementForce;
     }
 
     public override void OnTakeDamage(int damage)
@@ -114,21 +116,22 @@ public class Player : Character
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
+        healthBar.value = this.CurrentHealth;
 
-        Debug.Log("Took " + damage);        
+        Debug.Log("Took " + damage);
     }
 
     protected override void OnDeath()
     {
         GameManager.instance.LevelReload();
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 
     IEnumerator InvolTimer()
     {
-        invulnerable = true; 
+        invulnerable = true;
         yield return new WaitForSeconds(1.2f);
-        invulnerable = false; 
+        invulnerable = false;
     }
 
     protected override void FixedUpdate()
@@ -140,7 +143,7 @@ public class Player : Character
         {
             gravity = Wall_Gravity;
         }
-        else 
+        else
         {
             gravity = Normal_Gravity;
         }
@@ -183,7 +186,7 @@ public class Player : Character
 
     private void OnEnable()
     {
-        Controls.Enable(); 
+        Controls.Enable();
     }
 
     private void OnDisable()
@@ -195,6 +198,11 @@ public class Player : Character
     {
         Gizmos.DrawWireSphere(GroundedPlacer.transform.position, GroundDistance);
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
+    }
+
+    public void Update()
+    {
+        AniMethods.SetRun(moving);
     }
 
 }
