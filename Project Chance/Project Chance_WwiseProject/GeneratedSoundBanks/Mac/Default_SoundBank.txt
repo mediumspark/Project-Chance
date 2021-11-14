@@ -1,0 +1,43 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_Player_Footsteps			\Default Work Unit\Play_Player_Footsteps	
+	888154214	Play_Air_Enemy_Ranged_Attack			\Default Work Unit\Play_Air_Enemy_Ranged_Attack	
+	1484250099	Play_Air_Enemy_Flying			\Default Work Unit\Play_Air_Enemy_Flying	
+	1763307192	Play_Philanthropist_Attack			\Default Work Unit\Play_Philanthropist_Attack	
+	2301987285	Play_Player_Damaged			\Default Work Unit\Play_Player_Damaged	
+	2336839859	Play_Ground_Enemy_Ranged_Attack			\Default Work Unit\Play_Ground_Enemy_Ranged_Attack	
+	3197540882	Play_Ground_Enemy_Melee_Bigger_Footsteps			\Default Work Unit\Play_Ground_Enemy_Melee_Bigger_Footsteps	
+	3238800884	Play_Player_Attack			\Default Work Unit\Play_Player_Attack	
+	3376220201	Play_Philanthropist_Damaged			\Default Work Unit\Play_Philanthropist_Damaged	
+	3615605441	Play_Philanthropist_Footsteps			\Default Work Unit\Play_Philanthropist_Footsteps	
+	3664791045	Stop_Air_Enemy_Flying			\Default Work Unit\Stop_Air_Enemy_Flying	
+	3964574843	Play_Player_Ground_Slide			\Default Work Unit\Play_Player_Ground_Slide	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1211767367	Attack_Receiver			\Default Work Unit\Attack_Receiver\Attack_Receiver	
+
+Switch	ID	Name	Switch Group			Notes
+	1731679510	Person	Attack_Receiver			
+	1930240631	Robot	Attack_Receiver			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18358003	Ground_Enemy_Ranged_Attack	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack		89584
+	72399116	Philanthropist_Damaged_01	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01		38110
+	99213958	Air_Enemy_Ranged_Attack	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack		250720
+	128405744	Ground_Enemy_Melee_Bigger_Footsteps	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps		89584
+	142881645	Player_Damaged_01	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Player_Damaged\Player_Damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damaged\Player_Damaged_01		26924
+	150430255	Demo Player_Footsteps_04	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Footsteps\Demo Player_Footsteps_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Demo Player_Footsteps_04		17968
+	174009334	Demo Player_Footsteps_05	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Footsteps\Demo Player_Footsteps_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Demo Player_Footsteps_05		17968
+	175103265	Demo Player_Footsteps_01	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Footsteps\Demo Player_Footsteps_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Demo Player_Footsteps_01		17968
+	309411807	Demo Player_Footsteps_02	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Footsteps\Demo Player_Footsteps_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Demo Player_Footsteps_02		17968
+	435556039	Philanthropist_Footsteps	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\The Philanthropist\Philanthropist_Footsteps_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\The Philanthropist\Philanthropist_Footsteps		17968
+	445168730	Philanthropist_Damaged_02	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02		35520
+	509500562	Demo Player_Footsteps_03	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Footsteps\Demo Player_Footsteps_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Demo Player_Footsteps_03		17968
+	564759406	Player_Attack_Person	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Player_Attack\Player_Attack_Person_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Attack\Player_Attack_Person		81192
+	575851284	Ground_Slide	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ground_Slide		81984
+	774533342	Player_Damaged_03	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Player_Damaged\Player_Damaged_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damaged\Player_Damaged_03		26924
+	786107300	Philanthropist_Attack	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\The Philanthropist\Philanthropist_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\The Philanthropist\Philanthropist_Attack		67580
+	789446960	Player_Damaged_02	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Player_Damaged\Player_Damaged_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damaged\Player_Damaged_02		26924
+	905023422	Air_Enemy_Flying	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Air Enemy\Air_Enemy_Flying_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Air Enemy\Air_Enemy_Flying		89584
+	947751770	Player_Attack_Robot	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Player\Player_Attack\Player_Attack_Robot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Attack\Player_Attack_Robot		81192
+	969694525	Philanthropist_Damaged_03	E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03		35872
+
