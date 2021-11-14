@@ -29,6 +29,7 @@ public class Hooota : Enemy
         GameObject go = (GameObject)Resources.Load("Prefabs/Enemy Bullet");
         Bullet bul = Instantiate(go, BulletSpawnPoint.transform).AddComponent<Bullet>();
         bul.BulletSpeed = ProjectileSpeed;
+        bul.transform.parent = null; 
          
         yield return new WaitForSeconds(AttackCooldown);
         if (bul != null)
