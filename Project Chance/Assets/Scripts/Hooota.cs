@@ -18,7 +18,7 @@ public class Hooota : Enemy
         isRanged = true;
         isAutoFire = true;
         CanAttack = true;
-        AttackCooldown = 5.0f;
+        AttackCooldown = 2.5f;
         MaxHealth = 5;
         CurrentHealth = MaxHealth;
         StartCoroutine(EnemyAttack()); 
@@ -30,7 +30,7 @@ public class Hooota : Enemy
         Bullet bul = Instantiate(go, BulletSpawnPoint.transform).AddComponent<Bullet>();
         bul.BulletSpeed = ProjectileSpeed;
          
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(AttackCooldown);
         if (bul != null)
             Destroy(bul.gameObject);
         if (isAutoFire)

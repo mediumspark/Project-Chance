@@ -35,7 +35,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Crouch"",
+                    ""name"": ""Heal"",
                     ""type"": ""Button"",
                     ""id"": ""24d4dabc-29ad-4f61-a692-d73c4e0bfabf"",
                     ""expectedControlType"": ""Button"",
@@ -51,7 +51,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Heal"",
+                    ""name"": ""Action2"",
                     ""type"": ""Button"",
                     ""id"": ""631d462f-3ef5-4122-88c0-c1b17df87196"",
                     ""expectedControlType"": ""Button"",
@@ -173,7 +173,18 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""febe53f4-c3ec-438b-a63e-9be4ab327522"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""75a067ef-1038-495a-8a56-128eae150771"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -184,11 +195,11 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f6aeb148-24b7-4e5f-b639-afe3760e86e5"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<Gamepad>/dpad/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Crouch"",
+                    ""action"": ""Heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -199,7 +210,18 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Crouch"",
+                    ""action"": ""Heal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""efa72224-4ffa-4be8-9ae1-f6b62112d02e"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -232,7 +254,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Heal"",
+                    ""action"": ""Action2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -243,7 +265,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Heal"",
+                    ""action"": ""Action2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -256,9 +278,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Basic = asset.FindActionMap("Basic", throwIfNotFound: true);
         m_Basic_Movement = m_Basic.FindAction("Movement", throwIfNotFound: true);
         m_Basic_Jump = m_Basic.FindAction("Jump", throwIfNotFound: true);
-        m_Basic_Crouch = m_Basic.FindAction("Crouch", throwIfNotFound: true);
-        m_Basic_Attack = m_Basic.FindAction("Attack", throwIfNotFound: true);
         m_Basic_Heal = m_Basic.FindAction("Heal", throwIfNotFound: true);
+        m_Basic_Attack = m_Basic.FindAction("Attack", throwIfNotFound: true);
+        m_Basic_Action2 = m_Basic.FindAction("Action2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -310,18 +332,18 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private IBasicActions m_BasicActionsCallbackInterface;
     private readonly InputAction m_Basic_Movement;
     private readonly InputAction m_Basic_Jump;
-    private readonly InputAction m_Basic_Crouch;
-    private readonly InputAction m_Basic_Attack;
     private readonly InputAction m_Basic_Heal;
+    private readonly InputAction m_Basic_Attack;
+    private readonly InputAction m_Basic_Action2;
     public struct BasicActions
     {
         private @PlayerControls m_Wrapper;
         public BasicActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Basic_Movement;
         public InputAction @Jump => m_Wrapper.m_Basic_Jump;
-        public InputAction @Crouch => m_Wrapper.m_Basic_Crouch;
-        public InputAction @Attack => m_Wrapper.m_Basic_Attack;
         public InputAction @Heal => m_Wrapper.m_Basic_Heal;
+        public InputAction @Attack => m_Wrapper.m_Basic_Attack;
+        public InputAction @Action2 => m_Wrapper.m_Basic_Action2;
         public InputActionMap Get() { return m_Wrapper.m_Basic; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -337,15 +359,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnJump;
-                @Crouch.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnCrouch;
-                @Crouch.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnCrouch;
-                @Crouch.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnCrouch;
-                @Attack.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
-                @Attack.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
-                @Attack.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
                 @Heal.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
                 @Heal.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
                 @Heal.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnHeal;
+                @Attack.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnAttack;
+                @Action2.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnAction2;
+                @Action2.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnAction2;
+                @Action2.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnAction2;
             }
             m_Wrapper.m_BasicActionsCallbackInterface = instance;
             if (instance != null)
@@ -356,15 +378,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Crouch.started += instance.OnCrouch;
-                @Crouch.performed += instance.OnCrouch;
-                @Crouch.canceled += instance.OnCrouch;
-                @Attack.started += instance.OnAttack;
-                @Attack.performed += instance.OnAttack;
-                @Attack.canceled += instance.OnAttack;
                 @Heal.started += instance.OnHeal;
                 @Heal.performed += instance.OnHeal;
                 @Heal.canceled += instance.OnHeal;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
+                @Action2.started += instance.OnAction2;
+                @Action2.performed += instance.OnAction2;
+                @Action2.canceled += instance.OnAction2;
             }
         }
     }
@@ -373,8 +395,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnCrouch(InputAction.CallbackContext context);
-        void OnAttack(InputAction.CallbackContext context);
         void OnHeal(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnAction2(InputAction.CallbackContext context);
     }
 }

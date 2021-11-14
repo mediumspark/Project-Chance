@@ -2,23 +2,23 @@
 using UnityEngine;
 using System.Linq;
 
-public class Gooba : Enemy
+public class Stickya : Enemy
 {
-    protected override void Awake()
-    {
-        isRanged = false;
-        isAutoFire = false;
-        CanAttack = true; 
-        AttackCooldown = 5.0f;
-        MaxHealth = 5;
-        CurrentHealth = MaxHealth; 
-        base.Awake();
-    }
+    [SerializeField]
+    Collider2D Hitcollider;
 
-    public override void OnTakeDamage(int damage)
-    {
-        base.OnTakeDamage(damage);
-        Debug.Log("Taken Damage");
+    int ColliderOnUsingAnimation;
+    public int ColliderON { get { return ColliderOnUsingAnimation; } 
+        set 
+        {
+            if(value > 0)
+            {
+                ColliderOnUsingAnimation = 1;
+            } else
+            {
+                ColliderOnUsingAnimation = 0; 
+            }
+        }
     }
 
     protected override void FixedUpdate()
@@ -56,35 +56,36 @@ public class Gooba : Enemy
 
             default:
                 CurrentState = EnemyStates.Idle;
-                break; 
+                break;
         }
-        
+
     }
 
     protected override IEnumerator EnemyAttack()
     {
+        //Hitcollider.enabled = ColliderOnUsingAnimation > 0 ? true : false; 
+        Hitcollider.enabled = CanAttack; 
         if (CanAttack)
         {
             Debug.Log("Attack from " + transform.name);
-            CanAttack = false; 
+            CanAttack = false;
         }
         yield return new WaitForSecondsRealtime(AttackCooldown);
         Debug.Log(transform.name + " can attack again");
         CanAttack = true;
-        CurrentState = EnemyStates.Alerted; 
+        CurrentState = EnemyStates.Alerted;
     }
 
     protected override bool InAttackRange()
     {
         var InRange = Physics.OverlapSphere(transform.position, AttackRange).
-            ToList().Where(ctx => LayerMask.LayerToName(ctx.gameObject.layer) == "Player").FirstOrDefault();
+    ToList().Where(ctx => LayerMask.LayerToName(ctx.gameObject.layer) == "Player").FirstOrDefault();
 
-        return InRange != null; 
+        return InRange != null;
     }
 
     protected override void Patroling()
     {
         throw new System.NotImplementedException();
-        //Does not patrol
     }
 }

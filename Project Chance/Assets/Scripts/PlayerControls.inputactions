@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Crouch",
+                    "name": "Heal",
                     "type": "Button",
                     "id": "24d4dabc-29ad-4f61-a692-d73c4e0bfabf",
                     "expectedControlType": "Button",
@@ -38,7 +38,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Heal",
+                    "name": "Action2",
                     "type": "Button",
                     "id": "631d462f-3ef5-4122-88c0-c1b17df87196",
                     "expectedControlType": "Button",
@@ -160,7 +160,18 @@
                 {
                     "name": "",
                     "id": "febe53f4-c3ec-438b-a63e-9be4ab327522",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "75a067ef-1038-495a-8a56-128eae150771",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -171,11 +182,11 @@
                 {
                     "name": "",
                     "id": "f6aeb148-24b7-4e5f-b639-afe3760e86e5",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -186,7 +197,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
+                    "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "efa72224-4ffa-4be8-9ae1-f6b62112d02e",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -219,7 +241,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Heal",
+                    "action": "Action2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -230,7 +252,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Heal",
+                    "action": "Action2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

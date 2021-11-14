@@ -12,7 +12,6 @@ public class Player : Character
 
     private bool Healing;
     private int HealSpeed = 1; 
-    private bool Crouch;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
@@ -55,13 +54,11 @@ public class Player : Character
         Controls.Basic.Jump.performed += Jump_performed;
         Controls.Basic.Jump.canceled += ctx => jumping = false;   
 
-        Controls.Basic.Crouch.performed += ctx => Crouch = true;
-        Controls.Basic.Crouch.canceled += ctx => Crouch = false;
-
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
 
         Controls.Basic.Attack.performed += ctx => CurrentWeapon.Fire();
+
     }
 
     [SerializeField]
@@ -80,17 +77,13 @@ public class Player : Character
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (canMove && !Crouch)
+        if (canMove && !Healing)
         {
             moving = true; 
             movementForce.x = obj.ReadValue<float>();
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             FacingRight = obj.ReadValue<float>() > 0;
         } 
-        /*else if (Crouch)
-        {
-            movementForce.x = obj.ReadValue<float>() * 2.0f;
-        } If we ever want to create a crouch slide or crouch dash*/ 
     }
 
     protected override IEnumerator Jump(float duration)
@@ -173,6 +166,7 @@ public class Player : Character
                 Stamina += Time.deltaTime * HealSpeed;
             }
         }
+
 
         if (!invulnerable)
         {

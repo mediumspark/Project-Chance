@@ -34,7 +34,6 @@ public class Weapon
 
 }
 
-
 public class Default : Weapon
 {
     private float MoveDistance;
@@ -78,6 +77,17 @@ public class Default : Weapon
 
 public class ThePhilanthropist : Weapon
 {
+    Player Player;
+    public ThePhilanthropist(Player player)
+    {
+        Player = player; 
+    }
+
+    public override void Fire()
+    {
+
+    }
+
 
 }
 

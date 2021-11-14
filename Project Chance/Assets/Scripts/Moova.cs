@@ -16,7 +16,6 @@ public class Moova : Enemy
         movementForce.x = MovementSpeed;
         transform.eulerAngles = MovementSpeed > 0 ? Vector2.zero : new Vector2(0, 180);
 
-
         base.Awake();
     }
 

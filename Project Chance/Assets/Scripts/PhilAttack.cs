@@ -4,8 +4,6 @@
 public class PhilAttack : MonoBehaviour
 {
     Sprite Real, Fake;
-
-    Collider2D Collider2D;
     SpriteRenderer SpriteRenderer;
 
     public Vector2 PlayerLocation = Vector2.zero;
@@ -20,7 +18,6 @@ public class PhilAttack : MonoBehaviour
     {
         Real = Resources.Load<Sprite>("Artwork/Phil (real)");
         Fake = Resources.Load<Sprite>("Artwork/Phil (Fake)");
-        Collider2D = GetComponent<Collider2D>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
