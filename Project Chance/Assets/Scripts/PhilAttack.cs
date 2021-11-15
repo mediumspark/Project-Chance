@@ -16,8 +16,8 @@ public class PhilAttack : MonoBehaviour
 
     private void Awake()
     {
-        Real = Resources.Load<Sprite>("Artwork/Phil (real)");
-        Fake = Resources.Load<Sprite>("Artwork/Phil (Fake)");
+        Real = Resources.Load<Sprite>("Artwork/Characters/Boss_Real");
+        Fake = Resources.Load<Sprite>("Artwork/Characters/Boss_Fake");
         SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -26,7 +26,6 @@ public class PhilAttack : MonoBehaviour
         SpriteRenderer.sprite = isReal ? Real : Fake;
         gameObject.layer = isReal ? LayerMask.NameToLayer("Boss") : LayerMask.NameToLayer("Fake");
         tag = isReal ? "Boss" : "Fake";
-        SpriteRenderer.color = isReal ? Color.green : Color.blue; // Temp
 
         if (Attack)
             transform.position = Vector3.MoveTowards(transform.position, PlayerLocation, Speed);

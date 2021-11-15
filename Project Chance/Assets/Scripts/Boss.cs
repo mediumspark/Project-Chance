@@ -8,6 +8,8 @@ public abstract class Boss : Character
     [SerializeField]
     protected bool startAttack;
 
+    protected Weapon PrizeWeapon; 
+
     protected Vector3 AttackLocation;
 
     protected override void FixedUpdate()
@@ -27,6 +29,12 @@ public abstract class Boss : Character
                 StartCoroutine(Phase3Attack()); 
             }
         }
+    }
+
+    protected override void OnDeath()
+    {
+        base.OnDeath();
+        FindObjectOfType<Player>().addWeapon(PrizeWeapon); 
     }
 
     public void BeginBossFight()

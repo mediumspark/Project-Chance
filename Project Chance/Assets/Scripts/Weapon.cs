@@ -34,6 +34,7 @@ public class Weapon
 
 }
 
+[System.Serializable]
 public class Default : Weapon
 {
     private float MoveDistance;
@@ -85,7 +86,37 @@ public class ThePhilanthropist : Weapon
 
     public override void Fire()
     {
+        if (Player.isGrounded)
+            Player.StartCoroutine(Rise());
+        else
+            Player.StartCoroutine(Slam());
+    }
 
+    public IEnumerator Rise()
+    {
+        Player.MovementForce = new Vector2(0, Player.JumpForce);
+        yield return new WaitForSeconds(1.5f);
+        Player.StartCoroutine(Slam()); 
+    }
+
+    public IEnumerator Slam()
+    {
+        GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
+
+        GameObject go = Player.Instantiate(Effect, Player.transform);
+        Player.isInvol = true;
+        go.AddComponent<AttackEffect>();
+
+        float gravityplaceholder = 1.5f;
+        Player.Gravity = -5f;
+        Player.canMove = false;
+
+        yield return new WaitUntil(() => Player.isGrounded);
+
+        Object.Destroy(go);
+        Player.isInvol = false;
+        Player.Gravity = gravityplaceholder;
+        Player.canMove = true;
     }
 
 

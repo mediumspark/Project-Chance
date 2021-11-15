@@ -23,4 +23,14 @@ public class AnimatorMethods : MonoBehaviour
         Ani.SetBool("Run", moving);
     }
 
+    public void SetChargeTrigger()
+    {
+        if (!Ani.GetCurrentAnimatorStateInfo(0).IsName("Charging"))
+            Ani.SetTrigger("ChargeAttack");
+    }
+
+    public void SetGrounded(bool Grounded)
+    {
+        Ani.SetBool("Grounded", Grounded); 
+    }
 }

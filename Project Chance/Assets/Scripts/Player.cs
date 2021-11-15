@@ -1,15 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class Player : Character
 {
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work.
-    private Weapon CurrentWeapon;
-    private List<Weapon> Weapons = new List<Weapon>();
+    private readonly WeaponHandler WH = new WeaponHandler(); 
 
     private bool Healing;
     private int HealSpeed = 1;
@@ -27,9 +25,11 @@ public class Player : Character
     public bool canMove { get; set; }
     public bool Moving => moving;
     AnimatorMethods AniMethods;
+    SpriteRenderer sr;
 
     public bool isInvol { get => invulnerable; set => invulnerable = value; }
-
+    public bool isGrounded { get => grounded; }
+    
     private int base_speed = 4;
 
     protected override void Awake()
@@ -44,12 +44,15 @@ public class Player : Character
         MaxHealth = 100;
         CurrentHealth = MaxHealth;
 
-        CurrentWeapon = new Default(this, 4f, 10, Color.black);
-        Weapons.Add(CurrentWeapon);
-
         Speed = base_speed;
 
+        sr = GetComponent<SpriteRenderer>();
+        WH.Add(new Default(this, 4f, 10, Color.black));
+        WH.SetCurrentWeapon(0);
+
+        #region Inputs
         Controls = new PlayerControls();
+
         Controls.Basic.Movement.performed += Movement_performed;
         Controls.Basic.Movement.canceled += ctx => movementForce.x = 0;
         Controls.Basic.Movement.canceled += ctx => moving = false;
@@ -60,8 +63,11 @@ public class Player : Character
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
 
-        Controls.Basic.Attack.performed += ctx => CurrentWeapon.Fire();
+        Controls.Basic.Attack.performed += ctx => WH.Fire();
+        Controls.Basic.Attack.performed += ctx => AniMethods.SetChargeTrigger(); 
 
+        Controls.Basic.WeaponCycle.performed += ctx => WH.WeaponSwap(ctx.ReadValue<float>());
+        #endregion
     }
 
     [SerializeField]
@@ -84,31 +90,26 @@ public class Player : Character
         {
             moving = true;
             movementForce.x = obj.ReadValue<float>();
-            SpriteRenderer sr = GetComponent<SpriteRenderer>();
-            FacingRight = obj.ReadValue<float>() > 0;
         }
-    }
 
-    protected override IEnumerator Jump(float duration)
-    {
-        jumping = true;
-        yield return new WaitForSeconds(duration);
-        jumping = false;
+        FacingRight = obj.ReadValue<float>() > 0;
+
     }
 
     private IEnumerator WallJump(float duration)
     {
-        Vector2 tempMovementForce = MovementForce;
-        Vector2 Jumpforce = new Vector2(0, jumpForce);
-        Jumpforce.x = FacingRight ? -1.5f : 1.5f;
-        FacingRight = Jumpforce.x > 0;
-        movementForce = Jumpforce;
-        jumping = true;
-        canMove = false;
-        yield return new WaitForSeconds(duration);
-        jumping = false;
-        canMove = true;
-        MovementForce = tempMovementForce;
+        if (!grounded)
+        {
+            Vector2 tempMovementForce = MovementForce;
+            Vector2 WallJumpForce = new Vector2(0, jumpForce);
+            WallJumpForce.x = FacingRight ? -JumpForce : JumpForce;
+            FacingRight = WallJumpForce.x > 0;
+            movementForce = WallJumpForce;
+            jumping = true;
+            yield return new WaitForSeconds(duration); // Jump Ended
+            jumping = false;
+            MovementForce = tempMovementForce;
+        }
     }
 
     public override void OnTakeDamage(int damage)
@@ -117,9 +118,7 @@ public class Player : Character
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
-        healthBar.value = this.CurrentHealth;
-
-        Debug.Log("Took " + damage);
+        healthBar.value = CurrentHealth;
     }
 
     protected override void OnDeath()
@@ -140,6 +139,7 @@ public class Player : Character
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
         TouchingWall = Interacts.WallCling(BackgroundColliders);
+
         if (TouchingWall)
         {
             gravity = Wall_Gravity;
@@ -147,15 +147,6 @@ public class Player : Character
         else
         {
             gravity = Normal_Gravity;
-        }
-
-        if (!FacingRight)
-        {
-            transform.eulerAngles = new Vector3(0, 180);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0, 0);
         }
 
         if (Healing)
@@ -171,18 +162,36 @@ public class Player : Character
             }
         }
 
-
         if (!invulnerable)
         {
             Interacts.PlayerHit(colliders, gameObject, 10);
         }
 
         base.FixedUpdate();
+
+        AniMethods.SetGrounded(grounded); 
+    }
+
+    private void Update()
+    {
+        if (grounded)
+        {
+            AniMethods.SetRun(moving);
+        }
+
+        if (!FacingRight)
+        {
+            transform.eulerAngles = new Vector3(0, 180);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 0);
+        }
     }
 
     public void addWeapon(Weapon newWeapon)
     {
-        Weapons.Add(newWeapon);
+        WH.Add(newWeapon);
     }
 
     private void OnEnable()
@@ -197,13 +206,8 @@ public class Player : Character
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(GroundedPlacer.transform.position, GroundDistance);
+        Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
-    }
-
-    public void Update()
-    {
-        AniMethods.SetRun(moving);
     }
 
 }

@@ -20,7 +20,7 @@ public class ThePhilanthropistBoss : Boss
     protected override void Awake()
     {
         Phase_1.SetActive(false); Phase_2.SetActive(false); Phase_3.SetActive(false);
-        MaxHealth = 100;
+        MaxHealth = 50;
         CurrentHealth = MaxHealth;  
     }
 
@@ -44,12 +44,6 @@ public class ThePhilanthropistBoss : Boss
         return Temp; 
     }
 
-    /// <summary>
-    /// I Went from using Fisher-Yates shuffle to going through the fucking Unity Forums wtf is life rn. 
-    /// I'm a little angry Fisher-Yates generic didn't work since this is literally the same mofo algorithm 
-    /// The only difference is that it transfers positions instead of positioins in the array. 
-    /// </summary>
-    /// <param name="gameObjects"></param>
     private void Shuffle(GameObject[] gameObjects)
     {
         for (int i = 0; i < gameObjects.Length; i++)
