@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{19965D1D-4AAF-4F89-88FD-90F614B03263}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{19965D1D-4AAF-4F89-88FD-90F614B03263}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{19965D1D-4AAF-4F89-88FD-90F614B03263}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Attack_Receiver" ID="{D30AD6B5-9E45-448A-B28E-492AA9CD6F29}" ShortID="978954910">
+					<ChildrenList>
+						<SwitchGroup Name="Attack_Receiver" ID="{77553640-623B-4864-92D7-EC9820EE9338}">
+							<ChildrenList>
+								<Switch Name="Person" ID="{021489D6-FA4B-4779-9FA8-31A5297DF265}"/>
+								<Switch Name="Robot" ID="{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

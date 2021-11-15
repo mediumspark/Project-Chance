@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -15,6 +15,167 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2218482606" Language="SFX" Hash="695115677">
+			<ObjectPath>\SoundBanks\Default Work Unit\Default_SoundBank</ObjectPath>
+			<ShortName>Default_SoundBank</ShortName>
+			<Path>Default_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1484250099" Name="Play_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Play_Air_Enemy_Flying" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="905023422" Language="SFX">
+							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Flying.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Flying_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="888154214" Name="Play_Air_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Play_Air_Enemy_Ranged_Attack" DurationType="OneShot" DurationMin="2.611000" DurationMax="2.611000">
+					<IncludedMemoryFiles>
+						<File Id="99213958" Language="SFX">
+							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="512754046" Name="Play_Ground_Enemy_Melee_Attack" ObjectPath="\Events\Default Work Unit\Play_Ground_Enemy_Melee_Attack" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="338244938" Language="SFX">
+							<ShortName>Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3197540882" Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Ground_Enemy_Melee_Bigger_Footsteps" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="128405744" Language="SFX">
+							<ShortName>Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2336839859" Name="Play_Ground_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Play_Ground_Enemy_Ranged_Attack" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="18358003" Language="SFX">
+							<ShortName>Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1763307192" Name="Play_Philanthropist_Attack" ObjectPath="\Events\Default Work Unit\Play_Philanthropist_Attack" DurationType="OneShot" DurationMin="0.703292" DurationMax="0.703292">
+					<IncludedMemoryFiles>
+						<File Id="786107300" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Attack.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3376220201" Name="Play_Philanthropist_Damaged" ObjectPath="\Events\Default Work Unit\Play_Philanthropist_Damaged" DurationType="OneShot" DurationMin="0.338680" DurationMax="0.432182">
+					<IncludedMemoryFiles>
+						<File Id="72399116" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01_10C4C929.wem</Path>
+						</File>
+						<File Id="445168730" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02_10C4C929.wem</Path>
+						</File>
+						<File Id="969694525" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3615605441" Name="Play_Philanthropist_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Philanthropist_Footsteps" DurationType="OneShot" DurationMin="0.186500" DurationMax="0.186500">
+					<IncludedMemoryFiles>
+						<File Id="435556039" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Footsteps.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3238800884" Name="Play_Player_Attack" ObjectPath="\Events\Default Work Unit\Play_Player_Attack" DurationType="OneShot" DurationMin="0.845083" DurationMax="0.845083">
+					<IncludedMemoryFiles>
+						<File Id="564759406" Language="SFX">
+							<ShortName>Player\Player_Attack\Player_Attack_Person.wav</ShortName>
+							<Path>SFX\Player\Player_Attack\Player_Attack_Person_10C4C929.wem</Path>
+						</File>
+						<File Id="947751770" Language="SFX">
+							<ShortName>Player\Player_Attack\Player_Attack_Robot.wav</ShortName>
+							<Path>SFX\Player\Player_Attack\Player_Attack_Robot_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}">
+							<Media>
+								<File Id="947751770"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{021489D6-FA4B-4779-9FA8-31A5297DF265}">
+							<Media>
+								<File Id="564759406"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2301987285" Name="Play_Player_Damaged" ObjectPath="\Events\Default Work Unit\Play_Player_Damaged" DurationType="OneShot" DurationMin="0.256570" DurationMax="0.305115">
+					<IncludedMemoryFiles>
+						<File Id="142881645" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_01.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_01_10C4C929.wem</Path>
+						</File>
+						<File Id="774533342" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_03.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_03_10C4C929.wem</Path>
+						</File>
+						<File Id="789446960" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_02.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Player_Footsteps" DurationType="OneShot" DurationMin="0.171021" DurationMax="0.203380">
+					<IncludedMemoryFiles>
+						<File Id="150430255" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_04.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_04_10C4C929.wem</Path>
+						</File>
+						<File Id="174009334" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_05.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_05_10C4C929.wem</Path>
+						</File>
+						<File Id="175103265" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_01.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_01_10C4C929.wem</Path>
+						</File>
+						<File Id="309411807" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_02.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_02_10C4C929.wem</Path>
+						</File>
+						<File Id="509500562" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_03.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3964574843" Name="Play_Player_Ground_Slide" ObjectPath="\Events\Default Work Unit\Play_Player_Ground_Slide" DurationType="OneShot" DurationMin="0.426667" DurationMax="0.426667">
+					<IncludedMemoryFiles>
+						<File Id="575851284" Language="SFX">
+							<ShortName>Player\WhipWhooshSwoosh_S011FO.993.wav</ShortName>
+							<Path>SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3664791045" Name="Stop_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Stop_Air_Enemy_Flying" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1211767367" Name="Attack_Receiver" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver" GUID="{77553640-623B-4864-92D7-EC9820EE9338}">
+					<Switches>
+						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver\Person" GUID="{021489D6-FA4B-4779-9FA8-31A5297DF265}"/>
+						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver\Robot" GUID="{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
