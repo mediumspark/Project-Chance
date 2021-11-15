@@ -171,6 +171,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Player_LowHealth" ID="{887233F7-4314-4C5F-BF2F-04A5AF1224EA}">
+					<ChildrenList>
+						<Action Name="" ID="{7831350F-8FF4-4898-B6E0-51E8E6986A1D}" ShortID="896753982">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_LowHealth" ID="{660B3C83-8EF8-48D4-A2FF-9605CDC5C1C6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

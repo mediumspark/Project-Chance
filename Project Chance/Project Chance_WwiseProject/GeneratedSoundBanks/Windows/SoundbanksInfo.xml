@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Sound Design\RainShades\Project Files\Project-Chance-main\Project-Chance-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="424373747">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2218482606" Language="SFX" Hash="2954654395">
+		<SoundBank Id="2218482606" Language="SFX" Hash="805175709">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default_SoundBank</ObjectPath>
 			<ShortName>Default_SoundBank</ShortName>
 			<Path>Default_SoundBank.bnk</Path>
@@ -158,13 +158,21 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3851267176" Name="Play_Player_LowHealth" ObjectPath="\Events\Default Work Unit\Play_Player_LowHealth" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="546356425" Language="SFX">
+							<ShortName>Player_LowHealth.wav</ShortName>
+							<Path>SFX\Player_LowHealth_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3664791045" Name="Stop_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Stop_Air_Enemy_Flying" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
-				<SwitchGroup Id="1211767367" Name="Attack_Receiver" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver" GUID="{77553640-623B-4864-92D7-EC9820EE9338}">
+				<SwitchGroup Id="1211767367" Name="Attack_Receiver" ObjectPath="\Switches\Default Work Unit\Player\Attack_Receiver" GUID="{77553640-623B-4864-92D7-EC9820EE9338}">
 					<Switches>
-						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver\Person" GUID="{021489D6-FA4B-4779-9FA8-31A5297DF265}"/>
-						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Attack_Receiver\Attack_Receiver\Robot" GUID="{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}"/>
+						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Player\Attack_Receiver\Person" GUID="{021489D6-FA4B-4779-9FA8-31A5297DF265}"/>
+						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Player\Attack_Receiver\Robot" GUID="{37E0A1D4-4CE7-45C5-82DE-CA188B5AF5B4}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

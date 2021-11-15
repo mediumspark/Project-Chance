@@ -16,6 +16,7 @@
 						<ObjectRef Name="Play_Player_Ground_Slide" ID="{8603D04F-1E80-48B8-8E5E-43CFF8448E30}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack" ID="{9EAC1FEE-F540-4BAD-A0E3-1071BE2D8BFD}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Ranged_Attack" ID="{4A3ADF10-B6F7-4C30-8E53-88E5E7CB15B6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_LowHealth" ID="{887233F7-4314-4C5F-BF2F-04A5AF1224EA}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Attack" ID="{66875859-0696-4DAF-885E-AEC1FCBE5244}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Damaged" ID="{803FA075-C3ED-4F1B-B43F-FBDF5CD39248}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

@@ -542,6 +542,53 @@
 								<ActiveSource Name="WhipWhooshSwoosh_S011FO_993" ID="{4C17D79C-B0DA-4EA4-B9F9-E03C8CBADF95}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Player_LowHealth" ID="{660B3C83-8EF8-48D4-A2FF-9605CDC5C1C6}" ShortID="76855284">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_LowHealth" ID="{3B4EB775-20FB-453C-9594-CDF430937FFD}">
+									<Language>SFX</Language>
+									<AudioFile>Player_LowHealth.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546356425"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Life" ID="{C2F7A6B4-A242-423E-AFAF-80BFFE2CFE2F}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Dead" ID="{BA49B1D5-AE82-400E-B9D6-81B9E7F5F1B8}"/>
+										<CustomState Name="" ID="{0BDEA086-5BD0-4245-A2A9-B4DC178C4A27}" ShortID="482779222"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Alive" ID="{7EB1FCF3-87F9-4147-A583-90814725F8D3}"/>
+										<CustomState Name="" ID="{DFD3453E-8E62-49D5-BAD1-B862E2F62517}" ShortID="1048712059"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Low_Health" ID="{0B2A40FD-A8CD-4C4F-9477-77A9A0AE262F}"/>
+										<CustomState Name="" ID="{756E06B4-1102-401C-BB9C-BF952632D192}" ShortID="806606503"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_LowHealth" ID="{3B4EB775-20FB-453C-9594-CDF430937FFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="The Philanthropist" ID="{B1B00C9A-D6DF-415F-B0F9-FA4BC77A2CFE}" ShortID="695399346">
