@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem; 
 
 public class Player : Character
 {
@@ -10,12 +11,14 @@ public class Player : Character
     private readonly WeaponHandler WH = new WeaponHandler(); 
 
     private bool Healing;
-    private int HealSpeed = 1;
+    private int HealSpeed = 5;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
 
     public Slider healthBar;
+
+    public float currentHealth { get => CurrentHealth; set => CurrentHealth = value;  }
 
     [SerializeField]
     private GameObject WallDetectionObject;
@@ -25,7 +28,6 @@ public class Player : Character
     public bool canMove { get; set; }
     public bool Moving => moving;
     AnimatorMethods AniMethods;
-    SpriteRenderer sr;
 
     public bool isInvol { get => invulnerable; set => invulnerable = value; }
     public bool isGrounded { get => grounded; }
@@ -46,7 +48,6 @@ public class Player : Character
 
         Speed = base_speed;
 
-        sr = GetComponent<SpriteRenderer>();
         WH.Add(new Default(this, 4f, 10, Color.black));
         WH.SetCurrentWeapon(0);
 
@@ -63,17 +64,22 @@ public class Player : Character
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
 
-        Controls.Basic.Attack.performed += ctx => WH.Fire();
-        Controls.Basic.Attack.performed += ctx => AniMethods.SetChargeTrigger(); 
+        Controls.Basic.Attack.performed += Attack_performed;
 
         Controls.Basic.WeaponCycle.performed += ctx => WH.WeaponSwap(ctx.ReadValue<float>());
+
         #endregion
     }
 
+
     [SerializeField]
     private float Stamina;
+    public float CurrentStamina { get => Stamina; set => Stamina = value; }
     [SerializeField]
     private float MaxStamina = 100;
+    [SerializeField]
+    private float abilityCost;
+    public float AbilityCost { get => abilityCost; set=> abilityCost = value; } 
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
@@ -93,8 +99,17 @@ public class Player : Character
         }
 
         FacingRight = obj.ReadValue<float>() > 0;
-
     }
+
+    private void Attack_performed(InputAction.CallbackContext obj)
+    {
+        if (CurrentStamina > 9)
+        {
+            WH.Fire();
+            AniMethods.SetChargeTrigger();
+        }
+    }
+
 
     private IEnumerator WallJump(float duration)
     {
@@ -118,6 +133,7 @@ public class Player : Character
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
+      
         healthBar.value = CurrentHealth;
     }
 
@@ -138,7 +154,7 @@ public class Player : Character
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
-        TouchingWall = Interacts.WallCling(BackgroundColliders);
+        TouchingWall = Interacts.WallCling(BackgroundColliders);        
 
         if (TouchingWall)
         {
@@ -147,19 +163,6 @@ public class Player : Character
         else
         {
             gravity = Normal_Gravity;
-        }
-
-        if (Healing)
-        {
-            if(CurrentHealth < MaxHealth)
-            {
-                CurrentHealth += HealSpeed * Time.deltaTime;
-            }
-
-            if (Stamina < MaxStamina)
-            {
-                Stamina += Time.deltaTime * HealSpeed;
-            }
         }
 
         if (!invulnerable)
@@ -177,6 +180,21 @@ public class Player : Character
         if (grounded)
         {
             AniMethods.SetRun(moving);
+            AniMethods.SetHealing(Healing); 
+
+            if (Healing)
+            {
+                if (CurrentHealth < MaxHealth)
+                {
+                    CurrentHealth += HealSpeed * Time.deltaTime;
+                    healthBar.value = CurrentHealth;
+                }
+
+                if (Stamina < MaxStamina)
+                {
+                    Stamina += Time.deltaTime * HealSpeed;
+                }
+            }
         }
 
         if (!FacingRight)
@@ -187,6 +205,8 @@ public class Player : Character
         {
             transform.eulerAngles = new Vector3(0, 0);
         }
+
+
     }
 
     public void addWeapon(Weapon newWeapon)
@@ -208,6 +228,5 @@ public class Player : Character
     {
         Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
-    }
-
+    }    
 }

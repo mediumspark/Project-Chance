@@ -33,4 +33,9 @@ public class AnimatorMethods : MonoBehaviour
     {
         Ani.SetBool("Grounded", Grounded); 
     }
+
+    public void SetHealing(bool Healing)
+    {
+        Ani.SetBool("Healing", Healing); 
+    }
 }

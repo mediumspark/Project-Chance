@@ -27,7 +27,7 @@ public class Weapon
 
     }
 
-    public virtual void Fire()
+    public virtual void Fire(int cost)
     {
         Debug.Log("Default Weapon Fired");
     }
@@ -45,9 +45,13 @@ public class Default : Weapon
         Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; Default.CloakColor = Color; 
     }
 
-    public override void Fire()
+    public override void Fire(int cost)
     {
-        Player.StartCoroutine(Dash());
+        if (cost <= Player.CurrentStamina) 
+        {
+            Player.CurrentStamina -= cost;
+            Player.StartCoroutine(Dash());
+        }
     }
 
 
@@ -84,12 +88,16 @@ public class ThePhilanthropist : Weapon
         Player = player; 
     }
 
-    public override void Fire()
+    public override void Fire(int cost)
     {
-        if (Player.isGrounded)
-            Player.StartCoroutine(Rise());
-        else
-            Player.StartCoroutine(Slam());
+        if (cost <= Player.CurrentStamina)
+        {
+            Player.CurrentStamina -= cost;
+            if (Player.isGrounded)
+                Player.StartCoroutine(Rise());
+            else
+                Player.StartCoroutine(Slam());
+        }
     }
 
     public IEnumerator Rise()

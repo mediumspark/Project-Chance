@@ -13,7 +13,7 @@ public class WeaponHandler
 
     public void Fire()
     {
-        CurrentWeapon.Fire();
+        CurrentWeapon.Fire(10);
     }
 
     public void Add(Weapon weapon)

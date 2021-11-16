@@ -433,8 +433,8 @@ TextureImporter:
       name: Character Sheet_0
       rect:
         serializedVersion: 2
-        x: 334
-        y: 432
+        x: 300
+        y: 374
         width: 4
         height: 4
       alignment: 0
@@ -1018,7 +1018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_28
+      name: Heart_5
       rect:
         serializedVersion: 2
         x: 224
@@ -1039,7 +1039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_29
+      name: Heart_4
       rect:
         serializedVersion: 2
         x: 271
@@ -1060,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_30
+      name: Heart_3
       rect:
         serializedVersion: 2
         x: 314
@@ -1081,11 +1081,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_31
+      name: Heart_2
       rect:
         serializedVersion: 2
         x: 358
-        y: 267
+        y: 266
         width: 12
         height: 8
       alignment: 0
@@ -1102,7 +1102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_32
+      name: Heart_1
       rect:
         serializedVersion: 2
         x: 401
@@ -1354,7 +1354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_44
+      name: Headset_15
       rect:
         serializedVersion: 2
         x: 220
@@ -1375,7 +1375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_45
+      name: Headset_14
       rect:
         serializedVersion: 2
         x: 267
@@ -1396,7 +1396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_46
+      name: Headset_13
       rect:
         serializedVersion: 2
         x: 306
@@ -1417,7 +1417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_47
+      name: Headset_12
       rect:
         serializedVersion: 2
         x: 346
@@ -1438,7 +1438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_48
+      name: Headset_11
       rect:
         serializedVersion: 2
         x: 385
@@ -1459,7 +1459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_49
+      name: Headset_10
       rect:
         serializedVersion: 2
         x: 425
@@ -1480,7 +1480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_50
+      name: Headset_9
       rect:
         serializedVersion: 2
         x: 464
@@ -1501,7 +1501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_51
+      name: Headset_8
       rect:
         serializedVersion: 2
         x: 504
@@ -1522,7 +1522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_52
+      name: Headset_7
       rect:
         serializedVersion: 2
         x: 543
@@ -1543,7 +1543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_53
+      name: Headset_6
       rect:
         serializedVersion: 2
         x: 586
@@ -1564,7 +1564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_54
+      name: Headset_5
       rect:
         serializedVersion: 2
         x: 630
@@ -1585,7 +1585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_55
+      name: Headset_4
       rect:
         serializedVersion: 2
         x: 669
@@ -1606,7 +1606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_56
+      name: Headset_3
       rect:
         serializedVersion: 2
         x: 713
@@ -1627,7 +1627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_57
+      name: Headset_2
       rect:
         serializedVersion: 2
         x: 764
@@ -1648,7 +1648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_58
+      name: Headset_1
       rect:
         serializedVersion: 2
         x: 807
@@ -1711,7 +1711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_61
+      name: Textbox
       rect:
         serializedVersion: 2
         x: 575
@@ -2089,7 +2089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_79
+      name: NextText
       rect:
         serializedVersion: 2
         x: 551
@@ -2176,8 +2176,8 @@ TextureImporter:
       name: Boss_Real
       rect:
         serializedVersion: 2
-        x: 263
-        y: 10
+        x: 262
+        y: 11
         width: 36
         height: 87
       alignment: 0
@@ -2215,7 +2215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_85
+      name: OW_NPC_2
       rect:
         serializedVersion: 2
         x: 342
@@ -2236,7 +2236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_86
+      name: OW_NPC_1
       rect:
         serializedVersion: 2
         x: 377
@@ -2257,7 +2257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_87
+      name: Spector_3
       rect:
         serializedVersion: 2
         x: 413
@@ -2278,7 +2278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_88
+      name: CandyLady_Spector
       rect:
         serializedVersion: 2
         x: 464
@@ -2299,7 +2299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_89
+      name: WhistleBlower
       rect:
         serializedVersion: 2
         x: 511
@@ -2320,7 +2320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_90
+      name: Spector_2
       rect:
         serializedVersion: 2
         x: 555
@@ -2341,7 +2341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_91
+      name: Spector_1
       rect:
         serializedVersion: 2
         x: 594
@@ -2362,7 +2362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_92
+      name: Friend
       rect:
         serializedVersion: 2
         x: 630
@@ -2383,7 +2383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_93
+      name: Brother
       rect:
         serializedVersion: 2
         x: 665
@@ -2404,7 +2404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_94
+      name: Mother
       rect:
         serializedVersion: 2
         x: 705
@@ -2425,7 +2425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Sheet_95
+      name: Father
       rect:
         serializedVersion: 2
         x: 748
@@ -2467,7 +2467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker
+      name: Help Bot
       rect:
         serializedVersion: 2
         x: 823

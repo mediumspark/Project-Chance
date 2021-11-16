@@ -92,6 +92,12 @@ public class ThePhilanthropistBoss : Boss
     protected override IEnumerator Phase1Attack()
     {
         SpawnInPhils(Phase_1);
+        ///Not quite hard enough:
+        ///Maybe dash is too strong an ability?
+        ///Maybe it needs to do more damage? so the player really feels the threat?
+        ///Maybe it needs more mechanics?
+        ///Maybe despawn, shuffle them again, and speed them up again?
+        /// Likely won't destroy framerate
         foreach(PhilAttack attack in FindObjectsOfType<PhilAttack>())
         {
             attack.Attack = true;
@@ -119,7 +125,8 @@ public class ThePhilanthropistBoss : Boss
         Phase_2.gameObject.SetActive(false);
     }
 
-
+    //Maybe round three has him spawn robots from the sky for a couple seconds and player just needs to survive 
+    //"Your mission is almost done, you just need to be patient enough to see the results"
     protected override IEnumerator Phase3Attack()
     {
         SpawnInPhils(Phase_3);
