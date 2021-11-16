@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: 4d5a8ebb94bf9e7468d533570df18baa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3312180820059227298
+    second: 2021-11 Eddie Game Jam Compiled Assets_0
+  - first:
+      213: -8951018205554543129
+    second: 2021-11 Eddie Game Jam Compiled Assets_1
+  - first:
+      213: -7743492165848712828
+    second: 2021-11 Eddie Game Jam Compiled Assets_2
+  - first:
+      213: 6206776634953445731
+    second: 2021-11 Eddie Game Jam Compiled Assets_3
+  - first:
+      213: 5019038035755846484
+    second: 2021-11 Eddie Game Jam Compiled Assets_4
+  - first:
+      213: -6505897980696454331
+    second: 2021-11 Eddie Game Jam Compiled Assets_5
+  - first:
+      213: 6413747426023394653
+    second: 2021-11 Eddie Game Jam Compiled Assets_6
+  - first:
+      213: -1116054499244147031
+    second: 2021-11 Eddie Game Jam Compiled Assets_7
+  - first:
+      213: -3875200367911830758
+    second: 2021-11 Eddie Game Jam Compiled Assets_8
+  - first:
+      213: 2933296511250743609
+    second: 2021-11 Eddie Game Jam Compiled Assets_9
+  - first:
+      213: -6644754660985273788
+    second: 2021-11 Eddie Game Jam Compiled Assets_10
+  - first:
+      213: -2321764040188798944
+    second: 2021-11 Eddie Game Jam Compiled Assets_11
+  - first:
+      213: 3063446641181424519
+    second: 2021-11 Eddie Game Jam Compiled Assets_12
+  - first:
+      213: 3476369856786872424
+    second: 2021-11 Eddie Game Jam Compiled Assets_13
+  - first:
+      213: 899648190090932298
+    second: 2021-11 Eddie Game Jam Compiled Assets_14
+  - first:
+      213: 1994021821180368816
+    second: 2021-11 Eddie Game Jam Compiled Assets_15
+  - first:
+      213: -1231414254902844603
+    second: 2021-11 Eddie Game Jam Compiled Assets_16
+  - first:
+      213: 3579866779710420993
+    second: 2021-11 Eddie Game Jam Compiled Assets_17
+  - first:
+      213: -4116795696486588964
+    second: 2021-11 Eddie Game Jam Compiled Assets_18
+  - first:
+      213: 6610515883675946401
+    second: 2021-11 Eddie Game Jam Compiled Assets_19
+  - first:
+      213: -8084017536327733033
+    second: 2021-11 Eddie Game Jam Compiled Assets_20
+  - first:
+      213: -7615704030356619225
+    second: 2021-11 Eddie Game Jam Compiled Assets_21
+  - first:
+      213: -3889451500472511059
+    second: 2021-11 Eddie Game Jam Compiled Assets_22
+  - first:
+      213: -7035564564906514984
+    second: 2021-11 Eddie Game Jam Compiled Assets_23
+  - first:
+      213: 2510428387516668097
+    second: 2021-11 Eddie Game Jam Compiled Assets_24
+  - first:
+      213: -6034604812138749335
+    second: 2021-11 Eddie Game Jam Compiled Assets_25
+  - first:
+      213: -2116316690042868562
+    second: 2021-11 Eddie Game Jam Compiled Assets_26
+  - first:
+      213: -2799478007960448101
+    second: 2021-11 Eddie Game Jam Compiled Assets_27
+  - first:
+      213: -5169177384555776593
+    second: 2021-11 Eddie Game Jam Compiled Assets_28
+  - first:
+      213: 6073926893939067727
+    second: 2021-11 Eddie Game Jam Compiled Assets_29
+  - first:
+      213: -1870152520803336543
+    second: 2021-11 Eddie Game Jam Compiled Assets_30
+  - first:
+      213: -191565398661110115
+    second: 2021-11 Eddie Game Jam Compiled Assets_31
+  - first:
+      213: -4210178968779433825
+    second: 2021-11 Eddie Game Jam Compiled Assets_32
+  - first:
+      213: 1175098422625327314
+    second: 2021-11 Eddie Game Jam Compiled Assets_33
+  - first:
+      213: 5414465731282854919
+    second: 2021-11 Eddie Game Jam Compiled Assets_34
+  - first:
+      213: 8855550241406392171
+    second: 2021-11 Eddie Game Jam Compiled Assets_35
+  - first:
+      213: 8306797940850392967
+    second: 2021-11 Eddie Game Jam Compiled Assets_36
+  - first:
+      213: -2733112633563799272
+    second: 2021-11 Eddie Game Jam Compiled Assets_37
+  - first:
+      213: -5282826265264091524
+    second: 2021-11 Eddie Game Jam Compiled Assets_38
+  - first:
+      213: -1950522840587672791
+    second: 2021-11 Eddie Game Jam Compiled Assets_39
+  - first:
+      213: 1570567175391578877
+    second: 2021-11 Eddie Game Jam Compiled Assets_40
+  - first:
+      213: -5094376513361397580
+    second: 2021-11 Eddie Game Jam Compiled Assets_41
+  - first:
+      213: 7759421167655377170
+    second: 2021-11 Eddie Game Jam Compiled Assets_42
+  - first:
+      213: 1696498354043238813
+    second: 2021-11 Eddie Game Jam Compiled Assets_43
+  - first:
+      213: -887873398421084392
+    second: 2021-11 Eddie Game Jam Compiled Assets_44
+  - first:
+      213: -3458117905788838435
+    second: 2021-11 Eddie Game Jam Compiled Assets_45
+  - first:
+      213: 7212736660421183714
+    second: 2021-11 Eddie Game Jam Compiled Assets_46
+  - first:
+      213: 1112159997081206149
+    second: 2021-11 Eddie Game Jam Compiled Assets_47
+  - first:
+      213: 6013070948700464791
+    second: 2021-11 Eddie Game Jam Compiled Assets_48
+  - first:
+      213: 4143010024178976193
+    second: 2021-11 Eddie Game Jam Compiled Assets_49
+  - first:
+      213: -4993048169495716345
+    second: 2021-11 Eddie Game Jam Compiled Assets_50
+  - first:
+      213: -6183361592499969294
+    second: 2021-11 Eddie Game Jam Compiled Assets_51
+  - first:
+      213: 6535942166805745743
+    second: 2021-11 Eddie Game Jam Compiled Assets_52
+  - first:
+      213: 7620758152672876579
+    second: 2021-11 Eddie Game Jam Compiled Assets_53
+  - first:
+      213: 7123978795364651
+    second: 2021-11 Eddie Game Jam Compiled Assets_54
+  - first:
+      213: 8953838839616041030
+    second: 2021-11 Eddie Game Jam Compiled Assets_55
+  - first:
+      213: 2215001089001800775
+    second: 2021-11 Eddie Game Jam Compiled Assets_56
+  - first:
+      213: -6708460179138487296
+    second: 2021-11 Eddie Game Jam Compiled Assets_57
+  - first:
+      213: 2852933395742928307
+    second: 2021-11 Eddie Game Jam Compiled Assets_58
+  - first:
+      213: -4125350227404560153
+    second: 2021-11 Eddie Game Jam Compiled Assets_59
+  - first:
+      213: 286391675720002976
+    second: 2021-11 Eddie Game Jam Compiled Assets_60
+  - first:
+      213: -8308670042727287822
+    second: 2021-11 Eddie Game Jam Compiled Assets_61
+  - first:
+      213: 5996803940529687916
+    second: 2021-11 Eddie Game Jam Compiled Assets_62
+  - first:
+      213: -4998873272044895415
+    second: 2021-11 Eddie Game Jam Compiled Assets_63
+  - first:
+      213: 3456915572368681605
+    second: 2021-11 Eddie Game Jam Compiled Assets_64
+  - first:
+      213: 3181911129619499115
+    second: 2021-11 Eddie Game Jam Compiled Assets_65
+  - first:
+      213: 172054522705751321
+    second: 2021-11 Eddie Game Jam Compiled Assets_66
+  - first:
+      213: 1302018482935447250
+    second: 2021-11 Eddie Game Jam Compiled Assets_67
+  - first:
+      213: 7303348208960933332
+    second: 2021-11 Eddie Game Jam Compiled Assets_68
+  - first:
+      213: -3027888052777224579
+    second: 2021-11 Eddie Game Jam Compiled Assets_69
+  - first:
+      213: 3119995598776486753
+    second: 2021-11 Eddie Game Jam Compiled Assets_70
+  - first:
+      213: -5375298324910640503
+    second: 2021-11 Eddie Game Jam Compiled Assets_71
+  - first:
+      213: 7335225801909253871
+    second: 2021-11 Eddie Game Jam Compiled Assets_72
+  - first:
+      213: 1013527573374058746
+    second: 2021-11 Eddie Game Jam Compiled Assets_73
+  - first:
+      213: -6776743983669957458
+    second: 2021-11 Eddie Game Jam Compiled Assets_74
+  - first:
+      213: 3676663253153170716
+    second: 2021-11 Eddie Game Jam Compiled Assets_75
+  - first:
+      213: 939761900527863344
+    second: 2021-11 Eddie Game Jam Compiled Assets_76
+  - first:
+      213: -5760419259033034423
+    second: 2021-11 Eddie Game Jam Compiled Assets_77
+  - first:
+      213: 7716818867686040699
+    second: 2021-11 Eddie Game Jam Compiled Assets_78
+  - first:
+      213: -7017520334937393594
+    second: 2021-11 Eddie Game Jam Compiled Assets_79
+  - first:
+      213: 2044295254741814060
+    second: 2021-11 Eddie Game Jam Compiled Assets_80
+  - first:
+      213: 2771019509067351313
+    second: 2021-11 Eddie Game Jam Compiled Assets_81
+  - first:
+      213: 2240077668230908046
+    second: 2021-11 Eddie Game Jam Compiled Assets_82
+  - first:
+      213: -858295627420061421
+    second: 2021-11 Eddie Game Jam Compiled Assets_83
+  - first:
+      213: -1987117790491812629
+    second: 2021-11 Eddie Game Jam Compiled Assets_84
+  - first:
+      213: 7649802010286675763
+    second: 2021-11 Eddie Game Jam Compiled Assets_85
+  - first:
+      213: -8989754652890118669
+    second: 2021-11 Eddie Game Jam Compiled Assets_86
+  - first:
+      213: -8935061081144162957
+    second: 2021-11 Eddie Game Jam Compiled Assets_87
+  - first:
+      213: 8871981748556043526
+    second: 2021-11 Eddie Game Jam Compiled Assets_88
+  - first:
+      213: -2391897846916043372
+    second: 2021-11 Eddie Game Jam Compiled Assets_89
+  - first:
+      213: 6316118519099609869
+    second: 2021-11 Eddie Game Jam Compiled Assets_90
+  - first:
+      213: 2747236951152624846
+    second: 2021-11 Eddie Game Jam Compiled Assets_91
+  - first:
+      213: -2369543485388243920
+    second: 2021-11 Eddie Game Jam Compiled Assets_92
+  - first:
+      213: -7146795398303240833
+    second: 2021-11 Eddie Game Jam Compiled Assets_93
+  - first:
+      213: 5963038141701310361
+    second: 2021-11 Eddie Game Jam Compiled Assets_94
+  - first:
+      213: -4610726389477840689
+    second: 2021-11 Eddie Game Jam Compiled Assets_95
+  - first:
+      213: -2662088171766458082
+    second: 2021-11 Eddie Game Jam Compiled Assets_96
+  - first:
+      213: -8424131267499620601
+    second: 2021-11 Eddie Game Jam Compiled Assets_97
+  - first:
+      213: 3706232343311496975
+    second: 2021-11 Eddie Game Jam Compiled Assets_98
+  - first:
+      213: -8685830323365714133
+    second: 2021-11 Eddie Game Jam Compiled Assets_99
+  - first:
+      213: 2562467280775051250
+    second: 2021-11 Eddie Game Jam Compiled Assets_100
+  - first:
+      213: -1731276222134779082
+    second: 2021-11 Eddie Game Jam Compiled Assets_101
+  - first:
+      213: -1763933588118767573
+    second: 2021-11 Eddie Game Jam Compiled Assets_102
+  - first:
+      213: -5617078511799047364
+    second: 2021-11 Eddie Game Jam Compiled Assets_103
+  - first:
+      213: -2417782837580700851
+    second: 2021-11 Eddie Game Jam Compiled Assets_104
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1890
+        width: 509
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a40e7b38ea37fd20800000000000000
+      internalID: 3312180820059227298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1828
+        width: 513
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5fdd7dd5897c380800000000000000
+      internalID: -8951018205554543129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_2
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1187
+        width: 977
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4893195e6e6998490800000000000000
+      internalID: -7743492165848712828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1780
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361389ee676e22650800000000000000
+      internalID: 6206776634953445731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1662
+        width: 679
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bc663608437a540800000000000000
+      internalID: 5019038035755846484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 15
+        width: 705
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b18ab914866b5a0800000000000000
+      internalID: -6505897980696454331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Assets_6
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 471
+        width: 976
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d433f6d45320950800000000000000
+      internalID: 6413747426023394653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

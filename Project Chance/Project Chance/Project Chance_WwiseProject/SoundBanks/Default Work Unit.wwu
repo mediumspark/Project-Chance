@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{935185A3-A5CB-4657-9648-8DC983BF265F}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{935185A3-A5CB-4657-9648-8DC983BF265F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Uncovered_SoundBank" ID="{D19D522E-3D2A-41B8-9E26-A5D4627C07E4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Player_GroundSlide" ID="{FBC9CE91-1190-4088-8C7D-64AACBC9C84D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Damaged" ID="{7D34C43E-EE0B-443C-8BE2-AF480A5B260D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Attack" ID="{D39CA125-219B-48D0-AFDD-C108767C6954}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Falling" ID="{37770B6C-2471-4A51-AFC8-141013168DF8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Jump" ID="{426F1D14-AF3D-4BE1-B185-C1FE8212B378}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Main_Character_Theme" ID="{FB317639-DF9A-4C38-82E3-BFCADB3ACA1D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_LowHealth" ID="{BBE19BA2-E42E-4C95-BF54-D5A89E1E6D9C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{C14EA6F6-7056-4E62-8F6F-2422E2EA5B9F}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Player_LowHealth" ID="{7003A5C0-38D5-4EC3-B266-65BA08D1ACE1}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{19965D1D-4AAF-4F89-88FD-90F614B03263}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{19965D1D-4AAF-4F89-88FD-90F614B03263}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{F195E5CE-54FD-4C74-92D9-CB82EF63EBEC}" ShortID="842807657">
+					<ChildrenList>
+						<SwitchGroup Name="Attack" ID="{DEAEC6CC-0AD1-457C-8977-B5A1985EAC15}">
+							<ChildrenList>
+								<Switch Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+								<Switch Name="Robot" ID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{1A827251-F6E9-408D-9020-219A73D8EB5A}" ShortID="424852604">
+					<ChildrenList>
+						<SwitchGroup Name="Music" ID="{A35899C2-9201-403A-9C60-1E53A142BC79}">
+							<ChildrenList>
+								<Switch Name="Intro" ID="{379AF428-5ACF-4C4A-8786-06AE2019F01B}"/>
+								<Switch Name="Verse" ID="{AE2F1018-92FF-4056-98EA-0612DA63AD10}"/>
+								<Switch Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+								<Switch Name="Transition" ID="{203857A6-C57D-47CE-892C-3539781E1B30}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
