@@ -431,8 +431,14 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Robot" ID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}" WorkUnitID="{19965D1D-4AAF-4F89-88FD-90F614B03263}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Attack" ID="{DEAEC6CC-0AD1-457C-8977-B5A1985EAC15}" WorkUnitID="{19965D1D-4AAF-4F89-88FD-90F614B03263}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

@@ -123,6 +123,10 @@ public class Player : Character
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
         healthBar.value = CurrentHealth;
+        if (CurrentHealth < 50)
+        {
+            LowHealth();
+        }
     }
 
     protected override void OnDeath()
@@ -214,5 +218,10 @@ public class Player : Character
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
+    private void LowHealth()
+    {
+            AkSoundEngine.SetRTPCValue("Health", CurrentHealth);
+            AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
+    }
 
 }

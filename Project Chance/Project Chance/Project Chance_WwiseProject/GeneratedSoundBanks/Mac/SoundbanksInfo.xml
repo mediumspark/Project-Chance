@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\Sound Design\RainShades\Github\Project-Uncovered-main\Project-Uncovered-main\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\Sound Design\RainShades\Github\Project-Uncovered-main\Project-Uncovered-main\Project Chance\Project Chance_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Sound Design\RainShades\Github\Project-Uncovered-main\Project-Uncovered-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Sound Design\RainShades\Github\Project-Uncovered-main\Project-Uncovered-main\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="965033712" Language="SFX" Hash="1689886068">
+		<SoundBank Id="965033712" Language="SFX" Hash="1124259267">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>
@@ -194,6 +194,12 @@
 				<GameParameter Id="3677180323" Name="Health" ObjectPath="\Game Parameters\Default Work Unit\Health"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="180661997" Name="Attack" ObjectPath="\Switches\Default Work Unit\Player\Attack" GUID="{DEAEC6CC-0AD1-457C-8977-B5A1985EAC15}">
+					<Switches>
+						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Player\Attack\Person" GUID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Player\Attack\Robot" GUID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3991942870" Name="Music" ObjectPath="\Switches\Default Work Unit\Music\Music" GUID="{A35899C2-9201-403A-9C60-1E53A142BC79}">
 					<Switches>
 						<Switch Id="1125500713" Name="Intro" ObjectPath="\Switches\Default Work Unit\Music\Music\Intro" GUID="{379AF428-5ACF-4C4A-8786-06AE2019F01B}"/>
