@@ -24,11 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 817da5f092814a4a9e956ef2600d9a51
     GuidInternal: 
-<<<<<<< HEAD
     m_lastTime: -8585648994974775808
-=======
-    m_lastTime: -8585654340587445843
->>>>>>> Production-Branch
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -42,11 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-<<<<<<< HEAD
     m_lastTime: -8585648994974775808
-=======
-    m_lastTime: -8585654340587995969
->>>>>>> Production-Branch
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -74,8 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8585647590434775808
+    m_lastTime: -8585644966061124042
     List:
     - name: Default_SoundBank
       guid: 64b6d7f5be746a4c9579cd8dd0dffbe5
@@ -91,10 +82,6 @@ MonoBehaviour:
         ObjectType: 7
         guid: 64b6d7f5be746a4c9579cd8dd0dffbe5
       Path: SoundBanks\Default Work Unit\Default_SoundBank
-=======
-    m_lastTime: -8585654340588296030
-    List: []
->>>>>>> Production-Branch
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -107,8 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8585647590434775808
+    m_lastTime: -8585644966061644043
     List:
     - name: Play_Air_Enemy_Flying
       guid: 2c973050649dd74080e9361b17fddbc6
@@ -331,10 +317,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-=======
-    m_lastTime: -8585654340589226246
-    List: []
->>>>>>> Production-Branch
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -347,11 +329,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0fe870f86b4f6f4191d348886bab6ab3
     GuidInternal: 
-<<<<<<< HEAD
     m_lastTime: -8585648994974775808
-=======
-    m_lastTime: -8585654340589536314
->>>>>>> Production-Branch
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -365,11 +343,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ca490367e14ce14096a7d1b71c119f5b
     GuidInternal: 
-<<<<<<< HEAD
     m_lastTime: -8585648994974775808
-=======
-    m_lastTime: -8585654340588396055
->>>>>>> Production-Branch
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -383,8 +357,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1d5d9619af4a894f88fd90f614b03263
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8585647590434775808
+    m_lastTime: -8585644966061114041
     List:
     - name: Attack_Receiver
       guid: b5d60ad3459e8a44b28e492aa9cd6f29
@@ -463,10 +436,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-=======
-    m_lastTime: -8585654340589076209
-    List: []
->>>>>>> Production-Branch
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -479,15 +448,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ad124206cf9a5740b999d28b34a52196
     GuidInternal: 
-<<<<<<< HEAD
     m_lastTime: -8585648994974775808
-=======
-    m_lastTime: -8585654340588506082
->>>>>>> Production-Branch
     List: []
-  ExpandedFileSystemItemIds: 02000000030000001100000017000000190000001a0000001c0000001f000000
-  ExpandedWaapiItemIds: 02000000030000001100000017000000190000001a0000001c0000001f000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
