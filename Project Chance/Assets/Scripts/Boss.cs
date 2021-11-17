@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+
+[RequireComponent(typeof(DistanceToPlayer))]
 public abstract class Boss : Character
 {
     [SerializeField]
@@ -11,6 +13,7 @@ public abstract class Boss : Character
     protected Weapon PrizeWeapon; 
 
     protected Vector3 AttackLocation;
+        
 
     protected override void FixedUpdate()
     {
