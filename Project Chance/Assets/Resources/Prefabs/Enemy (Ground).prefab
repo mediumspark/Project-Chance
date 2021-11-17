@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2088810457163730402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.38, y: 0.18, z: 0}
-  m_LocalScale: {x: 1, y: 2.4209, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2088810458225034736}
   - {fileID: 2088810457228707831}
@@ -76,9 +76,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 7586f5a301b05a845b38f019fe981993, type: 3}
+  m_Sprite: {fileID: -8001470645687609090, guid: 12df9da5a32bd2846b2784c5f81cc037, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -98,7 +98,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.99999994
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -118,13 +118,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GravityOn: 1
-  Speed: 1
   GroundedPlacer: {fileID: 2088810458225034737}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 128
   gravity: 1
   jumpForce: 0
+  isRanged: 0
+  isAutoFire: 0
+  AttackRange: 4
+  AttackCooldown: 0
 --- !u!1 &2088810457228707824
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,8 +172,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009117603, y: 0}
-  m_Size: {x: 1.2, y: 1.2}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
   m_Direction: 0
 --- !u!1 &2088810458225034737
 GameObject:

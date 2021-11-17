@@ -1,14 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public abstract class Enemy : Character
-{
-    protected bool isRanged; 
-
-    protected abstract bool InAttackRange();
-    protected abstract void Attacking();
-    protected abstract void Patroling();
-}
+public enum EnemyStates { Idle, Patroling, Attacking, Alerted}
 
 [RequireComponent(typeof(CharacterController))]
 public class Character : MonoBehaviour
@@ -19,14 +12,12 @@ public class Character : MonoBehaviour
     protected Vector2 movementForce;
     public Vector2 MovementForce { get => movementForce; set => movementForce = value; }
 
-    
-    [SerializeField]
-    protected int Speed;
+    protected float Speed = 1;
     protected bool grounded;
     protected bool invulnerable;
     protected bool moving;
     protected bool jumping;
-    protected int MaxHealth, CurrentHealth, Attack;
+    protected float MaxHealth, CurrentHealth, Attack;
 
     [SerializeField]
     protected GameObject GroundedPlacer;
@@ -46,9 +37,13 @@ public class Character : MonoBehaviour
     {
         get => jumpForce; set => jumpForce = value; 
     }
-    protected virtual IEnumerator Jump(float duration)
+
+    public virtual IEnumerator Jump(float duration)
     {
-        yield return null; 
+        jumping = true;
+        movementForce.y = jumpForce;
+        yield return new WaitForSeconds(duration);
+        jumping = false;
     }
 
     protected virtual void Awake()
@@ -63,18 +58,14 @@ public class Character : MonoBehaviour
             if (!grounded && !jumping)
             {
                 movementForce.y = -gravity;
-            } else if (jumping)
-            {
-                movementForce.y = jumpForce;
             }
-            else
+            else if(grounded && !jumping)
             {
                 movementForce.y = 0;
             }
         }
 
-        grounded = Physics.CheckSphere(GroundedPlacer.transform.position, GroundDistance, GroundLayer);
-        Debug.Log("isGrounded: " + grounded);
+        grounded = Physics.CheckBox(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance), Quaternion.identity, GroundLayer);
         CharacterController.Move(movementForce * Speed * Time.deltaTime);
     }
 
@@ -99,10 +90,5 @@ public class Character : MonoBehaviour
     protected virtual void OnStun()
     {
 
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(GroundedPlacer.transform.position, GroundDistance);
     }
 }

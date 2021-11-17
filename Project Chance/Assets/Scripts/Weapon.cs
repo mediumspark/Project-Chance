@@ -13,7 +13,11 @@ public class Weapon
         {
             if(collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Boss"))
             {
-                collision.gameObject.GetComponentInParent<Enemy>().OnTakeDamage(damage); 
+                collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+                if(collision.gameObject.name == "New Game Object")
+                {
+                    Destroy(collision.gameObject); 
+                }
             }
         }
     }
@@ -23,14 +27,14 @@ public class Weapon
 
     }
 
-    public virtual void Fire()
+    public virtual void Fire(int cost)
     {
         Debug.Log("Default Weapon Fired");
     }
 
 }
 
-
+[System.Serializable]
 public class Default : Weapon
 {
     private float MoveDistance;
@@ -41,9 +45,13 @@ public class Default : Weapon
         Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; Default.CloakColor = Color; 
     }
 
-    public override void Fire()
+    public override void Fire(int cost)
     {
-        Player.StartCoroutine(Dash());
+        if (cost <= Player.CurrentStamina) 
+        {
+            Player.CurrentStamina -= cost;
+            Player.StartCoroutine(Dash());
+        }
     }
 
 
@@ -52,6 +60,7 @@ public class Default : Weapon
         GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
+        Player.isInvol = true; 
         go.AddComponent<AttackEffect>();
 
         float gravityplaceholder = 1.5f;
@@ -64,6 +73,7 @@ public class Default : Weapon
         yield return new WaitForSeconds(0.25f);
         
         Object.Destroy(go);
+        Player.isInvol = false; 
         Player.Gravity = gravityplaceholder; 
         Player.MovementForce =  Player.Moving ? Player.MovementForce * 0.5f : Vector2.zero; 
         Player.canMove = true;
@@ -72,6 +82,51 @@ public class Default : Weapon
 
 public class ThePhilanthropist : Weapon
 {
+    Player Player;
+    public ThePhilanthropist(Player player)
+    {
+        Player = player; 
+    }
+
+    public override void Fire(int cost)
+    {
+        if (cost <= Player.CurrentStamina)
+        {
+            Player.CurrentStamina -= cost;
+            if (Player.isGrounded)
+                Player.StartCoroutine(Rise());
+            else
+                Player.StartCoroutine(Slam());
+        }
+    }
+
+    public IEnumerator Rise()
+    {
+        Player.MovementForce = new Vector2(0, Player.JumpForce);
+        yield return new WaitForSeconds(1.5f);
+        Player.StartCoroutine(Slam()); 
+    }
+
+    public IEnumerator Slam()
+    {
+        GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
+
+        GameObject go = Player.Instantiate(Effect, Player.transform);
+        Player.isInvol = true;
+        go.AddComponent<AttackEffect>();
+
+        float gravityplaceholder = 1.5f;
+        Player.Gravity = -5f;
+        Player.canMove = false;
+
+        yield return new WaitUntil(() => Player.isGrounded);
+
+        Object.Destroy(go);
+        Player.isInvol = false;
+        Player.Gravity = gravityplaceholder;
+        Player.canMove = true;
+    }
+
 
 }
 

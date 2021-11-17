@@ -1,0 +1,41 @@
+﻿using UnityEngine;
+
+[RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(SpriteRenderer))]
+public class PhilAttack : MonoBehaviour
+{
+    Sprite Real, Fake;
+    SpriteRenderer SpriteRenderer;
+
+    public Vector2 PlayerLocation = Vector2.zero;
+    public bool isReal = false;
+
+    public bool Attack;
+    public float Speed = 0.5f;
+
+    public GameObject RealOneObject { get; set; } 
+
+    private void Awake()
+    {
+        Real = Resources.Load<Sprite>("Artwork/Characters/Boss_Real");
+        Fake = Resources.Load<Sprite>("Artwork/Characters/Boss_Fake");
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void FixedUpdate()
+    {
+        SpriteRenderer.sprite = isReal ? Real : Fake;
+        gameObject.layer = isReal ? LayerMask.NameToLayer("Boss") : LayerMask.NameToLayer("Fake");
+        tag = isReal ? "Boss" : "Fake";
+
+        if (Attack)
+            transform.position = Vector3.MoveTowards(transform.position, PlayerLocation, Speed);
+
+        if (Real && RealOneObject != null)
+            RealOneObject.transform.position = transform.position; 
+    }
+
+    private void OnDisable()
+    {
+        Destroy(gameObject);
+    }
+}

@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Crouch",
+                    "name": "Heal",
                     "type": "Button",
                     "id": "24d4dabc-29ad-4f61-a692-d73c4e0bfabf",
                     "expectedControlType": "Button",
@@ -38,9 +38,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "DamageSelf",
+                    "name": "Action2",
                     "type": "Button",
-                    "id": "9ce71f83-c1ef-4e03-91cf-7927775e103b",
+                    "id": "631d462f-3ef5-4122-88c0-c1b17df87196",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "WeaponCycle",
+                    "type": "Button",
+                    "id": "1b25b56d-555e-44e7-b21a-2e8232daf3cf",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -149,7 +157,7 @@
                 {
                     "name": "",
                     "id": "fe07070a-cf7d-46bc-85d2-1a8f00bf6d72",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -160,7 +168,18 @@
                 {
                     "name": "",
                     "id": "febe53f4-c3ec-438b-a63e-9be4ab327522",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "75a067ef-1038-495a-8a56-128eae150771",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -171,22 +190,33 @@
                 {
                     "name": "",
                     "id": "f6aeb148-24b7-4e5f-b639-afe3760e86e5",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "5f3edfbf-91c8-4e4d-b344-736106c0840f",
-                    "path": "<Keyboard>/c",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
+                    "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "efa72224-4ffa-4be8-9ae1-f6b62112d02e",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -214,14 +244,91 @@
                 },
                 {
                     "name": "",
-                    "id": "c0d4e17a-66ba-466d-8331-6c0426329af6",
-                    "path": "<Keyboard>/j",
+                    "id": "34c68947-1919-42ca-9e3b-7b96f1d8371b",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "DamageSelf",
+                    "action": "Action2",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9474934b-2233-4d17-ab22-7781e0cbcb86",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "a540b8c0-4308-4dcf-8844-2c0c8aef73d5",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f35c7027-cb99-424f-8b09-bae0abcd598f",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "4d056218-fc7b-4cfc-b5b5-858b0a1dce11",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "29d692d7-fcf0-4e70-89df-c602a6c4cf66",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "731c9233-8218-459e-9997-006686ac236d",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "40465e01-6dfb-412d-9253-1388b3f95a20",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeaponCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
