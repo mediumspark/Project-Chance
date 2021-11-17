@@ -21,7 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_ATTACK_01 = 4053597708U;
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_BIGGER_FOOTSTEPS = 3197540882U;
         static const AkUniqueID PLAY_GROUND_ENEMY_RANGED_ATTACK = 2336839859U;
-        static const AkUniqueID PLAY_MAIN_CHARACTER_THEME = 1429924295U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PLAYER_ATTACK = 3238800884U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
         static const AkUniqueID PLAY_PLAYER_FALLING = 396543629U;
@@ -39,11 +39,26 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID IN_COMBAT = 2116791127U;
+                static const AkUniqueID EXPLORATION = 2582085496U;
+                static const AkUniqueID FIGHT = 514064485U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OUT_OF_COMBAT = 3162566204U;
             } // namespace STATE
         } // namespace COMBAT
+
+        namespace LEVEL
+        {
+            static const AkUniqueID GROUP = 2782712965U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HOTEL_CAPUT = 1695287547U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFFICE_SPACE = 268254414U;
+                static const AkUniqueID ROOFTOP = 4265799768U;
+                static const AkUniqueID THE_HUB = 1036396546U;
+                static const AkUniqueID THE_STREETS = 363725171U;
+            } // namespace STATE
+        } // namespace LEVEL
 
         namespace LIFE
         {
@@ -90,6 +105,13 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DISTANCE_BUREAUCRAT = 1011057461U;
+        static const AkUniqueID DISTANCE_CHIEF = 2867040294U;
+        static const AkUniqueID DISTANCE_MAYOR = 4111688057U;
+        static const AkUniqueID DISTANCE_MONEY = 263702421U;
+        static const AkUniqueID DISTANCE_ORGANIZER = 3507896190U;
+        static const AkUniqueID DISTANCE_PHILANTHROPIST = 560269304U;
+        static const AkUniqueID DISTANCE_REBEL = 819496709U;
         static const AkUniqueID HEALTH = 3677180323U;
     } // namespace GAME_PARAMETERS
 

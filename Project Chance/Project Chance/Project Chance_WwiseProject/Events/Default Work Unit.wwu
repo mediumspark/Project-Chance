@@ -14,17 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Main_Character_Theme" ID="{FB317639-DF9A-4C38-82E3-BFCADB3ACA1D}">
-					<ChildrenList>
-						<Action Name="" ID="{2FA9572D-1013-4D81-9438-84A79B2204C5}" ShortID="384920314">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Main Character Theme" ID="{14B7F9D0-6629-4469-B10F-318C6BA3AB28}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Player" ID="{A59D6104-0FE5-4DE3-A3DC-34ECDD6F77BE}" ShortID="948473088">
 					<ChildrenList>
 						<Event Name="Play_Footsteps" ID="{C14EA6F6-7056-4E62-8F6F-2422E2EA5B9F}">
@@ -183,6 +172,22 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ground_Enemy_Ranged_Attack" ID="{3944A05F-191D-4CC5-9DC6-303F59974B6E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" ShortID="105698775"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{CE7B4DA2-BCFB-4E63-BE4D-BC03654F9490}" ShortID="708865298">
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{03C7D1E5-5BE0-4D48-B4CF-C8E869E80849}">
+							<ChildrenList>
+								<Action Name="" ID="{A9076298-B846-4E45-AB24-42AC0ED4ECAA}" ShortID="78497675">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{4BB3FD05-BABB-475F-B37A-EA1AAE50AEA2}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
