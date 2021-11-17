@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
-using System.Linq; 
+using System.Linq;
 
 public class ThePhilanthropistBoss : Boss
 {
-    [SerializeField]
-    private float BaseCooldownTime;
-
     [SerializeField]
     private GameObject Phase_1, Phase_2, Phase_3;
 
@@ -21,7 +18,8 @@ public class ThePhilanthropistBoss : Boss
     {
         Phase_1.SetActive(false); Phase_2.SetActive(false); Phase_3.SetActive(false);
         MaxHealth = 50;
-        CurrentHealth = MaxHealth;  
+        CurrentHealth = MaxHealth;
+        PrizeWeapon = new ThePhilanthropist(FindObjectOfType<Player>()); 
     }
 
     public override void OnTakeDamage(int damage)

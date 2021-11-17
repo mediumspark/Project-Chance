@@ -6,6 +6,8 @@ using UnityEngine;
 public abstract class Boss : Character
 {
     [SerializeField]
+    protected float BaseCooldownTime;
+    [SerializeField]
     protected bool battlestart;
     [SerializeField]
     protected bool startAttack;
