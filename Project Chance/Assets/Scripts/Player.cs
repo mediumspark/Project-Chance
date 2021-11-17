@@ -71,6 +71,7 @@ public class Player : Character
         #endregion
     }
 
+
     [SerializeField]
     private float Stamina;
     public float CurrentStamina { get => Stamina; set => Stamina = value; }
@@ -108,6 +109,7 @@ public class Player : Character
             AniMethods.SetChargeTrigger();
         }
     }
+
 
     private IEnumerator WallJump(float duration)
     {
@@ -203,6 +205,8 @@ public class Player : Character
         {
             transform.eulerAngles = new Vector3(0, 0);
         }
+
+
     }
 
     public void addWeapon(Weapon newWeapon)
