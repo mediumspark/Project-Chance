@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(DistanceToPlayer))]
 public abstract class Enemy : Character
 {
     [SerializeField]
