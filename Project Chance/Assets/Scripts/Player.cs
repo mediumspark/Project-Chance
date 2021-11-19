@@ -62,7 +62,8 @@ public class Player : Character
         Controls.Basic.Jump.canceled += ctx => jumping = false;
 
         Controls.Basic.Heal.performed += ctx => Healing = true;
-        Controls.Basic.Heal.canceled += ctx => Healing = false;
+        Controls.Basic.Heal.canceled += ctx => Healing = false; 
+        Controls.Basic.Heal.canceled += ctx => AkSoundEngine.PostEvent("Stop_Player_Heal", this.gameObject);
 
         Controls.Basic.Attack.performed += Attack_performed;
 
@@ -133,6 +134,10 @@ public class Player : Character
         StartCoroutine(InvolTimer());
       
         healthBar.value = CurrentHealth;
+        if (CurrentHealth < 50)
+        {
+            LowHealth();
+        }
     }
 
     protected override void OnDeath()
@@ -224,5 +229,11 @@ public class Player : Character
     {
         Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
-    }    
+    }
+
+    private void LowHealth()
+    {
+        AkSoundEngine.SetRTPCValue("Health", CurrentHealth);
+        AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
+    }
 }

@@ -3,147 +3,229 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{338254DE-0994-4190-B92F-DDFED71B002D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Air_Enemy_Ranged_Attack" ID="{07F5CFFB-7A84-4748-AB12-C4D09C315F9D}">
+				<Event Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}">
 					<ChildrenList>
-						<Action Name="" ID="{79674BE4-A744-4E2D-9C4F-F573404F4CFC}" ShortID="1069096134">
+						<Action Name="" ID="{9FADAE48-1561-4614-AE2D-0F01880FD604}" ShortID="818516540">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Air_Enemy_Ranged_Attack" ID="{97F30DC2-BF46-45B3-B607-B5462A30029C}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+									<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{02ADC055-18FA-4A54-A338-BB16AE5B9C20}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Footsteps" ID="{57736A66-3544-4271-BC05-94351EBC9271}">
+				<Folder Name="Player" ID="{A59D6104-0FE5-4DE3-A3DC-34ECDD6F77BE}" ShortID="948473088">
 					<ChildrenList>
-						<Action Name="" ID="{81C8AD06-6678-4D13-9A9D-8AF01A34D2AC}" ShortID="322026702">
+						<Event Name="Play_Footsteps" ID="{C14EA6F6-7056-4E62-8F6F-2422E2EA5B9F}">
+							<ChildrenList>
+								<Action Name="" ID="{D39DDE37-A4EB-487B-ADB6-A618D624C8DA}" ShortID="900735408">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{4DEE0D6F-4528-473C-BA47-AF6DCCD815D0}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Attack" ID="{D39CA125-219B-48D0-AFDD-C108767C6954}">
+							<ChildrenList>
+								<Action Name="" ID="{6F9C2F69-42C2-4E4D-8341-30950C3C5AC6}" ShortID="1015553045">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Attack" ID="{3A184130-D28D-42C3-8690-EFC35CA493B1}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Damaged" ID="{7D34C43E-EE0B-443C-8BE2-AF480A5B260D}">
+							<ChildrenList>
+								<Action Name="" ID="{14605848-DABD-4FAC-AFAF-01468E464C7A}" ShortID="114347429">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Damaged" ID="{46DED259-36DE-4995-B9E7-E7453ED8E0CE}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Falling" ID="{37770B6C-2471-4A51-AFC8-141013168DF8}">
+							<ChildrenList>
+								<Action Name="" ID="{B2EF3076-0CCA-4C3A-A5A6-E5ECFDC67BAA}" ShortID="850004503">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Falling" ID="{06387E1A-044C-4378-ABD3-5CC6B767624B}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_GroundSlide" ID="{FBC9CE91-1190-4088-8C7D-64AACBC9C84D}">
+							<ChildrenList>
+								<Action Name="" ID="{991F70ED-6963-4BFD-A5E3-3D67D9514C18}" ShortID="779445822">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_GroundSlide" ID="{2B3C4FF8-3F63-47F2-8932-088F3B9C5B8C}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Jump" ID="{426F1D14-AF3D-4BE1-B185-C1FE8212B378}">
+							<ChildrenList>
+								<Action Name="" ID="{5E81A33E-E04E-48BD-94CB-52B631F462C8}" ShortID="217846670">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Jump" ID="{9FA0EF60-DD02-45E0-9DBA-444AEDBDA237}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_LowHealth" ID="{BBE19BA2-E42E-4C95-BF54-D5A89E1E6D9C}">
+							<ChildrenList>
+								<Action Name="" ID="{E6922220-FB21-4BF4-8235-B07D46337E51}" ShortID="151072877">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LowHealth" ID="{60E22DD9-0913-49BF-B5DB-38C1EBECC9E6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_LowHealth" ID="{7003A5C0-38D5-4EC3-B266-65BA08D1ACE1}">
+							<ChildrenList>
+								<Action Name="" ID="{FDC9479B-3C92-4DE0-8E31-0885E8849273}" ShortID="673327321">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LowHealth" ID="{60E22DD9-0913-49BF-B5DB-38C1EBECC9E6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{CE7B328F-F2F6-4BED-BB0A-88D2A53EC541}" ShortID="1030958190">
+					<ChildrenList>
+						<Event Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}">
+							<ChildrenList>
+								<Action Name="" ID="{18A0397C-5E94-4C26-84AC-5CE8A480BAAE}" ShortID="668382044">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Air_Enemy_Flying" ID="{37889D46-E9CB-4F5D-9E90-445FB47D8F29}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}">
+							<ChildrenList>
+								<Action Name="" ID="{1C203C26-3463-4459-B33A-508947944D48}" ShortID="887409836">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Air_Enemy_Ranged_Attack" ID="{562B363C-6CEE-46E1-8049-421EF54AD89F}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}">
+							<ChildrenList>
+								<Action Name="" ID="{A79CA4B1-382F-4795-8801-5C0FFD519E37}" ShortID="994980695">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Footsteps" ID="{63315AA3-0E96-4C45-940F-EF49497ED324}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}">
+							<ChildrenList>
+								<Action Name="" ID="{94125403-106B-458F-A3FA-E47B617807DD}" ShortID="67108337">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{DDDA25AA-01E3-4808-98A0-210605A9FB37}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}">
+							<ChildrenList>
+								<Action Name="" ID="{C73C8C5F-8E9E-4C75-8858-7B4816D3E7D8}" ShortID="573588727">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Melee_Bigger_Footsteps" ID="{2E99866B-B981-435D-916D-B90D92EA5C51}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}">
+							<ChildrenList>
+								<Action Name="" ID="{C9274720-1D73-440F-9F5E-76738BE2B2C8}" ShortID="689057847">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Ranged_Attack" ID="{3944A05F-191D-4CC5-9DC6-303F59974B6E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" ShortID="105698775"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{CE7B4DA2-BCFB-4E63-BE4D-BC03654F9490}" ShortID="708865298">
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{03C7D1E5-5BE0-4D48-B4CF-C8E869E80849}">
+							<ChildrenList>
+								<Action Name="" ID="{A9076298-B846-4E45-AB24-42AC0ED4ECAA}" ShortID="78497675">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{4BB3FD05-BABB-475F-B37A-EA1AAE50AEA2}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_" ID="{E682EE35-EAAD-44CE-89E4-4F8606F3EBB7}">
+					<ChildrenList>
+						<Action Name="" ID="{91E715C0-BE14-41B5-8347-8CCBE06EC45B}" ShortID="913401676">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{955AEC9F-F451-449A-A112-7CA2B78FFAE3}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+									<ObjectRef Name="MainCharacter_Theme (Chorus Loop)" ID="{3399105C-F2CB-48E0-AEAC-5760B8E3F9EB}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Damaged" ID="{803FA075-C3ED-4F1B-B43F-FBDF5CD39248}">
+				<Event Name="Play_Player_Heal" ID="{8C5771F1-D3DA-41B9-AC75-1C43C38033DD}">
 					<ChildrenList>
-						<Action Name="" ID="{221119A0-53DC-4946-9562-023870120468}" ShortID="330937451">
+						<Action Name="" ID="{75275795-9BBB-4E4D-8575-542A627B200A}" ShortID="409391612">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Damaged" ID="{2703FD1D-5274-4067-942E-2D49E35EB51A}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+									<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Attack" ID="{66875859-0696-4DAF-885E-AEC1FCBE5244}">
+				<Event Name="Stop_Player_Heal" ID="{AD02A6C2-08A9-4BB2-A52B-F510C91EE429}">
 					<ChildrenList>
-						<Action Name="" ID="{76BB7CC9-BD5E-4858-BF25-92FD148CDFE0}" ShortID="128929734">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Attack" ID="{F6764981-F865-4589-9AE6-B6652F1B6A61}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Player_Ground_Slide" ID="{8603D04F-1E80-48B8-8E5E-43CFF8448E30}">
-					<ChildrenList>
-						<Action Name="" ID="{F829BA2E-FEB3-46CD-9065-3AB931DFAC06}" ShortID="685244765">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ground_Slide" ID="{A0569663-CA09-418C-98B6-B830925E195D}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Air_Enemy_Flying" ID="{5030972C-9D64-40D7-80E9-361B17FDDBC6}">
-					<ChildrenList>
-						<Action Name="" ID="{7658D332-1C84-42F9-9232-B95CC75F6F9C}" ShortID="172507534">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Air_Enemy_Flying" ID="{86F8C35F-B93C-4BBC-8718-B4A689F49DC6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Ground_Enemy_Melee_Attack" ID="{9EAC1FEE-F540-4BAD-A0E3-1071BE2D8BFD}">
-					<ChildrenList>
-						<Action Name="" ID="{F6BCC5FF-3BD0-4B70-B846-E28853D23E8D}" ShortID="524540379">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{0997F52D-9BD0-4AAC-A76E-1AE0E8E40F63}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{0C83FCA3-C235-4167-8300-97B1CC1348C4}">
-					<ChildrenList>
-						<Action Name="" ID="{ADBF3011-260A-49DF-A3E5-5BDCEB6DD941}" ShortID="256445902">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ground_Enemy_Melee_Bigger_Footsteps" ID="{201CF968-CC89-44E9-9BAE-88ED4215481D}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Air_Enemy_Flying" ID="{C7136DFF-1154-46FE-BBF4-F4FADAC31B21}">
-					<ChildrenList>
-						<Action Name="" ID="{F35A8949-B8F1-40DF-B32B-E9872017D316}" ShortID="947608899">
+						<Action Name="" ID="{B3E291EA-3B00-473C-B7E1-BB2BFD6D6D9E}" ShortID="725016931">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Air_Enemy_Flying" ID="{86F8C35F-B93C-4BBC-8718-B4A689F49DC6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Ground_Enemy_Ranged_Attack" ID="{4A3ADF10-B6F7-4C30-8E53-88E5E7CB15B6}">
-					<ChildrenList>
-						<Action Name="" ID="{D554A73F-78B1-450E-9630-4FB494490778}" ShortID="12734745">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ground_Enemy_Ranged_Attack" ID="{A4EEB453-38F4-4364-8CA4-8479C0BD1561}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Philanthropist_Damaged" ID="{196F92F2-BA49-4628-A7BA-77ACB72001B5}">
-					<ChildrenList>
-						<Action Name="" ID="{183BCF58-1FDB-44C2-B5E2-68C7A2E7977F}" ShortID="387584532">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Philanthropist_Damaged" ID="{FFBE79D1-50E9-41E6-A921-9CE304290667}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Philanthropist_Attack" ID="{1EB9D375-9151-443D-B9EB-6EEA9E69F7D4}">
-					<ChildrenList>
-						<Action Name="" ID="{B192AE60-76DB-4788-B089-B1A1DC78E4D1}" ShortID="494371150">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Philanthropist_Attack" ID="{D0E31F3B-45EE-4682-AEDD-806C71230E9C}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Philanthropist_Footsteps" ID="{7FADDD74-8ADE-4866-8993-60B420464D73}">
-					<ChildrenList>
-						<Action Name="" ID="{432B1698-84AB-4D22-B583-6BC8CDB534CC}" ShortID="703452788">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Philanthropist_Footsteps" ID="{13929375-3E7C-408A-B763-A5B4BBA2B88E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+									<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
