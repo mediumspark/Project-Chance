@@ -19,6 +19,9 @@ public abstract class Boss : Character
 
     protected override void FixedUpdate()
     {
+        if (GravityOn)
+            base.FixedUpdate(); 
+
         if (battlestart && startAttack)
         {
             if (CurrentHealth > MaxHealth / 2)

@@ -6,8 +6,6 @@ public enum EnemyStates { Idle, Patroling, Attacking, Alerted}
 [RequireComponent(typeof(CharacterController))]
 public class Character : MonoBehaviour
 {
-    [SerializeField]
-    protected bool GravityOn;
     protected CharacterController CharacterController;
     protected Vector2 movementForce;
     public Vector2 MovementForce { get => movementForce; set => movementForce = value; }
@@ -23,8 +21,16 @@ public class Character : MonoBehaviour
     protected GameObject GroundedPlacer;
     protected float GroundDistance = 0.09f;
     [SerializeField]
-    LayerMask GroundLayer; 
+    LayerMask GroundLayer;
+    protected Vector2 tempMovementForce;
 
+
+    [SerializeField]
+    protected bool GravityOn;
+    public bool isGravityOn
+    {
+        get => GravityOn; set => GravityOn = value; 
+    }
     [SerializeField]
     protected float gravity; 
     public float Gravity
@@ -62,11 +68,12 @@ public class Character : MonoBehaviour
             else if(grounded && !jumping)
             {
                 movementForce.y = 0;
-            }
+            }                        
         }
 
         grounded = Physics.CheckBox(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance), Quaternion.identity, GroundLayer);
         CharacterController.Move(movementForce * Speed * Time.deltaTime);
+        tempMovementForce = movementForce; 
     }
 
     public virtual void OnTakeDamage(int damage)

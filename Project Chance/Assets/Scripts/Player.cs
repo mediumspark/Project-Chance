@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class Player : Character
 {
+    public static Vector3 Position; 
+
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work.
@@ -37,7 +39,6 @@ public class Player : Character
     protected override void Awake()
     {
         base.Awake();
-
         DontDestroyOnLoad(gameObject);
         canMove = true;
 
@@ -78,6 +79,8 @@ public class Player : Character
     private float MaxStamina = 100;
     [SerializeField]
     private float abilityCost;
+    private bool canWallJump = true;
+
     public float AbilityCost { get => abilityCost; set=> abilityCost = value; } 
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -86,7 +89,7 @@ public class Player : Character
             StartCoroutine(Jump(0.5f));
 
         if (TouchingWall)
-            StartCoroutine(WallJump(0.5f));
+            StartCoroutine(WallJump(0.7f));
     }
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -95,9 +98,8 @@ public class Player : Character
         {
             moving = true;
             movementForce.x = obj.ReadValue<float>();
+            FacingRight = obj.ReadValue<float>() > 0;
         }
-
-        FacingRight = obj.ReadValue<float>() > 0;
     }
 
     private void Attack_performed(InputAction.CallbackContext obj)
@@ -111,17 +113,30 @@ public class Player : Character
 
     private IEnumerator WallJump(float duration)
     {
-        if (!grounded)
+        if (!grounded && canWallJump)
         {
-            Vector2 tempMovementForce = MovementForce;
+            float speed = movementForce.x; 
             Vector2 WallJumpForce = new Vector2(0, jumpForce);
             WallJumpForce.x = FacingRight ? -JumpForce : JumpForce;
             FacingRight = WallJumpForce.x > 0;
-            movementForce = WallJumpForce;
+            MovementForce = WallJumpForce;
+
             jumping = true;
+            canWallJump = false; 
             yield return new WaitForSeconds(duration); // Jump Ended
+
+            if (Moving)
+            {
+                movementForce.x = speed;
+            }
+            else
+            {
+                movementForce = Vector2.zero; 
+            }
+
             jumping = false;
-            MovementForce = tempMovementForce;
+            canWallJump = true; 
+
         }
     }
 
@@ -130,8 +145,7 @@ public class Player : Character
         //PlayAnimation for taking damage that allows player to be invulnerable for its duration
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
-        StartCoroutine(InvolTimer());
-      
+        StartCoroutine(InvolTimer());      
         healthBar.value = CurrentHealth;
     }
 
@@ -152,7 +166,7 @@ public class Player : Character
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
-        TouchingWall = Interacts.WallCling(BackgroundColliders);        
+        TouchingWall = Interacts.WallCling(BackgroundColliders);
 
         if (TouchingWall)
         {
@@ -203,6 +217,9 @@ public class Player : Character
         {
             transform.eulerAngles = new Vector3(0, 0);
         }
+
+        Position = transform.position;
+
     }
 
     public void addWeapon(Weapon newWeapon)

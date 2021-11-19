@@ -33,7 +33,7 @@ public class Interacts
 
                     case "Threshold":
                         col.GetComponent<Threshold>().OnHittingThreshold();
-                        break; 
+                        break;
                 }
             }
         }
@@ -75,6 +75,9 @@ public class Interacts
                 return true;
 
             case "Threshold":
+                return true;
+
+            case "Destructable":
                 return true; 
 
             default:
