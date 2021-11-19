@@ -152,7 +152,7 @@ public class Player : Character
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
-        TouchingWall = Interacts.WallCling(BackgroundColliders);        
+        TouchingWall = Interacts.WallCling(BackgroundColliders);
 
         if (TouchingWall)
         {
@@ -170,7 +170,7 @@ public class Player : Character
 
         base.FixedUpdate();
 
-        AniMethods.SetGrounded(grounded); 
+        AniMethods.SetGrounded(grounded);
     }
 
     private void Update()
