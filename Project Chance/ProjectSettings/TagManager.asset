@@ -13,6 +13,7 @@ TagManager:
   - Threshold
   - Destructable
   - Wall
+  - Dialogue
   layers:
   - Default
   - TransparentFX
@@ -29,23 +30,25 @@ TagManager:
   - Threshold
   - Destructable
   - Background
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Dialogue
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Default
     uniqueID: 0

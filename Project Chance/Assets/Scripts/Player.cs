@@ -1,16 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
 public class Player : Character
 {
-    public static Vector3 Position; 
+    public static Vector3 Position;
 
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work.
-    private readonly WeaponHandler WH = new WeaponHandler(); 
+    private readonly WeaponHandler WH = new WeaponHandler();
 
     private bool Healing;
     private int HealSpeed = 5;
@@ -33,7 +33,7 @@ public class Player : Character
 
     public bool isInvol { get => invulnerable; set => invulnerable = value; }
     public bool isGrounded { get => grounded; }
-    
+
     private int base_speed = 4;
 
     protected override void Awake()
@@ -85,7 +85,7 @@ public class Player : Character
     private float abilityCost;
     private bool WallJumping = false;
 
-    public float AbilityCost { get => abilityCost; set=> abilityCost = value; } 
+    public float AbilityCost { get => abilityCost; set=> abilityCost = value; }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
@@ -108,10 +108,10 @@ public class Player : Character
         {
             WH.Fire();
             AniMethods.SetChargeTrigger();
-            staminaBar.value = CurrentStamina; 
+            staminaBar.value = CurrentStamina;
         }
     }
-    
+
     Vector2 WallJumpForce;
     private IEnumerator WallJump()
     {
@@ -121,14 +121,14 @@ public class Player : Character
         FacingRight = WallJumpForce.x > 0;
 
         yield return new WaitForSeconds(0.5f);
-        WallJumping = false; 
+        WallJumping = false;
 
     }
 
     protected override void GravityCheck()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-        Interacts.PlayerHit(colliders, gameObject, 5); 
+        Interacts.PlayerHit(colliders, gameObject, 5);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
         TouchingWall = Interacts.WallCling(BackgroundColliders);
 
@@ -152,8 +152,8 @@ public class Player : Character
             movementForce = WallJumpForce;
             if (Controls.Basic.Movement.triggered && !grounded)
             {
-                WallJumping = false; 
-            }           
+                WallJumping = false;
+            }
         }
 
 
@@ -168,10 +168,10 @@ public class Player : Character
                 movementForce.y = 0;
                 if(!WallJumping && !moving && !Controls.Basic.Movement.triggered)
                 {
-                    movementForce.x = 0; 
+                    movementForce.x = 0;
                 }
             }
-            
+
             if (jumping || WallJumping)
             {
                 movementForce.y = jumpForce;
@@ -184,7 +184,7 @@ public class Player : Character
         //PlayAnimation for taking damage that allows player to be invulnerable for its duration
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
-        StartCoroutine(InvolTimer());      
+        StartCoroutine(InvolTimer());
         healthBar.value = CurrentHealth;
     }
 
@@ -206,7 +206,7 @@ public class Player : Character
         base.FixedUpdate();
 
 
-        AniMethods.SetGrounded(grounded); 
+        AniMethods.SetGrounded(grounded);
     }
 
     private void Update()
@@ -214,7 +214,7 @@ public class Player : Character
         if (grounded)
         {
             AniMethods.SetRun(moving);
-            AniMethods.SetHealing(Healing); 
+            AniMethods.SetHealing(Healing);
 
             if (Healing)
             {
@@ -265,5 +265,5 @@ public class Player : Character
     {
         Controls.Disable();
     }
-  
+
 }
