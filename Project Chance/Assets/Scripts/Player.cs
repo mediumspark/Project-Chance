@@ -1,14 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
 public class Player : Character
 {
+    public static Vector3 Position;
+
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work.
-    private readonly WeaponHandler WH = new WeaponHandler(); 
+    private readonly WeaponHandler WH = new WeaponHandler();
 
     private bool Healing;
     private int HealSpeed = 5;
@@ -16,7 +18,7 @@ public class Player : Character
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
 
-    public Slider healthBar;
+    public Slider healthBar, staminaBar;
 
     public float currentHealth { get => CurrentHealth; set => CurrentHealth = value;  }
 
@@ -31,13 +33,12 @@ public class Player : Character
 
     public bool isInvol { get => invulnerable; set => invulnerable = value; }
     public bool isGrounded { get => grounded; }
-    
+
     private int base_speed = 4;
 
     protected override void Awake()
     {
         base.Awake();
-
         DontDestroyOnLoad(gameObject);
         canMove = true;
 
@@ -51,6 +52,9 @@ public class Player : Character
         WH.Add(new Default(this, 4f, 10, Color.black));
         WH.SetCurrentWeapon(0);
 
+        healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
+        staminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
+
         #region Inputs
         Controls = new PlayerControls();
 
@@ -60,6 +64,7 @@ public class Player : Character
 
         Controls.Basic.Jump.performed += Jump_performed;
         Controls.Basic.Jump.canceled += ctx => jumping = false;
+        Controls.Basic.Jump.canceled += ctx => WallJumping = false;
 
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
@@ -78,26 +83,23 @@ public class Player : Character
     private float MaxStamina = 100;
     [SerializeField]
     private float abilityCost;
-    public float AbilityCost { get => abilityCost; set=> abilityCost = value; } 
+    private bool WallJumping = false;
+
+    public float AbilityCost { get => abilityCost; set=> abilityCost = value; }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         if(grounded && canMove)
             StartCoroutine(Jump(0.5f));
-
-        if (TouchingWall)
-            StartCoroutine(WallJump(0.5f));
     }
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         if (canMove && !Healing)
         {
-            moving = true;
             movementForce.x = obj.ReadValue<float>();
+            moving = true;
         }
-
-        FacingRight = obj.ReadValue<float>() > 0;
     }
 
     private void Attack_performed(InputAction.CallbackContext obj)
@@ -106,22 +108,74 @@ public class Player : Character
         {
             WH.Fire();
             AniMethods.SetChargeTrigger();
+            staminaBar.value = CurrentStamina;
         }
     }
 
-    private IEnumerator WallJump(float duration)
+    Vector2 WallJumpForce;
+    private IEnumerator WallJump()
     {
-        if (!grounded)
+        WallJumping = true;
+        WallJumpForce = new Vector2(0, jumpForce);
+        WallJumpForce.x = FacingRight ? -JumpForce : JumpForce;
+        FacingRight = WallJumpForce.x > 0;
+
+        yield return new WaitForSeconds(0.5f);
+        WallJumping = false;
+
+    }
+
+    protected override void GravityCheck()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
+        Interacts.PlayerHit(colliders, gameObject, 5);
+        Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
+        TouchingWall = Interacts.WallCling(BackgroundColliders);
+
+        if (TouchingWall)
         {
-            Vector2 tempMovementForce = MovementForce;
-            Vector2 WallJumpForce = new Vector2(0, jumpForce);
-            WallJumpForce.x = FacingRight ? -JumpForce : JumpForce;
-            FacingRight = WallJumpForce.x > 0;
+            gravity = Wall_Gravity;
+            if (Controls.Basic.Jump.triggered)
+            {
+                StartCoroutine(WallJump());
+            }
+
+        }
+        else
+        {
+            gravity = Normal_Gravity;
+        }
+
+
+        if (WallJumping)
+        {
             movementForce = WallJumpForce;
-            jumping = true;
-            yield return new WaitForSeconds(duration); // Jump Ended
-            jumping = false;
-            MovementForce = tempMovementForce;
+            if (Controls.Basic.Movement.triggered && !grounded)
+            {
+                WallJumping = false;
+            }
+        }
+
+
+        if (GravityOn)
+        {
+            if (!grounded && !jumping && !WallJumping)
+            {
+                movementForce.y = -gravity;
+            }
+            else if (grounded && !jumping && !WallJumping)
+            {
+                movementForce.y = 0;
+                if(!WallJumping && !moving && !Controls.Basic.Movement.triggered)
+                {
+                    movementForce.x = 0;
+                }
+            }
+
+            if (jumping || WallJumping)
+            {
+                movementForce.y = jumpForce;
+            }
         }
     }
 
@@ -131,13 +185,12 @@ public class Player : Character
         AniMethods.SetDamageTrigger();
         base.OnTakeDamage(damage);
         StartCoroutine(InvolTimer());
-      
         healthBar.value = CurrentHealth;
     }
 
     protected override void OnDeath()
     {
-        GameManager.instance.LevelReload();
+        GameManager.LevelReload();
         Destroy(gameObject);
     }
 
@@ -150,27 +203,10 @@ public class Player : Character
 
     protected override void FixedUpdate()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-        Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
-        TouchingWall = Interacts.WallCling(BackgroundColliders);        
-
-        if (TouchingWall)
-        {
-            gravity = Wall_Gravity;
-        }
-        else
-        {
-            gravity = Normal_Gravity;
-        }
-
-        if (!invulnerable)
-        {
-            Interacts.PlayerHit(colliders, gameObject, 10);
-        }
-
         base.FixedUpdate();
 
-        AniMethods.SetGrounded(grounded); 
+
+        AniMethods.SetGrounded(grounded);
     }
 
     private void Update()
@@ -178,7 +214,7 @@ public class Player : Character
         if (grounded)
         {
             AniMethods.SetRun(moving);
-            AniMethods.SetHealing(Healing); 
+            AniMethods.SetHealing(Healing);
 
             if (Healing)
             {
@@ -191,8 +227,15 @@ public class Player : Character
                 if (Stamina < MaxStamina)
                 {
                     Stamina += Time.deltaTime * HealSpeed;
+                    staminaBar.value = CurrentStamina;
                 }
             }
+        }
+
+
+        if (moving)
+        {
+            FacingRight = movementForce.x > 0;
         }
 
         if (!FacingRight)
@@ -203,6 +246,9 @@ public class Player : Character
         {
             transform.eulerAngles = new Vector3(0, 0);
         }
+
+        Position = transform.position;
+
     }
 
     public void addWeapon(Weapon newWeapon)
@@ -220,9 +266,4 @@ public class Player : Character
         Controls.Disable();
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
-        Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
-    }    
 }

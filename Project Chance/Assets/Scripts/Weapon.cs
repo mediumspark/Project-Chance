@@ -17,7 +17,21 @@ public class Weapon
                 if(collision.gameObject.name == "New Game Object")
                 {
                     Destroy(collision.gameObject); 
-                }
+                }                
+            }
+
+            if (collision.transform.CompareTag("Destructable"))
+            {
+                collision.gameObject.GetComponent<IDestructable>().OnHit(); 
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            Debug.Log("Hit 3D Object");
+            if (collision.transform.CompareTag("Destructable"))
+            {
+                collision.gameObject.GetComponent<IDestructable>().OnHit();
             }
         }
     }
@@ -63,8 +77,7 @@ public class Default : Weapon
         Player.isInvol = true; 
         go.AddComponent<AttackEffect>();
 
-        float gravityplaceholder = 1.5f;
-        Player.Gravity = 0;
+        Player.isGravityOn = false; 
         Player.canMove = false; 
         
         float DashDistance = Player.FacingRight ? MoveDistance :-MoveDistance; 
@@ -73,8 +86,8 @@ public class Default : Weapon
         yield return new WaitForSeconds(0.25f);
         
         Object.Destroy(go);
+        Player.isGravityOn = true;
         Player.isInvol = false; 
-        Player.Gravity = gravityplaceholder; 
         Player.MovementForce =  Player.Moving ? Player.MovementForce * 0.5f : Vector2.zero; 
         Player.canMove = true;
     }
