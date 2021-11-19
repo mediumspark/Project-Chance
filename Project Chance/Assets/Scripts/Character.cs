@@ -47,7 +47,6 @@ public class Character : MonoBehaviour
     public virtual IEnumerator Jump(float duration)
     {
         jumping = true;
-        movementForce.y = jumpForce;
         yield return new WaitForSeconds(duration);
         jumping = false;
     }
@@ -57,7 +56,7 @@ public class Character : MonoBehaviour
         CharacterController = GetComponent<CharacterController>();
     }
 
-    protected virtual void FixedUpdate()
+    protected virtual void GravityCheck()
     {
         if (GravityOn)
         {
@@ -65,16 +64,26 @@ public class Character : MonoBehaviour
             {
                 movementForce.y = -gravity;
             }
-            else if(grounded && !jumping)
+            else if (grounded && !jumping)
             {
                 movementForce.y = 0;
-            }                        
+            }
+            else if (jumping)
+            {
+                movementForce.y = jumpForce;
+            }
         }
+    }
+
+    protected virtual void FixedUpdate()
+    {
+        GravityCheck(); 
 
         grounded = Physics.CheckBox(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance), Quaternion.identity, GroundLayer);
         CharacterController.Move(movementForce * Speed * Time.deltaTime);
         tempMovementForce = movementForce; 
     }
+
 
     public virtual void OnTakeDamage(int damage)
     {

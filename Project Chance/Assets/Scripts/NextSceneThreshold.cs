@@ -5,9 +5,11 @@ using UnityEngine;
 public class NextSceneThreshold : Threshold
 {
     [SerializeField]
-    private string SceneName; 
+    private string SceneName;
+    [SerializeField]
+    private int spawnPoint = 0; 
     public override void OnHittingThreshold()
     {
-        GameManager.instance.LoadScene(SceneName); 
+        GameManager.LoadScene(SceneName, spawnPoint); 
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Fake
   - Threshold
   - Destructable
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Fake
   - Threshold
   - Destructable
-  - 
+  - Background
   - 
   - 
   - 

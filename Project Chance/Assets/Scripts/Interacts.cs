@@ -43,7 +43,7 @@ public class Interacts
     {
         var WallColliders = colliders.ToList().Where(ctx => LayerMask.LayerToName(ctx.gameObject.layer) == "Wall" || LayerMask.LayerToName(ctx.gameObject.layer) == "Ground").FirstOrDefault();
 
-        return WallColliders != null; 
+        return WallColliders != null && WallColliders.CompareTag("Wall"); 
     }
 
     private static bool OnInteract(string Layer)
