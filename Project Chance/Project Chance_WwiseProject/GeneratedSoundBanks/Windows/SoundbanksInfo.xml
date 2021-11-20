@@ -11,7 +11,125 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="965033712" Language="SFX" Hash="1330935934">
+		<SoundBank Id="115247927" Language="SFX" Hash="243248922">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
+			<ShortName>Music_And_Ambience</ShortName>
+			<Path>Music_And_Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2758753758" Name="Play_Ambiance_Hub" ObjectPath="\Events\Default Work Unit\Play_Ambiance_Hub" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="428237620" Language="SFX">
+							<ShortName>Ambiences\Ambiance_Hub.wav</ShortName>
+							<Path>SFX\Ambiences\Ambiance_Hub_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2955335140" Name="Play_Ambience_HotelCaput" ObjectPath="\Events\Default Work Unit\Play_Ambience_HotelCaput" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="702821490" Language="SFX">
+							<ShortName>Ambiences\Ambience_HotelCaput.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_HotelCaput_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1451337521" Name="Play_Ambience_Office" ObjectPath="\Events\Default Work Unit\Play_Ambience_Office" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="29815098" Language="SFX">
+							<ShortName>Ambiences\Stinger_OfficeSpace.wav</ShortName>
+							<Path>SFX\Ambiences\Stinger_OfficeSpace_D79FB2B7.wem</Path>
+						</File>
+						<File Id="326376891" Language="SFX">
+							<ShortName>Ambiences\Ambience_OfficeSpace.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_OfficeSpace_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3519641755" Name="Play_Ambience_Rooftops" ObjectPath="\Events\Default Work Unit\Play_Ambience_Rooftops" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="574758837" Language="SFX">
+							<ShortName>Ambiences\Ambience_Rooftops.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_Rooftops_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3932320915" Name="Play_Ambience_Streets" ObjectPath="\Events\Default Work Unit\Play_Ambience_Streets" DurationType="OneShot" DurationMin="14.174000" DurationMax="14.174000">
+					<IncludedMemoryFiles>
+						<File Id="916922512" Language="SFX">
+							<ShortName>Ambiences\Ambience_Streets.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_Streets_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3779208993" Name="Play_Music_HotelCaput_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_HotelCaput_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="342851348" Language="SFX">
+							<ShortName>Music_HotelCaput_Theme.wav</ShortName>
+							<Path>SFX\Music_HotelCaput_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1753068158" Name="Play_Music_OfficeSpace_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_OfficeSpace_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="121291358" Language="SFX">
+							<ShortName>Music_OfficeSpace_Theme.wav</ShortName>
+							<Path>SFX\Music_OfficeSpace_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="838192066" Name="Play_Music_Rooftops_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_Rooftops_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="159280278" Language="SFX">
+							<ShortName>Music_Rooftops_Theme.wav</ShortName>
+							<Path>SFX\Music_Rooftops_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="29672328" Name="Play_Music_Streets_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_Streets_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="211789275" Language="SFX">
+							<ShortName>Music_Streets_Theme.wav</ShortName>
+							<Path>SFX\Music_Streets_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1943370246" Name="Play_Music_TheGrandArena_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_TheGrandArena_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="364033017" Language="SFX">
+							<ShortName>Music_TheGrandArena_Theme.wav</ShortName>
+							<Path>SFX\Music_TheGrandArena_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277527292" Name="Play_Music_TheWildSide_Theme" ObjectPath="\Events\Default Work Unit\Play_Music_TheWildSide_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="649785047" Language="SFX">
+							<ShortName>Music_TheWildSide_Theme.wav</ShortName>
+							<Path>SFX\Music_TheWildSide_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Player\Combat" GUID="{86F66DE8-E44E-4313-8C94-B585A813C194}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Player\Combat\None" GUID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<State Id="514064485" Name="Fight" ObjectPath="\States\Default Work Unit\Player\Combat\Fight" GUID="{4ACC0FC3-9187-415B-AF12-8C65CAD7431C}"/>
+						<State Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Player\Combat\Exploration" GUID="{F3FFDA98-F406-4DF7-BECA-057911B553F9}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2782712965" Name="Level" ObjectPath="\States\Default Work Unit\Level" GUID="{F1F7D483-CB86-4C06-B440-FAA2B6716C6C}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Level\None" GUID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+						<State Id="1036396546" Name="The_Hub" ObjectPath="\States\Default Work Unit\Level\The_Hub" GUID="{DF1C29C6-4328-4E87-8AA3-19DFBF38795A}"/>
+						<State Id="363725171" Name="The_Streets" ObjectPath="\States\Default Work Unit\Level\The_Streets" GUID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+						<State Id="1695287547" Name="Hotel_Caput" ObjectPath="\States\Default Work Unit\Level\Hotel_Caput" GUID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+						<State Id="268254414" Name="Office_Space" ObjectPath="\States\Default Work Unit\Level\Office_Space" GUID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+						<State Id="4265799768" Name="Rooftop" ObjectPath="\States\Default Work Unit\Level\Rooftop" GUID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="965033712" Language="SFX" Hash="3359692341">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>

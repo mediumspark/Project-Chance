@@ -15,6 +15,11 @@ namespace AK
     {
         static const AkUniqueID PLAY_AIR_ENEMY_FLYING = 1484250099U;
         static const AkUniqueID PLAY_AIR_ENEMY_RANGED_ATTACK = 888154214U;
+        static const AkUniqueID PLAY_AMBIANCE_HUB = 2758753758U;
+        static const AkUniqueID PLAY_AMBIENCE_HOTELCAPUT = 2955335140U;
+        static const AkUniqueID PLAY_AMBIENCE_OFFICE = 1451337521U;
+        static const AkUniqueID PLAY_AMBIENCE_ROOFTOPS = 3519641755U;
+        static const AkUniqueID PLAY_AMBIENCE_STREETS = 3932320915U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_GROUND_ENEMY_FOOTSTEPS = 3600261322U;
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_ATTACK = 512754046U;
@@ -22,6 +27,12 @@ namespace AK
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_BIGGER_FOOTSTEPS = 3197540882U;
         static const AkUniqueID PLAY_GROUND_ENEMY_RANGED_ATTACK = 2336839859U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_MUSIC_HOTELCAPUT_THEME = 3779208993U;
+        static const AkUniqueID PLAY_MUSIC_OFFICESPACE_THEME = 1753068158U;
+        static const AkUniqueID PLAY_MUSIC_ROOFTOPS_THEME = 838192066U;
+        static const AkUniqueID PLAY_MUSIC_STREETS_THEME = 29672328U;
+        static const AkUniqueID PLAY_MUSIC_THEGRANDARENA_THEME = 1943370246U;
+        static const AkUniqueID PLAY_MUSIC_THEWILDSIDE_THEME = 277527292U;
         static const AkUniqueID PLAY_PLAYER_ATTACK = 3238800884U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
         static const AkUniqueID PLAY_PLAYER_FALLING = 396543629U;
@@ -120,6 +131,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MUSIC_AND_AMBIENCE = 115247927U;
         static const AkUniqueID UNCOVERED_SOUNDBANK = 965033712U;
     } // namespace BANKS
 
