@@ -13,7 +13,7 @@ public class Player : Character
     private readonly WeaponHandler WH = new WeaponHandler();
 
     private bool Healing;
-    private int HealSpeed = 5;
+    private int HealSpeed = 10;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
@@ -59,8 +59,7 @@ public class Player : Character
         Controls = new PlayerControls();
 
         Controls.Basic.Movement.performed += Movement_performed;
-        Controls.Basic.Movement.canceled += ctx => movementForce.x = 0;
-        Controls.Basic.Movement.canceled += ctx => moving = false;
+        Controls.Basic.Movement.canceled += ctx => Stop(); 
 
         Controls.Basic.Jump.performed += Jump_performed;
         Controls.Basic.Jump.canceled += ctx => jumping = false;
@@ -68,6 +67,7 @@ public class Player : Character
 
         Controls.Basic.Heal.performed += ctx => Healing = true;
         Controls.Basic.Heal.canceled += ctx => Healing = false;
+        Controls.Basic.Heal.canceled += ctx => AkSoundEngine.PostEvent("Stop_Player_Heal", this.gameObject);
 
         Controls.Basic.Attack.performed += Attack_performed;
 
@@ -91,6 +91,12 @@ public class Player : Character
     {
         if(grounded && canMove)
             StartCoroutine(Jump(0.5f));
+    }
+
+    public void Stop()
+    {
+        movementForce.x = 0;
+        moving = false;
     }
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -181,11 +187,14 @@ public class Player : Character
 
     public override void OnTakeDamage(int damage)
     {
-        //PlayAnimation for taking damage that allows player to be invulnerable for its duration
-        AniMethods.SetDamageTrigger();
-        base.OnTakeDamage(damage);
-        StartCoroutine(InvolTimer());
-        healthBar.value = CurrentHealth;
+        if (!invulnerable)
+        {
+            //PlayAnimation for taking damage that allows player to be invulnerable for its duration
+            AniMethods.SetDamageTrigger();
+            base.OnTakeDamage(damage);
+            StartCoroutine(InvolTimer());
+            healthBar.value = CurrentHealth;
+        }
     }
 
     protected override void OnDeath()
@@ -266,4 +275,15 @@ public class Player : Character
         Controls.Disable();
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
+        Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
+    }
+
+    private void LowHealth()
+    {
+        AkSoundEngine.SetRTPCValue("Health", CurrentHealth);
+        AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
+    }
 }

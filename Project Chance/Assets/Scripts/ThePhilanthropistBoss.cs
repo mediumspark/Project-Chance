@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables; 
 using System.Linq;
 
 public class ThePhilanthropistBoss : Boss
@@ -12,10 +13,15 @@ public class ThePhilanthropistBoss : Boss
     private List<GameObject> PossiblePositions;
 
     [SerializeField]
-    private GameObject RealOneObject; 
+    private GameObject RealOneObject;
+
+    private TextBoxManager IntroText;
+    [SerializeField]
+    private PlayableDirector Intro, Victory; 
 
     protected override void Awake()
     {
+        IntroText = GetComponentInChildren<TextBoxManager>();
         Phase_1.SetActive(false); Phase_2.SetActive(false); Phase_3.SetActive(false);
         MaxHealth = 50;
         CurrentHealth = MaxHealth;
@@ -30,6 +36,7 @@ public class ThePhilanthropistBoss : Boss
     protected override void OnDeath()
     {
         base.OnDeath();
+        Victory.gameObject.SetActive(true);
     }// for death sound effect
 
     private List<GameObject> GatherChildren(GameObject Phase)
@@ -40,6 +47,14 @@ public class ThePhilanthropistBoss : Boss
             Temp.Add(Phase.transform.GetChild(i).gameObject);
         }
         return Temp; 
+    }
+
+    private void Update()
+    {
+        if (IntroText.Finished)
+        {
+            Intro.gameObject.SetActive(true); 
+        }        
     }
 
     private void Shuffle(GameObject[] gameObjects)
@@ -67,7 +82,7 @@ public class ThePhilanthropistBoss : Boss
     { 
         GameObject real = new GameObject();
         real.AddComponent<PhilAttack>().isReal = true;
-        real.GetComponent<PhilAttack>().RealOneObject = RealOneObject; 
+        real.GetComponent<PhilAttack>().RealOneObject = RealOneObject;
 
         startAttack = false; 
         Phase.SetActive(true);
@@ -80,7 +95,8 @@ public class ThePhilanthropistBoss : Boss
         {
             GameObject Fakes = Instantiate(real, PossiblePositions[i].transform);
             Fakes.transform.localPosition = Vector3.zero; 
-            Fakes.GetComponent<PhilAttack>().isReal = false; 
+            Fakes.GetComponent<PhilAttack>().isReal = false;
+            Fakes.GetComponent<PhilAttack>().Summon();
         }
 
         PossiblePositions = null; //Empties array for next round of spawning
@@ -90,18 +106,15 @@ public class ThePhilanthropistBoss : Boss
     protected override IEnumerator Phase1Attack()
     {
         SpawnInPhils(Phase_1);
-        ///Not quite hard enough:
-        ///Maybe dash is too strong an ability?
-        ///Maybe it needs to do more damage? so the player really feels the threat?
-        ///Maybe it needs more mechanics?
-        ///Maybe despawn, shuffle them again, and speed them up again?
-        /// Likely won't destroy framerate
+        GetComponentInChildren<Animator>().Play("PAttack");
         foreach(PhilAttack attack in FindObjectsOfType<PhilAttack>())
         {
             attack.Attack = true;
+           // attack.GetComponentInChildren<Animator>().Play("PAttack");
             attack.PlayerLocation = FindObjectOfType<Player>().transform.position; 
             yield return new WaitForSecondsRealtime(.75f);
         }
+
         yield return new WaitForSeconds(BaseCooldownTime);
         Phase_1.gameObject.SetActive(false);
         yield return new WaitForSeconds(BaseCooldownTime);
@@ -120,7 +133,8 @@ public class ThePhilanthropistBoss : Boss
         yield return new WaitForSeconds(BaseCooldownTime);
         Phase_2.gameObject.SetActive(false);
         yield return new WaitForSeconds(BaseCooldownTime);
-        Phase_2.gameObject.SetActive(false);
+        startAttack = true;
+
     }
 
     //Maybe round three has him spawn robots from the sky for a couple seconds and player just needs to survive 
@@ -132,11 +146,11 @@ public class ThePhilanthropistBoss : Boss
         {
             attack.Attack = true;
             attack.PlayerLocation = FindObjectOfType<Player>().transform.position;
-            yield return new WaitForSecondsRealtime(.75f);
         }
         yield return new WaitForSeconds(BaseCooldownTime);
         Phase_3.gameObject.SetActive(false);
         yield return new WaitForSeconds(BaseCooldownTime);
-        Phase_3.gameObject.SetActive(false);
+        startAttack = true;
+
     }
 }

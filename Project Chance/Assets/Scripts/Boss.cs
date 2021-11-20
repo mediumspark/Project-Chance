@@ -22,7 +22,7 @@ public abstract class Boss : Character
         if (GravityOn)
             base.FixedUpdate(); 
 
-        if (battlestart && startAttack)
+        if (battlestart && startAttack && CurrentHealth > 0)
         {
             if (CurrentHealth > MaxHealth / 2)
             {

@@ -15,12 +15,16 @@ public class TextBoxManager : MonoBehaviour
 
     private bool dialogueBox;
     private bool finished;
+    public bool Finished => finished; 
 
     public TextAsset textFile;
 
     void Start()
     {
-        if (textFile != null)
+        textBox = CanvasManager.instance.TextBox;
+        textComponent = textBox != null ? textBox.GetComponentInChildren<TextMeshProUGUI>() : null; 
+
+        if (textFile != null && textComponent != null)
         {
             lines = (textFile.text.Split('\n'));
             textComponent.text = string.Empty;
@@ -57,7 +61,7 @@ public class TextBoxManager : MonoBehaviour
 
      public void StartDialogue()
     {
-        if (dialogueBox == false)
+        if (dialogueBox == false && textComponent != null)
         {
             textComponent.text = string.Empty;
             textBox.SetActive(true);

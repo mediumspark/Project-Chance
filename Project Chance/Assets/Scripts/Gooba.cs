@@ -4,14 +4,22 @@ using System.Linq;
 
 public class Gooba : Enemy
 {
+    [SerializeField]
+    protected GameObject BulletSpawnPoint;
+
+    [SerializeField]
+    [Range(0, 15)]
+    protected float ProjectileSpeed;
+
     protected override void Awake()
     {
-        isRanged = false;
-        isAutoFire = false;
-        CanAttack = true; 
-        AttackCooldown = 5.0f;
+        isRanged = true;
+        isAutoFire = true;
+        CanAttack = true;
+        AttackCooldown = 1.0f;
         MaxHealth = 5;
-        CurrentHealth = MaxHealth; 
+        CurrentHealth = MaxHealth;
+        StartCoroutine(EnemyAttack());
         base.Awake();
     }
 
@@ -21,57 +29,21 @@ public class Gooba : Enemy
         Debug.Log("Taken Damage");
     }
 
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
-
-        switch (CurrentState)
-        {
-            case EnemyStates.Attacking:
-                StartCoroutine(EnemyAttack());
-                break;
-            case EnemyStates.Alerted:
-                transform.eulerAngles = transform.position.x - FindObjectOfType<Player>().transform.position.x < 0
-                    ? Vector3.zero : new Vector3(0, 180);
-                if (InAttackRange())
-                {
-                    CurrentState = EnemyStates.Attacking;
-                }
-                break;
-            case EnemyStates.Idle:
-                if (InAttackRange())
-                {
-                    CurrentState = EnemyStates.Alerted;
-                }
-                Vector2 speedholer = movementForce;
-                movementForce = Vector2.zero;
-                break;
-
-            case EnemyStates.Patroling:
-                if (InAttackRange())
-                {
-                    CurrentState = EnemyStates.Alerted;
-                }
-                break;
-
-            default:
-                CurrentState = EnemyStates.Idle;
-                break; 
-        }
-        
-    }
 
     protected override IEnumerator EnemyAttack()
     {
-        if (CanAttack)
+        GameObject go = (GameObject)Resources.Load("Prefabs/Enemy Bullet");
+        Bullet bul = Instantiate(go, BulletSpawnPoint.transform).AddComponent<Bullet>();
+        bul.BulletSpeed = ProjectileSpeed;
+        bul.transform.parent = null;
+
+        yield return new WaitForSeconds(AttackCooldown);
+        if (bul != null)
+            Destroy(bul.gameObject);
+        if (isAutoFire)
         {
-            Debug.Log("Attack from " + transform.name);
-            CanAttack = false; 
+            StartCoroutine(EnemyAttack());
         }
-        yield return new WaitForSecondsRealtime(AttackCooldown);
-        Debug.Log(transform.name + " can attack again");
-        CanAttack = true;
-        CurrentState = EnemyStates.Alerted; 
     }
 
     protected override bool InAttackRange()

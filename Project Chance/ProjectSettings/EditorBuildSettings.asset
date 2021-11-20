@@ -5,12 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Startup.unity
     guid: 6f584efd462342847ae4fe483d8a928f
   - enabled: 1
+    path: Assets/Scenes/House(Start).unity
+    guid: 7c4d6de07250a5f4d957457186603d87
+  - enabled: 1
     path: Assets/Scenes/City_1.unity
     guid: cb8c22d8dc3c2a445abda4231679601c
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 339146ea3ff447e49b5f09d1f09ff6fe
+  - enabled: 1
+    path: Assets/Scenes/Phil Room.unity
+    guid: 459bb98c9da92a9408519c46e22e8d83
+  - enabled: 1
+    path: Assets/Scenes/Mayor Room.unity
+    guid: 82058202876e36141808a1be5390483a
   - enabled: 1
     path: Assets/Scenes/City_2.unity
     guid: 3f4d9101fd860eb43b5befd4934c53de
