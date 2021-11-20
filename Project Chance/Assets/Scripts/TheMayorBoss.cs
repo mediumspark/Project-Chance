@@ -1,5 +1,6 @@
 ﻿using System.Collections;
-using UnityEngine; 
+using UnityEngine;
+using UnityEngine.Playables; 
 
 public class TheMayorBoss : Boss
 {
@@ -23,8 +24,13 @@ public class TheMayorBoss : Boss
 
     bool isPilarAlive = false;
 
+    private TextBoxManager IntroText;
+    [SerializeField]
+    private PlayableDirector Intro, Victory;
+
     #endregion
 
+    #region Mayor Attack
     protected class MayorPilars : MonoBehaviour
     {
         public bool Projectile;
@@ -44,10 +50,11 @@ public class TheMayorBoss : Boss
             }
             if (Projectile)
             {
-                transform.Translate(-1 * MovingSpeed, 0, 0);
+                transform.Translate(Vector3.right * MovingSpeed, 0);
             }
         }
     }
+    #endregion
 
     public override void OnTakeDamage(int damage)
     {
@@ -57,11 +64,14 @@ public class TheMayorBoss : Boss
     protected override void OnDeath()
     {
         base.OnDeath();
+        Victory.gameObject.SetActive(true);
     }
 
     protected override void Awake()
     {
         base.Awake();
+
+        IntroText = GetComponentInChildren<TextBoxManager>();
 
         MaxHealth = 50;
         CurrentHealth = MaxHealth;
@@ -76,7 +86,19 @@ public class TheMayorBoss : Boss
     private void Update()
     {
         SpawnSpotOnPlayer.transform.position = new Vector3(Player.Position.x, transform.parent.position.y);
-        isPilarAlive = !DestructablePilar.DeadPilar;
+       
+        if(IntroText.Finished && !battlestart)
+            Intro.gameObject.SetActive(true);
+        else
+        {
+            Intro.gameObject.SetActive(false);
+        }
+
+
+        if (battlestart)
+        {
+            isPilarAlive = !DestructablePilar.DeadPilar;
+        }
     }
 
 
@@ -97,7 +119,8 @@ public class TheMayorBoss : Boss
     {
         GameObject go = Instantiate(AttackPillar, SpawnSpotOnPlayer.transform.position, Quaternion.identity);
         MayorPilars attack = go.AddComponent<MayorPilars>();
-        attack.SetPilarHeight(Player.Position.y + 5.0f, 0.1f);
+        float PlayerY = Player.Position.y > 0 ? Player.Position.y  + 5f : (Player.Position.y + 5.0f) * -1; 
+        attack.SetPilarHeight(PlayerY, 0.1f);
         RecentlyRaisedPilar = true; 
     }
 
@@ -118,25 +141,25 @@ public class TheMayorBoss : Boss
             Destroy(FindObjectOfType<MayorPilars>().gameObject);
             RecentlyRaisedPilar = false; 
         }
-        else
+        else if (!isPilarAlive && !RecentlyRaisedPilar)
         {
             yield return new WaitForSecondsRealtime(BaseCooldownTime * 2);
             RaiseDestructablePilar();
         }
         yield return new WaitForSeconds(BaseCooldownTime);//Attack Over
         startAttack = true;
-
     }// While on the pillar 1 throwing projectiles
 
     protected override IEnumerator Phase2Attack()
     {
-        if (isPilarAlive)
+        if (isPilarAlive && !RecentlyRaisedPilar)
         {
             PilarAttack();
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
+            ShootAtPlayer(); 
             Destroy(SpawnSpotOnPlayer.transform.GetChild(0).gameObject);
         }
-        else
+        else if(!isPilarAlive)
         {
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
             RaiseDestructablePilar();

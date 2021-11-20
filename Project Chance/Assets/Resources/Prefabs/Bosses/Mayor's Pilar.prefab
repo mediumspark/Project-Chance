@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 9093217148661236588}
   - component: {fileID: 9093217148661236584}
   - component: {fileID: 9093217148661236587}
-  - component: {fileID: 9093217148661236589}
   - component: {fileID: 9093217148661236586}
+  - component: {fileID: 7030041178058944776}
   m_Layer: 13
   m_Name: MayorStandingPilar
   m_TagString: Destructable
@@ -85,18 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9093217148661236589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9093217148661236591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6d2c223497ca84ab8eec49121b196b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &9093217148661236586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -123,6 +111,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7030041178058944776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9093217148661236591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f40da23652ea54db5149befd1fce55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeadPilar: 0
 --- !u!1 &9093217148662726735
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,28 +14,26 @@ public class PhilAttack : MonoBehaviour
 
     private void Awake()
     {
-        Real = Resources.Load<GameObject>("Prefabs/Bosses/The Fake Phil Prefab");
-        Fake = Resources.Load<GameObject>("Prefabs/Bosses/The Real Phil Prefab");
+        Fake = Resources.Load<GameObject>("Prefabs/Bosses/The Fake Phil Prefab");
+        RealOneObject = GameObject.Find("The Real One");
+        GetComponent<BoxCollider2D>().size = new Vector2(1, 3);
     }
 
     public void Summon()
     {
-        if (isReal)
-        {
-            Instantiate(Real, transform);
-        }
-        else
-        {
-            Instantiate(Fake, transform);
-        }
+        Instantiate(Fake, transform);
     }
 
     private void FixedUpdate()
     {
-        if (Attack)
+        gameObject.layer = isReal ? LayerMask.NameToLayer("Boss") : LayerMask.NameToLayer("Fake");
+        tag = isReal ? "Boss" : "Fake"; 
+
+        if (Attack) 
             transform.position = Vector3.MoveTowards(transform.position, PlayerLocation, Speed);
 
-        if (Real && RealOneObject != null)
+
+        if (isReal && RealOneObject != null)
             RealOneObject.transform.position = transform.position; 
     }
 
