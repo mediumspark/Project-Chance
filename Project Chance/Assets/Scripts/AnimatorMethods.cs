@@ -9,7 +9,7 @@ public class AnimatorMethods : MonoBehaviour
 
     private void Awake()
     {
-        Ani = GetComponent<Animator>(); 
+        Ani = GetComponent<Animator>();
     }
 
     public void SetDamageTrigger()
@@ -31,7 +31,7 @@ public class AnimatorMethods : MonoBehaviour
 
     public void SetGrounded(bool Grounded)
     {
-        Ani.SetBool("Grounded", Grounded); 
+        Ani.SetBool("Grounded", Grounded);
     }
 
     public void SetHealing(bool Healing)
@@ -39,5 +39,31 @@ public class AnimatorMethods : MonoBehaviour
         Ani.SetBool("Healing", Healing);
     }
 
+    //Sound Scripts
+
+    private void PlayerFootstep()
+    {
+        AkSoundEngine.PostEvent("Play_Footsteps", this.gameObject);
+    }
+
+    private void PlayerGroundSlide()
+    {
+        AkSoundEngine.PostEvent("Play_Player_GroundSlide", this.gameObject);
+    }
+
+    private void PlayerAttack()
+    {
+        AkSoundEngine.PostEvent("Play_Player_Attack", this.gameObject);
+    }
+
+    private void PlayerDamaged()
+    {
+        AkSoundEngine.PostEvent("Play_Player_Damaged", this.gameObject);
+    }
+
+    private void PlayerHeal()
+    {
+        AkSoundEngine.PostEvent("Play_Player_Heal", this.gameObject);
+    }
 
 }

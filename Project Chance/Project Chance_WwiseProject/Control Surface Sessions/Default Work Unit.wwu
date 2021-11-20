@@ -5,13 +5,13 @@
 			<ChildrenList>
 				<ControlSurfaceSession Name="Default Control Surface Session" ID="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}">
 					<ChildrenList>
-						<ControlSurfaceBindingGroup Name="Global" ID="{5868C3D1-7F2F-4B9D-974D-1D2975FC3B2C}"/>
-						<ControlSurfaceBindingGroup Name="Current Selection" ID="{D94B50CD-9456-454B-894A-3D55886EEF48}">
+						<ControlSurfaceBindingGroup Name="Global" ID="{37A5633D-E42E-4B77-BDD4-3D1DB2EAA228}"/>
+						<ControlSurfaceBindingGroup Name="Current Selection" ID="{73E436BD-B63D-4035-8CC8-1C21E6353807}">
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="4"/>
 							</PropertyList>
 							<ChildrenList>
-								<ControlSurfaceBinding Name="Binding" ID="{84717E64-52E1-4F28-A462-D83E62CEBDFE}">
+								<ControlSurfaceBinding Name="Binding" ID="{A667A9AB-04F8-4171-8FCC-C1660647220C}">
 									<PropertyList>
 										<Property Name="TargetName" Type="string" Value="PassMidiNote"/>
 										<Property Name="TargetType" Type="int16" Value="1"/>
@@ -19,7 +19,7 @@
 								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
-						<ControlSurfaceBindingGroup Name="View Groups" ID="{05EC8294-8D21-4FE2-B188-143E25C92469}">
+						<ControlSurfaceBindingGroup Name="View Groups" ID="{8FA82068-E0EA-4824-BEBC-27927F0245F6}">
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="3"/>
 							</PropertyList>
