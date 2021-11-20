@@ -67,7 +67,7 @@ public class ThePhilanthropistBoss : Boss
     { 
         GameObject real = new GameObject();
         real.AddComponent<PhilAttack>().isReal = true;
-        real.GetComponent<PhilAttack>().RealOneObject = RealOneObject; 
+        real.GetComponent<PhilAttack>().RealOneObject = RealOneObject;
 
         startAttack = false; 
         Phase.SetActive(true);
@@ -80,7 +80,9 @@ public class ThePhilanthropistBoss : Boss
         {
             GameObject Fakes = Instantiate(real, PossiblePositions[i].transform);
             Fakes.transform.localPosition = Vector3.zero; 
-            Fakes.GetComponent<PhilAttack>().isReal = false; 
+            Fakes.GetComponent<PhilAttack>().isReal = false;
+            real.GetComponent<PhilAttack>().Summon();
+
         }
 
         PossiblePositions = null; //Empties array for next round of spawning

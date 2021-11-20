@@ -3,9 +3,7 @@
 [RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(SpriteRenderer))]
 public class PhilAttack : MonoBehaviour
 {
-    Sprite Real, Fake;
-    SpriteRenderer SpriteRenderer;
-
+    GameObject Real, Fake;
     public Vector2 PlayerLocation = Vector2.zero;
     public bool isReal = false;
 
@@ -16,17 +14,24 @@ public class PhilAttack : MonoBehaviour
 
     private void Awake()
     {
-        Real = Resources.Load<Sprite>("Artwork/Characters/Boss_Real");
-        Fake = Resources.Load<Sprite>("Artwork/Characters/Boss_Fake");
-        SpriteRenderer = GetComponent<SpriteRenderer>();
+        Real = Resources.Load<GameObject>("Prefabs/Bosses/The Fake Phil Prefab");
+        Fake = Resources.Load<GameObject>("Prefabs/Bosses/The Real Phil Prefab");
+    }
+
+    public void Summon()
+    {
+        if (isReal)
+        {
+            Instantiate(Real, transform);
+        }
+        else
+        {
+            Instantiate(Fake, transform);
+        }
     }
 
     private void FixedUpdate()
     {
-        SpriteRenderer.sprite = isReal ? Real : Fake;
-        gameObject.layer = isReal ? LayerMask.NameToLayer("Boss") : LayerMask.NameToLayer("Fake");
-        tag = isReal ? "Boss" : "Fake";
-
         if (Attack)
             transform.position = Vector3.MoveTowards(transform.position, PlayerLocation, Speed);
 

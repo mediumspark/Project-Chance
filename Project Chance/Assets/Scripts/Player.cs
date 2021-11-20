@@ -13,7 +13,7 @@ public class Player : Character
     private readonly WeaponHandler WH = new WeaponHandler();
 
     private bool Healing;
-    private int HealSpeed = 5;
+    private int HealSpeed = 10;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
@@ -181,11 +181,14 @@ public class Player : Character
 
     public override void OnTakeDamage(int damage)
     {
-        //PlayAnimation for taking damage that allows player to be invulnerable for its duration
-        AniMethods.SetDamageTrigger();
-        base.OnTakeDamage(damage);
-        StartCoroutine(InvolTimer());
-        healthBar.value = CurrentHealth;
+        if (!invulnerable)
+        {
+            //PlayAnimation for taking damage that allows player to be invulnerable for its duration
+            AniMethods.SetDamageTrigger();
+            base.OnTakeDamage(damage);
+            StartCoroutine(InvolTimer());
+            healthBar.value = CurrentHealth;
+        }
     }
 
     protected override void OnDeath()

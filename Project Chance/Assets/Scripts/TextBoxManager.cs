@@ -20,6 +20,9 @@ public class TextBoxManager : MonoBehaviour
 
     void Start()
     {
+        textBox = CanvasManager.instance.TextBox;
+        textComponent = textBox.GetComponentInChildren<TextMeshProUGUI>(); 
+
         if (textFile != null)
         {
             lines = (textFile.text.Split('\n'));

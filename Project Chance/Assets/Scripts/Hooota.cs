@@ -21,7 +21,7 @@ public class Hooota : Enemy
         AttackCooldown = 2.5f;
         MaxHealth = 5;
         CurrentHealth = MaxHealth;
-        StartCoroutine(EnemyAttack()); 
+        StartCoroutine(EnemyAttack());
     }
 
     protected override IEnumerator EnemyAttack()

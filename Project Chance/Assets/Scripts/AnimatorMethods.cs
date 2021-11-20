@@ -36,6 +36,8 @@ public class AnimatorMethods : MonoBehaviour
 
     public void SetHealing(bool Healing)
     {
-        Ani.SetBool("Healing", Healing); 
+        Ani.SetBool("Healing", Healing);
     }
+
+
 }
