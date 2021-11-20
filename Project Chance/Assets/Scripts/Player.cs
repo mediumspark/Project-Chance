@@ -271,7 +271,6 @@ public class Player : Character
         Controls.Disable();
     }
 
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
@@ -284,5 +283,6 @@ public class Player : Character
         AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
     }
 }
-}
+
+
 
