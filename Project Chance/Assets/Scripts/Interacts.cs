@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using System.Linq; 
+using System.Linq;
 
 public class Interacts
 {
@@ -33,7 +33,11 @@ public class Interacts
 
                     case "Threshold":
                         col.GetComponent<Threshold>().OnHittingThreshold();
-                        break; 
+                        break;
+
+                    case "Dialogue":
+                        col.GetComponent<TextBoxManager>().StartDialogue();
+                        break;
                 }
             }
         }
@@ -43,7 +47,7 @@ public class Interacts
     {
         var WallColliders = colliders.ToList().Where(ctx => LayerMask.LayerToName(ctx.gameObject.layer) == "Wall" || LayerMask.LayerToName(ctx.gameObject.layer) == "Ground").FirstOrDefault();
 
-        return WallColliders != null; 
+        return WallColliders != null && WallColliders.CompareTag("Wall");
     }
 
     private static bool OnInteract(string Layer)
@@ -52,7 +56,7 @@ public class Interacts
         {
             case "Obsticle ":
                 Debug.Log("Obsticle");
-                return true; 
+                return true;
 
             case "Enemy":
                 Debug.Log("Enemy");
@@ -75,11 +79,16 @@ public class Interacts
                 return true;
 
             case "Threshold":
-                return true; 
+                return true;
+
+            case "Destructable":
+                return true;
+            case "Dialogue":
+                return true;
 
             default:
-                break; 
-        } 
-        return false; 
+                break;
+        }
+        return false;
     }
 }

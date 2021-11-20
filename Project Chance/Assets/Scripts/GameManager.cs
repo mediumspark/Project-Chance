@@ -6,52 +6,50 @@ using Cinemachine;
 
 public class GameManager 
 {
-    public static GameManager instance { get { return new GameManager(); } set { } }
+    private static int nextspawnposition; 
 
-    public void LevelReload()
+    public static void LevelReload()
     {
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void LoadScene(string Levelname)
+    public static  void LoadScene(string Levelname, int spawnpoint)
     {
+        SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+        nextspawnposition = spawnpoint;
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
         SceneManager.LoadScene(Levelname);
+
     }
 
-    public void LoadScene(int BuildOrder)
+    private static void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        SceneManager.sceneLoaded += SceneManager_sceneLoaded;
-        SceneManager.LoadScene(BuildOrder);
+        SpawnPlayer(nextspawnposition); 
     }
 
-    private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
-    {
-        SpawnPlayer(); 
-    }
-
-    private void SpawnPlayer()
+    private static void SpawnPlayer(int index)
     {
         Player player = GameObject.FindObjectOfType<Player>();
 
         if (player != null)
         {
-            GameObject go = GameObject.FindGameObjectWithTag("Respawn");
+            GameObject[] go = GameObject.FindGameObjectsWithTag("Respawn");
             player.GetComponent<CharacterController>().enabled = false;
-            player.transform.position = go.transform.position;
+            player.transform.position = go[index].transform.position;
             player.GetComponent<CharacterController>().enabled = true;
 
             CinemachineVirtualCamera OWcam = GameObject.FindObjectOfType<CinemachineVirtualCamera>(); 
             if(OWcam != null)
             {
-                OWcam.Follow = player.transform; 
+                OWcam.Follow = player.transform;
+                OWcam.LookAt = player.transform;
             }
         }
         else
         {
             GameObject go = GameObject.Instantiate((GameObject)Resources.Load("Prefabs/Player"));
-            SpawnPlayer(); 
+            SpawnPlayer(index); 
         }
     }
 

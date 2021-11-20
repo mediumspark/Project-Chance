@@ -11,6 +11,9 @@ TagManager:
   - PlayerAttack
   - Fake
   - Threshold
+  - Destructable
+  - Wall
+  - Dialogue
   layers:
   - Default
   - TransparentFX
@@ -25,25 +28,27 @@ TagManager:
   - Boss
   - Fake
   - Threshold
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Destructable
+  - Background
+  - Dialogue
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Default
     uniqueID: 0
