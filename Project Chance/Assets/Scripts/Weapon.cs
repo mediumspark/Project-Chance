@@ -13,7 +13,9 @@ public class Weapon
         {
             if(collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Boss"))
             {
-                collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+                if(collision.gameObject.GetComponentInParent<Character>())
+                    collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+
                 if(collision.gameObject.name == "New Game Object")
                 {
                     Destroy(collision.gameObject); 

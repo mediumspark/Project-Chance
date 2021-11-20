@@ -19,6 +19,6 @@ public class AimedBullet : Bullet
 
     private void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Destination, 0.2f);
+        transform.position = Vector3.MoveTowards(transform.position, Destination + Vector3.right * 10, 0.2f);
     }
 }

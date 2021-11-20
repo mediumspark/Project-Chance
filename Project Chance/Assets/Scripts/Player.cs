@@ -59,8 +59,7 @@ public class Player : Character
         Controls = new PlayerControls();
 
         Controls.Basic.Movement.performed += Movement_performed;
-        Controls.Basic.Movement.canceled += ctx => movementForce.x = 0;
-        Controls.Basic.Movement.canceled += ctx => moving = false;
+        Controls.Basic.Movement.canceled += ctx => Stop(); 
 
         Controls.Basic.Jump.performed += Jump_performed;
         Controls.Basic.Jump.canceled += ctx => jumping = false;
@@ -92,6 +91,12 @@ public class Player : Character
     {
         if(grounded && canMove)
             StartCoroutine(Jump(0.5f));
+    }
+
+    public void Stop()
+    {
+        movementForce.x = 0;
+        moving = false;
     }
 
     private void Movement_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

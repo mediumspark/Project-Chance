@@ -34,7 +34,7 @@ public class GameManager
     private static void SpawnPlayer(int index)
     {
         Player player = GameObject.FindObjectOfType<Player>();
-
+        player.Stop(); 
         if (player != null)
         {
             GameObject[] go = GameObject.FindGameObjectsWithTag("Respawn");

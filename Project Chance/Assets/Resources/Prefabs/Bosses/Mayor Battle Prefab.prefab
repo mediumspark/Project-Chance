@@ -374,7 +374,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!143 &1165522335
@@ -419,7 +419,6 @@ MonoBehaviour:
   startAttack: 1
   SpawnSpotOnPlayer: {fileID: 1427911827167152582}
   SpawnSpotAsProjectile: {fileID: 4136597966519507143}
-  DestructablePilar: {fileID: 0}
   MayorPilarHeight: 10
   AttackPilarScale: 0
   PilarPosition: {x: 0, y: 0, z: 0}

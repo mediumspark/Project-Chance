@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="115247927" Language="SFX" Hash="243248922">
+		<SoundBank Id="115247927" Language="SFX" Hash="290585461">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
 			<ShortName>Music_And_Ambience</ShortName>
 			<Path>Music_And_Ambience.bnk</Path>
@@ -129,7 +129,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="965033712" Language="SFX" Hash="3359692341">
+		<SoundBank Id="965033712" Language="SFX" Hash="2746440733">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>
