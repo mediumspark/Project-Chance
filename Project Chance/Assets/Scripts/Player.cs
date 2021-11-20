@@ -18,6 +18,8 @@ public class Player : Character
     float Wall_Gravity = 0.5f;
     float Normal_Gravity = 1.5f;
 
+    public int staminaRegen = 5;
+
     public Slider healthBar, staminaBar;
 
     public float currentHealth { get => CurrentHealth; set => CurrentHealth = value;  }
