@@ -77,7 +77,7 @@ public class TheMayorBoss : Boss
         CurrentHealth = MaxHealth;
         AttackPillar = (GameObject)Resources.Load("Prefabs/Enemies/Boss Attack Pillar");
         ProjectileAttack = (GameObject)Resources.Load("Prefabs/Enemies/Enemy Bullet");
-        PrizeWeapon = new TheMayor();
+        PrizeWeapon = new TheMayor(FindObjectOfType<Player>());
 
         DestructablePilar = FindObjectOfType<DestructablePilar>();
         DestructablePilar.SetPilarHeight(MayorPilarHeight, 0.25f);

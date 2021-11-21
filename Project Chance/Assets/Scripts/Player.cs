@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class Player : Character
-{
+{   
     public static Vector3 Position;
 
     private PlayerControls Controls;
@@ -50,7 +50,7 @@ public class Player : Character
 
         Speed = base_speed;
 
-        WH.Add(new Default(this, 4f, 10, Color.black));
+        WH.Add(new Default(this, 4f, 10));
         WH.SetCurrentWeapon(0);
 
         healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
@@ -146,7 +146,6 @@ public class Player : Character
             {
                 StartCoroutine(WallJump());
             }
-
         }
 
         if (WallJumping)
@@ -156,7 +155,7 @@ public class Player : Character
             {
                 WallJumping = false;
             }
-        }
+        } 
 
         if (GravityOn)
         {
@@ -178,11 +177,11 @@ public class Player : Character
                 movementForce.y = jumpForce;
             }
 
-
             if (grounded)
             {
-                gravity = Normal_Gravity;
+                gravity = Normal_Gravity; 
             }
+
         }
     }
 
@@ -214,7 +213,6 @@ public class Player : Character
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-
 
         AniMethods.SetGrounded(grounded);
     }

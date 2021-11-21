@@ -61,9 +61,9 @@ public class Default : Weapon
     private float MoveDistance;
     Player Player;
 
-    public Default(Player player, float MoveDistance, int damage, Color Color)
+    public Default(Player player, float MoveDistance, int damage)
     {
-        Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; Default.CloakColor = Color; 
+        Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; 
     }
 
     public override void Fire(int cost)
@@ -152,7 +152,57 @@ public class ThePhilanthropist : Weapon
 
 public class TheMayor : Weapon
 {
+    Player Player;
+    GameObject AttackPilar;
 
+    public TheMayor(Player P)
+    {
+        Player = P;        
+    }
+
+    public override void Fire(int cost)
+    {
+        if (cost <= Player.CurrentStamina)
+        {
+            Player.CurrentStamina -= cost;
+            Player.StartCoroutine(Stomp());
+        }
+    }
+
+    private IEnumerator Stomp()
+    {
+        if (Player.isGrounded)
+        {
+            AttackPilar = (GameObject)Resources.Load("Prefabs/Enemies/Player Attack Pillar");
+            GameObject go = Player.Instantiate(AttackPilar, Player.gameObject.transform);
+            go.transform.localPosition = new Vector3(1, -0.7f);
+            go.AddComponent<AttackEffect>(); 
+            PlayerPilars attack = go.AddComponent<PlayerPilars>();
+            float PlayerY = Player.GetComponent<CharacterController>().height; 
+            attack.SetPilarHeight(PlayerY, 0.7f);
+            go.transform.parent = null; 
+            
+            yield return new WaitForSeconds(5.0f);
+            Player.Destroy(go);
+        }
+    }
+
+    protected class PlayerPilars : MonoBehaviour
+    {
+        private float YDestination, RaisingSpeed;
+
+        public void SetPilarHeight(float ScaleY, float Speed)
+        {
+            YDestination = ScaleY; RaisingSpeed = Speed;
+        }
+        private void FixedUpdate()
+        {
+            if (transform.localScale.y <= YDestination)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y + RaisingSpeed, 1);
+            }
+        }
+    }
 }
 
 public class TheRebel : Weapon

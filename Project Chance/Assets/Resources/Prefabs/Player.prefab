@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1838765771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4743752100099361011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00a220777af9f548bca6d8c70b0a170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextBox: {fileID: 4743752100727589823}
 --- !u!1 &2611776066092035143
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +225,19 @@ Transform:
   m_Father: {fileID: 2611776066092035139}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838765771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743752100099361011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00a220777af9f548bca6d8c70b0a170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextBox: {fileID: 4743752100727589823}
 --- !u!1001 &787250857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,6 +296,10 @@ PrefabInstance:
     - target: {fileID: 1225112268, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646833971, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
+      propertyPath: m_Name
+      value: Stamina
       objectReference: {fileID: 0}
     - target: {fileID: 4743752100361401622, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
       propertyPath: m_IsActive
@@ -408,6 +412,10 @@ PrefabInstance:
     - target: {fileID: 4743752100619886666, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080811708779947234, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
+      propertyPath: m_Name
+      value: Health
       objectReference: {fileID: 0}
     - target: {fileID: 8623690581209451486, guid: 777b0a89054a46948ad4d95c16744557, type: 3}
       propertyPath: m_AnchorMax.x

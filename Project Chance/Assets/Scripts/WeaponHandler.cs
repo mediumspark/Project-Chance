@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
+
+public enum WeaponSelected { Default, Phil, Mayor}
 
 [System.Serializable]
 public class WeaponHandler
@@ -23,7 +26,7 @@ public class WeaponHandler
 
     public void SetCurrentWeapon(int index)
     {
-        CurrentWeapon = Weapons[index]; 
+        CurrentWeapon = Weapons[index];
     }
 
     public void WeaponSwap(float direction)

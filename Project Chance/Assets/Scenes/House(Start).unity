@@ -971,6 +971,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 473038751, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 473038751, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 707392193, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -978,10 +986,6 @@ PrefabInstance:
     - target: {fileID: 707392193, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287966618, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: m_Name
-      value: Stamina
       objectReference: {fileID: 0}
     - target: {fileID: 1875155713, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1003,6 +1007,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2611776066092035137, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
+      propertyPath: GroundLayer.m_Bits
+      value: 640
+      objectReference: {fileID: 0}
     - target: {fileID: 2611776066092035139, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1017,7 +1025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611776066092035139, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2611776066092035139, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1070,10 +1078,6 @@ PrefabInstance:
     - target: {fileID: 4743752099967950563, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7080811708015254091, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: m_Name
-      value: Health
       objectReference: {fileID: 0}
     - target: {fileID: 8623690580896216439, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.x
