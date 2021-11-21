@@ -12,6 +12,45 @@
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Ambience" ID="{88D0A69A-666A-4708-BA4F-9FC0B1AF23CE}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Music" ID="{2080C17F-1F60-4846-83B8-3E8D57A5770D}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="SFX" ID="{9CD7E90E-DB14-4956-9659-3CF9101EFAF1}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Player" ID="{230B28A6-F17D-41D9-8EA6-FBCE5DCE023D}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Boss" ID="{2AB1328F-2EEE-4788-B0B7-DFF07F5AA14C}">
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>

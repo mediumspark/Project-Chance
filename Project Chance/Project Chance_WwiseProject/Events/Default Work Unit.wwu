@@ -462,6 +462,76 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Stop_Ambience_Office" ID="{B74970D3-9B10-418E-BD04-4612E01C73EF}">
+									<ChildrenList>
+										<Action Name="" ID="{D1E0FF96-6310-4C68-8F67-62430DB413A7}" ShortID="699923460">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Ambiance_Hub" ID="{91C18457-F5ED-4A6B-8EFE-9F4BAA732AF2}">
+									<ChildrenList>
+										<Action Name="" ID="{C9D6F4B1-50F9-4777-8E33-25120A569E3E}" ShortID="745642778">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Ambience_HotelCaput" ID="{4EA42882-DFC4-4505-A70D-98751FA729B4}">
+									<ChildrenList>
+										<Action Name="" ID="{A4B5B978-409A-4556-A0B0-83154C76BCFC}" ShortID="1063893958">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Ambience_Rooftops" ID="{6AA87B96-E021-4C54-97DF-120F14CB4F0F}">
+									<ChildrenList>
+										<Action Name="" ID="{0A9D591A-3AB6-4B26-8EB9-181BBC47F750}" ShortID="361020435">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Ambience_Streets" ID="{363851B6-4B52-4776-BC83-631BD8412173}">
+									<ChildrenList>
+										<Action Name="" ID="{91164D9A-5C95-41AE-AF2C-D6F75D01DB24}" ShortID="186786850">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Sound Track" ID="{014D0DE0-D4D3-4335-822C-1A00752630F0}" ShortID="120108823">
@@ -532,10 +602,262 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Stop_Music_OfficeSpace_Theme" ID="{015BD03F-7498-4885-9D6B-F5993BF0C788}">
+									<ChildrenList>
+										<Action Name="" ID="{C56892F7-F051-4534-98BB-4C3D5336E4A9}" ShortID="484437624">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_MainCharacter_Theme__Chorus_Loop_" ID="{0A30E35B-35A4-4DC0-AED0-1866119C2A51}">
+									<ChildrenList>
+										<Action Name="" ID="{29B51B36-9563-4001-991A-0A113867CD96}" ShortID="927372975">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MainCharacter_Theme (Chorus Loop)" ID="{3399105C-F2CB-48E0-AEAC-5760B8E3F9EB}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Music_TheGrandArena_Theme" ID="{8E2B19D9-9641-43C2-9082-6B8DE9969E29}">
+									<ChildrenList>
+										<Action Name="" ID="{44A73B68-E47E-4B86-AF6E-71CF5F926028}" ShortID="757856696">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_TheGrandArena_Theme" ID="{C22B80BB-EF32-499E-8810-BC93F2E78D36}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Music_TheWildSide_Theme" ID="{14B7B30E-0D92-4C42-8EB8-0DE8EA84B03F}">
+									<ChildrenList>
+										<Action Name="" ID="{BBEC6F58-D0BB-44DC-AB7E-5DFBFA979DAD}" ShortID="725699519">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_TheWildSide_Theme" ID="{3A711370-2082-42BE-94DA-19F96DBFDEE1}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Music_Streets_Theme" ID="{779C3536-7653-415C-A5C4-C62091E1CE65}">
+									<ChildrenList>
+										<Action Name="" ID="{732F16EA-9026-4712-B794-C41EB6EB6109}" ShortID="466384855">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Music_Rooftops_Theme" ID="{D2E72674-3988-4E2F-AB16-3AB9EA68F0B4}">
+									<ChildrenList>
+										<Action Name="" ID="{92FFABE1-0F7B-406D-867C-C6ECACFE3F79}" ShortID="514147726">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_Rooftops_Theme" ID="{C70AA5BC-AB3A-42FB-A002-48EF67F84533}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Music_HotelCaput_Theme" ID="{104D7AD9-2529-43A7-A313-31FEDC81DE9A}">
+									<ChildrenList>
+										<Action Name="" ID="{36F8E2AB-6BE9-49AF-953D-A38A982113D7}" ShortID="58154308">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Music_HotelCaput_Theme" ID="{94AD8A5A-1361-40E0-B452-9481847D8D5B}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_Music" ID="{4DFF7B9B-41CB-4031-A443-9CC52DAC8B08}">
+					<ChildrenList>
+						<Action Name="" ID="{53162196-C1CC-45F5-B320-57447A60C6EB}" ShortID="426199134">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainCharacter_Theme (Chorus Loop)" ID="{3399105C-F2CB-48E0-AEAC-5760B8E3F9EB}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{04A2EA00-96C5-467B-8948-5708A2EAA3CA}" ShortID="299606455">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_HotelCaput_Theme" ID="{94AD8A5A-1361-40E0-B452-9481847D8D5B}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2764C41B-8EC6-47FB-A062-2254DFDCFA62}" ShortID="718029440">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A39CFAA7-863D-46F6-9D3B-3BF8AF6A12BA}" ShortID="79964554">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Rooftops_Theme" ID="{C70AA5BC-AB3A-42FB-A002-48EF67F84533}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7F7F312F-83AF-4E5F-80F4-924BD0029B0D}" ShortID="181484215">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{04A46BB7-4300-4E9D-9B12-29883B2943AA}" ShortID="229082326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_TheGrandArena_Theme" ID="{C22B80BB-EF32-499E-8810-BC93F2E78D36}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{318D580D-CFC7-40B9-9E72-10E6D01E5097}" ShortID="708872394">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_TheWildSide_Theme" ID="{3A711370-2082-42BE-94DA-19F96DBFDEE1}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9AA09872-17E2-4A98-98BF-970ECA1CCE44}" ShortID="948173675">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{78D7EFC2-BC28-4BCF-88D9-A8EA94C33CF8}" ShortID="817550167">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="The Mayor Theme" ID="{2E5BB7BF-1B6C-41F8-A77B-B9FC5177880E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AC44C9CD-3541-4269-895B-3B6B0232CE09}" ShortID="349371131">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="The Philanthropist_Theme" ID="{1DE9CB28-EF75-412C-B677-7E64027E9142}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4154A6BA-90A0-4E69-BB24-ABEED79B7E1A}" ShortID="140341396">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{93D7DF9E-A890-4C8E-919F-A0365ABE4761}" ShortID="4976149">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{186F1FF9-8CC7-43E2-8588-87646E130DE5}" ShortID="851291401">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{72694B81-35F9-4EE2-8BC3-D9A6E56E8640}" ShortID="925274655">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0600FC0E-12B6-4A70-8509-6D125361857A}" ShortID="687198629">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

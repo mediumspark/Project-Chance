@@ -155,28 +155,5 @@ public class ThePhilanthropistBoss : Boss
         Phase_3.gameObject.SetActive(false);
         yield return new WaitForSeconds(BaseCooldownTime);
         startAttack = true;
-
-    }
-
-    //Sounds
-
-    private void PhilAttack()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Attack", this.gameObject);
-    }
-
-    private void PhilClone()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Clone", this.gameObject);
-    }
-
-    private void PhilDamaged()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Damaged", this.gameObject);
-    }
-
-    private void PhilFootsteps()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Footsteps", this.gameObject);
     }
 }
