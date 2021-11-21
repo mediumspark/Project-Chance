@@ -56,6 +56,8 @@ public class Player : Character
         healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         staminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
 
+        AkSoundEngine.SetState("Life", "Alive");
+
         #region Inputs
         Controls = new PlayerControls();
 
@@ -211,6 +213,7 @@ public class Player : Character
 
     protected override void OnDeath()
     {
+        AkSoundEngine.SetState("Life", "Dead");
         GameManager.LevelReload();
         Destroy(gameObject);
     }
