@@ -7,6 +7,7 @@ public class DestructablePilar : MonoBehaviour, IDestructable
 
     public void OnHit()
     {
+        AkSoundEngine.PostEvent("Play_Mayor_RockSummon", this.gameObject);
         transform.parent.localScale = new Vector3(1, 0.5f, 1);
         DeadPilar = true;
     }
@@ -19,7 +20,7 @@ public class DestructablePilar : MonoBehaviour, IDestructable
     {
         if (!DeadPilar && transform.parent.localScale.y <= YDestination)
         {
-            transform.parent.localScale = new Vector3(1, transform.parent.localScale.y + RaisingSpeed, 1);
+            transform.parent.localScale = new Vector3(1.8f, transform.parent.localScale.y + RaisingSpeed, 1);
         }
     }
 }

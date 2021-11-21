@@ -474,10 +474,20 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1160859123">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3065513408">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<StateGroups>
+				<StateGroup Id="2137943" Name="Life" ObjectPath="\States\Default Work Unit\Player\Life" GUID="{E277CE77-97F1-4002-A749-9E93D726B092}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Player\Life\None" GUID="{0212D8A4-BA4D-4AB3-B311-BFE46624CF01}"/>
+						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\Player\Life\Dead" GUID="{010C3522-5C47-420A-91A5-55A0018A54F5}"/>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\Player\Life\Alive" GUID="{88D15907-D538-4F98-A030-548580FE7007}"/>
+						<State Id="72790338" Name="Low_Health" ObjectPath="\States\Default Work Unit\Player\Life\Low_Health" GUID="{A1E8261C-0B8A-4C53-826D-2C0EA5D512A4}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="2242381963" Language="SFX" Hash="687497747">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>

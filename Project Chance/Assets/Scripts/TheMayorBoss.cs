@@ -119,7 +119,8 @@ public class TheMayorBoss : Boss
         AimedBullet bul = Instantiate(ProjectileAttack, SpawnSpotAsProjectile.transform).AddComponent<AimedBullet>();
         bul.SetDestination(2.0f); 
         bul.BulletSpeed = 2.5f;
-        bul.transform.SetParent(null); 
+        bul.transform.SetParent(null);
+        AkSoundEngine.PostEvent("Play_Mayor_RockProjectile", this.gameObject);
     }
 
     private void PilarAttack()
@@ -128,7 +129,8 @@ public class TheMayorBoss : Boss
         MayorPilars attack = go.AddComponent<MayorPilars>();
         float PlayerY = Player.Position.y > 0 ? Player.Position.y  + 5f : (Player.Position.y + 5.0f) * -1; 
         attack.SetPilarHeight(PlayerY, 0.7f);
-        RecentlyRaisedPilar = true; 
+        RecentlyRaisedPilar = true;
+        AkSoundEngine.PostEvent("Play_Mayor_Impacts", this.gameObject);
     }
 
     private void PilarWave()
@@ -137,7 +139,8 @@ public class TheMayorBoss : Boss
         MayorPilars attack = go.AddComponent<MayorPilars>();
         attack.SetPilarHeight(3.0f, 0.1f);
         attack.SetPilarSpeed(0.10f);
-        RecentlyRaisedPilar = true; 
+        RecentlyRaisedPilar = true;
+        AkSoundEngine.PostEvent("Play_Mayor_RockSummon", this.gameObject);
     }
 
     protected override IEnumerator Phase1Attack()

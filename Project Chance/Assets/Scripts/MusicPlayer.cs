@@ -17,17 +17,20 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.Healing)
+        if (player != null)
         {
-            if (!MusicPause)
+            if (player.Healing)
             {
-                HealingMusicPause();
-            }   
-        }
-        else if (MusicPause)
-        {
-            HealingMusicResume();
-            MusicPause = false;
+                if (!MusicPause)
+                {
+                    HealingMusicPause();
+                }
+            }
+            else if (MusicPause)
+            {
+                HealingMusicResume();
+                MusicPause = false;
+            }
         }
     }
 

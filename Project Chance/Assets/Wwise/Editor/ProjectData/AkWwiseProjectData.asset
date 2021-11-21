@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 817da5f092814a4a9e956ef2600d9a51
     GuidInternal: 
-    m_lastTime: -8585641300958071679
+    m_lastTime: -8585644931114775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-    m_lastTime: -8585641145595884164
+    m_lastTime: -8585640963452688910
     List:
     - name: Ambience
       guid: 9aa6d0886a660847ba4f9fc0b1af23ce
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585640972533087190
+    m_lastTime: -8585640989688655230
     List:
     - name: Enemies
       guid: f20134e4e0b3be4aaeb66f2b09b747b8
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585640972555129797
+    m_lastTime: -8585640984534369274
     List:
     - name: Ambiences
       guid: fbeafe08b96b2d44803ae2af1dd16179
@@ -2463,7 +2463,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0fe870f86b4f6f4191d348886bab6ab3
     GuidInternal: 
-    m_lastTime: -8585642304994775808
+    m_lastTime: -8585642304997560015
     List:
     - name: Distance_Bureaucrat
       guid: 3da46b5cdd5bee4b9689125c105755f2
@@ -2589,7 +2589,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ca490367e14ce14096a7d1b71c119f5b
     GuidInternal: 
-    m_lastTime: -8585640972533077197
+    m_lastTime: -8585641048287389250
     List:
     - name: Combat
       guid: e86df6864ee413438c94b585a813c194
@@ -2958,7 +2958,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1d5d9619af4a894f88fd90f614b03263
     GuidInternal: 
-    m_lastTime: -8585641123811150136
+    m_lastTime: -8585641151071170399
     List:
     - name: Attack
       guid: ccc6aeded10a7c458977b5a1985eac15
@@ -3242,9 +3242,9 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ad124206cf9a5740b999d28b34a52196
     GuidInternal: 
-    m_lastTime: -8585641300958071679
+    m_lastTime: -8585644931114775808
     List: []
-  ExpandedFileSystemItemIds: 8700000088000000
+  ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 8700000088000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

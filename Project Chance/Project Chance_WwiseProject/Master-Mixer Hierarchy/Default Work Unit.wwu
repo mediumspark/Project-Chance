@@ -24,6 +24,32 @@
 							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Life" ID="{E277CE77-97F1-4002-A749-9E93D726B092}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{010C3522-5C47-420A-91A5-55A0018A54F5}"/>
+								<CustomState Name="" ID="{69399380-60B4-4B5F-A3C6-78E3888A257D}" ShortID="298070643">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="-100"/>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Low_Health" ID="{A1E8261C-0B8A-4C53-826D-2C0EA5D512A4}"/>
+								<CustomState Name="" ID="{F053DC7F-9FAF-48D1-9EA7-D5AD9998F321}" ShortID="175280021"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{88D15907-D538-4F98-A030-548580FE7007}"/>
+								<CustomState Name="" ID="{F4C92E4E-64EB-43FA-A531-BC500596DED7}" ShortID="124886867"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Music" ID="{2080C17F-1F60-4846-83B8-3E8D57A5770D}">
@@ -32,6 +58,33 @@
 							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Life" ID="{E277CE77-97F1-4002-A749-9E93D726B092}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{010C3522-5C47-420A-91A5-55A0018A54F5}"/>
+								<CustomState Name="" ID="{656711BE-219C-45C3-A9C7-042711578262}" ShortID="925834709">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-5"/>
+										<Property Name="Highpass" Type="int16" Value="-34"/>
+										<Property Name="Lowpass" Type="int16" Value="-57"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Low_Health" ID="{A1E8261C-0B8A-4C53-826D-2C0EA5D512A4}"/>
+								<CustomState Name="" ID="{D1B13521-DC35-4569-86A9-350CF62B3B84}" ShortID="160195663"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{88D15907-D538-4F98-A030-548580FE7007}"/>
+								<CustomState Name="" ID="{BA2FDE61-766C-4BFD-892F-00AA3CC22C98}" ShortID="355991936"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="SFX" ID="{9CD7E90E-DB14-4956-9659-3CF9101EFAF1}">
@@ -40,6 +93,31 @@
 							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Life" ID="{E277CE77-97F1-4002-A749-9E93D726B092}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{010C3522-5C47-420A-91A5-55A0018A54F5}"/>
+								<CustomState Name="" ID="{2A10C0D9-B4E2-4D30-9E3E-45959C15B69A}" ShortID="149523732">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Low_Health" ID="{A1E8261C-0B8A-4C53-826D-2C0EA5D512A4}"/>
+								<CustomState Name="" ID="{6D3332DF-5265-46C9-A25D-5CB2AF43E1BF}" ShortID="55132610"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{88D15907-D538-4F98-A030-548580FE7007}"/>
+								<CustomState Name="" ID="{66999E6D-C09A-4895-92C3-A0131FE7B38E}" ShortID="206146572"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Player" ID="{230B28A6-F17D-41D9-8EA6-FBCE5DCE023D}">
@@ -48,6 +126,31 @@
 							<ObjectRef Name="System" ID="{53744BC2-F39B-4B8F-91B1-D3B789E0B0A7}" WorkUnitID="{A685D0AF-CB30-422C-96E3-6E54AD7F15B4}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Life" ID="{E277CE77-97F1-4002-A749-9E93D726B092}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{010C3522-5C47-420A-91A5-55A0018A54F5}"/>
+								<CustomState Name="" ID="{D391E236-D2AC-49FD-A745-A2E1EA1E0794}" ShortID="470443794">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Low_Health" ID="{A1E8261C-0B8A-4C53-826D-2C0EA5D512A4}"/>
+								<CustomState Name="" ID="{67802792-D4BF-429F-A506-949635AACE9E}" ShortID="541301196"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{88D15907-D538-4F98-A030-548580FE7007}"/>
+								<CustomState Name="" ID="{C1E8DDC3-ED50-41E0-B3D8-FC37CCA104EC}" ShortID="987170481"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Boss" ID="{2AB1328F-2EEE-4788-B0B7-DFF07F5AA14C}">
