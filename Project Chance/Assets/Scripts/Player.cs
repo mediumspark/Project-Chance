@@ -10,7 +10,7 @@ public class Player : Character
     private PlayerControls Controls;
 
     //I wanted these to be viewable in the inspector to check that they work.
-    private readonly WeaponHandler WH = new WeaponHandler();
+    private WeaponHandler WH = new WeaponHandler();
 
     private bool Healing;
     private int HealSpeed = 10;
@@ -41,6 +41,7 @@ public class Player : Character
         base.Awake();
         DontDestroyOnLoad(gameObject);
         canMove = true;
+        gravity = Normal_Gravity;
 
         AniMethods = GetComponent<AnimatorMethods>();
 
@@ -147,11 +148,6 @@ public class Player : Character
             }
 
         }
-        else
-        {
-            gravity = Normal_Gravity;
-        }
-
 
         if (WallJumping)
         {
@@ -161,7 +157,6 @@ public class Player : Character
                 WallJumping = false;
             }
         }
-
 
         if (GravityOn)
         {
@@ -181,6 +176,12 @@ public class Player : Character
             if (jumping || WallJumping)
             {
                 movementForce.y = jumpForce;
+            }
+
+
+            if (grounded)
+            {
+                gravity = Normal_Gravity;
             }
         }
     }

@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/City_1.unity
     guid: cb8c22d8dc3c2a445abda4231679601c
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 339146ea3ff447e49b5f09d1f09ff6fe
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Phil Room.unity
     guid: 459bb98c9da92a9408519c46e22e8d83
