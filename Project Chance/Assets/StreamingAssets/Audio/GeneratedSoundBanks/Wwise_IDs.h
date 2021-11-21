@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID PLAY_AIR_ENEMY_FLYING = 1484250099U;
         static const AkUniqueID PLAY_AIR_ENEMY_RANGED_ATTACK = 888154214U;
         static const AkUniqueID PLAY_AMBIANCE_HUB = 2758753758U;
+        static const AkUniqueID PLAY_AMBIENCE_GROUND_ENEMY = 3545181809U;
+        static const AkUniqueID PLAY_AMBIENCE_GROUND_ENEMY_BIGGER = 354821980U;
         static const AkUniqueID PLAY_AMBIENCE_HOTELCAPUT = 2955335140U;
         static const AkUniqueID PLAY_AMBIENCE_OFFICE = 1451337521U;
         static const AkUniqueID PLAY_AMBIENCE_ROOFTOPS = 3519641755U;
@@ -26,13 +28,24 @@ namespace AK
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_ATTACK_01 = 4053597708U;
         static const AkUniqueID PLAY_GROUND_ENEMY_MELEE_BIGGER_FOOTSTEPS = 3197540882U;
         static const AkUniqueID PLAY_GROUND_ENEMY_RANGED_ATTACK = 2336839859U;
+        static const AkUniqueID PLAY_MAYOR_DAMAGED = 4069192858U;
+        static const AkUniqueID PLAY_MAYOR_FOOTSTEPS = 138878230U;
+        static const AkUniqueID PLAY_MAYOR_IMPACTS = 1261748742U;
+        static const AkUniqueID PLAY_MAYOR_ROCKPROJECTILE = 4104657743U;
+        static const AkUniqueID PLAY_MAYOR_ROCKSUMMON = 1279086127U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_MUSIC_HOTELCAPUT_THEME = 3779208993U;
+        static const AkUniqueID PLAY_MUSIC_MAYOR_THEME = 1577132608U;
         static const AkUniqueID PLAY_MUSIC_OFFICESPACE_THEME = 1753068158U;
+        static const AkUniqueID PLAY_MUSIC_PHILANTHROPIST_THEME = 1776098227U;
         static const AkUniqueID PLAY_MUSIC_ROOFTOPS_THEME = 838192066U;
         static const AkUniqueID PLAY_MUSIC_STREETS_THEME = 29672328U;
         static const AkUniqueID PLAY_MUSIC_THEGRANDARENA_THEME = 1943370246U;
         static const AkUniqueID PLAY_MUSIC_THEWILDSIDE_THEME = 277527292U;
+        static const AkUniqueID PLAY_PHILANTHROPIST_ATTACK = 1763307192U;
+        static const AkUniqueID PLAY_PHILANTHROPIST_CLONE = 1108016795U;
+        static const AkUniqueID PLAY_PHILANTHROPIST_DAMAGED = 3376220201U;
+        static const AkUniqueID PLAY_PHILANTHROPIST_FOOTSTEPS = 3615605441U;
         static const AkUniqueID PLAY_PLAYER_ATTACK = 3238800884U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
         static const AkUniqueID PLAY_PLAYER_FALLING = 396543629U;
@@ -40,6 +53,20 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_HEAL = 638998366U;
         static const AkUniqueID PLAY_PLAYER_JUMP = 562256996U;
         static const AkUniqueID PLAY_PLAYER_LOWHEALTH = 3851267176U;
+        static const AkUniqueID STOP_AMBIANCE_HUB = 2990671080U;
+        static const AkUniqueID STOP_AMBIENCE_HOTELCAPUT = 3195155574U;
+        static const AkUniqueID STOP_AMBIENCE_OFFICE = 565355115U;
+        static const AkUniqueID STOP_AMBIENCE_ROOFTOPS = 4231910077U;
+        static const AkUniqueID STOP_AMBIENCE_STREETS = 1083281165U;
+        static const AkUniqueID STOP_MAINCHARACTER_THEME__CHORUS_LOOP_ = 452826210U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
+        static const AkUniqueID STOP_MUSIC_HOTELCAPUT_THEME = 982605791U;
+        static const AkUniqueID STOP_MUSIC_OFFICESPACE_THEME = 2109301304U;
+        static const AkUniqueID STOP_MUSIC_PHILANTHROPIST_THEME = 11724553U;
+        static const AkUniqueID STOP_MUSIC_ROOFTOPS_THEME = 2102565096U;
+        static const AkUniqueID STOP_MUSIC_STREETS_THEME = 1669599958U;
+        static const AkUniqueID STOP_MUSIC_THEGRANDARENA_THEME = 998665532U;
+        static const AkUniqueID STOP_MUSIC_THEWILDSIDE_THEME = 3158376462U;
         static const AkUniqueID STOP_PLAYER_HEAL = 3607210104U;
         static const AkUniqueID STOP_PLAYER_LOWHEALTH = 898213950U;
     } // namespace EVENTS
@@ -131,13 +158,21 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MUSIC_AND_AMBIENCE = 115247927U;
+        static const AkUniqueID PHILANTHROPIST = 204495494U;
+        static const AkUniqueID THE_MAYOR = 80144099U;
         static const AkUniqueID UNCOVERED_SOUNDBANK = 965033712U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Playables; 
+using UnityEngine.Playables;
 using System.Linq;
 
 public class ThePhilanthropistBoss : Boss
@@ -17,7 +17,7 @@ public class ThePhilanthropistBoss : Boss
 
     private TextBoxManager IntroText;
     [SerializeField]
-    private PlayableDirector Intro, Victory; 
+    private PlayableDirector Intro, Victory;
 
     protected override void Awake()
     {
@@ -25,7 +25,7 @@ public class ThePhilanthropistBoss : Boss
         Phase_1.SetActive(false); Phase_2.SetActive(false); Phase_3.SetActive(false);
         MaxHealth = 50;
         CurrentHealth = MaxHealth;
-        PrizeWeapon = new ThePhilanthropist(FindObjectOfType<Player>()); 
+        PrizeWeapon = new ThePhilanthropist(FindObjectOfType<Player>());
     }
 
     public override void OnTakeDamage(int damage)
@@ -37,24 +37,28 @@ public class ThePhilanthropistBoss : Boss
     {
         base.OnDeath();
         Victory.gameObject.SetActive(true);
+
+        // Open wall to let player exit room, set wall component inactive
+        GameObject spawnWall = GameObject.Find("Intrance");
+        spawnWall.gameObject.SetActive(false);
     }// for death sound effect
 
     private List<GameObject> GatherChildren(GameObject Phase)
     {
-        List<GameObject> Temp = new List<GameObject>(); 
+        List<GameObject> Temp = new List<GameObject>();
         for(int i = 0; i < Phase.transform.childCount; i++)
         {
             Temp.Add(Phase.transform.GetChild(i).gameObject);
         }
-        return Temp; 
+        return Temp;
     }
 
     private void Update()
     {
         if (IntroText.Finished)
         {
-            Intro.gameObject.SetActive(true); 
-        }        
+            Intro.gameObject.SetActive(true);
+        }
     }
 
     private void Shuffle(GameObject[] gameObjects)
@@ -76,25 +80,25 @@ public class ThePhilanthropistBoss : Boss
             }
         }
     }
-    
+
 
     void SpawnInPhils(GameObject Phase)
-    { 
+    {
         GameObject real = new GameObject();
         real.AddComponent<PhilAttack>().isReal = true;
         real.GetComponent<PhilAttack>().RealOneObject = RealOneObject;
 
-        startAttack = false; 
+        startAttack = false;
         Phase.SetActive(true);
         PossiblePositions = GatherChildren(Phase);
-        Shuffle(PossiblePositions.ToArray()); 
+        Shuffle(PossiblePositions.ToArray());
         real.transform.parent = PossiblePositions[0].transform;
-        real.transform.localPosition = Vector3.zero; 
+        real.transform.localPosition = Vector3.zero;
 
         for(int i = 1; i < PossiblePositions.Count; i++)
         {
             GameObject Fakes = Instantiate(real, PossiblePositions[i].transform);
-            Fakes.transform.localPosition = Vector3.zero; 
+            Fakes.transform.localPosition = Vector3.zero;
             Fakes.GetComponent<PhilAttack>().isReal = false;
             Fakes.GetComponent<PhilAttack>().Summon();
         }
@@ -111,7 +115,7 @@ public class ThePhilanthropistBoss : Boss
         {
             attack.Attack = true;
            // attack.GetComponentInChildren<Animator>().Play("PAttack");
-            attack.PlayerLocation = FindObjectOfType<Player>().transform.position; 
+            attack.PlayerLocation = FindObjectOfType<Player>().transform.position;
             yield return new WaitForSecondsRealtime(.75f);
         }
 
@@ -137,7 +141,7 @@ public class ThePhilanthropistBoss : Boss
 
     }
 
-    //Maybe round three has him spawn robots from the sky for a couple seconds and player just needs to survive 
+    //Maybe round three has him spawn robots from the sky for a couple seconds and player just needs to survive
     //"Your mission is almost done, you just need to be patient enough to see the results"
     protected override IEnumerator Phase3Attack()
     {
