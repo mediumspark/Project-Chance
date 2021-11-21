@@ -65,9 +65,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience_Ground_Enemy" ID="{D5D08DD5-C6FF-4816-8C29-E2EB02AB1F7C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience_Ground_Enemy_Bigger" ID="{A98F7E8B-1679-4A1C-AA48-1D5DB9D0E34B}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

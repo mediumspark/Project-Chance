@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="80144099" Language="SFX" Hash="534625093">
+		<SoundBank Id="80144099" Language="SFX" Hash="2721689665">
 			<ObjectPath>\SoundBanks\Default Work Unit\The_Mayor</ObjectPath>
 			<ShortName>The_Mayor</ShortName>
 			<Path>The_Mayor.bnk</Path>
@@ -200,7 +200,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="204495494" Language="SFX" Hash="1061704580">
+		<SoundBank Id="204495494" Language="SFX" Hash="36764079">
 			<ObjectPath>\SoundBanks\Default Work Unit\Philanthropist</ObjectPath>
 			<ShortName>Philanthropist</ShortName>
 			<Path>Philanthropist.bnk</Path>

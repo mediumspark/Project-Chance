@@ -17,7 +17,6 @@ public class Moova : Enemy
         transform.eulerAngles = MovementSpeed > 0 ? Vector2.zero : new Vector2(0, 180);
 
         base.Awake();
-        AkSoundEngine.PostEvent("Play_Ambience_Ground_Enemy_Bigger", this.gameObject);
     }
 
     protected override void FixedUpdate()
@@ -60,17 +59,5 @@ public class Moova : Enemy
         yield return new WaitForSeconds(1f);
 
         GoOppositeDirection = false; 
-    }
-
-    //Sounds
-
-    private void MoovaFootstep ()
-    {
-        AkSoundEngine.PostEvent("Play_Ground_Enemy_Footsteps", this.gameObject);
-    }
-
-    private void MoovaRangedAttack ()
-    {
-        AkSoundEngine.PostEvent("Play_Ground_Enemy_Ranged_Attack", this.gameObject);
     }
 }

@@ -22,7 +22,6 @@ public class Hooota : Enemy
         MaxHealth = 5;
         CurrentHealth = MaxHealth;
         StartCoroutine(EnemyAttack());
-        AkSoundEngine.PostEvent("Play_Air_Enemy_Flying", this.gameObject);
     }
 
     protected override IEnumerator EnemyAttack()
@@ -53,12 +52,5 @@ public class Hooota : Enemy
     {
         throw new System.NotImplementedException();
         //Does not patrol
-    }
-
-    //Sounds
-
-    private void HoootaAttack()
-    {
-        AkSoundEngine.PostEvent("Air_Enemy_Ranged_Attack", this.gameObject);
     }
 }
