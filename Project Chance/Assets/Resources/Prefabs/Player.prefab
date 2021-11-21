@@ -510,7 +510,7 @@ MonoBehaviour:
   GroundedPlacer: {fileID: 2611776066315408394}
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 640
   GravityOn: 1
   gravity: 1.5
   jumpForce: 1.75
@@ -551,7 +551,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda883e8d9898dc43b1711be97d6a29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponAnimations: []
+  WeaponAnimations:
+  - {fileID: 9100000, guid: 51630b57bcfd35a4dafe108abc82bc4d, type: 2}
+  - {fileID: 9100000, guid: 17c28909f9699f241b081b1e96e859f5, type: 2}
+  - {fileID: 9100000, guid: f1ad7b2f86f83a64687515129b9cd2e0, type: 2}
   CurrentWeapon: 0
 --- !u!95 &2611776066092035197
 Animator:
@@ -563,7 +566,7 @@ Animator:
   m_GameObject: {fileID: 2611776066092035143}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f1ad7b2f86f83a64687515129b9cd2e0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 17c28909f9699f241b081b1e96e859f5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
