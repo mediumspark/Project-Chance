@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585642275927677815
+    m_lastTime: -8585641553358702464
     List:
     - name: Music_And_Ambience
       guid: ea41679e7bfc044c8d8fb9b27488bfe4
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585642275995553255
+    m_lastTime: -8585641553419196847
     List:
     - name: Ambiences
       guid: c51d44b69dfa9b49930ebbbb9e9a7883
@@ -748,7 +748,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0fe870f86b4f6f4191d348886bab6ab3
     GuidInternal: 
-    m_lastTime: -8585642275995523251
+    m_lastTime: -8585641553419196847
     List:
     - name: Distance_Bureaucrat
       guid: 3da46b5cdd5bee4b9689125c105755f2
@@ -874,7 +874,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ca490367e14ce14096a7d1b71c119f5b
     GuidInternal: 
-    m_lastTime: -8585642275927677815
+    m_lastTime: -8585641553358692462
     List:
     - name: Combat
       guid: e86df6864ee413438c94b585a813c194
@@ -1195,7 +1195,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1d5d9619af4a894f88fd90f614b03263
     GuidInternal: 
-    m_lastTime: -8585642275927667815
+    m_lastTime: -8585641553358692462
     List:
     - name: Attack
       guid: ccc6aeded10a7c458977b5a1985eac15
@@ -1403,9 +1403,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585642514091202104
     List: []
-  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000004500000046000000
+  ExpandedFileSystemItemIds: 4500000046000000
   ExpandedWaapiItemIds: 
-  AutoSyncSelection: 0
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 1
   CurrentPluginConfig: 
