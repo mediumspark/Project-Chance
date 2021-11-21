@@ -82,7 +82,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="115247927" Language="SFX" Hash="935119691">
+		<SoundBank Id="115247927" Language="SFX" Hash="1546806782">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
 			<ShortName>Music_And_Ambience</ShortName>
 			<Path>Music_And_Ambience.bnk</Path>
@@ -296,7 +296,7 @@
 				<Event Id="11724553" Name="Stop_Music_Philanthropist_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Stop_Music_Philanthropist_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="965033712" Language="SFX" Hash="3227569962">
+		<SoundBank Id="965033712" Language="SFX" Hash="3252971817">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>
@@ -342,13 +342,59 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1694127508" Name="Play_Player_GroundSlide" ObjectPath="\Events\Default Work Unit\Player\Play_Player_GroundSlide" DurationType="OneShot" DurationMin="0.426667" DurationMax="0.426667">
+				<Event Id="1694127508" Name="Play_Player_GroundSlide" ObjectPath="\Events\Default Work Unit\Player\Play_Player_GroundSlide" DurationType="OneShot" DurationMin="0.426667" DurationMax="3.254075">
 					<IncludedMemoryFiles>
+						<File Id="589466" Language="SFX">
+							<ShortName>Mayor_Impact_02.wav</ShortName>
+							<Path>SFX\Mayor_Impact_02_10C4C929.wem</Path>
+						</File>
+						<File Id="128107613" Language="SFX">
+							<ShortName>Mayor_RockSummon.wav</ShortName>
+							<Path>SFX\Mayor_RockSummon_10C4C929.wem</Path>
+						</File>
+						<File Id="153071325" Language="SFX">
+							<ShortName>Mayor_RockProjectile.wav</ShortName>
+							<Path>SFX\Mayor_RockProjectile_10C4C929.wem</Path>
+						</File>
+						<File Id="202651341" Language="SFX">
+							<ShortName>Mayor_Impact_03.wav</ShortName>
+							<Path>SFX\Mayor_Impact_03_10C4C929.wem</Path>
+						</File>
+						<File Id="285891447" Language="SFX">
+							<ShortName>Mayor_Impact_01.wav</ShortName>
+							<Path>SFX\Mayor_Impact_01_10C4C929.wem</Path>
+						</File>
+						<File Id="467343857" Language="SFX">
+							<ShortName>Philanthropist_AttackProjectile.wav</ShortName>
+							<Path>SFX\Philanthropist_AttackProjectile_10C4C929.wem</Path>
+						</File>
 						<File Id="833436760" Language="SFX">
 							<ShortName>Player\WhipWhooshSwoosh_S011FO.993.wav</ShortName>
 							<Path>SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B34B9841-A522-4B0A-A31D-CC3953AF87A2}">
+							<Media>
+								<File Id="467343857"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F40C2B14-EF34-47E2-A549-C7CAF41FB7F9}">
+							<Media>
+								<File Id="589466"/>
+								<File Id="128107613"/>
+								<File Id="153071325"/>
+								<File Id="202651341"/>
+								<File Id="285891447"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}">
+							<Media>
+								<File Id="833436760"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Heal" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -371,6 +417,38 @@
 						<File Id="662526332" Language="SFX">
 							<ShortName>Player\Player_LowHealth.wav</ShortName>
 							<Path>SFX\Player\Player_LowHealth_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2213893980" Name="Play_Player_Weapon" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Weapon" DurationType="OneShot" DurationMin="0.426667" DurationMax="3.254075">
+					<IncludedMemoryFiles>
+						<File Id="589466" Language="SFX">
+							<ShortName>Mayor_Impact_02.wav</ShortName>
+							<Path>SFX\Mayor_Impact_02_10C4C929.wem</Path>
+						</File>
+						<File Id="128107613" Language="SFX">
+							<ShortName>Mayor_RockSummon.wav</ShortName>
+							<Path>SFX\Mayor_RockSummon_10C4C929.wem</Path>
+						</File>
+						<File Id="153071325" Language="SFX">
+							<ShortName>Mayor_RockProjectile.wav</ShortName>
+							<Path>SFX\Mayor_RockProjectile_10C4C929.wem</Path>
+						</File>
+						<File Id="202651341" Language="SFX">
+							<ShortName>Mayor_Impact_03.wav</ShortName>
+							<Path>SFX\Mayor_Impact_03_10C4C929.wem</Path>
+						</File>
+						<File Id="285891447" Language="SFX">
+							<ShortName>Mayor_Impact_01.wav</ShortName>
+							<Path>SFX\Mayor_Impact_01_10C4C929.wem</Path>
+						</File>
+						<File Id="467343857" Language="SFX">
+							<ShortName>Philanthropist_AttackProjectile.wav</ShortName>
+							<Path>SFX\Philanthropist_AttackProjectile_10C4C929.wem</Path>
+						</File>
+						<File Id="833436760" Language="SFX">
+							<ShortName>Player\WhipWhooshSwoosh_S011FO.993.wav</ShortName>
+							<Path>SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

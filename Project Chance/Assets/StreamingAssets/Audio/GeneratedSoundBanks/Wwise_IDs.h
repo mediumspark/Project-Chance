@@ -40,6 +40,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_GROUNDSLIDE = 1694127508U;
         static const AkUniqueID PLAY_PLAYER_HEAL = 638998366U;
         static const AkUniqueID PLAY_PLAYER_LOWHEALTH = 3851267176U;
+        static const AkUniqueID PLAY_PLAYER_WEAPON = 2213893980U;
         static const AkUniqueID PLAY_SOUNDTRACK = 3884404148U;
         static const AkUniqueID RESUME_MUSIC = 2940177080U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;

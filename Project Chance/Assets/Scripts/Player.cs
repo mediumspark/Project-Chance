@@ -12,7 +12,7 @@ public class Player : Character
     //I wanted these to be viewable in the inspector to check that they work.
     private WeaponHandler WH = new WeaponHandler();
 
-    private bool Healing;
+    public bool Healing;
     private int HealSpeed = 10;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
@@ -87,7 +87,6 @@ public class Player : Character
     private bool WallJumping = false;
 
     bool LowHealthSound = false;
-    bool MusicPause;
 
     public float AbilityCost { get => abilityCost; set=> abilityCost = value; }
 
@@ -249,34 +248,18 @@ public class Player : Character
                 AkSoundEngine.SetRTPCValue("Health", currentHealth, this.gameObject);
             }
 
-            if (MusicPause)
-            {
-                HealingMusicResume();
-            }
-
             if (Healing)
             {
-                if(!MusicPause)
-                {
-                    HealingMusicPause();
-                }
-
                 if (CurrentHealth < MaxHealth)
                 {
                     CurrentHealth += HealSpeed * Time.deltaTime;
                     healthBar.value = CurrentHealth;
                 }
-
                 if (Stamina < MaxStamina)
                 {
                     Stamina += Time.deltaTime * HealSpeed;
                     staminaBar.value = CurrentStamina;
                 }
-            }
-
-            else if(MusicPause)
-            {
-                HealingMusicResume();
             }
         }
 
@@ -323,17 +306,5 @@ public class Player : Character
     public void LowHealth()
     {
         AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
-    }
-
-    public void HealingMusicPause()
-    {
-        AkSoundEngine.PostEvent("Stop_Music", this.gameObject);
-        MusicPause = true;
-    }
-
-    public void HealingMusicResume()
-    {
-        AkSoundEngine.PostEvent("Resume_Music", this.gameObject);
-        MusicPause = false;
     }
 }

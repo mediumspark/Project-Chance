@@ -195,6 +195,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+						<CurrentSwitchRef Name="Default" ID="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}"/>
 						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

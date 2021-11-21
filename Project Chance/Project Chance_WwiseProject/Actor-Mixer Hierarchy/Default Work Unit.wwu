@@ -1231,73 +1231,103 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Mayor_Impact_01" ID="{6F005E14-5FE5-4375-ACEB-351AC0A1DBD3}" ShortID="797652587">
+														<Sound Name="Mayor_Impact_01" ID="{DEF6DEDD-4B89-462C-A887-EDBF69C28D1A}" ShortID="391572246">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic" ID="{709EBA33-6301-4486-9B6E-1C0235698E36}" WorkUnitID="{A54A96AD-DAF0-40B7-9150-99A2B52235DF}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+																	<ObjectRef Name="Boss" ID="{2AB1328F-2EEE-4788-B0B7-DFF07F5AA14C}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Mayor_Impact_01" ID="{0235E7A3-F6DD-4A72-8B50-4AF768D2123E}">
+																<AudioFileSource Name="Mayor_Impact_01" ID="{2FF51633-76CD-4345-A502-BA5060807AD5}">
 																	<Language>SFX</Language>
-																	<AudioFile>Mayor Impacts\Mayor_Impact_01.wav</AudioFile>
+																	<AudioFile>Mayor_Impact_01.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="259424978"/>
+																		<MediaID ID="285891447"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{8C56CA3E-11F4-4AFC-AFA1-D205D36B4DFF}"/>
+															</PositioningInfo>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="Mayor_Impact_01" ID="{0235E7A3-F6DD-4A72-8B50-4AF768D2123E}" Platform="Linked"/>
+																<ActiveSource Name="Mayor_Impact_01" ID="{2FF51633-76CD-4345-A502-BA5060807AD5}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="Mayor_Impact_02" ID="{40A873AF-8225-4BF9-8AC5-FABCFA0015DA}" ShortID="1037356646">
+														<Sound Name="Mayor_Impact_03" ID="{A447FD20-1BC4-4682-83B0-9A044A72F54E}" ShortID="401690361">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic" ID="{709EBA33-6301-4486-9B6E-1C0235698E36}" WorkUnitID="{A54A96AD-DAF0-40B7-9150-99A2B52235DF}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+																	<ObjectRef Name="Boss" ID="{2AB1328F-2EEE-4788-B0B7-DFF07F5AA14C}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Mayor_Impact_02" ID="{94A9AB06-6931-424A-ADE5-02A1FF41B907}">
+																<AudioFileSource Name="Mayor_Impact_03" ID="{8D73CDAD-876A-4EC3-A559-8FD79107C278}">
 																	<Language>SFX</Language>
-																	<AudioFile>Mayor Impacts\Mayor_Impact_02.wav</AudioFile>
+																	<AudioFile>Mayor_Impact_03.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="269216594"/>
+																		<MediaID ID="202651341"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{6412ABF7-CD56-40CF-9B56-F4A1BB159E84}"/>
+															</PositioningInfo>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="Mayor_Impact_02" ID="{94A9AB06-6931-424A-ADE5-02A1FF41B907}" Platform="Linked"/>
+																<ActiveSource Name="Mayor_Impact_03" ID="{8D73CDAD-876A-4EC3-A559-8FD79107C278}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="Mayor_Impact_03" ID="{CCEF6EF1-25C2-43D4-9432-E45148699248}" ShortID="888020332">
+														<Sound Name="Mayor_Impact_02" ID="{C5A5D282-6275-4F60-BB31-20CF3E5A677B}" ShortID="1006665414">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic" ID="{709EBA33-6301-4486-9B6E-1C0235698E36}" WorkUnitID="{A54A96AD-DAF0-40B7-9150-99A2B52235DF}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+																	<ObjectRef Name="Boss" ID="{2AB1328F-2EEE-4788-B0B7-DFF07F5AA14C}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Mayor_Impact_03" ID="{B508F6C7-D4BA-4E5C-9F13-739491484F82}">
+																<AudioFileSource Name="Mayor_Impact_02" ID="{1D59F690-694C-47F6-82D5-4528E4B59AB9}">
 																	<Language>SFX</Language>
-																	<AudioFile>Mayor Impacts\Mayor_Impact_03.wav</AudioFile>
+																	<AudioFile>Mayor_Impact_02.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="646397021"/>
+																		<MediaID ID="589466"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{2CDDC329-9144-4029-B214-1C00AD6D31AA}"/>
+															</PositioningInfo>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="Mayor_Impact_03" ID="{B508F6C7-D4BA-4E5C-9F13-739491484F82}" Platform="Linked"/>
+																<ActiveSource Name="Mayor_Impact_02" ID="{1D59F690-694C-47F6-82D5-4528E4B59AB9}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -1370,10 +1400,43 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</BlendContainer>
+										<Sound Name="Player_GroundSlide" ID="{8C7A9F10-324B-45F4-B7D1-BC4AD76670A8}" ShortID="784235679">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{230B28A6-F17D-41D9-8EA6-FBCE5DCE023D}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhipWhooshSwoosh_S011FO_993" ID="{AA9BB149-B96C-4B01-8169-DA47F6B55703}">
+													<Language>SFX</Language>
+													<AudioFile>Player\WhipWhooshSwoosh_S011FO.993.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="833436760"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="WhipWhooshSwoosh_S011FO_993" ID="{AA9BB149-B96C-4B01-8169-DA47F6B55703}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
 										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Player_GroundSlide" ID="{8C7A9F10-324B-45F4-B7D1-BC4AD76670A8}"/>
+											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Player_Attack" ID="{3A184130-D28D-42C3-8690-EFC35CA493B1}"/>
 											</GroupingBehavior>
@@ -1400,7 +1463,7 @@
 											<Grouping>
 												<SwitchRef Name="Default" ID="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}"/>
 												<ItemList>
-													<ItemRef Name="Player_Attack" ID="{3A184130-D28D-42C3-8690-EFC35CA493B1}"/>
+													<ItemRef Name="Player_GroundSlide" ID="{8C7A9F10-324B-45F4-B7D1-BC4AD76670A8}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>

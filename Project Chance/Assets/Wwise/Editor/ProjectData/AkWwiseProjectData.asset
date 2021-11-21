@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585641038483715883
+    m_lastTime: -8585641022124847067
     List:
     - name: Enemies
       guid: f20134e4e0b3be4aaeb66f2b09b747b8
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585641038483546345
+    m_lastTime: -8585641022125036558
     List:
     - name: Ambiences
       guid: fbeafe08b96b2d44803ae2af1dd16179
@@ -389,8 +389,8 @@ MonoBehaviour:
         guid: 82e050f7451e14488e3fb8e9899ae764
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_MainCharacter_Theme__Chorus_Loop_
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music
       guid: 0c4a65ed7f087f4da08cd4f011dcb11f
       id: 2735935537
@@ -435,8 +435,8 @@ MonoBehaviour:
         guid: 267426e59fb7a745b45d5e34af4a8b6c
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_HotelCaput_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music_OfficeSpace_Theme
       guid: a3a81508137cbb4faf795a59854ad962
       id: 2680955920
@@ -464,8 +464,8 @@ MonoBehaviour:
         guid: a3a81508137cbb4faf795a59854ad962
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_OfficeSpace_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music_Rooftops_Theme
       guid: d1017d92705ebc4b9bf26a2acf68e8ec
       id: 3118350336
@@ -493,8 +493,8 @@ MonoBehaviour:
         guid: d1017d92705ebc4b9bf26a2acf68e8ec
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_Rooftops_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music_Streets_Theme
       guid: 91d9891fc9d2bb4f86665d4db9b6b13d
       id: 1420828622
@@ -522,8 +522,8 @@ MonoBehaviour:
         guid: 91d9891fc9d2bb4f86665d4db9b6b13d
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_Streets_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music_TheGrandArena_Theme
       guid: 5dfb93007b0f9b48b7b542876bfc5a15
       id: 608597892
@@ -551,8 +551,8 @@ MonoBehaviour:
         guid: 5dfb93007b0f9b48b7b542876bfc5a15
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_TheGrandArena_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pause_Music_TheWildSide_Theme
       guid: e4ec6dc596e6c54fb964ab39c61ece50
       id: 1345378182
@@ -580,8 +580,8 @@ MonoBehaviour:
         guid: e4ec6dc596e6c54fb964ab39c61ece50
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Pause\Pause_Music_TheWildSide_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play
       guid: e4da4aa33249db4693f820d4491b06a2
       id: 1256202815
@@ -1521,8 +1521,8 @@ MonoBehaviour:
         guid: 6c0b77377124514aafc8141013168df8
       Path: Events\Default Work Unit\Player\Play_Player_Falling
       maxAttenuation: 0
-      maxDuration: 0.512875
-      minDuration: 0.512875
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Player_GroundSlide
       guid: 91cec9fb901188408c7d64aacbc9c84d
       id: 1694127508
@@ -1581,8 +1581,8 @@ MonoBehaviour:
         guid: 141d6f423dafe14bb185c1fe8212b378
       Path: Events\Default Work Unit\Player\Play_Player_Jump
       maxAttenuation: 0
-      maxDuration: 1.77175
-      minDuration: 1.77175
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Player_LowHealth
       guid: a29be1bb2ee4954cbf54d5a89e1e6d9c
       id: 3851267176
@@ -1693,8 +1693,8 @@ MonoBehaviour:
         guid: 7fae57465cac9347bdbceac941eb522e
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_MainCharacter_Theme__Chorus_Loop_
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music
       guid: e4663cb089f90946b27261bd4c50166b
       id: 2940177080
@@ -1751,8 +1751,8 @@ MonoBehaviour:
         guid: d2c4339b7a834e4284d96a3a835d8459
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_HotelCaput_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music_OfficeSpace_Theme
       guid: bd6df189be0604439e4d1c4bf8ab976a
       id: 2382468665
@@ -1780,8 +1780,8 @@ MonoBehaviour:
         guid: bd6df189be0604439e4d1c4bf8ab976a
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_OfficeSpace_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music_Rooftops_Theme
       guid: b71da634471b9e44966a774bca3b6e69
       id: 686754847
@@ -1809,8 +1809,8 @@ MonoBehaviour:
         guid: b71da634471b9e44966a774bca3b6e69
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_Rooftops_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music_Streets_Theme
       guid: 76b1a0971a850645b06abb1b65b125bb
       id: 2312307375
@@ -1838,8 +1838,8 @@ MonoBehaviour:
         guid: 76b1a0971a850645b06abb1b65b125bb
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_Streets_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music_TheGrandArena_Theme
       guid: 9bec2be88c48bf42bb3fa3495845099f
       id: 892971965
@@ -1867,8 +1867,8 @@ MonoBehaviour:
         guid: 9bec2be88c48bf42bb3fa3495845099f
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_TheGrandArena_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Music_TheWildSide_Theme
       guid: 903c02ef938c4141ba45a63be6fc1736
       id: 603419835
@@ -1896,8 +1896,8 @@ MonoBehaviour:
         guid: 903c02ef938c4141ba45a63be6fc1736
       Path: Events\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music_TheWildSide_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Sound Track
       guid: e00d4d01d3d43543822c1a00752630f0
       id: 279314299
@@ -1988,8 +1988,8 @@ MonoBehaviour:
         guid: 5784c191edf56b4a8efe9f4baa732af2
       Path: Events\Default Work Unit\City\Ambiences\Stop\Stop_Ambiance_Hub
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Ambience_HotelCaput
       guid: 8228a44ec4df0545a70d98751fa729b4
       id: 3195155574
@@ -2014,8 +2014,8 @@ MonoBehaviour:
         guid: 8228a44ec4df0545a70d98751fa729b4
       Path: Events\Default Work Unit\City\Ambiences\Stop\Stop_Ambience_HotelCaput
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Ambience_Office
       guid: d37049b7109b8e41bd044612e01c73ef
       id: 565355115
@@ -2040,8 +2040,8 @@ MonoBehaviour:
         guid: d37049b7109b8e41bd044612e01c73ef
       Path: Events\Default Work Unit\City\Ambiences\Stop\Stop_Ambience_Office
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Ambience_Rooftops
       guid: 967ba86a21e0544c97df120f14cb4f0f
       id: 4231910077
@@ -2066,8 +2066,8 @@ MonoBehaviour:
         guid: 967ba86a21e0544c97df120f14cb4f0f
       Path: Events\Default Work Unit\City\Ambiences\Stop\Stop_Ambience_Rooftops
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Ambience_Streets
       guid: b6513836524b7647bc83631bd8412173
       id: 1083281165
@@ -2092,8 +2092,8 @@ MonoBehaviour:
         guid: b6513836524b7647bc83631bd8412173
       Path: Events\Default Work Unit\City\Ambiences\Stop\Stop_Ambience_Streets
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_MainCharacter_Theme__Chorus_Loop_
       guid: 5be3300aa435c04daed01866119c2a51
       id: 452826210
@@ -2118,8 +2118,8 @@ MonoBehaviour:
         guid: 5be3300aa435c04daed01866119c2a51
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_MainCharacter_Theme__Chorus_Loop_
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music
       guid: 9b7bff4dcb413140a4439cc52dac8b08
       id: 2837384057
@@ -2173,8 +2173,8 @@ MonoBehaviour:
         guid: d97a4d102925a743a31331fedc81de9a
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_HotelCaput_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_OfficeSpace_Theme
       guid: 3fd05b01987485489d6bf5993bf0c788
       id: 2109301304
@@ -2199,8 +2199,8 @@ MonoBehaviour:
         guid: 3fd05b01987485489d6bf5993bf0c788
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_OfficeSpace_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_Philanthropist_Theme
       guid: 176d9fd514b1a247922044ce9f74ab93
       id: 11724553
@@ -2248,8 +2248,8 @@ MonoBehaviour:
         guid: 7426e7d288392f4eab163ab9ea68f0b4
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_Rooftops_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_Streets_Theme
       guid: 36359c7753765c41a5c4c62091e1ce65
       id: 1669599958
@@ -2274,8 +2274,8 @@ MonoBehaviour:
         guid: 36359c7753765c41a5c4c62091e1ce65
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_Streets_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_TheGrandArena_Theme
       guid: d9192b8e4196c24390826b8de9969e29
       id: 998665532
@@ -2300,8 +2300,8 @@ MonoBehaviour:
         guid: d9192b8e4196c24390826b8de9969e29
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_TheGrandArena_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Music_TheWildSide_Theme
       guid: 0eb3b714920d424c8eb80de8ea84b03f
       id: 3158376462
@@ -2326,8 +2326,8 @@ MonoBehaviour:
         guid: 0eb3b714920d424c8eb80de8ea84b03f
       Path: Events\Default Work Unit\City\Sound Track\Stop\Stop_Music_TheWildSide_Theme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Player_Heal
       guid: c2a602ada908b24ba52bf510c91ee429
       id: 3607210104
@@ -3225,7 +3225,7 @@ MonoBehaviour:
     m_lastTime: -8585644931114775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 1600000017000000
+  ExpandedWaapiItemIds: 0a0000000b0000000c0000000e0000001600000017000000300000004600000074000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

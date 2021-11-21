@@ -23,14 +23,17 @@ public class AnimatorMethods : MonoBehaviour
         switch (CurrentWeapon)
         {
             case WeaponSelected.Default:
+                AkSoundEngine.SetSwitch("Weapon", "Default", this.gameObject);
                 Ani.runtimeAnimatorController = WeaponAnimations[0];
                 break;
 
             case WeaponSelected.Mayor:
+                AkSoundEngine.SetSwitch("Weapon", "Mayor_Weapon", this.gameObject);
                 Ani.runtimeAnimatorController = WeaponAnimations[1];
                 break;
 
             case WeaponSelected.Phil:
+                AkSoundEngine.SetSwitch("Weapon", "Phil_Weapon", this.gameObject);
                 Ani.runtimeAnimatorController = WeaponAnimations[2];
                 break; 
         }
