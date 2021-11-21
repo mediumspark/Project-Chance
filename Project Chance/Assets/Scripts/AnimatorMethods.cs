@@ -7,6 +7,8 @@ public class AnimatorMethods : MonoBehaviour
 {
     Animator Ani;
 
+    public WeaponSelected CurrentWeapon; 
+
     private void Awake()
     {
         Ani = GetComponent<Animator>();

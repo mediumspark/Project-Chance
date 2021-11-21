@@ -13,8 +13,13 @@ public class Weapon
         {
             if(collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Boss"))
             {
-                if(collision.gameObject.GetComponentInParent<Character>())
-                    collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+                if (collision.gameObject.GetComponentInParent<Character>())
+                {
+                    collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage);
+                    if (collision.transform.CompareTag("Boss"))
+                       StartCoroutine( collision.gameObject.GetComponentInParent<Boss>().deactivateHurtbox(3f, collision)); 
+                }
+                
 
                 if(collision.gameObject.name == "New Game Object")
                 {
@@ -56,9 +61,9 @@ public class Default : Weapon
     private float MoveDistance;
     Player Player;
 
-    public Default(Player player, float MoveDistance, int damage, Color Color)
+    public Default(Player player, float MoveDistance, int damage)
     {
-        Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; Default.CloakColor = Color; 
+        Player = player; this.MoveDistance = MoveDistance; Default.damage = damage; 
     }
 
     public override void Fire(int cost)
@@ -117,28 +122,28 @@ public class ThePhilanthropist : Weapon
 
     public IEnumerator Rise()
     {
+        Player.isGravityOn = false;
+        Player.canMove = false; 
         Player.MovementForce = new Vector2(0, Player.JumpForce);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         Player.StartCoroutine(Slam()); 
     }
 
     public IEnumerator Slam()
     {
+        Player.isGravityOn = true; 
         GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
         Player.isInvol = true;
         go.AddComponent<AttackEffect>();
 
-        float gravityplaceholder = 1.5f;
-        Player.Gravity = -5f;
-        Player.canMove = false;
+        Player.Gravity *= 4;
 
         yield return new WaitUntil(() => Player.isGrounded);
 
         Object.Destroy(go);
         Player.isInvol = false;
-        Player.Gravity = gravityplaceholder;
         Player.canMove = true;
     }
 
@@ -147,7 +152,57 @@ public class ThePhilanthropist : Weapon
 
 public class TheMayor : Weapon
 {
+    Player Player;
+    GameObject AttackPilar;
 
+    public TheMayor(Player P)
+    {
+        Player = P;        
+    }
+
+    public override void Fire(int cost)
+    {
+        if (cost <= Player.CurrentStamina)
+        {
+            Player.CurrentStamina -= cost;
+            Player.StartCoroutine(Stomp());
+        }
+    }
+
+    private IEnumerator Stomp()
+    {
+        if (Player.isGrounded)
+        {
+            AttackPilar = (GameObject)Resources.Load("Prefabs/Enemies/Player Attack Pillar");
+            GameObject go = Player.Instantiate(AttackPilar, Player.gameObject.transform);
+            go.transform.localPosition = new Vector3(1, -0.7f);
+            go.AddComponent<AttackEffect>(); 
+            PlayerPilars attack = go.AddComponent<PlayerPilars>();
+            float PlayerY = Player.GetComponent<CharacterController>().height; 
+            attack.SetPilarHeight(PlayerY, 0.7f);
+            go.transform.parent = null; 
+            
+            yield return new WaitForSeconds(5.0f);
+            Player.Destroy(go);
+        }
+    }
+
+    protected class PlayerPilars : MonoBehaviour
+    {
+        private float YDestination, RaisingSpeed;
+
+        public void SetPilarHeight(float ScaleY, float Speed)
+        {
+            YDestination = ScaleY; RaisingSpeed = Speed;
+        }
+        private void FixedUpdate()
+        {
+            if (transform.localScale.y <= YDestination)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y + RaisingSpeed, 1);
+            }
+        }
+    }
 }
 
 public class TheRebel : Weapon
