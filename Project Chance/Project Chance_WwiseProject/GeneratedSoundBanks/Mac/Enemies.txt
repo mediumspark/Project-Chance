@@ -19,5 +19,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	756961344	Ground_Enemy_Melee_Attack	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Melee_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Ground Enemy\Ground_Enemy_Melee_Attack		89584
 	790539309	Ground_Enemy_Melee_Attack	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack		89584
 	816202818	Stinger_Ground_Enemy_Bigger_Ambience_02	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Stinger_Ground_Enemy_Bigger_Ambience_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Bigger_Ambience\Stingers_ambiences\Stinger_Ground_Enemy_Bigger_Ambience_02		258704
+<<<<<<< HEAD
 	948367304	Ground_Enemy_Bigger_Ambience	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Ground_Enemy_Bigger_Ambience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Bigger_Ambience\Ground_Enemy_Bigger_Ambience		1790464
+=======
+	948367304	Ground_Enemy_Ambience	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Mac\SFX\Ground_Enemy_Bigger_Ambience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Basic\Ground Enemy\Ground_Enemy_Ambience		1790464
+>>>>>>> Production-Branch
 
