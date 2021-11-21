@@ -233,6 +233,7 @@ public class Player : Character
     {
         if (grounded)
         {
+            AniMethods.CurrentWeapon = WH.GetWeapon(); 
             AniMethods.SetRun(moving);
             AniMethods.SetHealing(Healing);
 

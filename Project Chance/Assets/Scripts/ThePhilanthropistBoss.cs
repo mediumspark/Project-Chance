@@ -37,10 +37,7 @@ public class ThePhilanthropistBoss : Boss
     {
         base.OnDeath();
         Victory.gameObject.SetActive(true);
-
-        // Open wall to let player exit room, set wall component inactive
-        GameObject spawnWall = GameObject.Find("Intrance");
-        spawnWall.gameObject.SetActive(false);
+        
     }// for death sound effect
 
     private List<GameObject> GatherChildren(GameObject Phase)

@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
       value: 2021-11 Eddie Game Jam Compiled Assets_4 (2)
@@ -251,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 2158379638792956476, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
@@ -549,6 +557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
       value: 2021-11 Eddie Game Jam Compiled Assets_4 (5)
@@ -663,6 +675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
       value: 2021-11 Eddie Game Jam Compiled Assets_4
@@ -772,6 +788,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
       value: 2021-11 Eddie Game Jam Compiled Assets_4 (3)
@@ -838,7 +858,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 19.867836
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -949,6 +969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name
       value: 2021-11 Eddie Game Jam Compiled Assets_4 (6)
@@ -964,7 +988,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360185832}
-  - component: {fileID: 1360185831}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1002,31 +1025,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1360185831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340026410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569fbe21d087a4242a19d4d55300dc63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 21725472af59a8b498b1319e88b58d80, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1360185832
 Transform:
   m_ObjectHideFlags: 0
@@ -1046,6 +1044,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2158379638792956476, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
   m_PrefabInstance: {fileID: 1021729555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1451635544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451635546}
+  - component: {fileID: 1451635545}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1451635545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451635544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569fbe21d087a4242a19d4d55300dc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 21725472af59a8b498b1319e88b58d80, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1451635546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451635544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1542787512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1210,10 @@ PrefabInstance:
     - target: {fileID: 2158379638792956476, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158379638792956478, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
+      propertyPath: m_Size.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2158379638792956479, guid: 98f95fe05905ce9458a7ea48c7e7b57d, type: 3}
       propertyPath: m_Name

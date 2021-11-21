@@ -889,6 +889,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6db2b14eba7de01489a14020e502e75f, type: 3}
+--- !u!1 &791872156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791872158}
+  - component: {fileID: 791872157}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &791872157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791872156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569fbe21d087a4242a19d4d55300dc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 21725472af59a8b498b1319e88b58d80, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &791872158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791872156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924940775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,14 +1307,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 473038751, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 473038751, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 707392193, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1286,10 +1334,6 @@ PrefabInstance:
     - target: {fileID: 1875155713, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2611776066092035137, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: GroundLayer.m_Bits
-      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 2611776066092035139, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_RootOrder
@@ -1339,26 +1383,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Player '
       objectReference: {fileID: 0}
-    - target: {fileID: 2611776066092035196, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: WeaponAnimations.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2611776066092035196, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: WeaponAnimations.Array.data[0]
-      value: 
-      objectReference: {fileID: 9100000, guid: 51630b57bcfd35a4dafe108abc82bc4d, type: 2}
-    - target: {fileID: 2611776066092035196, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: WeaponAnimations.Array.data[1]
-      value: 
-      objectReference: {fileID: 9100000, guid: 17c28909f9699f241b081b1e96e859f5, type: 2}
-    - target: {fileID: 2611776066092035196, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: WeaponAnimations.Array.data[2]
-      value: 
-      objectReference: {fileID: 9100000, guid: f1ad7b2f86f83a64687515129b9cd2e0, type: 2}
-    - target: {fileID: 2611776066092035197, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 17c28909f9699f241b081b1e96e859f5, type: 2}
     - target: {fileID: 4743752099967950563, guid: d40c679a27227ba4499e595ff1c690c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1771,7 +1795,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992392813}
-  - component: {fileID: 1992392812}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1779,31 +1802,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1992392812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992392811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569fbe21d087a4242a19d4d55300dc63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 21725472af59a8b498b1319e88b58d80, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1992392813
 Transform:
   m_ObjectHideFlags: 0
