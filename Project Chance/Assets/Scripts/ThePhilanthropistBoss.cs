@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Playables;
 using System.Linq;
 
@@ -19,6 +20,8 @@ public class ThePhilanthropistBoss : Boss
     [SerializeField]
     private PlayableDirector Intro, Victory;
 
+    public Slider enemyHealthBar;
+
     protected override void Awake()
     {
         IntroText = GetComponentInChildren<TextBoxManager>();
@@ -26,6 +29,9 @@ public class ThePhilanthropistBoss : Boss
         MaxHealth = 50;
         CurrentHealth = MaxHealth;
         PrizeWeapon = new ThePhilanthropist(FindObjectOfType<Player>());
+
+        enemyHealthBar = GameObject.Find("EnemyHealthBar").GetComponent<Slider>();
+        enemyHealthBar.maxValue = MaxHealth;
     }
 
     public override void OnTakeDamage(int damage)
@@ -56,6 +62,7 @@ public class ThePhilanthropistBoss : Boss
         {
             Intro.gameObject.SetActive(true);
         }
+        enemyHealthBar.value = CurrentHealth;
     }
 
     private void Shuffle(GameObject[] gameObjects)

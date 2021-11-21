@@ -999,7 +999,7 @@ PrefabInstance:
     - target: {fileID: 2091781327347157215, guid: dea1307f412957643a18af075418bb99, type: 3}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: 99b30679a35f87d468144e63c68ae618, type: 3}
+      objectReference: {fileID: 4900000, guid: 1a67ad5aa1ffe684aa852ee9f58248db, type: 3}
     - target: {fileID: 2765356185372609938, guid: dea1307f412957643a18af075418bb99, type: 3}
       propertyPath: m_Name
       value: NPC (Spector) (1)
