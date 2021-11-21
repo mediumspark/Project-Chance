@@ -132,16 +132,19 @@ public class ThePhilanthropist : Weapon
     public IEnumerator Slam()
     {
         Player.isGravityOn = true; 
-        GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
+        Player.ExternalChargeTrigger(); 
+        GameObject Effect = Resources.Load<GameObject>("Prefabs/DropAttack");
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
         Player.isInvol = true;
         go.AddComponent<AttackEffect>();
 
-        Player.Gravity *= 4;
+        Player.MovementForce *= 4;
+        
 
         yield return new WaitUntil(() => Player.isGrounded);
 
+        Player.isGravityOn = true;
         Object.Destroy(go);
         Player.isInvol = false;
         Player.canMove = true;

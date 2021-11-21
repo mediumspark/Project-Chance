@@ -41,8 +41,8 @@ public class TextBoxManager : MonoBehaviour
         {
             if (dialogueBox == true && finished == false)
             {
-                Debug.Log("textComponent.text: " + textComponent.text);
-                Debug.Log("lines[index]: " + lines[index]);
+                //Debug.Log("textComponent.text: " + textComponent.text);
+                //Debug.Log("lines[index]: " + lines[index]);
                 //Debug.Log("lines: " + lines[0]);
                 //Debug.Log("index is " + index);
                 //Debug.Log("text component is " + textComponent.text);

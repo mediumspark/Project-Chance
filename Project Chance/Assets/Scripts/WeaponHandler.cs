@@ -19,6 +19,24 @@ public class WeaponHandler
         CurrentWeapon.Fire(10);
     }
 
+    public WeaponSelected GetWeapon()
+    {
+        switch (CurrentWeapon)
+        {
+            case Default D:
+                return WeaponSelected.Default;
+
+            case ThePhilanthropist P:
+                return WeaponSelected.Phil;
+
+            case TheMayor M:
+                return WeaponSelected.Mayor;
+
+            default:
+                throw new System.Exception("Weapon Not Implemented");
+        }
+    }
+
     public void Add(Weapon weapon)
     {
         Weapons.Add(weapon);

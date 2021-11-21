@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 [RequireComponent(typeof(Animator))]
 public class AnimatorMethods : MonoBehaviour
 {
+    [SerializeField]
+    RuntimeAnimatorController[] WeaponAnimations; 
+
     Animator Ani;
 
     public WeaponSelected CurrentWeapon; 
@@ -14,11 +18,35 @@ public class AnimatorMethods : MonoBehaviour
         Ani = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        switch (CurrentWeapon)
+        {
+            case WeaponSelected.Default:
+                Ani.runtimeAnimatorController = WeaponAnimations[0];
+                break;
+
+            case WeaponSelected.Mayor:
+                Ani.runtimeAnimatorController = WeaponAnimations[1];
+                break;
+
+            case WeaponSelected.Phil:
+                Ani.runtimeAnimatorController = WeaponAnimations[2];
+                break; 
+        }
+    }
+
     public void SetDamageTrigger()
     {
         if(!Ani.GetCurrentAnimatorStateInfo(0).IsName("TakeDamage"))
             Ani.SetTrigger("Damaged");
     }
+
+    public void SetWallCollision(bool onWall)
+    {
+        Ani.SetBool("WallSlide", onWall); 
+    }
+
 
     public void SetRun(bool moving)
     {
