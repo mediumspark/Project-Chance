@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations; 
+using UnityEngine.Animations;
 
 [RequireComponent(typeof(Animator))]
 public class AnimatorMethods : MonoBehaviour
 {
     [SerializeField]
-    AnimatorController[] WeaponAnimations; 
+    RuntimeAnimatorController[] WeaponAnimations; 
 
     Animator Ani;
 

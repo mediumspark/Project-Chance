@@ -6,7 +6,8 @@ using Cinemachine;
 
 public class GameManager 
 {
-    private static int nextspawnposition; 
+    private static int nextspawnposition;
+    public static bool DemoFinished; 
 
     public static void LevelReload()
     {
@@ -25,6 +26,7 @@ public class GameManager
 
     public static bool DemoCheck()
     {
+
         return false;   
     }
 

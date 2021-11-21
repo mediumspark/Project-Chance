@@ -252,6 +252,12 @@ public class Player : Character
             }
         }
 
+        if(WH.Weapons.Count == 3)
+        {
+            GameManager.DemoFinished = true; 
+        }// if all three weapons are gathered the game is functionally over,
+         // it pauses the game, opens a UI to tell the player, but the player is free to roam the few levels
+
 
         if (moving)
         {
@@ -284,12 +290,6 @@ public class Player : Character
     private void OnDisable()
     {
         Controls.Disable();
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(GroundedPlacer.transform.position, new Vector3(.5f, GroundDistance));
-        Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
     private void LowHealth()
