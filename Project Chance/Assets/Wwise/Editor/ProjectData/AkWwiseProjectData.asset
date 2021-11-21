@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-    m_lastTime: -8585642514093782698
+    m_lastTime: -8585641317298544794
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585641553358702464
+    m_lastTime: -8585641286927433401
     List:
+    - name: Enemies
+      guid: f20134e4e0b3be4aaeb66f2b09b747b8
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a3855193cba5574696488dc983bf265f
+      - ElementName: Enemies
+        ObjectType: 7
+        guid: f20134e4e0b3be4aaeb66f2b09b747b8
+      Path: SoundBanks\Default Work Unit\Enemies
     - name: Music_And_Ambience
       guid: ea41679e7bfc044c8d8fb9b27488bfe4
       id: 115247927
@@ -82,6 +96,34 @@ MonoBehaviour:
         ObjectType: 7
         guid: ea41679e7bfc044c8d8fb9b27488bfe4
       Path: SoundBanks\Default Work Unit\Music_And_Ambience
+    - name: Philanthropist
+      guid: b2a3ce437fd86f468c044908a10f9d53
+      id: 204495494
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a3855193cba5574696488dc983bf265f
+      - ElementName: Philanthropist
+        ObjectType: 7
+        guid: b2a3ce437fd86f468c044908a10f9d53
+      Path: SoundBanks\Default Work Unit\Philanthropist
+    - name: The_Mayor
+      guid: 579d3a05d4968c41aaa81f5ddfb8d240
+      id: 80144099
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a3855193cba5574696488dc983bf265f
+      - ElementName: The_Mayor
+        ObjectType: 7
+        guid: 579d3a05d4968c41aaa81f5ddfb8d240
+      Path: SoundBanks\Default Work Unit\The_Mayor
     - name: Uncovered_SoundBank
       guid: 2e529dd12a3db8419e26a5d4627c07e4
       id: 965033712
@@ -108,7 +150,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585641553419196847
+    m_lastTime: -8585641317333392619
     List:
     - name: Ambiences
       guid: c51d44b69dfa9b49930ebbbb9e9a7883
@@ -1403,9 +1445,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585642514091202104
     List: []
-  ExpandedFileSystemItemIds: 4500000046000000
+  ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
-  AutoSyncSelection: 1
+  AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
