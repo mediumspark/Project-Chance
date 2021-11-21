@@ -51,6 +51,7 @@ public class Player : Character
         Speed = base_speed;
 
         WH.Add(new Default(this, 4f, 10));
+
         WH.SetCurrentWeapon(0);
 
         healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
@@ -73,6 +74,7 @@ public class Player : Character
         Controls.Basic.Attack.performed += Attack_performed;
 
         Controls.Basic.WeaponCycle.performed += ctx => WH.WeaponSwap(ctx.ReadValue<float>());
+        Controls.Basic.WeaponCycle.performed += ctx => AniMethods.CurrentWeapon = WH.GetWeapon(); 
 
         #endregion
     }
@@ -109,12 +111,18 @@ public class Player : Character
         }
     }
 
+    public void ExternalChargeTrigger()
+    {
+        AniMethods.SetChargeTrigger(); 
+    }
+
     private void Attack_performed(InputAction.CallbackContext obj)
     {
         if (CurrentStamina > 9)
         {
             WH.Fire();
-            AniMethods.SetChargeTrigger();
+            if(AniMethods.CurrentWeapon != WeaponSelected.Phil || !grounded)
+                AniMethods.SetChargeTrigger();
             staminaBar.value = CurrentStamina;
         }
     }
@@ -138,6 +146,7 @@ public class Player : Character
         Interacts.PlayerHit(colliders, gameObject, 5);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
         TouchingWall = Interacts.WallCling(BackgroundColliders);
+        AniMethods.SetWallCollision(TouchingWall);
 
         if (TouchingWall)
         {
@@ -146,6 +155,9 @@ public class Player : Character
             {
                 StartCoroutine(WallJump());
             }
+        } else if(!TouchingWall && !grounded && GravityOn)
+        {
+            gravity = Normal_Gravity; 
         }
 
         if (WallJumping)

@@ -23,11 +23,21 @@ public class GameManager
 
     }
 
+    public static bool DemoCheck()
+    {
+        return false;   
+    }
+
     private static void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         if (nextspawnposition != -1)
         {
             SpawnPlayer(nextspawnposition);
+        }
+
+        if(arg0.buildIndex == 0)
+        {
+            GameObject.Destroy(GameObject.FindObjectOfType<Player>().gameObject);
         }
 
         if (CanvasManager.instance.TextBox)
