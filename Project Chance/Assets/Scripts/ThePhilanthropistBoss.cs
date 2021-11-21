@@ -153,26 +153,4 @@ public class ThePhilanthropistBoss : Boss
         startAttack = true;
 
     }
-
-    //Sounds
-
-    private void PhilAttack()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Attack", this.gameObject);
-    }
-
-    private void PhilClone()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Clone", this.gameObject);
-    }
-
-    private void PhilDamaged()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Damaged", this.gameObject);
-    }
-
-    private void PhilFootsteps()
-    {
-        AkSoundEngine.PostEvent("Play_Philanthropist_Footsteps", this.gameObject);
-    }
 }

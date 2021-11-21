@@ -1050,7 +1050,6 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Philanthropist_Damaged" ID="{DD23D45D-F0F7-442D-8F64-6F5E4C50A6F9}" ShortID="786543237">
 							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1146,7 +1145,7 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
-						<Sound Name="Philanthropist_Clone" ID="{2C766237-7FF5-4DE1-8047-417596CC9A82}" ShortID="1052099695">
+						<Sound Name="Philanthropist_Attack" ID="{2C766237-7FF5-4DE1-8047-417596CC9A82}" ShortID="1052099695">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1185,15 +1184,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Philanthropist_Footsteps" ID="{B0E813DD-6DCA-47FB-836B-02873E7BA90D}" ShortID="226964303">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{C6C3A0E6-A5A5-47AC-BC17-A6260E2B1332}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
@@ -1214,70 +1204,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Philanthropist_Footsteps" ID="{AE3FAE7C-6B06-4BE9-9F43-537FC13CF8FA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="The Philanthropist_Theme" ID="{1DE9CB28-EF75-412C-B677-7E64027E9142}" ShortID="512883473">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="The Philanthropist" ID="{8B8F30B5-39E5-4BFE-B5AB-4672657177B5}">
-									<Language>SFX</Language>
-									<AudioFile>The Philanthropist.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="943991102"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="The Philanthropist" ID="{8B8F30B5-39E5-4BFE-B5AB-4672657177B5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Philanthropist_AttackProjectile" ID="{32182E80-1770-4BA2-9AFB-1DCBE8A8AAF8}" ShortID="209985943">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{DB961E83-C4BE-4913-B254-D0085EE564BF}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="300"/>
-													<Property Name="Min" Type="Real64" Value="-300"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Philanthropist_AttackProjectile" ID="{0D973193-D81E-4960-84F8-C95655EBDCF6}">
-									<Language>SFX</Language>
-									<AudioFile>Philanthropist_AttackProjectile.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="467343857"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Philanthropist_AttackProjectile" ID="{0D973193-D81E-4960-84F8-C95655EBDCF6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -2928,6 +2854,32 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
+								<Sound Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" ShortID="359866875">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambiance_Hub" ID="{775C3B43-E5B4-4E21-98E4-714066B9629F}">
+											<Language>SFX</Language>
+											<AudioFile>Ambiences\Ambiance_Hub.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="428237620"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambiance_Hub" ID="{775C3B43-E5B4-4E21-98E4-714066B9629F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 								<Sound Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}" ShortID="88479086">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -2954,7 +2906,7 @@
 										<ActiveSource Name="Ambience_HotelCaput" ID="{37934B54-35B1-41E0-BBDD-6877B7402971}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" ShortID="359866875">
+								<Sound Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" ShortID="651274003">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -2967,17 +2919,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Ambiance_Hub" ID="{775C3B43-E5B4-4E21-98E4-714066B9629F}">
+										<AudioFileSource Name="Ambience_Rooftops" ID="{646F3E68-73F7-470D-9B46-719162E9B86C}">
 											<Language>SFX</Language>
-											<AudioFile>Ambiences\Ambiance_Hub.wav</AudioFile>
+											<AudioFile>Ambiences\Ambience_Rooftops.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="428237620"/>
+												<MediaID ID="574758837"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Ambiance_Hub" ID="{775C3B43-E5B4-4E21-98E4-714066B9629F}" Platform="Linked"/>
+										<ActiveSource Name="Ambience_Rooftops" ID="{646F3E68-73F7-470D-9B46-719162E9B86C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}" ShortID="898135562">
@@ -3060,32 +3012,6 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</BlendContainer>
-								<Sound Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" ShortID="651274003">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Ambience_Rooftops" ID="{646F3E68-73F7-470D-9B46-719162E9B86C}">
-											<Language>SFX</Language>
-											<AudioFile>Ambiences\Ambience_Rooftops.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="574758837"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Ambience_Rooftops" ID="{646F3E68-73F7-470D-9B46-719162E9B86C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" ShortID="665370019">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3137,6 +3063,12 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+										<ItemList>
+											<ItemRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Hotel_Caput" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
 										<ItemList>
 											<ItemRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}"/>
@@ -3163,358 +3095,6 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<ActorMixer Name="Ambience Mixer" ID="{E82E249A-290D-4186-8CDB-6E354DC2A719}" ShortID="836162844">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambience" ID="{88D0A69A-666A-4708-BA4F-9FC0B1AF23CE}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-						</ActorMixer>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="The Mayor" ID="{00BCEEC9-7F4A-4458-A614-8E4068B0B8CF}" ShortID="407307116">
-					<ChildrenList>
-						<Sound Name="The Mayor Theme" ID="{2E5BB7BF-1B6C-41F8-A77B-B9FC5177880E}" ShortID="717062244">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{F6D4A753-39BC-4166-881A-333BB4458625}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="The Mayor Theme" ID="{B139F90C-E31B-4181-A25C-487B81D3D57C}">
-									<Language>SFX</Language>
-									<AudioFile>The Mayor Theme.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="320059318"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="The Mayor Theme" ID="{B139F90C-E31B-4181-A25C-487B81D3D57C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Mayor_Damaged" ID="{4A3E0D30-0EB7-4B17-9D05-F950C5869470}" ShortID="316399273">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-250</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{1DDAF35D-B8A8-4314-AFA2-62C23AFDA9B6}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Philanthropist_Damaged_01" ID="{DDB77043-0A43-4F4A-BEC7-A7F49713EA16}" ShortID="113038283">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Philanthropist_Damaged_01" ID="{F9756005-F7F2-4846-AAE0-695E4F115E21}">
-											<Language>SFX</Language>
-											<AudioFile>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="624953290"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Philanthropist_Damaged_01" ID="{F9756005-F7F2-4846-AAE0-695E4F115E21}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Philanthropist_Damaged_02" ID="{5E55BA26-3AE8-416B-A6A0-6EDD6D4B8616}" ShortID="653605594">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Philanthropist_Damaged_02" ID="{961B17BB-B8BF-44AE-931D-28C0D457BDB5}">
-											<Language>SFX</Language>
-											<AudioFile>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="955219341"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Philanthropist_Damaged_02" ID="{961B17BB-B8BF-44AE-931D-28C0D457BDB5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Philanthropist_Damaged_03" ID="{E64C0995-7B39-4B91-B871-6BCB2693603A}" ShortID="261720077">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{D15B93C0-301D-4C1A-B7F3-4CF5BC6C07AC}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Philanthropist_Damaged_03" ID="{CBAE58D3-7BD7-4F0C-8057-2D791087BF6A}">
-											<Language>SFX</Language>
-											<AudioFile>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="81352099"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Philanthropist_Damaged_03" ID="{CBAE58D3-7BD7-4F0C-8057-2D791087BF6A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</RandomSequenceContainer>
-						<Sound Name="Mayor_Footsteps" ID="{46FC8BA6-9FCC-4A29-AD55-C964FB096383}" ShortID="102556788">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{830F3E08-0DCA-4541-BAE0-B642B913D87B}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Philanthropist_Footsteps" ID="{59792A4A-466A-4413-A913-EE6E2E94C6F2}">
-									<Language>SFX</Language>
-									<AudioFile>The Philanthropist\Philanthropist_Footsteps.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="102596096"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Philanthropist_Footsteps" ID="{59792A4A-466A-4413-A913-EE6E2E94C6F2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Mayor Impacts" ID="{38A0BCF3-E09D-410F-AE80-1D9A9C14EB56}" ShortID="516315564">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{8EDE6C5D-4AFF-49D9-ABA8-73290D31D0F8}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="300"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Mayor_Impact_01" ID="{F6F39AD3-78A0-4F54-A49E-CBB7E89A44C5}" ShortID="451302000">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Mayor_Impact_01" ID="{1A26EB3E-97C1-4974-924C-857BA1280B30}">
-											<Language>SFX</Language>
-											<AudioFile>Mayor Impacts\Mayor_Impact_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="259424978"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Mayor_Impact_01" ID="{1A26EB3E-97C1-4974-924C-857BA1280B30}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Mayor_Impact_02" ID="{3950EA1E-39A5-461E-A3DD-4E87B1C5094E}" ShortID="897873946">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Mayor_Impact_02" ID="{1B4CCEE9-5AEA-4E82-82BF-D81F9BC7A141}">
-											<Language>SFX</Language>
-											<AudioFile>Mayor Impacts\Mayor_Impact_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="269216594"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Mayor_Impact_02" ID="{1B4CCEE9-5AEA-4E82-82BF-D81F9BC7A141}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Mayor_Impact_03" ID="{1FFEA28D-D144-4A41-A4DE-87BE6DD16E87}" ShortID="484370289">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Mayor_Impact_03" ID="{24FDE537-7115-4DB0-A060-26232892AF26}">
-											<Language>SFX</Language>
-											<AudioFile>Mayor Impacts\Mayor_Impact_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="646397021"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Mayor_Impact_03" ID="{24FDE537-7115-4DB0-A060-26232892AF26}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</RandomSequenceContainer>
-						<Sound Name="Mayor_RockProjectile" ID="{E5B71427-4658-4267-9016-6A854EEDEFFA}" ShortID="252964516">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B87CB316-C9A3-4F14-A4EE-F6BCB89DF9FC}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Mayor_RockProjectile" ID="{E13B808D-5548-4A8A-B603-510C9189D139}">
-									<Language>SFX</Language>
-									<AudioFile>Mayor_RockProjectile.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="153071325"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Mayor_RockProjectile" ID="{E13B808D-5548-4A8A-B603-510C9189D139}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Mayor_RockSummon" ID="{C2CD8C67-135A-4376-9100-095B0D9E6FAE}" ShortID="522806938">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B24BC6CD-51D7-4383-9CAD-D0F41A77A9A6}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Mayor_RockSummon" ID="{E83F9377-41F4-4C95-AE51-2CF09A5B1837}">
-									<Language>SFX</Language>
-									<AudioFile>Mayor_RockSummon.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="128107613"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Mayor_RockSummon" ID="{E83F9377-41F4-4C95-AE51-2CF09A5B1837}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

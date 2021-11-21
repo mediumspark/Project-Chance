@@ -3,6 +3,17 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{338254DE-0994-4190-B92F-DDFED71B002D}" PersistMode="Standalone">
 			<ChildrenList>
+				<Event Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}">
+					<ChildrenList>
+						<Action Name="" ID="{9FADAE48-1561-4614-AE2D-0F01880FD604}" ShortID="818516540">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{02ADC055-18FA-4A54-A338-BB16AE5B9C20}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Folder Name="Player" ID="{A59D6104-0FE5-4DE3-A3DC-34ECDD6F77BE}" ShortID="948473088">
 					<ChildrenList>
 						<Event Name="Play_Footsteps" ID="{C14EA6F6-7056-4E62-8F6F-2422E2EA5B9F}">
@@ -96,285 +107,77 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Player_Heal" ID="{8C5771F1-D3DA-41B9-AC75-1C43C38033DD}">
-							<ChildrenList>
-								<Action Name="" ID="{75275795-9BBB-4E4D-8575-542A627B200A}" ShortID="409391612">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Player_Heal" ID="{AD02A6C2-08A9-4BB2-A52B-F510C91EE429}">
-							<ChildrenList>
-								<Action Name="" ID="{B3E291EA-3B00-473C-B7E1-BB2BFD6D6D9E}" ShortID="725016931">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemy" ID="{CE7B328F-F2F6-4BED-BB0A-88D2A53EC541}" ShortID="1030958190">
 					<ChildrenList>
-						<Folder Name="The Mayor" ID="{ED3E8270-A553-4778-AE39-4F62EE333150}" ShortID="998543637">
+						<Event Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}">
 							<ChildrenList>
-								<Event Name="Play_Mayor_Footsteps" ID="{9F868D70-27D1-409C-ACB5-90A967D61A2C}">
-									<ChildrenList>
-										<Action Name="" ID="{61ACB7BE-CA0A-4CAD-BF45-D0023CD2156A}" ShortID="968901820">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mayor_Footsteps" ID="{46FC8BA6-9FCC-4A29-AD55-C964FB096383}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Mayor_RockProjectile" ID="{6F9092E7-954F-4829-A7EB-E0532C89A4E7}">
-									<ChildrenList>
-										<Action Name="" ID="{7F1B8E37-3709-4B01-BAB8-33D290E02A44}" ShortID="672967204">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mayor_RockProjectile" ID="{E5B71427-4658-4267-9016-6A854EEDEFFA}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Mayor_Damaged" ID="{1E9FBF05-4463-4CA6-ACA2-4DD05C94C44D}">
-									<ChildrenList>
-										<Action Name="" ID="{8E49FA6F-E1F3-4A21-93B0-B2DE17DB45F8}" ShortID="927092069">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mayor_Damaged" ID="{4A3E0D30-0EB7-4B17-9D05-F950C5869470}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Mayor_Impacts" ID="{38A3E980-B430-4425-94B7-D17F36A3E4C9}">
-									<ChildrenList>
-										<Action Name="" ID="{2C937C0E-E403-4C5A-97C5-C076007D58F8}" ShortID="488782770">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mayor Impacts" ID="{38A0BCF3-E09D-410F-AE80-1D9A9C14EB56}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Mayor_RockSummon" ID="{9D796725-5C05-4784-BC54-2760B9D6C1A8}">
-									<ChildrenList>
-										<Action Name="" ID="{C8E13B0F-2DC1-47CB-8FE0-2A3CB313F100}" ShortID="528217333">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mayor_RockSummon" ID="{C2CD8C67-135A-4376-9100-095B0D9E6FAE}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_music_Mayor_Theme" ID="{75124F50-A7E4-4FFA-8004-056FE7B8855D}">
-									<ChildrenList>
-										<Action Name="" ID="{A2D44776-DFF3-4CBE-8C97-5121F94AE34F}" ShortID="783844905">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="The Mayor Theme" ID="{2E5BB7BF-1B6C-41F8-A77B-B9FC5177880E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Action Name="" ID="{18A0397C-5E94-4C26-84AC-5CE8A480BAAE}" ShortID="668382044">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Air_Enemy_Flying" ID="{37889D46-E9CB-4F5D-9E90-445FB47D8F29}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
-						</Folder>
-						<Folder Name="The Philanthropist" ID="{A0DE45F9-955E-4296-AA1E-0A5919CD8107}" ShortID="37473106">
+						</Event>
+						<Event Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}">
 							<ChildrenList>
-								<Event Name="Play_Philanthropist_Clone" ID="{19BFC8CA-171F-4C59-B484-997DE5894453}">
-									<ChildrenList>
-										<Action Name="" ID="{4AF04ED3-D5C8-4ACF-9288-DA7257432CF7}" ShortID="802220287">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Philanthropist_Clone" ID="{2C766237-7FF5-4DE1-8047-417596CC9A82}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Stop_Music_Philanthropist_Theme" ID="{D59F6D17-B114-47A2-9220-44CE9F74AB93}">
-									<ChildrenList>
-										<Action Name="" ID="{E8EC5D41-8662-4188-923C-52014F762CD2}" ShortID="181401857">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="The Philanthropist_Theme" ID="{1DE9CB28-EF75-412C-B677-7E64027E9142}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Philanthropist_Attack" ID="{3DF80A1E-C548-4955-8735-2135E6544FE0}">
-									<ChildrenList>
-										<Action Name="" ID="{55BD8BA3-BE9B-4C23-AFC5-01CFE85D2F52}" ShortID="66451743">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Philanthropist_AttackProjectile" ID="{32182E80-1770-4BA2-9AFB-1DCBE8A8AAF8}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Philanthropist_Footsteps" ID="{352A1303-0860-4217-B074-AF6199F6F265}">
-									<ChildrenList>
-										<Action Name="" ID="{1813C52C-CD0D-4942-96B4-548D2CB2D605}" ShortID="382814576">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Philanthropist_Footsteps" ID="{B0E813DD-6DCA-47FB-836B-02873E7BA90D}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_Philanthropist_Theme" ID="{C1242941-02B1-4060-959E-427E57031091}">
-									<ChildrenList>
-										<Action Name="" ID="{98E651D0-7FB8-40BF-8E62-99C848D302FD}" ShortID="287529452">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="The Philanthropist_Theme" ID="{1DE9CB28-EF75-412C-B677-7E64027E9142}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Philanthropist_Damaged" ID="{DD209EB5-66EE-4B8A-B2A4-EA3A0238907B}">
-									<ChildrenList>
-										<Action Name="" ID="{CE7930D2-58A9-447E-8D8C-61890622242A}" ShortID="1032482531">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Philanthropist_Damaged" ID="{DD23D45D-F0F7-442D-8F64-6F5E4C50A6F9}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Action Name="" ID="{1C203C26-3463-4459-B33A-508947944D48}" ShortID="887409836">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Air_Enemy_Ranged_Attack" ID="{562B363C-6CEE-46E1-8049-421EF54AD89F}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
-						</Folder>
-						<Folder Name="Basic" ID="{F79E3FE5-7D9C-4BE0-94B4-EE4EC4A1AD67}" ShortID="940883360">
+						</Event>
+						<Event Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}">
 							<ChildrenList>
-								<Folder Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" ShortID="105698775">
-									<ChildrenList>
-										<Event Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}">
-											<ChildrenList>
-												<Action Name="" ID="{18A0397C-5E94-4C26-84AC-5CE8A480BAAE}" ShortID="668382044">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Air_Enemy_Flying" ID="{37889D46-E9CB-4F5D-9E90-445FB47D8F29}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_Ambience_Ground_Enemy_Bigger" ID="{A98F7E8B-1679-4A1C-AA48-1D5DB9D0E34B}">
-											<ChildrenList>
-												<Action Name="" ID="{B9ECBD9D-7D79-4618-A92B-2D367C6F93AE}" ShortID="895965239">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Ground_Enemy_Bigger_Ambience" ID="{0FB56B3A-E600-4B02-ACF0-C1F49BB39F07}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_Ambience_Ground_Enemy" ID="{D5D08DD5-C6FF-4816-8C29-E2EB02AB1F7C}">
-											<ChildrenList>
-												<Action Name="" ID="{1BEEFFFD-5915-4B56-9E89-14C251A8E318}" ShortID="728942221">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Ground_Enemy_Ambience" ID="{121F7E4E-4423-49AF-BFAD-A85B8C1F2117}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-									</ChildrenList>
-								</Folder>
-								<Event Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}">
-									<ChildrenList>
-										<Action Name="" ID="{1C203C26-3463-4459-B33A-508947944D48}" ShortID="887409836">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Air_Enemy_Ranged_Attack" ID="{562B363C-6CEE-46E1-8049-421EF54AD89F}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}">
-									<ChildrenList>
-										<Action Name="" ID="{A79CA4B1-382F-4795-8801-5C0FFD519E37}" ShortID="994980695">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ground_Enemy_Footsteps" ID="{63315AA3-0E96-4C45-940F-EF49497ED324}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}">
-									<ChildrenList>
-										<Action Name="" ID="{94125403-106B-458F-A3FA-E47B617807DD}" ShortID="67108337">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{DDDA25AA-01E3-4808-98A0-210605A9FB37}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}">
-									<ChildrenList>
-										<Action Name="" ID="{C73C8C5F-8E9E-4C75-8858-7B4816D3E7D8}" ShortID="573588727">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ground_Enemy_Melee_Bigger_Footsteps" ID="{2E99866B-B981-435D-916D-B90D92EA5C51}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}">
-									<ChildrenList>
-										<Action Name="" ID="{C9274720-1D73-440F-9F5E-76738BE2B2C8}" ShortID="689057847">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ground_Enemy_Ranged_Attack" ID="{3944A05F-191D-4CC5-9DC6-303F59974B6E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}">
-									<ChildrenList>
-										<Action Name="" ID="{9FADAE48-1561-4614-AE2D-0F01880FD604}" ShortID="818516540">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{02ADC055-18FA-4A54-A338-BB16AE5B9C20}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Action Name="" ID="{A79CA4B1-382F-4795-8801-5C0FFD519E37}" ShortID="994980695">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Footsteps" ID="{63315AA3-0E96-4C45-940F-EF49497ED324}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
-						</Folder>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}">
+							<ChildrenList>
+								<Action Name="" ID="{94125403-106B-458F-A3FA-E47B617807DD}" ShortID="67108337">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Melee_Attack" ID="{DDDA25AA-01E3-4808-98A0-210605A9FB37}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}">
+							<ChildrenList>
+								<Action Name="" ID="{C73C8C5F-8E9E-4C75-8858-7B4816D3E7D8}" ShortID="573588727">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Melee_Bigger_Footsteps" ID="{2E99866B-B981-435D-916D-B90D92EA5C51}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}">
+							<ChildrenList>
+								<Action Name="" ID="{C9274720-1D73-440F-9F5E-76738BE2B2C8}" ShortID="689057847">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_Enemy_Ranged_Attack" ID="{3944A05F-191D-4CC5-9DC6-303F59974B6E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" ShortID="105698775"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{CE7B4DA2-BCFB-4E63-BE4D-BC03654F9490}" ShortID="708865298">
@@ -403,139 +206,152 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="City" ID="{BB525FF8-DAEE-4FEF-8D86-EE2AA8529C5B}" ShortID="557418854">
+				<Event Name="Play_Player_Heal" ID="{8C5771F1-D3DA-41B9-AC75-1C43C38033DD}">
 					<ChildrenList>
-						<Folder Name="Ambiences" ID="{08FEEAFB-6BB9-442D-803A-E2AF1DD16179}" ShortID="443216241">
-							<ChildrenList>
-								<Event Name="Play_Ambience_Office" ID="{AB250109-8B5F-47B3-8BB4-0AC13DE85AA5}">
-									<ChildrenList>
-										<Action Name="" ID="{6E7E6B67-9F5E-4F8D-9A64-AD2EC17614C0}" ShortID="973264938">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ambience_Streets" ID="{AA5FD4CA-B98C-498A-A6DA-01772FF430B3}">
-									<ChildrenList>
-										<Action Name="" ID="{BD0BD34A-6CAC-433D-991C-DD809CEAB5A0}" ShortID="12006545">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ambiance_Hub" ID="{BA2C6F2B-FB44-40D1-B07D-3B21267E21A8}">
-									<ChildrenList>
-										<Action Name="" ID="{8D6DB082-3547-4AA3-8DDE-A4252AF3F2E3}" ShortID="588014133">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}">
-									<ChildrenList>
-										<Action Name="" ID="{06384DFE-977A-4950-95E6-D466CFE95568}" ShortID="654308580">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}">
-									<ChildrenList>
-										<Action Name="" ID="{AA34B7E3-5B81-4BDD-9A75-7F95197CA630}" ShortID="495780765">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Sound Track" ID="{014D0DE0-D4D3-4335-822C-1A00752630F0}" ShortID="120108823">
-							<ChildrenList>
-								<Event Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}">
-									<ChildrenList>
-										<Action Name="" ID="{AE1A7874-F507-4645-96EB-8FA19002D700}" ShortID="898138174">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_Rooftops_Theme" ID="{C70AA5BC-AB3A-42FB-A002-48EF67F84533}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_TheGrandArena_Theme" ID="{EF52690B-3020-46AF-972E-B12289DBF723}">
-									<ChildrenList>
-										<Action Name="" ID="{EBC34F8C-816C-4F0A-B5D7-D0B13DB58916}" ShortID="767661611">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_TheGrandArena_Theme" ID="{C22B80BB-EF32-499E-8810-BC93F2E78D36}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}">
-									<ChildrenList>
-										<Action Name="" ID="{9FC9DA4D-880F-4579-B6FC-7C27653071B3}" ShortID="208373625">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_HotelCaput_Theme" ID="{94AD8A5A-1361-40E0-B452-9481847D8D5B}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_TheWildSide_Theme" ID="{3115DA7B-4DB5-4193-9775-E54AF37BFA4D}">
-									<ChildrenList>
-										<Action Name="" ID="{D5D522DB-88C3-4C74-8258-9EFA199FA28F}" ShortID="705202660">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_TheWildSide_Theme" ID="{3A711370-2082-42BE-94DA-19F96DBFDEE1}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_Streets_Theme" ID="{AC9BD409-AED7-4846-A141-3CA4381C75D4}">
-									<ChildrenList>
-										<Action Name="" ID="{1D1033B0-BF2A-4DC3-AB5E-289491A07949}" ShortID="847084946">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Music_OfficeSpace_Theme" ID="{80403403-019D-46BE-B23C-4ED4C24E8F6A}">
-									<ChildrenList>
-										<Action Name="" ID="{0DB3BCF9-B03E-4ED0-BE5B-EC12132920E4}" ShortID="695630657">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
+						<Action Name="" ID="{75275795-9BBB-4E4D-8575-542A627B200A}" ShortID="409391612">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
-				</Folder>
+				</Event>
+				<Event Name="Stop_Player_Heal" ID="{AD02A6C2-08A9-4BB2-A52B-F510C91EE429}">
+					<ChildrenList>
+						<Action Name="" ID="{B3E291EA-3B00-473C-B7E1-BB2BFD6D6D9E}" ShortID="725016931">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Office" ID="{AB250109-8B5F-47B3-8BB4-0AC13DE85AA5}">
+					<ChildrenList>
+						<Action Name="" ID="{6E7E6B67-9F5E-4F8D-9A64-AD2EC17614C0}" ShortID="973264938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambiance_Hub" ID="{BA2C6F2B-FB44-40D1-B07D-3B21267E21A8}">
+					<ChildrenList>
+						<Action Name="" ID="{8D6DB082-3547-4AA3-8DDE-A4252AF3F2E3}" ShortID="588014133">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}">
+					<ChildrenList>
+						<Action Name="" ID="{AA34B7E3-5B81-4BDD-9A75-7F95197CA630}" ShortID="495780765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}">
+					<ChildrenList>
+						<Action Name="" ID="{06384DFE-977A-4950-95E6-D466CFE95568}" ShortID="654308580">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Streets" ID="{AA5FD4CA-B98C-498A-A6DA-01772FF430B3}">
+					<ChildrenList>
+						<Action Name="" ID="{BD0BD34A-6CAC-433D-991C-DD809CEAB5A0}" ShortID="12006545">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}">
+					<ChildrenList>
+						<Action Name="" ID="{9FC9DA4D-880F-4579-B6FC-7C27653071B3}" ShortID="208373625">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_HotelCaput_Theme" ID="{94AD8A5A-1361-40E0-B452-9481847D8D5B}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_OfficeSpace_Theme" ID="{80403403-019D-46BE-B23C-4ED4C24E8F6A}">
+					<ChildrenList>
+						<Action Name="" ID="{0DB3BCF9-B03E-4ED0-BE5B-EC12132920E4}" ShortID="695630657">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}">
+					<ChildrenList>
+						<Action Name="" ID="{AE1A7874-F507-4645-96EB-8FA19002D700}" ShortID="898138174">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Rooftops_Theme" ID="{C70AA5BC-AB3A-42FB-A002-48EF67F84533}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Streets_Theme" ID="{AC9BD409-AED7-4846-A141-3CA4381C75D4}">
+					<ChildrenList>
+						<Action Name="" ID="{1D1033B0-BF2A-4DC3-AB5E-289491A07949}" ShortID="847084946">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_TheGrandArena_Theme" ID="{EF52690B-3020-46AF-972E-B12289DBF723}">
+					<ChildrenList>
+						<Action Name="" ID="{EBC34F8C-816C-4F0A-B5D7-D0B13DB58916}" ShortID="767661611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_TheGrandArena_Theme" ID="{C22B80BB-EF32-499E-8810-BC93F2E78D36}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_TheWildSide_Theme" ID="{3115DA7B-4DB5-4193-9775-E54AF37BFA4D}">
+					<ChildrenList>
+						<Action Name="" ID="{D5D522DB-88C3-4C74-8258-9EFA199FA28F}" ShortID="705202660">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_TheWildSide_Theme" ID="{3A711370-2082-42BE-94DA-19F96DBFDEE1}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

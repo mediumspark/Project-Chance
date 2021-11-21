@@ -8,8 +8,15 @@
 						<ObjectRef Name="Play_Player_GroundSlide" ID="{FBC9CE91-1190-4088-8C7D-64AACBC9C84D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Heal" ID="{8C5771F1-D3DA-41B9-AC75-1C43C38033DD}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Damaged" ID="{7D34C43E-EE0B-443C-8BE2-AF480A5B260D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Attack" ID="{D39CA125-219B-48D0-AFDD-C108767C6954}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Enemy_Flying" ID="{540CBB98-014A-49A8-A0B8-97C3D4849E0E}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Falling" ID="{37770B6C-2471-4A51-AFC8-141013168DF8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_Heal" ID="{AD02A6C2-08A9-4BB2-A52B-F510C91EE429}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Jump" ID="{426F1D14-AF3D-4BE1-B185-C1FE8212B378}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_LowHealth" ID="{BBE19BA2-E42E-4C95-BF54-D5A89E1E6D9C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
@@ -33,43 +40,6 @@
 						<ObjectRef Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Philanthropist" ID="{43CEA3B2-D87F-466F-8C04-4908A10F9D53}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_Music_Philanthropist_Theme" ID="{C1242941-02B1-4060-959E-427E57031091}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Philanthropist_Footsteps" ID="{352A1303-0860-4217-B074-AF6199F6F265}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Music_Philanthropist_Theme" ID="{D59F6D17-B114-47A2-9220-44CE9F74AB93}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Philanthropist_Attack" ID="{3DF80A1E-C548-4955-8735-2135E6544FE0}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Philanthropist_Damaged" ID="{DD209EB5-66EE-4B8A-B2A4-EA3A0238907B}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Philanthropist_Clone" ID="{19BFC8CA-171F-4C59-B484-997DE5894453}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="The_Mayor" ID="{053A9D57-96D4-418C-AAA8-1F5DDFB8D240}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_Mayor_Footsteps" ID="{9F868D70-27D1-409C-ACB5-90A967D61A2C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Mayor_Impacts" ID="{38A3E980-B430-4425-94B7-D17F36A3E4C9}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Mayor_RockSummon" ID="{9D796725-5C05-4784-BC54-2760B9D6C1A8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Mayor_RockProjectile" ID="{6F9092E7-954F-4829-A7EB-E0532C89A4E7}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Mayor_Damaged" ID="{1E9FBF05-4463-4CA6-ACA2-4DD05C94C44D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_music_Mayor_Theme" ID="{75124F50-A7E4-4FFA-8004-056FE7B8855D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Enemies" ID="{E43401F2-B3E0-4ABE-AEB6-6F2B09B747B8}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_Ground_Enemy_Footsteps" ID="{0BC33F09-E5C5-44E9-9911-E221CCC533E9}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ground_Enemy_Ranged_Attack" ID="{B843873E-5B90-474D-961A-6D6E0DB840C3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ID="{6483C9EE-76B3-496F-A333-C9DDA497A33C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Ambiences" ID="{B6441DC5-FA9D-499B-930E-BBBB9E9A7883}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack_01" ID="{967F9B00-16D2-49F1-875B-488272AE78E6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Air_Enemy_Ranged_Attack" ID="{5D9504DB-A158-4A95-956F-6634644E2153}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ground_Enemy_Melee_Attack" ID="{0BB300CE-69F3-4BB0-ABB4-58D36A8BFB6C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
