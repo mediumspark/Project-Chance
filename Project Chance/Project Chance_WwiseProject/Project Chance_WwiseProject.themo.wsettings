@@ -86,7 +86,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="8gE05OCzvkqutm8rCbdHuOpBZ557/ARMjY+5snSIv+Syo85Df9hvRowESQihD51TV506BdSWjEGqqB9d37jSQC5SndEqPbhBnial1GJ8B+Q="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="vTbkcz22NUCMyBwh5jU4BwECqDH/////PWOlNy7kd0u91D0dsuqiKAECqDH/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="PWOlNy7kd0u91D0dsuqiKAECqDH/////vTbkcz22NUCMyBwh5jU4BwECqDH/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -124,7 +124,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="f7Q1Sz0TQEK2IlWZ6QaCKs7llfH9VHRMktnLgu9j6+wdXZYZr0qJT4j9kPYUsDJj"/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="o4VRk8ulV0aWSI3Jg78mXw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value="D+hw+GtPb0GR00iIa6tqsw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
 				<Property Name="RTPC\GameParameterSimValue\{091082F3-20B6-42CD-B15F-3D74E3518022}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{48FA747C-831E-4791-9946-94353DA22DC5}" Type="Real64" Value="50"/>

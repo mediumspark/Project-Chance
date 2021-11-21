@@ -194,6 +194,10 @@ public class Player : Character
             base.OnTakeDamage(damage);
             StartCoroutine(InvolTimer());
             healthBar.value = CurrentHealth;
+            if (currentHealth <= 50)
+            {
+                LowHealth();
+            }
         }
     }
 
@@ -223,6 +227,11 @@ public class Player : Character
         {
             AniMethods.SetRun(moving);
             AniMethods.SetHealing(Healing);
+
+            if (currentHealth >= 50)
+            {
+                AkSoundEngine.PostEvent("Stop_Player_LowHealth", this.gameObject);
+            }
 
             if (Healing)
             {
@@ -280,9 +289,9 @@ public class Player : Character
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
-    private void LowHealth()
+    public void LowHealth()
     {
-        AkSoundEngine.SetRTPCValue("Health", CurrentHealth);
+        AkSoundEngine.SetRTPCValue("Health", currentHealth, this.gameObject);
         AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
     }
 }
