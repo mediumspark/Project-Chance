@@ -96,6 +96,11 @@ public class Player : Character
             StartCoroutine(Jump(0.5f));
     }
 
+    public void ExternalChargeTrigger()
+    {
+        AniMethods.SetChargeTrigger();
+    }
+
     public void Stop()
     {
         movementForce.x = 0;
