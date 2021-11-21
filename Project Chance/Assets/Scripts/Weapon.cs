@@ -13,8 +13,13 @@ public class Weapon
         {
             if(collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Boss"))
             {
-                if(collision.gameObject.GetComponentInParent<Character>())
-                    collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage); 
+                if (collision.gameObject.GetComponentInParent<Character>())
+                {
+                    collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage);
+                    if (collision.transform.CompareTag("Boss"))
+                       StartCoroutine( collision.gameObject.GetComponentInParent<Boss>().deactivateHurtbox(3f, collision)); 
+                }
+                
 
                 if(collision.gameObject.name == "New Game Object")
                 {
@@ -117,28 +122,28 @@ public class ThePhilanthropist : Weapon
 
     public IEnumerator Rise()
     {
+        Player.isGravityOn = false;
+        Player.canMove = false; 
         Player.MovementForce = new Vector2(0, Player.JumpForce);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         Player.StartCoroutine(Slam()); 
     }
 
     public IEnumerator Slam()
     {
+        Player.isGravityOn = true; 
         GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
         Player.isInvol = true;
         go.AddComponent<AttackEffect>();
 
-        float gravityplaceholder = 1.5f;
-        Player.Gravity = -5f;
-        Player.canMove = false;
+        Player.Gravity *= 4;
 
         yield return new WaitUntil(() => Player.isGrounded);
 
         Object.Destroy(go);
         Player.isInvol = false;
-        Player.Gravity = gravityplaceholder;
         Player.canMove = true;
     }
 

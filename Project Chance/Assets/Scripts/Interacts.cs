@@ -24,7 +24,8 @@ public class Interacts
 
                     case "Boss":
                         P.OnTakeDamage(Mathf.RoundToInt(damage * 1.5f));
-                        GameObject.Destroy(col.gameObject);
+                        if(col.name == "New Game Object")
+                            GameObject.Destroy(col.gameObject);
                         break;
 
                     case "Fake":

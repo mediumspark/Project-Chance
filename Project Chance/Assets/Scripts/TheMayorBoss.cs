@@ -40,7 +40,7 @@ public class TheMayorBoss : Boss
         {
             YDestination = ScaleY; RaisingSpeed = Speed; 
         }
-        public void SetPilarSpeed(float speed) { MovingSpeed = speed; }
+        public void SetPilarSpeed(float speed) { Projectile = true;  MovingSpeed = speed; }
 
         private void FixedUpdate()
         {
@@ -73,7 +73,7 @@ public class TheMayorBoss : Boss
 
         IntroText = GetComponentInChildren<TextBoxManager>();
 
-        MaxHealth = 50;
+        MaxHealth = 100;
         CurrentHealth = MaxHealth;
         AttackPillar = (GameObject)Resources.Load("Prefabs/Enemies/Boss Attack Pillar");
         ProjectileAttack = (GameObject)Resources.Load("Prefabs/Enemies/Enemy Bullet");
@@ -120,7 +120,7 @@ public class TheMayorBoss : Boss
         GameObject go = Instantiate(AttackPillar, SpawnSpotOnPlayer.transform.position, Quaternion.identity);
         MayorPilars attack = go.AddComponent<MayorPilars>();
         float PlayerY = Player.Position.y > 0 ? Player.Position.y  + 5f : (Player.Position.y + 5.0f) * -1; 
-        attack.SetPilarHeight(PlayerY, 0.1f);
+        attack.SetPilarHeight(PlayerY, 0.7f);
         RecentlyRaisedPilar = true; 
     }
 
@@ -129,13 +129,15 @@ public class TheMayorBoss : Boss
         GameObject go = Instantiate(AttackPillar, SpawnSpotAsProjectile.transform);
         MayorPilars attack = go.AddComponent<MayorPilars>();
         attack.SetPilarHeight(3.0f, 0.1f);
+        attack.SetPilarSpeed(0.10f);
+        RecentlyRaisedPilar = true; 
     }
 
     protected override IEnumerator Phase1Attack()
     {
         if (isPilarAlive && !RecentlyRaisedPilar)
         {
-            PilarAttack();
+            PilarAttack(); 
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
             ShootAtPlayer(); 
             Destroy(FindObjectOfType<MayorPilars>().gameObject);
@@ -173,7 +175,8 @@ public class TheMayorBoss : Boss
     protected override IEnumerator Phase3Attack()
     {
         PilarWave();
-        Destroy(DestructablePilar);
+        if(DestructablePilar != null)
+            Destroy(DestructablePilar);
         yield return new WaitForSeconds(BaseCooldownTime);//Attack over
         startAttack = true;
     }
