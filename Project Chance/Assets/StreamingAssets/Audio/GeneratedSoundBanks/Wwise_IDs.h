@@ -53,7 +53,20 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_HEAL = 638998366U;
         static const AkUniqueID PLAY_PLAYER_JUMP = 562256996U;
         static const AkUniqueID PLAY_PLAYER_LOWHEALTH = 3851267176U;
+        static const AkUniqueID STOP_AMBIANCE_HUB = 2990671080U;
+        static const AkUniqueID STOP_AMBIENCE_HOTELCAPUT = 3195155574U;
+        static const AkUniqueID STOP_AMBIENCE_OFFICE = 565355115U;
+        static const AkUniqueID STOP_AMBIENCE_ROOFTOPS = 4231910077U;
+        static const AkUniqueID STOP_AMBIENCE_STREETS = 1083281165U;
+        static const AkUniqueID STOP_MAINCHARACTER_THEME__CHORUS_LOOP_ = 452826210U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
+        static const AkUniqueID STOP_MUSIC_HOTELCAPUT_THEME = 982605791U;
+        static const AkUniqueID STOP_MUSIC_OFFICESPACE_THEME = 2109301304U;
         static const AkUniqueID STOP_MUSIC_PHILANTHROPIST_THEME = 11724553U;
+        static const AkUniqueID STOP_MUSIC_ROOFTOPS_THEME = 2102565096U;
+        static const AkUniqueID STOP_MUSIC_STREETS_THEME = 1669599958U;
+        static const AkUniqueID STOP_MUSIC_THEGRANDARENA_THEME = 998665532U;
+        static const AkUniqueID STOP_MUSIC_THEWILDSIDE_THEME = 3158376462U;
         static const AkUniqueID STOP_PLAYER_HEAL = 3607210104U;
         static const AkUniqueID STOP_PLAYER_LOWHEALTH = 898213950U;
     } // namespace EVENTS
@@ -155,7 +168,11 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

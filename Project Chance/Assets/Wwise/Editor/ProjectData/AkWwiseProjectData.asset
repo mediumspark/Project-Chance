@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-    m_lastTime: -8585641349362589136
+    m_lastTime: -8585641265154001234
     List:
     - name: Ambience
       guid: 9aa6d0886a660847ba4f9fc0b1af23ce
@@ -54,6 +54,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9aa6d0886a660847ba4f9fc0b1af23ce
       Path: Master-Mixer Hierarchy\Default Work Unit\Ambience
+    - name: Boss
+      guid: 8f32b12aee2e8847b0b7dff07f5aa14c
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 451a98d126020542942cc8f53a6fbc29
+      - ElementName: Boss
+        ObjectType: 2
+        guid: 8f32b12aee2e8847b0b7dff07f5aa14c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Boss
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -68,6 +82,48 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 7fc18020601f464883b83e8d57a5770d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 451a98d126020542942cc8f53a6fbc29
+      - ElementName: Music
+        ObjectType: 2
+        guid: 7fc18020601f464883b83e8d57a5770d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music
+    - name: Player
+      guid: a6280b237df1d9418ea6fbce5dce023d
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 451a98d126020542942cc8f53a6fbc29
+      - ElementName: Player
+        ObjectType: 2
+        guid: a6280b237df1d9418ea6fbce5dce023d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Player
+    - name: SFX
+      guid: 0ee9d79c14db564996593cf9101efaf1
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 451a98d126020542942cc8f53a6fbc29
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 0ee9d79c14db564996593cf9101efaf1
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -80,7 +136,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585641315740394015
+    m_lastTime: -8585641205464156757
     List:
     - name: Enemies
       guid: f20134e4e0b3be4aaeb66f2b09b747b8
@@ -164,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585641349391831221
+    m_lastTime: -8585641205464306302
     List:
     - name: Ambiences
       guid: c51d44b69dfa9b49930ebbbb9e9a7883
@@ -320,9 +376,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 98bb0c544a01a849a0b897c3d4849e0e
       Path: Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Air_Enemy_Flying
-      maxAttenuation: 0
-      maxDuration: 0.9325
-      minDuration: 0.9325
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Air_Enemy_Ranged_Attack
       guid: db04955d58a1954a956f6634644e2153
       id: 888154214
@@ -343,9 +399,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: db04955d58a1954a956f6634644e2153
       Path: Events\Default Work Unit\Enemy\Basic\Play_Air_Enemy_Ranged_Attack
-      maxAttenuation: 0
-      maxDuration: 2.611
-      minDuration: 2.611
+      maxAttenuation: 100
+      maxDuration: 0.095662
+      minDuration: 0.095662
     - name: Play_Ambiance_Hub
       guid: 2b6f2cba44fbd140b07d3b21267e21a8
       id: 2758753758
@@ -418,7 +474,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8b7e8fa979161c4aaa481d5db9d0e34b
       Path: Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Ambience_Ground_Enemy_Bigger
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: Play_Ambience_HotelCaput
@@ -511,8 +567,8 @@ MonoBehaviour:
         guid: cad45faa8cb98a49a6da01772ff430b3
       Path: Events\Default Work Unit\City\Ambiences\Play_Ambience_Streets
       maxAttenuation: 0
-      maxDuration: 14.174
-      minDuration: 14.174
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps
       guid: f6a64ec15670624e8f6f2422e2ea5b9f
       id: 3854155799
@@ -576,7 +632,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ce00b30bf369b04babb458d36a8bfb6c
       Path: Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Attack
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.9325
       minDuration: 0.9325
     - name: Play_Ground_Enemy_Melee_Attack_01
@@ -714,7 +770,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 80e9a33830b4254494b7d17f36a3e4c9
       Path: Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Impacts
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 2.120561
       minDuration: 1.411445
     - name: Play_Mayor_RockProjectile
@@ -1010,7 +1066,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: cac8bf191f17594cb484997de5894453
       Path: Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Clone
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.766945
       minDuration: 0.644921
     - name: Play_Philanthropist_Damaged
@@ -1236,6 +1292,207 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Ambiance_Hub
+      guid: 5784c191edf56b4a8efe9f4baa732af2
+      id: 2990671080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Stop_Ambiance_Hub
+        ObjectType: 3
+        guid: 5784c191edf56b4a8efe9f4baa732af2
+      Path: Events\Default Work Unit\City\Ambiences\Stop_Ambiance_Hub
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience_HotelCaput
+      guid: 8228a44ec4df0545a70d98751fa729b4
+      id: 3195155574
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Stop_Ambience_HotelCaput
+        ObjectType: 3
+        guid: 8228a44ec4df0545a70d98751fa729b4
+      Path: Events\Default Work Unit\City\Ambiences\Stop_Ambience_HotelCaput
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience_Office
+      guid: d37049b7109b8e41bd044612e01c73ef
+      id: 565355115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Stop_Ambience_Office
+        ObjectType: 3
+        guid: d37049b7109b8e41bd044612e01c73ef
+      Path: Events\Default Work Unit\City\Ambiences\Stop_Ambience_Office
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience_Rooftops
+      guid: 967ba86a21e0544c97df120f14cb4f0f
+      id: 4231910077
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Stop_Ambience_Rooftops
+        ObjectType: 3
+        guid: 967ba86a21e0544c97df120f14cb4f0f
+      Path: Events\Default Work Unit\City\Ambiences\Stop_Ambience_Rooftops
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience_Streets
+      guid: b6513836524b7647bc83631bd8412173
+      id: 1083281165
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Stop_Ambience_Streets
+        ObjectType: 3
+        guid: b6513836524b7647bc83631bd8412173
+      Path: Events\Default Work Unit\City\Ambiences\Stop_Ambience_Streets
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MainCharacter_Theme__Chorus_Loop_
+      guid: 5be3300aa435c04daed01866119c2a51
+      id: 452826210
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_MainCharacter_Theme__Chorus_Loop_
+        ObjectType: 3
+        guid: 5be3300aa435c04daed01866119c2a51
+      Path: Events\Default Work Unit\City\Sound Track\Stop_MainCharacter_Theme__Chorus_Loop_
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: 9b7bff4dcb413140a4439cc52dac8b08
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: Stop_Music
+        ObjectType: 3
+        guid: 9b7bff4dcb413140a4439cc52dac8b08
+      Path: Events\Default Work Unit\Stop_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_HotelCaput_Theme
+      guid: d97a4d102925a743a31331fedc81de9a
+      id: 982605791
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_HotelCaput_Theme
+        ObjectType: 3
+        guid: d97a4d102925a743a31331fedc81de9a
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_HotelCaput_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_OfficeSpace_Theme
+      guid: 3fd05b01987485489d6bf5993bf0c788
+      id: 2109301304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_OfficeSpace_Theme
+        ObjectType: 3
+        guid: 3fd05b01987485489d6bf5993bf0c788
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_OfficeSpace_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Music_Philanthropist_Theme
       guid: 176d9fd514b1a247922044ce9f74ab93
       id: 11724553
@@ -1256,6 +1513,98 @@ MonoBehaviour:
         ObjectType: 3
         guid: 176d9fd514b1a247922044ce9f74ab93
       Path: Events\Default Work Unit\Enemy\The Philanthropist\Stop_Music_Philanthropist_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_Rooftops_Theme
+      guid: 7426e7d288392f4eab163ab9ea68f0b4
+      id: 2102565096
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_Rooftops_Theme
+        ObjectType: 3
+        guid: 7426e7d288392f4eab163ab9ea68f0b4
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_Rooftops_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_Streets_Theme
+      guid: 36359c7753765c41a5c4c62091e1ce65
+      id: 1669599958
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_Streets_Theme
+        ObjectType: 3
+        guid: 36359c7753765c41a5c4c62091e1ce65
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_Streets_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_TheGrandArena_Theme
+      guid: d9192b8e4196c24390826b8de9969e29
+      id: 998665532
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_TheGrandArena_Theme
+        ObjectType: 3
+        guid: d9192b8e4196c24390826b8de9969e29
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_TheGrandArena_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_TheWildSide_Theme
+      guid: 0eb3b714920d424c8eb80de8ea84b03f
+      id: 3158376462
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop_Music_TheWildSide_Theme
+        ObjectType: 3
+        guid: 0eb3b714920d424c8eb80de8ea84b03f
+      Path: Events\Default Work Unit\City\Sound Track\Stop_Music_TheWildSide_Theme
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -2006,7 +2355,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585644931114775808
     List: []
-  ExpandedFileSystemItemIds: 0400000005000000060000005a000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000e0000000f0000001000000011000000120000001300000014000000150000001b00000020000000220000002600000027000000290000002e00000032000000460000004700000049000000590000005a0000006500000066000000
   ExpandedWaapiItemIds: 02000000030000000400000005000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

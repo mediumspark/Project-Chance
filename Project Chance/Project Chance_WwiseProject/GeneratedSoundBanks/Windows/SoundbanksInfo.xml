@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="80144099" Language="SFX" Hash="2721689665">
+		<SoundBank Id="80144099" Language="SFX" Hash="351820641">
 			<ObjectPath>\SoundBanks\Default Work Unit\The_Mayor</ObjectPath>
 			<ShortName>The_Mayor</ShortName>
 			<Path>The_Mayor.bnk</Path>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1261748742" Name="Play_Mayor_Impacts" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Impacts" DurationType="OneShot" DurationMin="1.411445" DurationMax="2.120561">
+				<Event Id="1261748742" Name="Play_Mayor_Impacts" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Impacts" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.411445" DurationMax="2.120561">
 					<IncludedMemoryFiles>
 						<File Id="259424978" Language="SFX">
 							<ShortName>Mayor Impacts\Mayor_Impact_01.wav</ShortName>
@@ -82,7 +82,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="115247927" Language="SFX" Hash="2805109171">
+		<SoundBank Id="115247927" Language="SFX" Hash="1124336011">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
 			<ShortName>Music_And_Ambience</ShortName>
 			<Path>Music_And_Ambience.bnk</Path>
@@ -123,11 +123,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3932320915" Name="Play_Ambience_Streets" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_Streets" DurationType="OneShot" DurationMin="14.174000" DurationMax="14.174000">
+				<Event Id="3932320915" Name="Play_Ambience_Streets" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_Streets" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="916922512" Language="SFX">
 							<ShortName>Ambiences\Ambience_Streets.wav</ShortName>
-							<Path>SFX\Ambiences\Ambience_Streets_10C4C929.wem</Path>
+							<Path>SFX\Ambiences\Ambience_Streets_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -179,6 +179,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2990671080" Name="Stop_Ambiance_Hub" ObjectPath="\Events\Default Work Unit\City\Ambiences\Stop_Ambiance_Hub" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3195155574" Name="Stop_Ambience_HotelCaput" ObjectPath="\Events\Default Work Unit\City\Ambiences\Stop_Ambience_HotelCaput" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="565355115" Name="Stop_Ambience_Office" ObjectPath="\Events\Default Work Unit\City\Ambiences\Stop_Ambience_Office" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4231910077" Name="Stop_Ambience_Rooftops" ObjectPath="\Events\Default Work Unit\City\Ambiences\Stop_Ambience_Rooftops" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1083281165" Name="Stop_Ambience_Streets" ObjectPath="\Events\Default Work Unit\City\Ambiences\Stop_Ambience_Streets" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452826210" Name="Stop_MainCharacter_Theme__Chorus_Loop_" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_MainCharacter_Theme__Chorus_Loop_" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="982605791" Name="Stop_Music_HotelCaput_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_HotelCaput_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2109301304" Name="Stop_Music_OfficeSpace_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_OfficeSpace_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2102565096" Name="Stop_Music_Rooftops_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_Rooftops_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1669599958" Name="Stop_Music_Streets_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_Streets_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="998665532" Name="Stop_Music_TheGrandArena_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_TheGrandArena_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3158376462" Name="Stop_Music_TheWildSide_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Stop_Music_TheWildSide_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Player\Combat" GUID="{86F66DE8-E44E-4313-8C94-B585A813C194}">
@@ -200,7 +213,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="204495494" Language="SFX" Hash="36764079">
+		<SoundBank Id="204495494" Language="SFX" Hash="161098872">
 			<ObjectPath>\SoundBanks\Default Work Unit\Philanthropist</ObjectPath>
 			<ShortName>Philanthropist</ShortName>
 			<Path>Philanthropist.bnk</Path>
@@ -221,7 +234,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1108016795" Name="Play_Philanthropist_Clone" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Clone" DurationType="OneShot" DurationMin="0.644921" DurationMax="0.766945">
+				<Event Id="1108016795" Name="Play_Philanthropist_Clone" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Clone" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.644921" DurationMax="0.766945">
 					<IncludedMemoryFiles>
 						<File Id="96923447" Language="SFX">
 							<ShortName>The Philanthropist\Philanthropist_Attack.wav</ShortName>
@@ -256,7 +269,7 @@
 				<Event Id="11724553" Name="Stop_Music_Philanthropist_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Stop_Music_Philanthropist_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="965033712" Language="SFX" Hash="2514109293">
+		<SoundBank Id="965033712" Language="SFX" Hash="3200572591">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>
@@ -604,29 +617,29 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1601575706">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2643713061">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2242381963" Language="SFX" Hash="570400659">
+		<SoundBank Id="2242381963" Language="SFX" Hash="687497747">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
 			<ShortName>Enemies</ShortName>
 			<Path>Enemies.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1484250099" Name="Play_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Air_Enemy_Flying" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+				<Event Id="1484250099" Name="Play_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Air_Enemy_Flying" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="603567313" Language="SFX">
 							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Flying.wav</ShortName>
-							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Flying_10C4C929.wem</Path>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Flying_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="888154214" Name="Play_Air_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Air_Enemy_Ranged_Attack" DurationType="OneShot" DurationMin="2.611000" DurationMax="2.611000">
+				<Event Id="888154214" Name="Play_Air_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Air_Enemy_Ranged_Attack" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.095662" DurationMax="0.095662">
 					<IncludedMemoryFiles>
 						<File Id="376328550" Language="SFX">
 							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack.wav</ShortName>
-							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack_10C4C929.wem</Path>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack_E992FCE9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -638,7 +651,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="354821980" Name="Play_Ambience_Ground_Enemy_Bigger" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Ambience_Ground_Enemy_Bigger" DurationType="Infinite">
+				<Event Id="354821980" Name="Play_Ambience_Ground_Enemy_Bigger" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Ambience_Ground_Enemy_Bigger" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="286797296" Language="SFX">
 							<ShortName>Stinger_Ground_Enemy_Bigger_Ambience_01.wav</ShortName>
@@ -662,7 +675,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="512754046" Name="Play_Ground_Enemy_Melee_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Attack" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+				<Event Id="512754046" Name="Play_Ground_Enemy_Melee_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Attack" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
 					<IncludedMemoryFiles>
 						<File Id="790539309" Language="SFX">
 							<ShortName>Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack.wav</ShortName>
