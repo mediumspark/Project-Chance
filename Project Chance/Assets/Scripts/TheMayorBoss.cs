@@ -73,7 +73,7 @@ public class TheMayorBoss : Boss
 
         IntroText = GetComponentInChildren<TextBoxManager>();
 
-        MaxHealth = 100;
+        MaxHealth = 50;
         CurrentHealth = MaxHealth;
         AttackPillar = (GameObject)Resources.Load("Prefabs/Enemies/Boss Attack Pillar");
         ProjectileAttack = (GameObject)Resources.Load("Prefabs/Enemies/Enemy Bullet");

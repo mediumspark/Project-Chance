@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 817da5f092814a4a9e956ef2600d9a51
     GuidInternal: 
-    m_lastTime: -8585644931114775808
+    m_lastTime: -8585642514091202104
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-    m_lastTime: -8585641265154001234
+    m_lastTime: -8585641128441678164
     List:
     - name: Ambience
       guid: 9aa6d0886a660847ba4f9fc0b1af23ce
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585641022124847067
+    m_lastTime: -8585640966924655086
     List:
     - name: Enemies
       guid: f20134e4e0b3be4aaeb66f2b09b747b8
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585641022125036558
+    m_lastTime: -8585640966966234435
     List:
     - name: Ambiences
       guid: fbeafe08b96b2d44803ae2af1dd16179
@@ -583,29 +583,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Play
-      guid: e4da4aa33249db4693f820d4491b06a2
-      id: 1256202815
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: de54823394099041b92fddfed71b002d
-      - ElementName: City
-        ObjectType: 4
-        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
-      - ElementName: Ambiences
-        ObjectType: 4
-        guid: fbeafe08b96b2d44803ae2af1dd16179
-      - ElementName: Play
-        ObjectType: 4
-        guid: e4da4aa33249db4693f820d4491b06a2
-      Path: Events\Default Work Unit\City\Ambiences\Play
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play
       guid: 58be7f9cc038ca4592179bc0f3020357
       id: 1256202815
       PathAndIcons:
@@ -625,6 +602,29 @@ MonoBehaviour:
         ObjectType: 4
         guid: 58be7f9cc038ca4592179bc0f3020357
       Path: Events\Default Work Unit\City\Sound Track\Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play
+      guid: e4da4aa33249db4693f820d4491b06a2
+      id: 1256202815
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Ambiences
+        ObjectType: 4
+        guid: fbeafe08b96b2d44803ae2af1dd16179
+      - ElementName: Play
+        ObjectType: 4
+        guid: e4da4aa33249db4693f820d4491b06a2
+      Path: Events\Default Work Unit\City\Ambiences\Play
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1541,7 +1541,7 @@ MonoBehaviour:
         guid: 91cec9fb901188408c7d64aacbc9c84d
       Path: Events\Default Work Unit\Player\Play_Player_GroundSlide
       maxAttenuation: 0
-      maxDuration: 0.426667
+      maxDuration: 3.254075
       minDuration: 0.426667
     - name: Play_Player_Heal
       guid: f171578cdad3b941ac751c43c38033dd
@@ -1603,6 +1603,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Player_Weapon
+      guid: 4065f295b722cf4182fb44bd0be03786
+      id: 2213893980
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: Player
+        ObjectType: 4
+        guid: 04619da5e50fe34da3dc34ecdd6f77be
+      - ElementName: Play_Player_Weapon
+        ObjectType: 3
+        guid: 4065f295b722cf4182fb44bd0be03786
+      Path: Events\Default Work Unit\Player\Play_Player_Weapon
+      maxAttenuation: 0
+      maxDuration: 3.254075
+      minDuration: 0.426667
     - name: Play_SoundTrack
       guid: 792c1cb1353ca74f854df143a824fc77
       id: 3884404148
@@ -1919,29 +1939,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Stop
-      guid: 0ab05bbabf7bba4997d8e40335abf965
-      id: 788884573
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: de54823394099041b92fddfed71b002d
-      - ElementName: City
-        ObjectType: 4
-        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
-      - ElementName: Sound Track
-        ObjectType: 4
-        guid: e00d4d01d3d43543822c1a00752630f0
-      - ElementName: Stop
-        ObjectType: 4
-        guid: 0ab05bbabf7bba4997d8e40335abf965
-      Path: Events\Default Work Unit\City\Sound Track\Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop
       guid: b71f98e29e47ac49b74edffa55e26fa9
       id: 788884573
       PathAndIcons:
@@ -1961,6 +1958,29 @@ MonoBehaviour:
         ObjectType: 4
         guid: b71f98e29e47ac49b74edffa55e26fa9
       Path: Events\Default Work Unit\City\Ambiences\Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop
+      guid: 0ab05bbabf7bba4997d8e40335abf965
+      id: 788884573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: de54823394099041b92fddfed71b002d
+      - ElementName: City
+        ObjectType: 4
+        guid: f85f52bbeedaef4f8d86ee2aa8529c5b
+      - ElementName: Sound Track
+        ObjectType: 4
+        guid: e00d4d01d3d43543822c1a00752630f0
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 0ab05bbabf7bba4997d8e40335abf965
+      Path: Events\Default Work Unit\City\Sound Track\Stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2443,7 +2463,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0fe870f86b4f6f4191d348886bab6ab3
     GuidInternal: 
-    m_lastTime: -8585642304997560015
+    m_lastTime: -8585641553419196847
     List:
     - name: Distance_Bureaucrat
       guid: 3da46b5cdd5bee4b9689125c105755f2
@@ -2569,7 +2589,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ca490367e14ce14096a7d1b71c119f5b
     GuidInternal: 
-    m_lastTime: -8585641048287389250
+    m_lastTime: -8585640966924635063
     List:
     - name: Combat
       guid: e86df6864ee413438c94b585a813c194
@@ -2938,7 +2958,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1d5d9619af4a894f88fd90f614b03263
     GuidInternal: 
-    m_lastTime: -8585641151071170399
+    m_lastTime: -8585641124998968861
     List:
     - name: Attack
       guid: ccc6aeded10a7c458977b5a1985eac15
@@ -3222,10 +3242,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ad124206cf9a5740b999d28b34a52196
     GuidInternal: 
-    m_lastTime: -8585644931114775808
+    m_lastTime: -8585642514091202104
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0a0000000b0000000c0000000e0000001600000017000000300000004600000074000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
