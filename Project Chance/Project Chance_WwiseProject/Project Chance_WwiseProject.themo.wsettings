@@ -107,12 +107,16 @@
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="vTbkcz22NUCMyBwh5jU4BwEC6xr/////PWOlNy7kd0u91D0dsuqiKAEC6xr/////"/>
 =======
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="PWOlNy7kd0u91D0dsuqiKAECYhv/////vTbkcz22NUCMyBwh5jU4BwECYhv/////"/>
 >>>>>>> Production-Branch
 =======
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="vTbkcz22NUCMyBwh5jU4BwECqDH/////PWOlNy7kd0u91D0dsuqiKAECqDH/////"/>
+>>>>>>> Wayne
+=======
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="PWOlNy7kd0u91D0dsuqiKAECqDH/////vTbkcz22NUCMyBwh5jU4BwECqDH/////"/>
 >>>>>>> Wayne
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
@@ -173,7 +177,7 @@
 >>>>>>> Wayne
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="o4VRk8ulV0aWSI3Jg78mXw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value="D+hw+GtPb0GR00iIa6tqsw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
 				<Property Name="RTPC\GameParameterSimValue\{091082F3-20B6-42CD-B15F-3D74E3518022}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{48FA747C-831E-4791-9946-94353DA22DC5}" Type="Real64" Value="50"/>
