@@ -132,23 +132,16 @@ public class ThePhilanthropist : Weapon
     public IEnumerator Slam()
     {
         Player.isGravityOn = true; 
-<<<<<<< HEAD
-        GameObject Effect = Resources.Load<GameObject>("Prefabs/Charge Attack");
-=======
+
         Player.ExternalChargeTrigger(); 
         GameObject Effect = Resources.Load<GameObject>("Prefabs/DropAttack");
->>>>>>> Production-Branch
 
         GameObject go = Player.Instantiate(Effect, Player.transform);
         Player.isInvol = true;
         go.AddComponent<AttackEffect>();
 
-<<<<<<< HEAD
-        Player.Gravity *= 4;
-=======
         Player.MovementForce *= 4;
-        
->>>>>>> Production-Branch
+
 
         yield return new WaitUntil(() => Player.isGrounded);
 
@@ -170,8 +163,6 @@ public class TheMayor : Weapon
     {
         Player = P;        
     }
-<<<<<<< HEAD
-
     public override void Fire(int cost)
     {
         if (cost <= Player.CurrentStamina)
@@ -180,19 +171,6 @@ public class TheMayor : Weapon
             Player.StartCoroutine(Stomp());
         }
     }
-
-=======
-
-    public override void Fire(int cost)
-    {
-        if (cost <= Player.CurrentStamina)
-        {
-            Player.CurrentStamina -= cost;
-            Player.StartCoroutine(Stomp());
-        }
-    }
-
->>>>>>> Production-Branch
     private IEnumerator Stomp()
     {
         if (Player.isGrounded)

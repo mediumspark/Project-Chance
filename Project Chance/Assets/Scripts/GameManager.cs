@@ -34,14 +34,10 @@ public class GameManager
         {
             SpawnPlayer(nextspawnposition);
         }
-<<<<<<< HEAD
-=======
-
         if(arg0.buildIndex == 0)
         {
             GameObject.Destroy(GameObject.FindObjectOfType<Player>().gameObject);
         }
->>>>>>> Production-Branch
 
         if (CanvasManager.instance.TextBox)
             CanvasManager.instance.TextBox.SetActive(false);

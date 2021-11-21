@@ -51,10 +51,6 @@ public class Player : Character
         Speed = base_speed;
 
         WH.Add(new Default(this, 4f, 10));
-<<<<<<< HEAD
-=======
-
->>>>>>> Production-Branch
         WH.SetCurrentWeapon(0);
 
         healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
@@ -158,12 +154,9 @@ public class Player : Character
             {
                 StartCoroutine(WallJump());
             }
-<<<<<<< HEAD
-=======
         } else if(!TouchingWall && !grounded && GravityOn)
         {
             gravity = Normal_Gravity; 
->>>>>>> Production-Branch
         }
 
         if (WallJumping)
