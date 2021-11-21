@@ -15,12 +15,14 @@ public abstract class Boss : Character
     protected Weapon PrizeWeapon; 
 
     protected Vector3 AttackLocation;
-        
-    public IEnumerator deactivateHurtbox(float duration, Collision2D col)
+
+    [SerializeField]
+    protected Collider2D HurtBox; 
+    public IEnumerator deactivateHurtbox(float duration)
     {
-        col.gameObject.SetActive(false);
+        HurtBox.gameObject.SetActive(false);
         yield return new WaitForSeconds(duration);
-        col.gameObject.SetActive(true); 
+        HurtBox.gameObject.SetActive(true); 
     }
 
     protected override void FixedUpdate()

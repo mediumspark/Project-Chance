@@ -17,7 +17,8 @@ public class Weapon
                 {
                     collision.gameObject.GetComponentInParent<Character>().OnTakeDamage(damage);
                     if (collision.transform.CompareTag("Boss"))
-                       StartCoroutine( collision.gameObject.GetComponentInParent<Boss>().deactivateHurtbox(1.5f, collision)); 
+                       collision.gameObject.GetComponentInParent<Character>().StartCoroutine(
+                           collision.gameObject.GetComponentInParent<Boss>().deactivateHurtbox(1.5f)); 
                 }
                 
 
