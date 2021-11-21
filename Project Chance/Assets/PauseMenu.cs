@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
                 isPaused = true;
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0;
+                AkSoundEngine.Suspend();
             }
         }
     }
@@ -43,5 +44,6 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        AkSoundEngine.WakeupFromSuspend();
     }
 }

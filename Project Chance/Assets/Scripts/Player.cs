@@ -86,6 +86,8 @@ public class Player : Character
     private float abilityCost;
     private bool WallJumping = false;
 
+    bool LowHealthSound = false;
+
     public float AbilityCost { get => abilityCost; set=> abilityCost = value; }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -194,9 +196,10 @@ public class Player : Character
             base.OnTakeDamage(damage);
             StartCoroutine(InvolTimer());
             healthBar.value = CurrentHealth;
-            if (currentHealth <= 50)
+            if (currentHealth <= 50 && !LowHealthSound)
             {
                 LowHealth();
+                LowHealthSound = true;
             }
         }
     }
@@ -231,7 +234,15 @@ public class Player : Character
             if (currentHealth >= 50)
             {
                 AkSoundEngine.PostEvent("Stop_Player_LowHealth", this.gameObject);
+                LowHealthSound = false;
             }
+
+            if (currentHealth <= 50)
+            {
+                AkSoundEngine.SetRTPCValue("Health", currentHealth, this.gameObject);
+            }
+
+
 
             if (Healing)
             {
@@ -291,7 +302,6 @@ public class Player : Character
 
     public void LowHealth()
     {
-        AkSoundEngine.SetRTPCValue("Health", currentHealth, this.gameObject);
         AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
     }
 }
