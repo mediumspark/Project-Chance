@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -388533942210950127, guid: 12df9da5a32bd2846b2784c5f81cc037, type: 3}
+    - target: {fileID: 2091781327347157215, guid: dea1307f412957643a18af075418bb99, type: 3}
+      propertyPath: textFile
+      value: 
+      objectReference: {fileID: 4900000, guid: be9df00a4784c9641a3548c9102d2f42, type: 3}
     - target: {fileID: 2765356185372609938, guid: dea1307f412957643a18af075418bb99, type: 3}
       propertyPath: m_Name
       value: NPC (Spector) (3)
@@ -1382,9 +1386,13 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2091781327347157215, guid: dea1307f412957643a18af075418bb99, type: 3}
+      propertyPath: textFile
+      value: 
+      objectReference: {fileID: 4900000, guid: f02c196a038bb2e42a29fcab37f25218, type: 3}
     - target: {fileID: 2765356185372609938, guid: dea1307f412957643a18af075418bb99, type: 3}
       propertyPath: m_Name
-      value: NPC (Spector)
+      value: OldLady
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea1307f412957643a18af075418bb99, type: 3}
@@ -3376,6 +3384,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6029437125401117213, guid: 12df9da5a32bd2846b2784c5f81cc037, type: 3}
+    - target: {fileID: 2091781327347157215, guid: dea1307f412957643a18af075418bb99, type: 3}
+      propertyPath: textFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 7a503ab44373f2047b451ca8f6c091fe, type: 3}
     - target: {fileID: 2765356185372609938, guid: dea1307f412957643a18af075418bb99, type: 3}
       propertyPath: m_Name
       value: NPC (Spector) (2)

@@ -16,6 +16,12 @@ public abstract class Boss : Character
 
     protected Vector3 AttackLocation;
         
+    public IEnumerator deactivateHurtbox(float duration, Collision2D col)
+    {
+        col.gameObject.SetActive(false);
+        yield return new WaitForSeconds(duration);
+        col.gameObject.SetActive(true); 
+    }
 
     protected override void FixedUpdate()
     {

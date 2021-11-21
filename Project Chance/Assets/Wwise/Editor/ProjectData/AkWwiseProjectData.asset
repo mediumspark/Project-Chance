@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 451a98d126020542942cc8f53a6fbc29
     GuidInternal: 
-    m_lastTime: -8585641470248367520
+    m_lastTime: -8585641349362589136
     List:
     - name: Ambience
       guid: 9aa6d0886a660847ba4f9fc0b1af23ce
@@ -80,7 +80,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a3855193cba5574696488dc983bf265f
     GuidInternal: 
-    m_lastTime: -8585641510499051460
+    m_lastTime: -8585641349356367477
     List:
     - name: Enemies
       guid: f20134e4e0b3be4aaeb66f2b09b747b8
@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: de54823394099041b92fddfed71b002d
     GuidInternal: 
-    m_lastTime: -8585641470248227909
+    m_lastTime: -8585641349391831221
     List:
     - name: Ambiences
       guid: c51d44b69dfa9b49930ebbbb9e9a7883
@@ -827,8 +827,8 @@ MonoBehaviour:
         guid: 504f1275e4a7fa4f8004056fe7b8855d
       Path: Events\Default Work Unit\Enemy\The Mayor\Play_music_Mayor_Theme
       maxAttenuation: 0
-      maxDuration: 40
-      minDuration: 40
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music_OfficeSpace_Theme
       guid: 033440809d01be46b23c4ed4c24e8f6a
       id: 1753068158
@@ -873,8 +873,8 @@ MonoBehaviour:
         guid: 412924c1b1026040959e427e57031091
       Path: Events\Default Work Unit\Enemy\The Philanthropist\Play_Music_Philanthropist_Theme
       maxAttenuation: 0
-      maxDuration: 128.84213
-      minDuration: 128.84213
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music_Rooftops_Theme
       guid: c71c891e39b5b24ba3470fe422478c82
       id: 838192066
@@ -1351,7 +1351,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0fe870f86b4f6f4191d348886bab6ab3
     GuidInternal: 
-    m_lastTime: -8585642304997560015
+    m_lastTime: -8585641550480161130
     List:
     - name: Distance_Bureaucrat
       guid: 3da46b5cdd5bee4b9689125c105755f2
@@ -1477,7 +1477,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ca490367e14ce14096a7d1b71c119f5b
     GuidInternal: 
-    m_lastTime: -8585642304970704978
+    m_lastTime: -8585641550449200337
     List:
     - name: Combat
       guid: e86df6864ee413438c94b585a813c194
@@ -1798,7 +1798,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1d5d9619af4a894f88fd90f614b03263
     GuidInternal: 
-    m_lastTime: -8585642304970695005
+    m_lastTime: -8585641550449200337
     List:
     - name: Attack
       guid: ccc6aeded10a7c458977b5a1985eac15
@@ -2007,7 +2007,7 @@ MonoBehaviour:
     m_lastTime: -8585644931114775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000c0000000d0000000e0000000f00000010000000110000001200000013000000190000001a0000001c0000001d0000001e0000001f0000002000000029000000820000008300000099000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
