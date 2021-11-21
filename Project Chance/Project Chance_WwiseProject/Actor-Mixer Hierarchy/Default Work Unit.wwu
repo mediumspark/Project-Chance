@@ -1898,6 +1898,65 @@
 												<ActiveSource Name="MainCharacter_Theme (Chorus Loop)" ID="{59B354D5-6090-4C51-B161-B2AEA8B92C56}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="The Philanthropist_Theme" ID="{3866D7E3-29DF-4C58-9C77-4CC08182080E}" ShortID="587461691">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2080C17F-1F60-4846-83B8-3E8D57A5770D}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="The Philanthropist" ID="{23E02E11-B5A3-47CC-BD43-EF5D9ACE9D26}">
+													<Language>SFX</Language>
+													<AudioFile>The Philanthropist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="943991102"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="The Philanthropist" ID="{23E02E11-B5A3-47CC-BD43-EF5D9ACE9D26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="The Mayor Theme" ID="{F790BE6B-EFE8-4FB6-8FCB-6DE9F212B240}" ShortID="679509646">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2080C17F-1F60-4846-83B8-3E8D57A5770D}" WorkUnitID="{D1981A45-0226-4205-942C-C8F53A6FBC29}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="The Mayor Theme" ID="{0AA78095-98A1-436B-A6E0-1116FA79D2F2}">
+													<Language>SFX</Language>
+													<AudioFile>The Mayor Theme.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="320059318"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="The Mayor Theme" ID="{0AA78095-98A1-436B-A6E0-1116FA79D2F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
@@ -1912,6 +1971,9 @@
 												<ItemRef Name="MainCharacter_Theme (Chorus Loop)" ID="{3399105C-F2CB-48E0-AEAC-5760B8E3F9EB}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="The Mayor Theme" ID="{F790BE6B-EFE8-4FB6-8FCB-6DE9F212B240}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Music_TheWildSide_Theme" ID="{3A711370-2082-42BE-94DA-19F96DBFDEE1}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
@@ -1923,10 +1985,13 @@
 											<GroupingBehavior>
 												<ItemRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}"/>
 											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="The Philanthropist_Theme" ID="{3866D7E3-29DF-4C58-9C77-4CC08182080E}"/>
+											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="The_Streets" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+												<SwitchRef Name="Lab" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
 												<ItemList>
 													<ItemRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}"/>
 												</ItemList>
@@ -1938,7 +2003,7 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Hotel_Caput" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+												<SwitchRef Name="City_1" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
 												<ItemList>
 													<ItemRef Name="Music_HotelCaput_Theme" ID="{94AD8A5A-1361-40E0-B452-9481847D8D5B}"/>
 												</ItemList>
@@ -1950,15 +2015,27 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Rooftop" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+												<SwitchRef Name="City_3" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
 												<ItemList>
 													<ItemRef Name="Music_Rooftops_Theme" ID="{C70AA5BC-AB3A-42FB-A002-48EF67F84533}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Office_Space" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+												<SwitchRef Name="City_2" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
 												<ItemList>
 													<ItemRef Name="Music_OfficeSpace_Theme" ID="{BF275CC8-5182-4A00-800F-006A2DCDAFE6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Mayor_Room" ID="{C4FEE4EB-967C-4337-8D61-C42D5E0C4C5A}"/>
+												<ItemList>
+													<ItemRef Name="The Mayor Theme" ID="{F790BE6B-EFE8-4FB6-8FCB-6DE9F212B240}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Phil_Room" ID="{74139BEF-B008-4937-84A9-EB0798B83381}"/>
+												<ItemList>
+													<ItemRef Name="The Philanthropist_Theme" ID="{3866D7E3-29DF-4C58-9C77-4CC08182080E}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -3252,25 +3329,25 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="The_Streets" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+														<SwitchRef Name="Lab" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
 														<ItemList>
 															<ItemRef Name="Rebel+Phil" ID="{8C4E49B1-E76D-4893-A2E6-88D454F6D3A7}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Hotel_Caput" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+														<SwitchRef Name="City_1" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
 														<ItemList>
 															<ItemRef Name="Chief+Mayor" ID="{AAF60201-D505-493E-847D-D8BE430D3427}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Rooftop" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+														<SwitchRef Name="City_3" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
 														<ItemList>
 															<ItemRef Name="Org+Money" ID="{9CA4EA7B-5185-4047-A6E2-0123E0222009}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Office_Space" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+														<SwitchRef Name="City_2" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
 														<ItemList>
 															<ItemRef Name="The Bureaucrat Music Stems" ID="{88CBDE02-EBEB-4009-9FD5-3B527875B8B7}"/>
 														</ItemList>
@@ -3556,13 +3633,13 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="The_Streets" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+												<SwitchRef Name="Lab" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
 												<ItemList>
 													<ItemRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Hotel_Caput" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+												<SwitchRef Name="City_1" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
 												<ItemList>
 													<ItemRef Name="Ambience_HotelCaput" ID="{517A4FC8-7296-4AB6-AB51-D734200B5732}"/>
 												</ItemList>
@@ -3574,13 +3651,25 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Rooftop" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+												<SwitchRef Name="City_3" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
 												<ItemList>
 													<ItemRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Office_Space" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+												<SwitchRef Name="City_2" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+												<ItemList>
+													<ItemRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Mayor_Room" ID="{C4FEE4EB-967C-4337-8D61-C42D5E0C4C5A}"/>
+												<ItemList>
+													<ItemRef Name="Ambience_Rooftops" ID="{87A985DB-7EF8-4722-BB71-281FA4A1CEEF}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Phil_Room" ID="{74139BEF-B008-4937-84A9-EB0798B83381}"/>
 												<ItemList>
 													<ItemRef Name="Ambience_Office" ID="{DCBF5E36-45AC-4925-A767-F04E2E78E16E}"/>
 												</ItemList>
@@ -3637,7 +3726,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Mayor_Impact_01" ID="{F6F39AD3-78A0-4F54-A49E-CBB7E89A44C5}" ShortID="451302000">
+										<Sound Name="Mayor_Impact_01" ID="{1B5FC1CE-9C0E-408F-ABAD-8E00BA79FC5E}" ShortID="951876835">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
@@ -3647,20 +3736,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Mayor_Impact_01" ID="{1A26EB3E-97C1-4974-924C-857BA1280B30}">
+												<AudioFileSource Name="Mayor_Impact_01" ID="{F01FD863-4A6C-48FF-BD3D-7391A20A3F9C}">
 													<Language>SFX</Language>
-													<AudioFile>Mayor Impacts\Mayor_Impact_01.wav</AudioFile>
+													<AudioFile>Mayor_Impact_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="259424978"/>
+														<MediaID ID="285891447"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Mayor_Impact_01" ID="{1A26EB3E-97C1-4974-924C-857BA1280B30}" Platform="Linked"/>
+												<ActiveSource Name="Mayor_Impact_01" ID="{F01FD863-4A6C-48FF-BD3D-7391A20A3F9C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Mayor_Impact_02" ID="{3950EA1E-39A5-461E-A3DD-4E87B1C5094E}" ShortID="897873946">
+										<Sound Name="Mayor_Impact_02" ID="{F6A033FA-D534-4F27-A0AD-7D028468C1C9}" ShortID="642376014">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
@@ -3670,20 +3759,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Mayor_Impact_02" ID="{1B4CCEE9-5AEA-4E82-82BF-D81F9BC7A141}">
+												<AudioFileSource Name="Mayor_Impact_02" ID="{CEB80D8B-3B98-4EA2-80E5-F7C25CC566C2}">
 													<Language>SFX</Language>
-													<AudioFile>Mayor Impacts\Mayor_Impact_02.wav</AudioFile>
+													<AudioFile>Mayor_Impact_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="269216594"/>
+														<MediaID ID="589466"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Mayor_Impact_02" ID="{1B4CCEE9-5AEA-4E82-82BF-D81F9BC7A141}" Platform="Linked"/>
+												<ActiveSource Name="Mayor_Impact_02" ID="{CEB80D8B-3B98-4EA2-80E5-F7C25CC566C2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Mayor_Impact_03" ID="{1FFEA28D-D144-4A41-A4DE-87BE6DD16E87}" ShortID="484370289">
+										<Sound Name="Mayor_Impact_03" ID="{CB76027D-EA3D-41D7-A31E-735B4830B731}" ShortID="1050645967">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3F805057-9460-409A-A056-ED0DBD061428}"/>
@@ -3693,17 +3782,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Mayor_Impact_03" ID="{24FDE537-7115-4DB0-A060-26232892AF26}">
+												<AudioFileSource Name="Mayor_Impact_03" ID="{DF8D246B-AF1A-4712-8E13-56D9B6F10AC6}">
 													<Language>SFX</Language>
-													<AudioFile>Mayor Impacts\Mayor_Impact_03.wav</AudioFile>
+													<AudioFile>Mayor_Impact_03.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="646397021"/>
+														<MediaID ID="202651341"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Mayor_Impact_03" ID="{24FDE537-7115-4DB0-A060-26232892AF26}" Platform="Linked"/>
+												<ActiveSource Name="Mayor_Impact_03" ID="{DF8D246B-AF1A-4712-8E13-56D9B6F10AC6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

@@ -24,28 +24,45 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Stop_Music" ID="{4DFF7B9B-41CB-4031-A443-9CC52DAC8B08}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambiance_Hub" ID="{BA2C6F2B-FB44-40D1-B07D-3B21267E21A8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_TheWildSide_Theme" ID="{EF023C90-8C93-4141-BA45-A63BE6FC1736}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Streets_Theme" ID="{779C3536-7653-415C-A5C4-C62091E1CE65}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience" ID="{A900343C-F817-4172-9772-8A0D5DC8A4B6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience_Office" ID="{B74970D3-9B10-418E-BD04-4612E01C73EF}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_TheWildSide_Theme" ID="{3115DA7B-4DB5-4193-9775-E54AF37BFA4D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_HotelCaput_Theme" ID="{9B33C4D2-837A-424E-84D9-6A3A835D8459}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_TheGrandArena_Theme" ID="{E82BEC9B-488C-42BF-BB3F-A3495845099F}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_OfficeSpace_Theme" ID="{89F16DBD-06BE-4304-9E4D-1C4BF8AB976A}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_HotelCaput_Theme" ID="{104D7AD9-2529-43A7-A313-31FEDC81DE9A}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_TheGrandArena_Theme" ID="{8E2B19D9-9641-43C2-9082-6B8DE9969E29}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_Rooftops_Theme" ID="{34A61DB7-1B47-449E-966A-774BCA3B6E69}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience_HotelCaput" ID="{4EA42882-DFC4-4505-A70D-98751FA729B4}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music_Streets_Theme" ID="{97A0B176-851A-4506-B06A-BB1B65B125BB}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_HotelCaput_Theme" ID="{E5267426-B79F-45A7-B45D-5E34AF4A8B6C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music" ID="{B03C66E4-F989-4609-B272-61BD4C50166B}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_TheGrandArena_Theme" ID="{EF52690B-3020-46AF-972E-B12289DBF723}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_OfficeSpace_Theme" ID="{80403403-019D-46BE-B23C-4ED4C24E8F6A}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience_Streets" ID="{363851B6-4B52-4776-BC83-631BD8412173}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_MainCharacter_Theme__Chorus_Loop_" ID="{4657AE7F-AC5C-4793-BDBC-EAC941EB522E}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Office" ID="{AB250109-8B5F-47B3-8BB4-0AC13DE85AA5}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_MainCharacter_Theme__Chorus_Loop_" ID="{F750E082-1E45-4814-8E3F-B8E9899AE764}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_Streets_Theme" ID="{AC9BD409-AED7-4846-A141-3CA4381C75D4}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_OfficeSpace_Theme" ID="{015BD03F-7498-4885-9D6B-F5993BF0C788}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_TheGrandArena_Theme" ID="{0093FB5D-0F7B-489B-B7B5-42876BFC5A15}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Streets" ID="{AA5FD4CA-B98C-498A-A6DA-01772FF430B3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambiance_Hub" ID="{91C18457-F5ED-4A6B-8EFE-9F4BAA732AF2}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_Rooftops_Theme" ID="{927D01D1-5E70-4BBC-9BF2-6A2ACF68E8EC}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_TheWildSide_Theme" ID="{14B7B30E-0D92-4C42-8EB8-0DE8EA84B03F}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience_Rooftops" ID="{6AA87B96-E021-4C54-97DF-120F14CB4F0F}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_MainCharacter_Theme__Chorus_Loop_" ID="{0A30E35B-35A4-4DC0-AED0-1866119C2A51}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music_Rooftops_Theme" ID="{D2E72674-3988-4E2F-AB16-3AB9EA68F0B4}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SoundTrack" ID="{B11C2C79-3C35-4FA7-854D-F143A824FC77}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_OfficeSpace_Theme" ID="{0815A8A3-7C13-4FBB-AF79-5A59854AD962}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_Streets_Theme" ID="{1F89D991-D2C9-4FBB-8666-5D4DB9B6B13D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Music_TheWildSide_Theme" ID="{C56DECE4-E696-4FC5-B964-AB39C61ECE50}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

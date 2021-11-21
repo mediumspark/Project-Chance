@@ -37,10 +37,13 @@
 					<ChildrenList>
 						<State Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
 						<State Name="The_Hub" ID="{DF1C29C6-4328-4E87-8AA3-19DFBF38795A}"/>
-						<State Name="The_Streets" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
-						<State Name="Hotel_Caput" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
-						<State Name="Office_Space" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
-						<State Name="Rooftop" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+						<State Name="Lab" ID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+						<State Name="City_1" ID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+						<State Name="City_2" ID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+						<State Name="City_3" ID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+						<State Name="Phil_Room" ID="{74139BEF-B008-4937-84A9-EB0798B83381}"/>
+						<State Name="Mayor_Room" ID="{C4FEE4EB-967C-4337-8D61-C42D5E0C4C5A}"/>
+						<State Name="Startup" ID="{3CAF978A-E79B-44DF-A304-9E7EFBEBBA8E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

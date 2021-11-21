@@ -1,28 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	29672328	Play_Music_Streets_Theme			\Default Work Unit\City\Sound Track\Play_Music_Streets_Theme	
-	277527292	Play_Music_TheWildSide_Theme			\Default Work Unit\City\Sound Track\Play_Music_TheWildSide_Theme	
-	452826210	Stop_MainCharacter_Theme__Chorus_Loop_			\Default Work Unit\City\Sound Track\Stop_MainCharacter_Theme__Chorus_Loop_	
-	565355115	Stop_Ambience_Office			\Default Work Unit\City\Ambiences\Stop_Ambience_Office	
-	838192066	Play_Music_Rooftops_Theme			\Default Work Unit\City\Sound Track\Play_Music_Rooftops_Theme	
-	982605791	Stop_Music_HotelCaput_Theme			\Default Work Unit\City\Sound Track\Stop_Music_HotelCaput_Theme	
-	998665532	Stop_Music_TheGrandArena_Theme			\Default Work Unit\City\Sound Track\Stop_Music_TheGrandArena_Theme	
-	1083281165	Stop_Ambience_Streets			\Default Work Unit\City\Ambiences\Stop_Ambience_Streets	
-	1451337521	Play_Ambience_Office			\Default Work Unit\City\Ambiences\Play_Ambience_Office	
-	1669599958	Stop_Music_Streets_Theme			\Default Work Unit\City\Sound Track\Stop_Music_Streets_Theme	
-	1753068158	Play_Music_OfficeSpace_Theme			\Default Work Unit\City\Sound Track\Play_Music_OfficeSpace_Theme	
-	1943370246	Play_Music_TheGrandArena_Theme			\Default Work Unit\City\Sound Track\Play_Music_TheGrandArena_Theme	
-	2102565096	Stop_Music_Rooftops_Theme			\Default Work Unit\City\Sound Track\Stop_Music_Rooftops_Theme	
-	2109301304	Stop_Music_OfficeSpace_Theme			\Default Work Unit\City\Sound Track\Stop_Music_OfficeSpace_Theme	
-	2758753758	Play_Ambiance_Hub			\Default Work Unit\City\Ambiences\Play_Ambiance_Hub	
-	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
-	2955335140	Play_Ambience_HotelCaput			\Default Work Unit\City\Ambiences\Play_Ambience_HotelCaput	
-	2990671080	Stop_Ambiance_Hub			\Default Work Unit\City\Ambiences\Stop_Ambiance_Hub	
-	3158376462	Stop_Music_TheWildSide_Theme			\Default Work Unit\City\Sound Track\Stop_Music_TheWildSide_Theme	
-	3195155574	Stop_Ambience_HotelCaput			\Default Work Unit\City\Ambiences\Stop_Ambience_HotelCaput	
-	3519641755	Play_Ambience_Rooftops			\Default Work Unit\City\Ambiences\Play_Ambience_Rooftops	
-	3779208993	Play_Music_HotelCaput_Theme			\Default Work Unit\City\Sound Track\Play_Music_HotelCaput_Theme	
-	3932320915	Play_Ambience_Streets			\Default Work Unit\City\Ambiences\Play_Ambience_Streets	
-	4231910077	Stop_Ambience_Rooftops			\Default Work Unit\City\Ambiences\Stop_Ambience_Rooftops	
+	278617630	Play_Ambience			\Default Work Unit\City\Ambiences\Play_Ambience	
+	2837384057	Stop_Music			\Default Work Unit\City\Sound Track\Suspend\Pause\Stop_Music	
+	2940177080	Resume_Music			\Default Work Unit\City\Sound Track\Suspend\Resume\Resume_Music	
+	3884404148	Play_SoundTrack			\Default Work Unit\Music\Play_SoundTrack	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2764240573	Combat			\Default Work Unit\Player\Combat	
@@ -32,24 +12,28 @@ State	ID	Name	State Group			Notes
 	514064485	Fight	Combat			
 	748895195	None	Combat			
 	2582085496	Exploration	Combat			
-	268254414	Office_Space	Level			
-	363725171	The_Streets	Level			
+	578926554	Lab	Level			
 	748895195	None	Level			
 	1036396546	The_Hub	Level			
-	1695287547	Hotel_Caput	Level			
-	4265799768	Rooftop	Level			
+	1707324172	City_1	Level			
+	1707324174	City_3	Level			
+	1707324175	City_2	Level			
+	2530218128	Startup	Level			
+	2552669160	Phil_Room	Level			
+	3105353467	Mayor_Room	Level			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29815098	Stinger_OfficeSpace	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Stinger_OfficeSpace_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambience_Office\Stinger_OfficeSpace		286528
 	121291358	Music_OfficeSpace_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_OfficeSpace_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_OfficeSpace_Theme		2456552
 	159280278	Music_Rooftops_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_Rooftops_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_Rooftops_Theme		5461400
 	211789275	Music_Streets_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_Streets_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_Streets_Theme		5671452
+	320059318	The Mayor Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\The Mayor Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\The Mayor Theme		7680064
 	326376891	Ambience_OfficeSpace	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Ambience_OfficeSpace_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambience_Office\Ambience_OfficeSpace		5612968
 	342851348	Music_HotelCaput_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_HotelCaput_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_HotelCaput_Theme		8192064
-	364033017	Music_TheGrandArena_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_TheGrandArena_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_TheGrandArena_Theme		21065208
 	428237620	Ambiance_Hub	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Ambiance_Hub_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambiance_Hub		2430760
 	574758837	Ambience_Rooftops	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Ambience_Rooftops_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambience_Rooftops		3259752
-	649785047	Music_TheWildSide_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_TheWildSide_Theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\Music_TheWildSide_Theme		2730732
 	702821490	Ambience_HotelCaput	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Ambience_HotelCaput_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambience_HotelCaput		5612968
+	841116670	MainCharacter_Theme (Chorus Loop)	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\MainCharacter_Theme (Chorus Loop)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\MainCharacter_Theme (Chorus Loop)		4337008
 	916922512	Ambience_Streets	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Ambiences\Ambience_Streets_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience Mixer\Ambiences Switch\Ambience_Streets		2721472
+	943991102	The Philanthropist_Theme	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\The Philanthropist_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Theme Music\The Philanthropist_Theme		24737752
 
