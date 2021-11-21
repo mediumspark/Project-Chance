@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        GameManager.LoadScene(newGameScene, 0);
+        GameManager.LoadScene(newGameScene, -1);
     }
 
     public void QuitGame()

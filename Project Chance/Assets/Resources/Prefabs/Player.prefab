@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Bits: 128
   GravityOn: 1
   gravity: 1.5
-  jumpForce: 1.75
+  jumpForce: 3.5
   healthBar: {fileID: 0}
   staminaBar: {fileID: 0}
   WallDetectionObject: {fileID: 2611776066948263046}
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda883e8d9898dc43b1711be97d6a29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentWeapon: 0
 --- !u!95 &2611776066092035197
 Animator:
   serializedVersion: 3
