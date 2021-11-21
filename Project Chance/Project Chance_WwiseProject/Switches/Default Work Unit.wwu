@@ -11,6 +11,13 @@
 								<Switch Name="Robot" ID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}"/>
 							</ChildrenList>
 						</SwitchGroup>
+						<SwitchGroup Name="Weapon" ID="{4B35B47F-133D-4240-B622-5599E906822A}">
+							<ChildrenList>
+								<Switch Name="Default" ID="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}"/>
+								<Switch Name="Phil_Weapon" ID="{B34B9841-A522-4B0A-A31D-CC3953AF87A2}"/>
+								<Switch Name="Mayor_Weapon" ID="{F40C2B14-EF34-47E2-A549-C7CAF41FB7F9}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{1A827251-F6E9-408D-9020-219A73D8EB5A}" ShortID="424852604">

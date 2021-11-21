@@ -13,10 +13,14 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	180661997	Attack			\Default Work Unit\Player\Attack	
+	3893417221	Weapon			\Default Work Unit\Player\Weapon	
 
 Switch	ID	Name	Switch Group			Notes
 	1731679510	Person	Attack			
 	1930240631	Robot	Attack			
+	756542853	Phil_Weapon	Weapon			
+	782826392	Default	Weapon			
+	3027089830	Mayor_Weapon	Weapon			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2137943	Life			\Default Work Unit\Player\Life	

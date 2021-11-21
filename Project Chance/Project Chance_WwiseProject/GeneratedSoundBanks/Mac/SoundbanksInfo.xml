@@ -86,7 +86,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="115247927" Language="SFX" Hash="1124336011">
+		<SoundBank Id="115247927" Language="SFX" Hash="3533799883">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
 			<ShortName>Music_And_Ambience</ShortName>
 			<Path>Music_And_Ambience.bnk</Path>
@@ -277,7 +277,7 @@
 				<Event Id="11724553" Name="Stop_Music_Philanthropist_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Stop_Music_Philanthropist_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="965033712" Language="SFX" Hash="3200572591">
+		<SoundBank Id="965033712" Language="SFX" Hash="4149833386">
 			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
 			<ShortName>Uncovered_SoundBank</ShortName>
 			<Path>Uncovered_SoundBank.bnk</Path>
@@ -621,6 +621,13 @@
 					<Switches>
 						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Player\Attack\Person" GUID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
 						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Player\Attack\Robot" GUID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3893417221" Name="Weapon" ObjectPath="\Switches\Default Work Unit\Player\Weapon" GUID="{4B35B47F-133D-4240-B622-5599E906822A}">
+					<Switches>
+						<Switch Id="782826392" Name="Default" ObjectPath="\Switches\Default Work Unit\Player\Weapon\Default" GUID="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}"/>
+						<Switch Id="756542853" Name="Phil_Weapon" ObjectPath="\Switches\Default Work Unit\Player\Weapon\Phil_Weapon" GUID="{B34B9841-A522-4B0A-A31D-CC3953AF87A2}"/>
+						<Switch Id="3027089830" Name="Mayor_Weapon" ObjectPath="\Switches\Default Work Unit\Player\Weapon\Mayor_Weapon" GUID="{F40C2B14-EF34-47E2-A549-C7CAF41FB7F9}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
