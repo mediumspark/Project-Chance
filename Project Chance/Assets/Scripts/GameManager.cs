@@ -14,7 +14,7 @@ public class GameManager
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public static void LoadScene(string Levelname, int spawnpoint)
+    public static  void LoadScene(string Levelname, int spawnpoint)
     {
         SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
         nextspawnposition = spawnpoint;
@@ -25,10 +25,7 @@ public class GameManager
 
     private static void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        if (nextspawnposition != -1)
-        {
-            SpawnPlayer(nextspawnposition);
-        }
+        SpawnPlayer(nextspawnposition);
 
         if (CanvasManager.instance.TextBox)
             CanvasManager.instance.TextBox.SetActive(false);
