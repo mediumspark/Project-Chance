@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 024763e2daddac146a66f663b0747fd9, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   textBox: {fileID: 0}
   textComponent: {fileID: 0}
   textSpeed: 0.02
@@ -408,11 +408,11 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes:
+  m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_BonesAABB: []
   m_VariableBoneCountWeights:
-    m_Data:
+    m_Data: 
   m_MeshCompression: 0
   m_IsReadable: 1
   m_KeepVertices: 1
@@ -486,59 +486,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0.8721676, y: 8.776539, z: 11.286047}
     m_Extent: {x: 0.8721676, y: 8.776541, z: 11.286047}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: 1
@@ -546,7 +546,7 @@ Mesh:
     serializedVersion: 2
     offset: 0
     size: 0
-    path:
+    path: 
 --- !u!1 &1018540214
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,8 +638,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a0a2bcaa006d544901881b2aedad6f, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   SceneName: Lab
   spawnPoint: 1
 --- !u!61 &1097876904
@@ -741,27 +741,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6081000625849305198, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_Sprite
-      value:
+      value: 
       objectReference: {fileID: -3014510905054556287, guid: 35b9b93d9a1f0214fa167420e5cc9fea, type: 3}
     - target: {fileID: 6418436440822637884, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: Intro
-      value:
+      value: 
       objectReference: {fileID: 653957551}
     - target: {fileID: 6418436440822637884, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: Victory
-      value:
+      value: 
       objectReference: {fileID: 428211975}
     - target: {fileID: 6418436440946910504, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_Mesh
-      value:
+      value: 
       objectReference: {fileID: 977266065}
     - target: {fileID: 6418436440946910508, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_Mesh
-      value:
+      value: 
       objectReference: {fileID: 977266065}
     - target: {fileID: 6418436440946910509, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_Mesh
-      value:
+      value: 
       objectReference: {fileID: 977266065}
     - target: {fileID: 6418436441426486657, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_FlipX
@@ -781,19 +781,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418436441588233975, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
-      value:
+      value: 
       objectReference: {fileID: 9172286288737467701, guid: 6f4cf348335d5284484c9f109627033b, type: 2}
     - target: {fileID: 6418436441588233975, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].key
-      value:
+      value: 
       objectReference: {fileID: 7448595003587058046, guid: 6f4cf348335d5284484c9f109627033b, type: 2}
     - target: {fileID: 6418436441588233975, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
-      value:
+      value: 
       objectReference: {fileID: 1098392375}
     - target: {fileID: 6418436441588233975, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
-      value:
+      value: 
       objectReference: {fileID: 1025724202}
     - target: {fileID: 8411227322078655397, guid: 68537aaf7046802439e6f56d8d43675d, type: 3}
       propertyPath: m_Name
@@ -815,8 +815,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11b514f9989099e4b91bc8b874a590ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1098392375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,8 +827,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: ab94cf67df7249a489036b468c7d9d1f, type: 2}
@@ -844,7 +844,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument:
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!4 &1098392376 stripped
@@ -886,8 +886,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecd185d3621d95c4ab7cf02f34b35666, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   isDefaultListener: 1
   listenerId: 0
 --- !u!20 &1135910997
@@ -957,8 +957,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4afbda20581ed2c488b563a06c97a344, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
@@ -969,62 +969,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &1182450235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1182450237}
-  - component: {fileID: 1182450236}
-  m_Layer: 0
-  m_Name: WwiseGlobal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1182450236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182450235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569fbe21d087a4242a19d4d55300dc63, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  InitializationSettings: {fileID: 11400000, guid: 21725472af59a8b498b1319e88b58d80, type: 2}
-  basePath:
-  language:
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
---- !u!4 &1182450237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182450235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343179803
 GameObject:
   m_ObjectHideFlags: 0
