@@ -179,4 +179,31 @@ public class TheMayorBoss : Boss
     }
     //knocked off of pilar in one place
     //Jumps around creating waves of pillars 
+
+    //Sounds
+
+    private void MayorProjectile()
+    {
+        AkSoundEngine.PostEvent("Play_Mayor_Projectile", this.gameObject);
+    }
+
+    private void MayorSummonRocks()
+    {
+        AkSoundEngine.PostEvent("Play_Mayor_RockSummon", this.gameObject);
+    }
+
+    private void MayorAttackImpact()
+    {
+        AkSoundEngine.PostEvent("Play_Mayor_Impacts", this.gameObject);
+    }
+
+    private void MayorDamaged()
+    {
+        AkSoundEngine.PostEvent("Play_Mayor_Damaged", this.gameObject);
+    }
+
+    private void MayorFootsteps()
+    {
+        AkSoundEngine.PostEvent("Play_Mayor_Footsteps", this.gameObject);
+    }
 }

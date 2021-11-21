@@ -1,6 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{39CF3E87-6B42-43B6-8CC1-00D247446BFD}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{39CF3E87-6B42-43B6-8CC1-00D247446BFD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{39CF3E87-6B42-43B6-8CC1-00D247446BFD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Background Sounds" ID="{DE74A6FC-34D3-4A01-9476-566187DB1922}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Ambiance_Hub" ID="{BA2C6F2B-FB44-40D1-B07D-3B21267E21A8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_OfficeSpace_Theme" ID="{80403403-019D-46BE-B23C-4ED4C24E8F6A}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience_Office" ID="{AB250109-8B5F-47B3-8BB4-0AC13DE85AA5}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_Streets_Theme" ID="{AC9BD409-AED7-4846-A141-3CA4381C75D4}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience_Streets" ID="{AA5FD4CA-B98C-498A-A6DA-01772FF430B3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_TheGrandArena_Theme" ID="{EF52690B-3020-46AF-972E-B12289DBF723}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_TheWildSide_Theme" ID="{3115DA7B-4DB5-4193-9775-E54AF37BFA4D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_Philanthropist_Theme" ID="{C1242941-02B1-4060-959E-427E57031091}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="6" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_music_Mayor_Theme" ID="{75124F50-A7E4-4FFA-8004-056FE7B8855D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
+							<Position X="7" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Chief" ID="{EB5DAAEC-340B-4264-9389-3DCC5A0E7CA1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Organizer" ID="{091082F3-20B6-42CD-B15F-3D74E3518022}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Money" ID="{FB185ACF-BF9B-4484-BB83-2C1B3F06BFE1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Bureaucrat" ID="{5C6BA43D-5BDD-4BEE-9689-125C105755F2}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Rebel" ID="{ED48E5E6-44EE-4ECD-BE6F-72CA4B6F3154}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{0212D8A4-BA4D-4AB3-B311-BFE46624CF01}"/>
+						<CurrentStateRef Name="None" ID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<CurrentStateRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Non_Interactive_Sounds" ID="{AF0BB824-6BDE-4931-959C-545611F5A365}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Chief" ID="{EB5DAAEC-340B-4264-9389-3DCC5A0E7CA1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Organizer" ID="{091082F3-20B6-42CD-B15F-3D74E3518022}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Money" ID="{FB185ACF-BF9B-4484-BB83-2C1B3F06BFE1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Bureaucrat" ID="{5C6BA43D-5BDD-4BEE-9689-125C105755F2}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Rebel" ID="{ED48E5E6-44EE-4ECD-BE6F-72CA4B6F3154}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<CurrentStateRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
