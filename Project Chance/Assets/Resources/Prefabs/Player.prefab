@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Bits: 128
   GravityOn: 1
   gravity: 1.5
-  jumpForce: 3.5
+  jumpForce: 1.75
   healthBar: {fileID: 0}
   staminaBar: {fileID: 0}
   WallDetectionObject: {fileID: 2611776066948263046}
