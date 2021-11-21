@@ -141,6 +141,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace MUSIC
 
+        namespace WEAPON
+        {
+            static const AkUniqueID GROUP = 3893417221U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID MAYOR_WEAPON = 3027089830U;
+                static const AkUniqueID PHIL_WEAPON = 756542853U;
+            } // namespace SWITCH
+        } // namespace WEAPON
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
