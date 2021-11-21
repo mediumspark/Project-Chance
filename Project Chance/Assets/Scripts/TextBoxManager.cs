@@ -63,6 +63,7 @@ public class TextBoxManager : MonoBehaviour
     {
         if (dialogueBox == false && textComponent != null)
         {
+            Time.timeScale = 0;
             textComponent.text = string.Empty;
             textBox.SetActive(true);
             index = 0;
@@ -76,7 +77,7 @@ public class TextBoxManager : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
     }
 
@@ -92,6 +93,7 @@ public class TextBoxManager : MonoBehaviour
         {
             textBox.SetActive(false);
             finished = true;
+            Time.timeScale = 1;
         }
     }
 }
