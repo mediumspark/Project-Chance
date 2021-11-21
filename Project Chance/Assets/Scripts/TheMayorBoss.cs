@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Playables; 
+using UnityEngine.Playables;
+using UnityEngine.UI;
 
 public class TheMayorBoss : Boss
 {
@@ -27,6 +28,8 @@ public class TheMayorBoss : Boss
     private TextBoxManager IntroText;
     [SerializeField]
     private PlayableDirector Intro, Victory;
+
+    public Slider enemyHealthBar;
 
     #endregion
 
@@ -81,6 +84,9 @@ public class TheMayorBoss : Boss
 
         DestructablePilar = FindObjectOfType<DestructablePilar>();
         DestructablePilar.SetPilarHeight(MayorPilarHeight, 0.25f);
+
+        enemyHealthBar = GameObject.Find("EnemyHealthBar").GetComponent<Slider>();
+        enemyHealthBar.maxValue = MaxHealth;
     }
 
     private void Update()
@@ -99,6 +105,7 @@ public class TheMayorBoss : Boss
         {
             isPilarAlive = !DestructablePilar.DeadPilar;
         }
+        enemyHealthBar.value = CurrentHealth;
     }
 
 
