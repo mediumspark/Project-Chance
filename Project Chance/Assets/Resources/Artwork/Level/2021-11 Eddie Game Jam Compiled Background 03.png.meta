@@ -1,0 +1,2052 @@
+fileFormatVersion: 2
+guid: e70f46e59325ade4a987ea385d79bb04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6019519420274108149
+    second: 2021-11 Eddie Game Jam Compiled Background 03_0
+  - first:
+      213: 8935118896264426995
+    second: 2021-11 Eddie Game Jam Compiled Background 03_1
+  - first:
+      213: 2953898999901896560
+    second: 2021-11 Eddie Game Jam Compiled Background 03_2
+  - first:
+      213: 1699823549000084783
+    second: 2021-11 Eddie Game Jam Compiled Background 03_3
+  - first:
+      213: 4008650966965345043
+    second: 2021-11 Eddie Game Jam Compiled Background 03_4
+  - first:
+      213: -6681615354101084173
+    second: 2021-11 Eddie Game Jam Compiled Background 03_5
+  - first:
+      213: 583580397436186864
+    second: 2021-11 Eddie Game Jam Compiled Background 03_6
+  - first:
+      213: -5338984179469986189
+    second: 2021-11 Eddie Game Jam Compiled Background 03_7
+  - first:
+      213: 6264131079085265449
+    second: 2021-11 Eddie Game Jam Compiled Background 03_8
+  - first:
+      213: 302391474144853293
+    second: 2021-11 Eddie Game Jam Compiled Background 03_9
+  - first:
+      213: -7511830536494178436
+    second: 2021-11 Eddie Game Jam Compiled Background 03_10
+  - first:
+      213: 8955416812014351557
+    second: 2021-11 Eddie Game Jam Compiled Background 03_11
+  - first:
+      213: -448597239061236463
+    second: 2021-11 Eddie Game Jam Compiled Background 03_12
+  - first:
+      213: -7620293399390692372
+    second: 2021-11 Eddie Game Jam Compiled Background 03_13
+  - first:
+      213: 6909578239345017226
+    second: 2021-11 Eddie Game Jam Compiled Background 03_14
+  - first:
+      213: 3247727312173829367
+    second: 2021-11 Eddie Game Jam Compiled Background 03_15
+  - first:
+      213: 2690609434983700334
+    second: 2021-11 Eddie Game Jam Compiled Background 03_16
+  - first:
+      213: -530963192460658386
+    second: 2021-11 Eddie Game Jam Compiled Background 03_17
+  - first:
+      213: 2521904896542031199
+    second: 2021-11 Eddie Game Jam Compiled Background 03_18
+  - first:
+      213: 3005058847197865839
+    second: 2021-11 Eddie Game Jam Compiled Background 03_19
+  - first:
+      213: -2213225354847985630
+    second: 2021-11 Eddie Game Jam Compiled Background 03_20
+  - first:
+      213: -5630983397412146310
+    second: 2021-11 Eddie Game Jam Compiled Background 03_21
+  - first:
+      213: 6757510059449592958
+    second: 2021-11 Eddie Game Jam Compiled Background 03_22
+  - first:
+      213: 6252568259903747643
+    second: 2021-11 Eddie Game Jam Compiled Background 03_23
+  - first:
+      213: 111416845046704029
+    second: 2021-11 Eddie Game Jam Compiled Background 03_24
+  - first:
+      213: -8477369027858313219
+    second: 2021-11 Eddie Game Jam Compiled Background 03_25
+  - first:
+      213: -7067110530097573152
+    second: 2021-11 Eddie Game Jam Compiled Background 03_26
+  - first:
+      213: -4692223423220756963
+    second: 2021-11 Eddie Game Jam Compiled Background 03_27
+  - first:
+      213: 5954425099283942498
+    second: 2021-11 Eddie Game Jam Compiled Background 03_28
+  - first:
+      213: 4070773035052012845
+    second: 2021-11 Eddie Game Jam Compiled Background 03_29
+  - first:
+      213: -1348292913263613424
+    second: 2021-11 Eddie Game Jam Compiled Background 03_30
+  - first:
+      213: -6353560132268079477
+    second: 2021-11 Eddie Game Jam Compiled Background 03_31
+  - first:
+      213: -8993182415965943253
+    second: 2021-11 Eddie Game Jam Compiled Background 03_32
+  - first:
+      213: 3328478232466610448
+    second: 2021-11 Eddie Game Jam Compiled Background 03_33
+  - first:
+      213: 8090517804543565088
+    second: 2021-11 Eddie Game Jam Compiled Background 03_34
+  - first:
+      213: 1148539891967709858
+    second: 2021-11 Eddie Game Jam Compiled Background 03_35
+  - first:
+      213: 7565328188432809808
+    second: 2021-11 Eddie Game Jam Compiled Background 03_36
+  - first:
+      213: 8247362744771772832
+    second: 2021-11 Eddie Game Jam Compiled Background 03_37
+  - first:
+      213: -1643811156241665326
+    second: 2021-11 Eddie Game Jam Compiled Background 03_38
+  - first:
+      213: -9113595718430687176
+    second: 2021-11 Eddie Game Jam Compiled Background 03_39
+  - first:
+      213: -6725646637910706447
+    second: 2021-11 Eddie Game Jam Compiled Background 03_40
+  - first:
+      213: -6555224595582236835
+    second: 2021-11 Eddie Game Jam Compiled Background 03_41
+  - first:
+      213: 3196720974057682632
+    second: 2021-11 Eddie Game Jam Compiled Background 03_42
+  - first:
+      213: -8092381389274073855
+    second: 2021-11 Eddie Game Jam Compiled Background 03_43
+  - first:
+      213: 3588933728072811098
+    second: 2021-11 Eddie Game Jam Compiled Background 03_44
+  - first:
+      213: 4271730308353727059
+    second: 2021-11 Eddie Game Jam Compiled Background 03_45
+  - first:
+      213: -5774758736104078809
+    second: 2021-11 Eddie Game Jam Compiled Background 03_46
+  - first:
+      213: 2722416340544053464
+    second: 2021-11 Eddie Game Jam Compiled Background 03_47
+  - first:
+      213: 4706890472188111617
+    second: 2021-11 Eddie Game Jam Compiled Background 03_48
+  - first:
+      213: -4352856389676626671
+    second: 2021-11 Eddie Game Jam Compiled Background 03_49
+  - first:
+      213: 812319490448877532
+    second: 2021-11 Eddie Game Jam Compiled Background 03_50
+  - first:
+      213: 831656044440914280
+    second: 2021-11 Eddie Game Jam Compiled Background 03_51
+  - first:
+      213: -3800415841577438809
+    second: 2021-11 Eddie Game Jam Compiled Background 03_52
+  - first:
+      213: 1322950180527117625
+    second: 2021-11 Eddie Game Jam Compiled Background 03_53
+  - first:
+      213: 1074244064719483193
+    second: 2021-11 Eddie Game Jam Compiled Background 03_54
+  - first:
+      213: 283392747581989851
+    second: 2021-11 Eddie Game Jam Compiled Background 03_55
+  - first:
+      213: 1910243192703775400
+    second: 2021-11 Eddie Game Jam Compiled Background 03_56
+  - first:
+      213: 1468459849048966275
+    second: 2021-11 Eddie Game Jam Compiled Background 03_57
+  - first:
+      213: 7941696537380194755
+    second: 2021-11 Eddie Game Jam Compiled Background 03_58
+  - first:
+      213: -6127648110144864168
+    second: 2021-11 Eddie Game Jam Compiled Background 03_59
+  - first:
+      213: 3707032206167887753
+    second: 2021-11 Eddie Game Jam Compiled Background 03_60
+  - first:
+      213: -6556912950992754832
+    second: 2021-11 Eddie Game Jam Compiled Background 03_61
+  - first:
+      213: -2901624755567553008
+    second: 2021-11 Eddie Game Jam Compiled Background 03_62
+  - first:
+      213: -8940937238405741217
+    second: 2021-11 Eddie Game Jam Compiled Background 03_63
+  - first:
+      213: 2459363970158659502
+    second: 2021-11 Eddie Game Jam Compiled Background 03_64
+  - first:
+      213: -21851450603747202
+    second: 2021-11 Eddie Game Jam Compiled Background 03_65
+  - first:
+      213: 6192630436141818921
+    second: 2021-11 Eddie Game Jam Compiled Background 03_66
+  - first:
+      213: 5178556774836319878
+    second: 2021-11 Eddie Game Jam Compiled Background 03_67
+  - first:
+      213: 2222716230933254516
+    second: 2021-11 Eddie Game Jam Compiled Background 03_68
+  - first:
+      213: 7280133284081845733
+    second: 2021-11 Eddie Game Jam Compiled Background 03_69
+  - first:
+      213: -966181613497201121
+    second: 2021-11 Eddie Game Jam Compiled Background 03_70
+  - first:
+      213: -5969435233293004228
+    second: 2021-11 Eddie Game Jam Compiled Background 03_71
+  - first:
+      213: 5605561449394203515
+    second: 2021-11 Eddie Game Jam Compiled Background 03_72
+  - first:
+      213: -4839482972122259258
+    second: 2021-11 Eddie Game Jam Compiled Background 03_73
+  - first:
+      213: -834224304418857883
+    second: 2021-11 Eddie Game Jam Compiled Background 03_74
+  - first:
+      213: -8886914114223391512
+    second: 2021-11 Eddie Game Jam Compiled Background 03_75
+  - first:
+      213: 4621611514344190534
+    second: 2021-11 Eddie Game Jam Compiled Background 03_76
+  - first:
+      213: -6134799517797217358
+    second: 2021-11 Eddie Game Jam Compiled Background 03_77
+  - first:
+      213: -3446805808647845005
+    second: 2021-11 Eddie Game Jam Compiled Background 03_78
+  - first:
+      213: -5875441139690887442
+    second: 2021-11 Eddie Game Jam Compiled Background 03_79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 175
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 4755
+        width: 1071
+        height: 1311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6e00c1501a98350800000000000000
+      internalID: 6019519420274108149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_1
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 4808
+        width: 845
+        height: 1258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5b8bdbb4beffb70800000000000000
+      internalID: 8935118896264426995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_2
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 5573
+        width: 180
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fb88f6d7b5ef820800000000000000
+      internalID: 2953898999901896560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_3
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 4808
+        width: 705
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d6ef2038cf69710800000000000000
+      internalID: 1699823549000084783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_4
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 5148
+        width: 172
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bde72d0d691a730800000000000000
+      internalID: 4008650966965345043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_5
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 4855
+        width: 178
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff42057c322643a0800000000000000
+      internalID: -6681615354101084173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_6
+      rect:
+        serializedVersion: 2
+        x: 4442
+        y: 4788
+        width: 339
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0b01f874b491800800000000000000
+      internalID: 583580397436186864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_7
+      rect:
+        serializedVersion: 2
+        x: 5048
+        y: 3717
+        width: 2801
+        height: 2209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376d2490d2e18e5b0800000000000000
+      internalID: -5338984179469986189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_8
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 5128
+        width: 173
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9229c53170aaee650800000000000000
+      internalID: 6264131079085265449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_9
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 5114
+        width: 142
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2db28f817f423400800000000000000
+      internalID: 302391474144853293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_10
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 5114
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f155b2ded90c790800000000000000
+      internalID: -7511830536494178436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_11
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 5135
+        width: 106
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c43da78428084c70800000000000000
+      internalID: 8955416812014351557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_12
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 4801
+        width: 386
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b886103346c9f0800000000000000
+      internalID: -448597239061236463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_13
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 4808
+        width: 140
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb501df6874f3690800000000000000
+      internalID: -7620293399390692372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_14
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 4808
+        width: 120
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81cde7dcc0c3ef50800000000000000
+      internalID: 6909578239345017226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_15
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 4808
+        width: 146
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc847188ce321d20800000000000000
+      internalID: 3247727312173829367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_16
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4336
+        width: 466
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6794819607f65520800000000000000
+      internalID: 2690609434983700334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_17
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 4336
+        width: 40
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2933942ac3a1a8f0800000000000000
+      internalID: -530963192460658386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_18
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 4349
+        width: 72
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5db4bb442b9ff220800000000000000
+      internalID: 2521904896542031199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_19
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 4322
+        width: 33
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67af5c991d14b920800000000000000
+      internalID: 3005058847197865839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_20
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 4336
+        width: 53
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220e564144b0941e0800000000000000
+      internalID: -2213225354847985630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_21
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 4376
+        width: 498
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73702d2f6abad1b0800000000000000
+      internalID: -5630983397412146310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 3857
+        width: 486
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c2f93a89f77cd50800000000000000
+      internalID: 6757510059449592958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_23
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 3105
+        width: 172
+        height: 1064
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36f17174b595c650800000000000000
+      internalID: 6252568259903747643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_24
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 3091
+        width: 219
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97e00fb705db8100800000000000000
+      internalID: 111416845046704029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_25
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 3275
+        width: 146
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff4b90c8c55a5a80800000000000000
+      internalID: -8477369027858313219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_26
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 3091
+        width: 226
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e29c118a649ced90800000000000000
+      internalID: -7067110530097573152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_27
+      rect:
+        serializedVersion: 2
+        x: 9307
+        y: 236
+        width: 4119
+        height: 3827
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec82438afd1eeb0800000000000000
+      internalID: -4692223423220756963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_28
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3011
+        width: 618
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c4d74741e52a250800000000000000
+      internalID: 5954425099283942498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_29
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 3244
+        width: 133
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25938be18a4e7830800000000000000
+      internalID: 4070773035052012845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_30
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 3198
+        width: 132
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aeebb2db6e94de0800000000000000
+      internalID: -1348292913263613424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_31
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 3105
+        width: 885
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86c319e8be93d7a0800000000000000
+      internalID: -6353560132268079477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_32
+      rect:
+        serializedVersion: 2
+        x: 6126
+        y: 1048
+        width: 2788
+        height: 2203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a8f089d3cc13380800000000000000
+      internalID: -8993182415965943253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_33
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 2073
+        width: 240
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019dac04151213e20800000000000000
+      internalID: 3328478232466610448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_34
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2013
+        width: 632
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ddacce31b474070800000000000000
+      internalID: 8090517804543565088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_35
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 2306
+        width: 152
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2d91f42fe60ff00800000000000000
+      internalID: 1148539891967709858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_36
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2306
+        width: 532
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f79c097e17df860800000000000000
+      internalID: 7565328188432809808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_37
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 2306
+        width: 140
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a189ef48b4847270800000000000000
+      internalID: 8247362744771772832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_38
+      rect:
+        serializedVersion: 2
+        x: 5008
+        y: 2306
+        width: 392
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2346276720039e0800000000000000
+      internalID: -1643811156241665326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_39
+      rect:
+        serializedVersion: 2
+        x: 5507
+        y: 2333
+        width: 86
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8300b60eaf0068180800000000000000
+      internalID: -9113595718430687176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_40
+      rect:
+        serializedVersion: 2
+        x: 5662
+        y: 2352
+        width: 117
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6388e4404b9a2a0800000000000000
+      internalID: -6725646637910706447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_41
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2000
+        width: 579
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57ca6d16f92705a0800000000000000
+      internalID: -6555224595582236835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_42
+      rect:
+        serializedVersion: 2
+        x: 5281
+        y: 2073
+        width: 62
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6bfb8f9c80d5c20800000000000000
+      internalID: 3196720974057682632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_43
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 1980
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1053651700612bf80800000000000000
+      internalID: -8092381389274073855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_44
+      rect:
+        serializedVersion: 2
+        x: 5214
+        y: 835
+        width: 645
+        height: 1231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52c230f5347ec130800000000000000
+      internalID: 3588933728072811098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_45
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 1927
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a91b5351c384b30800000000000000
+      internalID: 4271730308353727059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_46
+      rect:
+        serializedVersion: 2
+        x: 5826
+        y: 1780
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722cee6868febdfa0800000000000000
+      internalID: -5774758736104078809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_47
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1661
+        width: 325
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0e8dcdc37f7c520800000000000000
+      internalID: 2722416340544053464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_48
+      rect:
+        serializedVersion: 2
+        x: 5860
+        y: 1720
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b617f32fb325140800000000000000
+      internalID: 4706890472188111617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_49
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1516
+        width: 645
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d090f0d2c8793c0800000000000000
+      internalID: -4352856389676626671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_50
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 1516
+        width: 225
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7e450d540f54b00800000000000000
+      internalID: 812319490448877532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_51
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 1481
+        width: 114
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869053024c2aa8b00800000000000000
+      internalID: 831656044440914280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_52
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 1314
+        width: 299
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a172047de5324bc0800000000000000
+      internalID: -3800415841577438809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_53
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1368
+        width: 1350
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9359bdd0e201c5210800000000000000
+      internalID: 1322950180527117625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_54
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 975
+        width: 119
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9313da7094b78ee00800000000000000
+      internalID: 1074244064719483193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_55
+      rect:
+        serializedVersion: 2
+        x: 4342
+        y: 1168
+        width: 113
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3eb83d330dee300800000000000000
+      internalID: 283392747581989851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_56
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 1408
+        width: 47
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a277b7101c828a10800000000000000
+      internalID: 1910243192703775400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_57
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 1168
+        width: 87
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384cc75d374016410800000000000000
+      internalID: 1468459849048966275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_58
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 1368
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c90f708ce2963e60800000000000000
+      internalID: 7941696537380194755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_59
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1182
+        width: 2708
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850c83e628836faa0800000000000000
+      internalID: -6127648110144864168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_60
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 975
+        width: 167
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fc19b9626027330800000000000000
+      internalID: 3707032206167887753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_61
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 1215
+        width: 80
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0772bec396a2105a0800000000000000
+      internalID: -6556912950992754832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_62
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 438
+        width: 313
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0169ae488ab5bb7d0800000000000000
+      internalID: -2901624755567553008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_63
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 975
+        width: 335
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5583c9e3f86be380800000000000000
+      internalID: -8940937238405741217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_64
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 1029
+        width: 957
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea783b6208a612220800000000000000
+      internalID: 2459363970158659502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 438
+        width: 772
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78cfe0b83e52bff0800000000000000
+      internalID: -21851450603747202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_66
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 438
+        width: 213
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924618b5294a0f550800000000000000
+      internalID: 6192630436141818921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_67
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 438
+        width: 226
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686bf4513fdedd740800000000000000
+      internalID: 5178556774836319878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_68
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 749
+        width: 759
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4719545b2aca8de10800000000000000
+      internalID: 2222716230933254516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_69
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 889
+        width: 479
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5423b66aa380560800000000000000
+      internalID: 7280133284081845733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_70
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 423
+        width: 432
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e4cfa01fe6792f0800000000000000
+      internalID: -966181613497201121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_71
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 529
+        width: 462
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c329ed1684e482da0800000000000000
+      internalID: -5969435233293004228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_72
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 582
+        width: 2708
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7be3cd4074facd40800000000000000
+      internalID: 5605561449394203515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_73
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 176
+        width: 2708
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0e916a0e3b6dcb0800000000000000
+      internalID: -4839482972122259258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_74
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 356
+        width: 293
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cdd104a6d3c64f0800000000000000
+      internalID: -834224304418857883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_75
+      rect:
+        serializedVersion: 2
+        x: 3896
+        y: 356
+        width: 2709
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec3f40b2b65ba480800000000000000
+      internalID: -8886914114223391512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_76
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 163
+        width: 533
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642375a9f23432040800000000000000
+      internalID: 4621611514344190534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_77
+      rect:
+        serializedVersion: 2
+        x: 3896
+        y: 123
+        width: 1371
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb85759750dcdaa0800000000000000
+      internalID: -6134799517797217358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_78
+      rect:
+        serializedVersion: 2
+        x: 5407
+        y: 123
+        width: 659
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bcac5016c7a20d0800000000000000
+      internalID: -3446805808647845005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2021-11 Eddie Game Jam Compiled Background 03_79
+      rect:
+        serializedVersion: 2
+        x: 6219
+        y: 123
+        width: 386
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee62202b96d367ea0800000000000000
+      internalID: -5875441139690887442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 48424f197a0cecc479a6dd261fcb6de3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

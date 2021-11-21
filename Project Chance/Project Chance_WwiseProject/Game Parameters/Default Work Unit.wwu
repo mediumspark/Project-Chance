@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F870E80F-4F6B-416F-91D3-48886BAB6AB3}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F870E80F-4F6B-416F-91D3-48886BAB6AB3}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
+				<GameParameter Name="Distance_Bureaucrat" ID="{5C6BA43D-5BDD-4BEE-9689-125C105755F2}"/>
+				<GameParameter Name="Distance_Chief" ID="{EB5DAAEC-340B-4264-9389-3DCC5A0E7CA1}"/>
+				<GameParameter Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
+				<GameParameter Name="Distance_Money" ID="{FB185ACF-BF9B-4484-BB83-2C1B3F06BFE1}"/>
+				<GameParameter Name="Distance_Organizer" ID="{091082F3-20B6-42CD-B15F-3D74E3518022}"/>
+				<GameParameter Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
+				<GameParameter Name="Distance_Rebel" ID="{ED48E5E6-44EE-4ECD-BE6F-72CA4B6F3154}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

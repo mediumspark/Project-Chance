@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+<<<<<<< HEAD
+		<SoundBank Id="80144099" Language="SFX" Hash="534625093">
+=======
+		<SoundBank Id="80144099" Language="SFX" Hash="2721689665">
+>>>>>>> Production-Branch
+			<ObjectPath>\SoundBanks\Default Work Unit\The_Mayor</ObjectPath>
+			<ShortName>The_Mayor</ShortName>
+			<Path>The_Mayor.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4069192858" Name="Play_Mayor_Damaged" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Damaged" DurationType="OneShot" DurationMin="0.391295" DurationMax="0.499322">
+					<IncludedMemoryFiles>
+						<File Id="81352099" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03_10C4C929.wem</Path>
+						</File>
+						<File Id="624953290" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01_10C4C929.wem</Path>
+						</File>
+						<File Id="955219341" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="138878230" Name="Play_Mayor_Footsteps" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Footsteps" DurationType="OneShot" DurationMin="0.186500" DurationMax="0.186500">
+					<IncludedMemoryFiles>
+						<File Id="102596096" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Footsteps.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1261748742" Name="Play_Mayor_Impacts" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_Impacts" DurationType="OneShot" DurationMin="1.411445" DurationMax="2.120561">
+					<IncludedMemoryFiles>
+						<File Id="259424978" Language="SFX">
+							<ShortName>Mayor Impacts\Mayor_Impact_01.wav</ShortName>
+							<Path>SFX\Mayor Impacts\Mayor_Impact_01_10C4C929.wem</Path>
+						</File>
+						<File Id="269216594" Language="SFX">
+							<ShortName>Mayor Impacts\Mayor_Impact_02.wav</ShortName>
+							<Path>SFX\Mayor Impacts\Mayor_Impact_02_10C4C929.wem</Path>
+						</File>
+						<File Id="646397021" Language="SFX">
+							<ShortName>Mayor Impacts\Mayor_Impact_03.wav</ShortName>
+							<Path>SFX\Mayor Impacts\Mayor_Impact_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4104657743" Name="Play_Mayor_RockProjectile" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_RockProjectile" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="153071325" Language="SFX">
+							<ShortName>Mayor_RockProjectile.wav</ShortName>
+							<Path>SFX\Mayor_RockProjectile_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1279086127" Name="Play_Mayor_RockSummon" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_Mayor_RockSummon" DurationType="OneShot" DurationMin="2.984000" DurationMax="2.984000">
+					<IncludedMemoryFiles>
+						<File Id="128107613" Language="SFX">
+							<ShortName>Mayor_RockSummon.wav</ShortName>
+							<Path>SFX\Mayor_RockSummon_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1577132608" Name="Play_music_Mayor_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Mayor\Play_music_Mayor_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="320059318" Language="SFX">
+							<ShortName>The Mayor Theme.wav</ShortName>
+							<Path>SFX\The Mayor Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="115247927" Language="SFX" Hash="2805109171">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_And_Ambience</ObjectPath>
+			<ShortName>Music_And_Ambience</ShortName>
+			<Path>Music_And_Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2758753758" Name="Play_Ambiance_Hub" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambiance_Hub" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="428237620" Language="SFX">
+							<ShortName>Ambiences\Ambiance_Hub.wav</ShortName>
+							<Path>SFX\Ambiences\Ambiance_Hub_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2955335140" Name="Play_Ambience_HotelCaput" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_HotelCaput" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="702821490" Language="SFX">
+							<ShortName>Ambiences\Ambience_HotelCaput.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_HotelCaput_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1451337521" Name="Play_Ambience_Office" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_Office" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="29815098" Language="SFX">
+							<ShortName>Ambiences\Stinger_OfficeSpace.wav</ShortName>
+							<Path>SFX\Ambiences\Stinger_OfficeSpace_D79FB2B7.wem</Path>
+						</File>
+						<File Id="326376891" Language="SFX">
+							<ShortName>Ambiences\Ambience_OfficeSpace.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_OfficeSpace_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3519641755" Name="Play_Ambience_Rooftops" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_Rooftops" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="574758837" Language="SFX">
+							<ShortName>Ambiences\Ambience_Rooftops.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_Rooftops_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3932320915" Name="Play_Ambience_Streets" ObjectPath="\Events\Default Work Unit\City\Ambiences\Play_Ambience_Streets" DurationType="OneShot" DurationMin="14.174000" DurationMax="14.174000">
+					<IncludedMemoryFiles>
+						<File Id="916922512" Language="SFX">
+							<ShortName>Ambiences\Ambience_Streets.wav</ShortName>
+							<Path>SFX\Ambiences\Ambience_Streets_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3779208993" Name="Play_Music_HotelCaput_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_HotelCaput_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="342851348" Language="SFX">
+							<ShortName>Music_HotelCaput_Theme.wav</ShortName>
+							<Path>SFX\Music_HotelCaput_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1753068158" Name="Play_Music_OfficeSpace_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_OfficeSpace_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="121291358" Language="SFX">
+							<ShortName>Music_OfficeSpace_Theme.wav</ShortName>
+							<Path>SFX\Music_OfficeSpace_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="838192066" Name="Play_Music_Rooftops_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_Rooftops_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="159280278" Language="SFX">
+							<ShortName>Music_Rooftops_Theme.wav</ShortName>
+							<Path>SFX\Music_Rooftops_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="29672328" Name="Play_Music_Streets_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_Streets_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="211789275" Language="SFX">
+							<ShortName>Music_Streets_Theme.wav</ShortName>
+							<Path>SFX\Music_Streets_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1943370246" Name="Play_Music_TheGrandArena_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_TheGrandArena_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="364033017" Language="SFX">
+							<ShortName>Music_TheGrandArena_Theme.wav</ShortName>
+							<Path>SFX\Music_TheGrandArena_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277527292" Name="Play_Music_TheWildSide_Theme" ObjectPath="\Events\Default Work Unit\City\Sound Track\Play_Music_TheWildSide_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="649785047" Language="SFX">
+							<ShortName>Music_TheWildSide_Theme.wav</ShortName>
+							<Path>SFX\Music_TheWildSide_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Player\Combat" GUID="{86F66DE8-E44E-4313-8C94-B585A813C194}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Player\Combat\None" GUID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<State Id="514064485" Name="Fight" ObjectPath="\States\Default Work Unit\Player\Combat\Fight" GUID="{4ACC0FC3-9187-415B-AF12-8C65CAD7431C}"/>
+						<State Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Player\Combat\Exploration" GUID="{F3FFDA98-F406-4DF7-BECA-057911B553F9}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2782712965" Name="Level" ObjectPath="\States\Default Work Unit\Level" GUID="{F1F7D483-CB86-4C06-B440-FAA2B6716C6C}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Level\None" GUID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+						<State Id="1036396546" Name="The_Hub" ObjectPath="\States\Default Work Unit\Level\The_Hub" GUID="{DF1C29C6-4328-4E87-8AA3-19DFBF38795A}"/>
+						<State Id="363725171" Name="The_Streets" ObjectPath="\States\Default Work Unit\Level\The_Streets" GUID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+						<State Id="1695287547" Name="Hotel_Caput" ObjectPath="\States\Default Work Unit\Level\Hotel_Caput" GUID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+						<State Id="268254414" Name="Office_Space" ObjectPath="\States\Default Work Unit\Level\Office_Space" GUID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+						<State Id="4265799768" Name="Rooftop" ObjectPath="\States\Default Work Unit\Level\Rooftop" GUID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+<<<<<<< HEAD
+		<SoundBank Id="204495494" Language="SFX" Hash="1061704580">
+=======
+		<SoundBank Id="204495494" Language="SFX" Hash="36764079">
+>>>>>>> Production-Branch
+			<ObjectPath>\SoundBanks\Default Work Unit\Philanthropist</ObjectPath>
+			<ShortName>Philanthropist</ShortName>
+			<Path>Philanthropist.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1776098227" Name="Play_Music_Philanthropist_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Music_Philanthropist_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="943991102" Language="SFX">
+							<ShortName>The Philanthropist.wav</ShortName>
+							<Path>SFX\The Philanthropist_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1763307192" Name="Play_Philanthropist_Attack" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Attack" DurationType="OneShot" DurationMin="0.823343" DurationMax="1.164382">
+					<IncludedMemoryFiles>
+						<File Id="467343857" Language="SFX">
+							<ShortName>Philanthropist_AttackProjectile.wav</ShortName>
+							<Path>SFX\Philanthropist_AttackProjectile_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1108016795" Name="Play_Philanthropist_Clone" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Clone" DurationType="OneShot" DurationMin="0.644921" DurationMax="0.766945">
+					<IncludedMemoryFiles>
+						<File Id="96923447" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Attack.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3376220201" Name="Play_Philanthropist_Damaged" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Damaged" DurationType="OneShot" DurationMin="0.338680" DurationMax="0.432182">
+					<IncludedMemoryFiles>
+						<File Id="81352099" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_03_10C4C929.wem</Path>
+						</File>
+						<File Id="624953290" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_01_10C4C929.wem</Path>
+						</File>
+						<File Id="955219341" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Damaged\Philanthropist_Damaged_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3615605441" Name="Play_Philanthropist_Footsteps" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Play_Philanthropist_Footsteps" DurationType="OneShot" DurationMin="0.186500" DurationMax="0.186500">
+					<IncludedMemoryFiles>
+						<File Id="102596096" Language="SFX">
+							<ShortName>The Philanthropist\Philanthropist_Footsteps.wav</ShortName>
+							<Path>SFX\The Philanthropist\Philanthropist_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="11724553" Name="Stop_Music_Philanthropist_Theme" ObjectPath="\Events\Default Work Unit\Enemy\The Philanthropist\Stop_Music_Philanthropist_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="965033712" Language="SFX" Hash="2514109293">
+			<ObjectPath>\SoundBanks\Default Work Unit\Uncovered_SoundBank</ObjectPath>
+			<ShortName>Uncovered_SoundBank</ShortName>
+			<Path>Uncovered_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Play_Footsteps" DurationType="OneShot" DurationMin="0.171021" DurationMax="0.203380">
+					<IncludedMemoryFiles>
+						<File Id="364865366" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_02.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_02_10C4C929.wem</Path>
+						</File>
+						<File Id="399656267" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_04.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_04_10C4C929.wem</Path>
+						</File>
+						<File Id="434921525" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_01.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_01_10C4C929.wem</Path>
+						</File>
+						<File Id="678434978" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_03.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_03_10C4C929.wem</Path>
+						</File>
+						<File Id="690709086" Language="SFX">
+							<ShortName>Player\Footsteps\Demo Player_Footsteps_05.wav</ShortName>
+							<Path>SFX\Player\Footsteps\Demo Player_Footsteps_05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="11636562" Language="SFX">
+							<ShortName>Music_ Guitar_02.wav</ShortName>
+							<Path>SFX\Music_ Guitar_02_10C4C929.wem</Path>
+						</File>
+						<File Id="29575122" Language="SFX">
+							<ShortName>Music_ Trumpet_03.wav</ShortName>
+							<Path>SFX\Music_ Trumpet_03_10C4C929.wem</Path>
+						</File>
+						<File Id="110326130" Language="SFX">
+							<ShortName>Music_ Synth_02.wav</ShortName>
+							<Path>SFX\Music_ Synth_02_10C4C929.wem</Path>
+						</File>
+						<File Id="117946101" Language="SFX">
+							<ShortName>Music_ Banjo_03.wav</ShortName>
+							<Path>SFX\Music_ Banjo_03_10C4C929.wem</Path>
+						</File>
+						<File Id="119414258" Language="SFX">
+							<ShortName>Music_ Violin_01.wav</ShortName>
+							<Path>SFX\Music_ Violin_01_10C4C929.wem</Path>
+						</File>
+						<File Id="121291358" Language="SFX">
+							<ShortName>Music_OfficeSpace_Theme.wav</ShortName>
+							<Path>SFX\Music_OfficeSpace_Theme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="122596244" Language="SFX">
+							<ShortName>Music_ Violin_03.wav</ShortName>
+							<Path>SFX\Music_ Violin_03_10C4C929.wem</Path>
+						</File>
+						<File Id="159280278" Language="SFX">
+							<ShortName>Music_Rooftops_Theme.wav</ShortName>
+							<Path>SFX\Music_Rooftops_Theme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="183193241" Language="SFX">
+							<ShortName>Music_ Drums_02.wav</ShortName>
+							<Path>SFX\Music_ Drums_02_10C4C929.wem</Path>
+						</File>
+						<File Id="211789275" Language="SFX">
+							<ShortName>Music_Streets_Theme.wav</ShortName>
+							<Path>SFX\Music_Streets_Theme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="307058123" Language="SFX">
+							<ShortName>Music_ Piano_03.wav</ShortName>
+							<Path>SFX\Music_ Piano_03_10C4C929.wem</Path>
+						</File>
+						<File Id="327889281" Language="SFX">
+							<ShortName>Music_ Drums_03.wav</ShortName>
+							<Path>SFX\Music_ Drums_03_10C4C929.wem</Path>
+						</File>
+						<File Id="342851348" Language="SFX">
+							<ShortName>Music_HotelCaput_Theme.wav</ShortName>
+							<Path>SFX\Music_HotelCaput_Theme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="351226835" Language="SFX">
+							<ShortName>Music_ Bass_02.wav</ShortName>
+							<Path>SFX\Music_ Bass_02_10C4C929.wem</Path>
+						</File>
+						<File Id="378521049" Language="SFX">
+							<ShortName>Music_ Synth_03.wav</ShortName>
+							<Path>SFX\Music_ Synth_03_10C4C929.wem</Path>
+						</File>
+						<File Id="433256608" Language="SFX">
+							<ShortName>Music_ Piano_02.wav</ShortName>
+							<Path>SFX\Music_ Piano_02_10C4C929.wem</Path>
+						</File>
+						<File Id="441889350" Language="SFX">
+							<ShortName>Music_ Banjo_01.wav</ShortName>
+							<Path>SFX\Music_ Banjo_01_10C4C929.wem</Path>
+						</File>
+						<File Id="487250221" Language="SFX">
+							<ShortName>Music_ Bass_03.wav</ShortName>
+							<Path>SFX\Music_ Bass_03_10C4C929.wem</Path>
+						</File>
+						<File Id="536666391" Language="SFX">
+							<ShortName>Music_ Sax_01.wav</ShortName>
+							<Path>SFX\Music_ Sax_01_10C4C929.wem</Path>
+						</File>
+						<File Id="572755904" Language="SFX">
+							<ShortName>Music_ Trumpet_01.wav</ShortName>
+							<Path>SFX\Music_ Trumpet_01_10C4C929.wem</Path>
+						</File>
+						<File Id="615964006" Language="SFX">
+							<ShortName>Music_ Trumpet_02.wav</ShortName>
+							<Path>SFX\Music_ Trumpet_02_10C4C929.wem</Path>
+						</File>
+						<File Id="708371709" Language="SFX">
+							<ShortName>Music_ Synth_01.wav</ShortName>
+							<Path>SFX\Music_ Synth_01_10C4C929.wem</Path>
+						</File>
+						<File Id="718970927" Language="SFX">
+							<ShortName>Music_ Guitar_01.wav</ShortName>
+							<Path>SFX\Music_ Guitar_01_10C4C929.wem</Path>
+						</File>
+						<File Id="767394848" Language="SFX">
+							<ShortName>Music_ Sax_02.wav</ShortName>
+							<Path>SFX\Music_ Sax_02_10C4C929.wem</Path>
+						</File>
+						<File Id="774586788" Language="SFX">
+							<ShortName>Music_ Banjo_02.wav</ShortName>
+							<Path>SFX\Music_ Banjo_02_10C4C929.wem</Path>
+						</File>
+						<File Id="812201351" Language="SFX">
+							<ShortName>Music_ Violin_02.wav</ShortName>
+							<Path>SFX\Music_ Violin_02_10C4C929.wem</Path>
+						</File>
+						<File Id="841116670" Language="SFX">
+							<ShortName>MainCharacter_Theme (Chorus Loop).wav</ShortName>
+							<Path>SFX\MainCharacter_Theme (Chorus Loop)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="884437571" Language="SFX">
+							<ShortName>Music_ Drums_01.wav</ShortName>
+							<Path>SFX\Music_ Drums_01_10C4C929.wem</Path>
+						</File>
+						<File Id="918042324" Language="SFX">
+							<ShortName>Music_ Sax_03.wav</ShortName>
+							<Path>SFX\Music_ Sax_03_10C4C929.wem</Path>
+						</File>
+						<File Id="972008963" Language="SFX">
+							<ShortName>Music_ Piano_01.wav</ShortName>
+							<Path>SFX\Music_ Piano_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1008752036" Language="SFX">
+							<ShortName>Music_ Bass_01.wav</ShortName>
+							<Path>SFX\Music_ Bass_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{F3FFDA98-F406-4DF7-BECA-057911B553F9}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F3FFDA98-F406-4DF7-BECA-057911B553F9}">
+							<DefaultSwitchValue>{DF1C29C6-4328-4E87-8AA3-19DFBF38795A}</DefaultSwitchValue>
+							<Media>
+								<File Id="364033017"/>
+								<File Id="649785047"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{01257773-F167-41EF-BC80-AB20AA793953}">
+									<Media>
+										<File Id="342851348"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{55F951E4-DBC7-4637-ABD8-11882F11E076}">
+									<Media>
+										<File Id="121291358"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}">
+									<Media>
+										<File Id="159280278"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{589EAD23-0471-4764-8208-5CDEC530DB14}">
+									<Media>
+										<File Id="211789275"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F0980C68-8ED5-4A69-A6B7-D453D858F169}">
+									<Media>
+										<File Id="841116670"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4ACC0FC3-9187-415B-AF12-8C65CAD7431C}">
+							<Media>
+								<File Id="183193241"/>
+								<File Id="327889281"/>
+								<File Id="351226835"/>
+								<File Id="487250221"/>
+								<File Id="884437571"/>
+								<File Id="1008752036"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{55F951E4-DBC7-4637-ABD8-11882F11E076}">
+									<Media>
+										<File Id="110326130"/>
+										<File Id="378521049"/>
+										<File Id="708371709"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{589EAD23-0471-4764-8208-5CDEC530DB14}">
+									<Media>
+										<File Id="117946101"/>
+										<File Id="441889350"/>
+										<File Id="536666391"/>
+										<File Id="767394848"/>
+										<File Id="774586788"/>
+										<File Id="918042324"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{01257773-F167-41EF-BC80-AB20AA793953}">
+									<Media>
+										<File Id="11636562"/>
+										<File Id="119414258"/>
+										<File Id="122596244"/>
+										<File Id="718970927"/>
+										<File Id="812201351"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}">
+									<Media>
+										<File Id="29575122"/>
+										<File Id="307058123"/>
+										<File Id="433256608"/>
+										<File Id="572755904"/>
+										<File Id="615964006"/>
+										<File Id="972008963"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3238800884" Name="Play_Player_Attack" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Attack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2301987285" Name="Play_Player_Damaged" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Damaged" DurationType="OneShot" DurationMin="0.256570" DurationMax="0.305115">
+					<IncludedMemoryFiles>
+						<File Id="241811837" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_03.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_03_10C4C929.wem</Path>
+						</File>
+						<File Id="849162186" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_02.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_02_10C4C929.wem</Path>
+						</File>
+						<File Id="986594121" Language="SFX">
+							<ShortName>Player\Player_Damaged\Player_Damaged_01.wav</ShortName>
+							<Path>SFX\Player\Player_Damaged\Player_Damaged_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="396543629" Name="Play_Player_Falling" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Falling" DurationType="OneShot" DurationMin="0.512875" DurationMax="0.512875">
+					<IncludedMemoryFiles>
+						<File Id="76081364" Language="SFX">
+							<ShortName>Player_Falling.wav</ShortName>
+							<Path>SFX\Player_Falling_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1694127508" Name="Play_Player_GroundSlide" ObjectPath="\Events\Default Work Unit\Player\Play_Player_GroundSlide" DurationType="OneShot" DurationMin="0.426667" DurationMax="0.426667">
+					<IncludedMemoryFiles>
+						<File Id="833436760" Language="SFX">
+							<ShortName>Player\WhipWhooshSwoosh_S011FO.993.wav</ShortName>
+							<Path>SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="638998366" Name="Play_Player_Heal" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Heal" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="627206562" Language="SFX">
+							<ShortName>ESM_Ancient_Game_Magic_Heal_Buff_Fantasy_Tonal_Accent_Hit_Stab.wav</ShortName>
+							<Path>SFX\ESM_Ancient_Game_Magic_Heal_Buff_Fantasy_Tonal_Accent_Hit_Stab_81CFEAD6.wem</Path>
+						</File>
+						<File Id="841116670" Language="SFX">
+							<ShortName>MainCharacter_Theme (Chorus Loop).wav</ShortName>
+							<Path>SFX\MainCharacter_Theme (Chorus Loop)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="897857902" Language="SFX">
+							<ShortName>SPLC-3476_FX_Oneshot_Wind_Chimes_Tonal.wav</ShortName>
+							<Path>SFX\SPLC-3476_FX_Oneshot_Wind_Chimes_Tonal_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="562256996" Name="Play_Player_Jump" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Jump" DurationType="OneShot" DurationMin="1.771750" DurationMax="1.771750">
+					<IncludedMemoryFiles>
+						<File Id="579271797" Language="SFX">
+							<ShortName>Player_Jump.wav</ShortName>
+							<Path>SFX\Player_Jump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3851267176" Name="Play_Player_LowHealth" ObjectPath="\Events\Default Work Unit\Player\Play_Player_LowHealth" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="662526332" Language="SFX">
+							<ShortName>Player\Player_LowHealth.wav</ShortName>
+							<Path>SFX\Player\Player_LowHealth_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3607210104" Name="Stop_Player_Heal" ObjectPath="\Events\Default Work Unit\Player\Stop_Player_Heal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="898213950" Name="Stop_Player_LowHealth" ObjectPath="\Events\Default Work Unit\Player\Stop_Player_LowHealth" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="263702421" Name="Distance_Money" ObjectPath="\Game Parameters\Default Work Unit\Distance_Money"/>
+				<GameParameter Id="560269304" Name="Distance_Philanthropist" ObjectPath="\Game Parameters\Default Work Unit\Distance_Philanthropist"/>
+				<GameParameter Id="819496709" Name="Distance_Rebel" ObjectPath="\Game Parameters\Default Work Unit\Distance_Rebel"/>
+				<GameParameter Id="1011057461" Name="Distance_Bureaucrat" ObjectPath="\Game Parameters\Default Work Unit\Distance_Bureaucrat"/>
+				<GameParameter Id="2867040294" Name="Distance_Chief" ObjectPath="\Game Parameters\Default Work Unit\Distance_Chief"/>
+				<GameParameter Id="3507896190" Name="Distance_Organizer" ObjectPath="\Game Parameters\Default Work Unit\Distance_Organizer"/>
+				<GameParameter Id="3677180323" Name="Health" ObjectPath="\Game Parameters\Default Work Unit\Health"/>
+				<GameParameter Id="4111688057" Name="Distance_Mayor" ObjectPath="\Game Parameters\Default Work Unit\Distance_Mayor"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Player\Combat" GUID="{86F66DE8-E44E-4313-8C94-B585A813C194}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Player\Combat\None" GUID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<State Id="514064485" Name="Fight" ObjectPath="\States\Default Work Unit\Player\Combat\Fight" GUID="{4ACC0FC3-9187-415B-AF12-8C65CAD7431C}"/>
+						<State Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Player\Combat\Exploration" GUID="{F3FFDA98-F406-4DF7-BECA-057911B553F9}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2782712965" Name="Level" ObjectPath="\States\Default Work Unit\Level" GUID="{F1F7D483-CB86-4C06-B440-FAA2B6716C6C}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Level\None" GUID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+						<State Id="1036396546" Name="The_Hub" ObjectPath="\States\Default Work Unit\Level\The_Hub" GUID="{DF1C29C6-4328-4E87-8AA3-19DFBF38795A}"/>
+						<State Id="363725171" Name="The_Streets" ObjectPath="\States\Default Work Unit\Level\The_Streets" GUID="{589EAD23-0471-4764-8208-5CDEC530DB14}"/>
+						<State Id="1695287547" Name="Hotel_Caput" ObjectPath="\States\Default Work Unit\Level\Hotel_Caput" GUID="{01257773-F167-41EF-BC80-AB20AA793953}"/>
+						<State Id="268254414" Name="Office_Space" ObjectPath="\States\Default Work Unit\Level\Office_Space" GUID="{55F951E4-DBC7-4637-ABD8-11882F11E076}"/>
+						<State Id="4265799768" Name="Rooftop" ObjectPath="\States\Default Work Unit\Level\Rooftop" GUID="{E61EE5C8-2540-4A7D-8735-53D109A88E0A}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="180661997" Name="Attack" ObjectPath="\Switches\Default Work Unit\Player\Attack" GUID="{DEAEC6CC-0AD1-457C-8977-B5A1985EAC15}">
+					<Switches>
+						<Switch Id="1731679510" Name="Person" ObjectPath="\Switches\Default Work Unit\Player\Attack\Person" GUID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+						<Switch Id="1930240631" Name="Robot" ObjectPath="\Switches\Default Work Unit\Player\Attack\Robot" GUID="{114E64E4-AA5A-42FA-A242-9F580CDD4692}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1601575706">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2242381963" Language="SFX" Hash="570400659">
+			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
+			<ShortName>Enemies</ShortName>
+			<Path>Enemies.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1484250099" Name="Play_Air_Enemy_Flying" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Air_Enemy_Flying" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="603567313" Language="SFX">
+							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Flying.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Flying_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="888154214" Name="Play_Air_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Air_Enemy_Ranged_Attack" DurationType="OneShot" DurationMin="2.611000" DurationMax="2.611000">
+					<IncludedMemoryFiles>
+						<File Id="376328550" Language="SFX">
+							<ShortName>Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Air Enemy\Air_Enemy_Ranged_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3545181809" Name="Play_Ambience_Ground_Enemy" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Ambience_Ground_Enemy" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="948367304" Language="SFX">
+							<ShortName>Ground_Enemy_Bigger_Ambience.wav</ShortName>
+							<Path>SFX\Ground_Enemy_Bigger_Ambience_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="354821980" Name="Play_Ambience_Ground_Enemy_Bigger" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Ambiences\Play_Ambience_Ground_Enemy_Bigger" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="286797296" Language="SFX">
+							<ShortName>Stinger_Ground_Enemy_Bigger_Ambience_01.wav</ShortName>
+							<Path>SFX\Stinger_Ground_Enemy_Bigger_Ambience_01_10C4C929.wem</Path>
+						</File>
+						<File Id="816202818" Language="SFX">
+							<ShortName>Stinger_Ground_Enemy_Bigger_Ambience_02.wav</ShortName>
+							<Path>SFX\Stinger_Ground_Enemy_Bigger_Ambience_02_10C4C929.wem</Path>
+						</File>
+						<File Id="948367304" Language="SFX">
+							<ShortName>Ground_Enemy_Bigger_Ambience.wav</ShortName>
+							<Path>SFX\Ground_Enemy_Bigger_Ambience_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3600261322" Name="Play_Ground_Enemy_Footsteps" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Footsteps" DurationType="OneShot" DurationMin="0.233125" DurationMax="0.233125">
+					<IncludedMemoryFiles>
+						<File Id="267594868" Language="SFX">
+							<ShortName>Enemies\Basic\Ground Enemy\Ground_Enemy_Footsteps.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="512754046" Name="Play_Ground_Enemy_Melee_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Attack" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="790539309" Language="SFX">
+							<ShortName>Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4053597708" Name="Play_Ground_Enemy_Melee_Attack_01" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Attack_01" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="756961344" Language="SFX">
+							<ShortName>Enemies\Basic\Ground Enemy\Ground_Enemy_Melee_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Melee_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3197540882" Name="Play_Ground_Enemy_Melee_Bigger_Footsteps" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Melee_Bigger_Footsteps" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="8160346" Language="SFX">
+							<ShortName>Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Bigger Ground Enemy\Ground_Enemy_Melee_Bigger_Footsteps_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2336839859" Name="Play_Ground_Enemy_Ranged_Attack" ObjectPath="\Events\Default Work Unit\Enemy\Basic\Play_Ground_Enemy_Ranged_Attack" DurationType="OneShot" DurationMin="0.932500" DurationMax="0.932500">
+					<IncludedMemoryFiles>
+						<File Id="548938292" Language="SFX">
+							<ShortName>Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack.wav</ShortName>
+							<Path>SFX\Enemies\Basic\Ground Enemy\Ground_Enemy_Ranged_Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
