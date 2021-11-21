@@ -1403,13 +1403,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585648994974775808
     List: []
-<<<<<<< HEAD
-  ExpandedFileSystemItemIds: 04000000050000004500000046000000
-  ExpandedWaapiItemIds: 4500000046000000
-=======
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
->>>>>>> Production-Branch
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
