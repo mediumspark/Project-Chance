@@ -151,7 +151,7 @@ public class TheMayorBoss : Boss
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
             ShootAtPlayer(); 
             Destroy(FindObjectOfType<MayorPilars>().gameObject);
-            RecentlyRaisedPilar = false; 
+            RecentlyRaisedPilar = false;
         }
         else if (!isPilarAlive && !RecentlyRaisedPilar)
         {
@@ -168,8 +168,9 @@ public class TheMayorBoss : Boss
         {
             PilarAttack();
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
-            ShootAtPlayer(); 
-            Destroy(SpawnSpotOnPlayer.transform.GetChild(0).gameObject);
+            ShootAtPlayer();
+            Destroy(FindObjectOfType<MayorPilars>().gameObject);
+            RecentlyRaisedPilar = false; 
         }
         else if(!isPilarAlive)
         {

@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Lab
-  spawnPoint: 0
+  spawnPoint: 1
 --- !u!114 &434543280
 MonoBehaviour:
   m_ObjectHideFlags: 0

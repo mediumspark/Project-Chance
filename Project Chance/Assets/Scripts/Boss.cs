@@ -20,9 +20,12 @@ public abstract class Boss : Character
     protected Collider2D HurtBox; 
     public IEnumerator deactivateHurtbox(float duration)
     {
-        HurtBox.gameObject.SetActive(false);
-        yield return new WaitForSeconds(duration);
-        HurtBox.gameObject.SetActive(true); 
+        if (this is TheMayorBoss)
+        {
+            HurtBox.gameObject.SetActive(false);
+            yield return new WaitForSeconds(duration);
+            HurtBox.gameObject.SetActive(true);
+        }
     }
 
     protected override void FixedUpdate()
