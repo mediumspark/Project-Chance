@@ -9,9 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/1E891CC7-B539-4BB2-A347-0FE422478C82.asset
   m_Script: {fileID: 11500000, guid: 4bbe01aa0befe7a42a9da951e99bba6e, type: 3}
   m_Name: 1E891CC7-B539-4BB2-A347-0FE422478C82
   m_EditorClassIdentifier: 
   objectName: Play_Music_Rooftops_Theme
   id: 838192066
   guid: 1E891CC7-B539-4BB2-A347-0FE422478C82
+=======
+  m_Script: {fileID: 11500000, guid: 44df9ef1b1faaa743a898954cad59f18, type: 3}
+  m_Name: E43401F2-B3E0-4ABE-AEB6-6F2B09B747B8
+  m_EditorClassIdentifier: 
+  objectName: Enemies
+  id: 2242381963
+  guid: E43401F2-B3E0-4ABE-AEB6-6F2B09B747B8
+>>>>>>> Wayne:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/E43401F2-B3E0-4ABE-AEB6-6F2B09B747B8.asset

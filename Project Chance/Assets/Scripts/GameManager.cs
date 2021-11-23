@@ -6,12 +6,18 @@ using Cinemachine;
 
 public class GameManager 
 {
-    private static int nextspawnposition; 
+    private static int nextspawnposition;
+    public static bool DemoFinished; 
 
     public static void LevelReload()
-    {
-        SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+    {        
+        SceneManager.sceneLoaded += Respawn ;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private static void Respawn(Scene scene, LoadSceneMode scenemode)
+    {
+        SpawnPlayer(nextspawnposition);
     }
 
     public static void LoadScene(string Levelname, int spawnpoint)
@@ -25,6 +31,7 @@ public class GameManager
 
     public static bool DemoCheck()
     {
+
         return false;   
     }
 
@@ -34,7 +41,8 @@ public class GameManager
         {
             SpawnPlayer(nextspawnposition);
         }
-        if(arg0.buildIndex == 0)
+
+        if (arg0.buildIndex == 0)
         {
             GameObject.Destroy(GameObject.FindObjectOfType<Player>().gameObject);
         }

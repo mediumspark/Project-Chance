@@ -7,13 +7,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Player_GroundSlide" ID="{FBC9CE91-1190-4088-8C7D-64AACBC9C84D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Heal" ID="{8C5771F1-D3DA-41B9-AC75-1C43C38033DD}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Weapon" ID="{95F26540-22B7-41CF-82FB-44BD0BE03786}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Damaged" ID="{7D34C43E-EE0B-443C-8BE2-AF480A5B260D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Attack" ID="{D39CA125-219B-48D0-AFDD-C108767C6954}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Player_Falling" ID="{37770B6C-2471-4A51-AFC8-141013168DF8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_Heal" ID="{AD02A6C2-08A9-4BB2-A52B-F510C91EE429}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Player_Jump" ID="{426F1D14-AF3D-4BE1-B185-C1FE8212B378}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_LowHealth" ID="{BBE19BA2-E42E-4C95-BF54-D5A89E1E6D9C}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music" ID="{03C7D1E5-5BE0-4D48-B4CF-C8E869E80849}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{C14EA6F6-7056-4E62-8F6F-2422E2EA5B9F}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_LowHealth" ID="{7003A5C0-38D5-4EC3-B266-65BA08D1ACE1}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
@@ -22,17 +20,10 @@
 				</SoundBank>
 				<SoundBank Name="Music_And_Ambience" ID="{9E6741EA-FC7B-4C04-8D8F-B9B27488BFE4}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Ambiance_Hub" ID="{BA2C6F2B-FB44-40D1-B07D-3B21267E21A8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_TheWildSide_Theme" ID="{3115DA7B-4DB5-4193-9775-E54AF37BFA4D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_TheGrandArena_Theme" ID="{EF52690B-3020-46AF-972E-B12289DBF723}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_OfficeSpace_Theme" ID="{80403403-019D-46BE-B23C-4ED4C24E8F6A}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience_Office" ID="{AB250109-8B5F-47B3-8BB4-0AC13DE85AA5}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_Streets_Theme" ID="{AC9BD409-AED7-4846-A141-3CA4381C75D4}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience_Streets" ID="{AA5FD4CA-B98C-498A-A6DA-01772FF430B3}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience_HotelCaput" ID="{97D6328E-603F-4A0F-B8C4-CC8EB97A3DC2}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_Rooftops_Theme" ID="{1E891CC7-B539-4BB2-A347-0FE422478C82}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Music_HotelCaput_Theme" ID="{0BE5E7B8-E931-4D66-88CC-154CC33724F8}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience_Rooftops" ID="{F19DA96A-274A-4E31-A34E-EC64E6B44AFE}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Music" ID="{4DFF7B9B-41CB-4031-A443-9CC52DAC8B08}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience" ID="{A900343C-F817-4172-9772-8A0D5DC8A4B6}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Music" ID="{B03C66E4-F989-4609-B272-61BD4C50166B}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SoundTrack" ID="{B11C2C79-3C35-4FA7-854D-F143A824FC77}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

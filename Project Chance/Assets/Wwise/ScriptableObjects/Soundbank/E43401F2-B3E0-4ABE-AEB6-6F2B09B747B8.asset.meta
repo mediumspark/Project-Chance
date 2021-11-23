@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ebeed35b2ee8bce47aa5b06e2abd639c
+=======
+<<<<<<< HEAD:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/75124F50-A7E4-4FFA-8004-056FE7B8855D.asset.meta
+guid: 7260c4d74044b4e4e960a8641ab7496c
+=======
+guid: 7a2f198ad7a58964b9c5750fb10686bb
+>>>>>>> Wayne:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/E43401F2-B3E0-4ABE-AEB6-6F2B09B747B8.asset.meta
+>>>>>>> Wayne
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

@@ -11,16 +11,32 @@ State	ID	Name	State Group			Notes
 	514064485	Fight	Combat			
 	748895195	None	Combat			
 	2582085496	Exploration	Combat			
-	268254414	Office_Space	Level			
-	363725171	The_Streets	Level			
+	578926554	Lab	Level			
 	748895195	None	Level			
 	1036396546	The_Hub	Level			
-	1695287547	Hotel_Caput	Level			
-	4265799768	Rooftop	Level			
+	1707324172	City_1	Level			
+	1707324174	City_3	Level			
+	1707324175	City_2	Level			
+	2530218128	Startup	Level			
+	2552669160	Phil_Room	Level			
+	3105353467	Mayor_Room	Level			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	149523732	Dead	Life	\Master-Mixer Hierarchy\Default Work Unit\SFX		
+	298070643	Dead	Life	\Master-Mixer Hierarchy\Default Work Unit\Ambience		
+	470443794	Dead	Life	\Master-Mixer Hierarchy\Default Work Unit\Player		
+	925834709	Dead	Life	\Master-Mixer Hierarchy\Default Work Unit\Music		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
+<<<<<<< HEAD
+=======
+	393239870	SFX			\Default Work Unit\SFX	
+	1069431850	Player			\Default Work Unit\Player	
+	1560169506	Boss			\Default Work Unit\Boss	
+>>>>>>> Wayne
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

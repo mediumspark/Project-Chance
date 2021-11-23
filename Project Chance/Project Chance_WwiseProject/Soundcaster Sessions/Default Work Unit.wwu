@@ -3,6 +3,7 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{39CF3E87-6B42-43B6-8CC1-00D247446BFD}" PersistMode="Standalone">
 			<ChildrenList>
+<<<<<<< HEAD
 				<SoundcasterSession Name="Background Sounds" ID="{DE74A6FC-34D3-4A01-9476-566187DB1922}">
 					<ModuleList>
 						<Module>
@@ -60,6 +61,32 @@
 						<Module>
 							<ObjectRef Name="Play_music_Mayor_Theme" ID="{75124F50-A7E4-4FFA-8004-056FE7B8855D}" WorkUnitID="{338254DE-0994-4190-B92F-DDFED71B002D}"/>
 							<Position X="7" Y="1"/>
+=======
+				<SoundcasterSession Name="House" ID="{8628AD27-FDD9-4273-8F42-94DA0CF20F11}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{4DEE0D6F-4528-473C-BA47-AF6DCCD815D0}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambiance_Hub" ID="{AD01DF2C-8229-43D5-9D1D-B9C502ABC856}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MainCharacter_Theme (Chorus Loop)" ID="{3399105C-F2CB-48E0-AEAC-5760B8E3F9EB}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_GroundSlide" ID="{2B3C4FF8-3F63-47F2-8932-088F3B9C5B8C}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_LowHealth" ID="{60E22DD9-0913-49BF-B5DB-38C1EBECC9E6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -81,7 +108,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
-							<Value>50</Value>
+							<Value>12.5407166123778</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
@@ -106,7 +133,7 @@
 						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
-				<SoundcasterSession Name="Non_Interactive_Sounds" ID="{AF0BB824-6BDE-4931-959C-545611F5A365}">
+				<SoundcasterSession Name="General Mix" ID="{F3B9C6FA-C461-430B-B29C-B2BEABE80D0F}">
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
@@ -126,7 +153,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
-							<Value>50</Value>
+							<Value>12.5407166123778</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
@@ -142,6 +169,213 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{0212D8A4-BA4D-4AB3-B311-BFE46624CF01}"/>
+						<CurrentStateRef Name="None" ID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<CurrentStateRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="City_1" ID="{EBF9B411-7C99-4903-A263-6D75E43ACC7C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Air_Enemy_Flying" ID="{37889D46-E9CB-4F5D-9E90-445FB47D8F29}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambience_Streets" ID="{54C5B14E-0DEE-4A32-8E20-B0429B672FBD}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Streets_Theme" ID="{BDA8EB2B-E06E-4B9A-8E62-FC525E797729}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{4DEE0D6F-4528-473C-BA47-AF6DCCD815D0}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Air_Enemy_Ranged_Attack" ID="{562B363C-6CEE-46E1-8049-421EF54AD89F}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Damaged" ID="{46DED259-36DE-4995-B9E7-E7453ED8E0CE}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_LowHealth" ID="{60E22DD9-0913-49BF-B5DB-38C1EBECC9E6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Heal" ID="{D5D43941-5BF9-4C1C-BFC1-E713AB514437}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="3" Y="3"/>
+>>>>>>> Wayne
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Chief" ID="{EB5DAAEC-340B-4264-9389-3DCC5A0E7CA1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Organizer" ID="{091082F3-20B6-42CD-B15F-3D74E3518022}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Money" ID="{FB185ACF-BF9B-4484-BB83-2C1B3F06BFE1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
+<<<<<<< HEAD
+							<Value>50</Value>
+=======
+							<Value>12.5407166123778</Value>
+>>>>>>> Wayne
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Bureaucrat" ID="{5C6BA43D-5BDD-4BEE-9689-125C105755F2}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Rebel" ID="{ED48E5E6-44EE-4ECD-BE6F-72CA4B6F3154}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{0212D8A4-BA4D-4AB3-B311-BFE46624CF01}"/>
+						<CurrentStateRef Name="None" ID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
+						<CurrentStateRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Chorus" ID="{EFC49CD6-3843-4F4A-AD16-01156106FEEE}"/>
+<<<<<<< HEAD
+						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Non_Interactive_Sounds" ID="{AF0BB824-6BDE-4931-959C-545611F5A365}">
+=======
+						<CurrentSwitchRef Name="Default" ID="{E25B0EE0-1E0A-4BD6-8919-8FE3542CD0BA}"/>
+						<CurrentSwitchRef Name="Person" ID="{B7C811AB-9FAF-45C5-B429-5A8D5E036CE6}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Combat" ID="{6EE71F03-5F44-4A29-95B4-43AC2C9A24DE}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="The Philanthropist_Theme" ID="{1DE9CB28-EF75-412C-B677-7E64027E9142}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Philanthropist_Damaged" ID="{DD23D45D-F0F7-442D-8F64-6F5E4C50A6F9}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mayor Impacts" ID="{38A0BCF3-E09D-410F-AE80-1D9A9C14EB56}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{4DEE0D6F-4528-473C-BA47-AF6DCCD815D0}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="The Mayor Theme" ID="{2E5BB7BF-1B6C-41F8-A77B-B9FC5177880E}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Philanthropist_AttackProjectile" ID="{32182E80-1770-4BA2-9AFB-1DCBE8A8AAF8}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mayor_Damaged" ID="{4A3E0D30-0EB7-4B17-9D05-F950C5869470}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Damaged" ID="{46DED259-36DE-4995-B9E7-E7453ED8E0CE}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Philanthropist_Clone" ID="{2C766237-7FF5-4DE1-8047-417596CC9A82}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mayor_Footsteps" ID="{46FC8BA6-9FCC-4A29-AD55-C964FB096383}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_GroundSlide" ID="{2B3C4FF8-3F63-47F2-8932-088F3B9C5B8C}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Philanthropist_Footsteps" ID="{B0E813DD-6DCA-47FB-836B-02873E7BA90D}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mayor_RockProjectile" ID="{E5B71427-4658-4267-9016-6A854EEDEFFA}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_LowHealth" ID="{60E22DD9-0913-49BF-B5DB-38C1EBECC9E6}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mayor_RockSummon" ID="{C2CD8C67-135A-4376-9100-095B0D9E6FAE}" WorkUnitID="{CADE7C14-43B2-4365-BB53-D353B7BBD857}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+					</ModuleList>
+>>>>>>> Wayne
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Mayor" ID="{F40F5910-C6D4-4019-BFCC-C95698B37EE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Chief" ID="{EB5DAAEC-340B-4264-9389-3DCC5A0E7CA1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Organizer" ID="{091082F3-20B6-42CD-B15F-3D74E3518022}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Money" ID="{FB185ACF-BF9B-4484-BB83-2C1B3F06BFE1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Health" ID="{A86B128A-615E-4523-A598-A03C6C47891D}"/>
+<<<<<<< HEAD
+							<Value>50</Value>
+=======
+							<Value>12.5407166123778</Value>
+>>>>>>> Wayne
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Philanthropist" ID="{48FA747C-831E-4791-9946-94353DA22DC5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Bureaucrat" ID="{5C6BA43D-5BDD-4BEE-9689-125C105755F2}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Rebel" ID="{ED48E5E6-44EE-4ECD-BE6F-72CA4B6F3154}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+<<<<<<< HEAD
+=======
+						<CurrentStateRef Name="None" ID="{0212D8A4-BA4D-4AB3-B311-BFE46624CF01}"/>
+>>>>>>> Wayne
 						<CurrentStateRef Name="None" ID="{1BA4157B-6CF4-4BA5-9F25-49ACD9BF12DD}"/>
 						<CurrentStateRef Name="None" ID="{F0980C68-8ED5-4A69-A6B7-D453D858F169}"/>
 					</CurrentStateList>

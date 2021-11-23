@@ -9,9 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/BA2C6F2B-FB44-40D1-B07D-3B21267E21A8.asset
   m_Script: {fileID: 11500000, guid: 4bbe01aa0befe7a42a9da951e99bba6e, type: 3}
   m_Name: BA2C6F2B-FB44-40D1-B07D-3B21267E21A8
   m_EditorClassIdentifier: 
   objectName: Play_Ambiance_Hub
   id: 2758753758
   guid: BA2C6F2B-FB44-40D1-B07D-3B21267E21A8
+=======
+  m_Script: {fileID: 11500000, guid: 44df9ef1b1faaa743a898954cad59f18, type: 3}
+  m_Name: 053A9D57-96D4-418C-AAA8-1F5DDFB8D240
+  m_EditorClassIdentifier: 
+  objectName: The_Mayor
+  id: 80144099
+  guid: 053A9D57-96D4-418C-AAA8-1F5DDFB8D240
+>>>>>>> Wayne:Project Chance/Assets/Wwise/ScriptableObjects/Soundbank/053A9D57-96D4-418C-AAA8-1F5DDFB8D240.asset

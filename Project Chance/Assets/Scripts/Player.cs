@@ -12,7 +12,7 @@ public class Player : Character
     //I wanted these to be viewable in the inspector to check that they work.
     private WeaponHandler WH = new WeaponHandler();
 
-    private bool Healing;
+    public bool Healing;
     private int HealSpeed = 10;
     private bool TouchingWall;
     float Wall_Gravity = 0.5f;
@@ -56,6 +56,8 @@ public class Player : Character
         healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         staminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
 
+        AkSoundEngine.SetState("Life", "Alive");
+
         #region Inputs
         Controls = new PlayerControls();
 
@@ -73,7 +75,6 @@ public class Player : Character
         Controls.Basic.Attack.performed += Attack_performed;
 
         Controls.Basic.WeaponCycle.performed += ctx => WH.WeaponSwap(ctx.ReadValue<float>());
-        Controls.Basic.WeaponCycle.performed += ctx => AniMethods.CurrentWeapon = WH.GetWeapon(); 
 
         #endregion
     }
@@ -87,12 +88,19 @@ public class Player : Character
     private float abilityCost;
     private bool WallJumping = false;
 
+    bool LowHealthSound = false;
+
     public float AbilityCost { get => abilityCost; set=> abilityCost = value; }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         if(grounded && canMove)
             StartCoroutine(Jump(0.5f));
+    }
+
+    public void ExternalChargeTrigger()
+    {
+        AniMethods.SetChargeTrigger();
     }
 
     public void Stop()
@@ -110,18 +118,12 @@ public class Player : Character
         }
     }
 
-    public void ExternalChargeTrigger()
-    {
-        AniMethods.SetChargeTrigger(); 
-    }
-
     private void Attack_performed(InputAction.CallbackContext obj)
     {
         if (CurrentStamina > 9)
         {
             WH.Fire();
-            if(AniMethods.CurrentWeapon != WeaponSelected.Phil || !grounded)
-                AniMethods.SetChargeTrigger();
+            AniMethods.SetChargeTrigger();
             staminaBar.value = CurrentStamina;
         }
     }
@@ -145,7 +147,6 @@ public class Player : Character
         Interacts.PlayerHit(colliders, gameObject, 5);
         Collider[] BackgroundColliders = Physics.OverlapSphere(WallDetectionObject.transform.position, 0.5f);
         TouchingWall = Interacts.WallCling(BackgroundColliders);
-        AniMethods.SetWallCollision(TouchingWall);
 
         if (TouchingWall)
         {
@@ -154,9 +155,6 @@ public class Player : Character
             {
                 StartCoroutine(WallJump());
             }
-        } else if(!TouchingWall && !grounded && GravityOn)
-        {
-            gravity = Normal_Gravity; 
         }
 
         if (WallJumping)
@@ -205,11 +203,17 @@ public class Player : Character
             base.OnTakeDamage(damage);
             StartCoroutine(InvolTimer());
             healthBar.value = CurrentHealth;
+            if (currentHealth <= 50 && !LowHealthSound)
+            {
+                LowHealth();
+                LowHealthSound = true;
+            }
         }
     }
 
     protected override void OnDeath()
     {
+        AkSoundEngine.SetState("Life", "Dead");
         GameManager.LevelReload();
         Destroy(gameObject);
     }
@@ -232,8 +236,20 @@ public class Player : Character
     {
         if (grounded)
         {
+            AniMethods.CurrentWeapon = WH.GetWeapon(); 
             AniMethods.SetRun(moving);
             AniMethods.SetHealing(Healing);
+
+            if (currentHealth >= 50)
+            {
+                AkSoundEngine.PostEvent("Stop_Player_LowHealth", this.gameObject);
+                LowHealthSound = false;
+            }
+
+            if (currentHealth <= 50)
+            {
+                AkSoundEngine.SetRTPCValue("Health", currentHealth, this.gameObject);
+            }
 
             if (Healing)
             {
@@ -242,7 +258,6 @@ public class Player : Character
                     CurrentHealth += HealSpeed * Time.deltaTime;
                     healthBar.value = CurrentHealth;
                 }
-
                 if (Stamina < MaxStamina)
                 {
                     Stamina += Time.deltaTime * HealSpeed;
@@ -291,9 +306,8 @@ public class Player : Character
         Gizmos.DrawWireSphere(WallDetectionObject.transform.position, 0.5f);
     }
 
-    private void LowHealth()
+    public void LowHealth()
     {
-        AkSoundEngine.SetRTPCValue("Health", CurrentHealth);
         AkSoundEngine.PostEvent("Play_Player_LowHealth", this.gameObject);
     }
 }

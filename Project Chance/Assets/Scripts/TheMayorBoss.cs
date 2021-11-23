@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Playables; 
+using UnityEngine.Playables;
+using UnityEngine.UI;
 
 public class TheMayorBoss : Boss
 {
@@ -27,6 +28,8 @@ public class TheMayorBoss : Boss
     private TextBoxManager IntroText;
     [SerializeField]
     private PlayableDirector Intro, Victory;
+
+    public Slider enemyHealthBar;
 
     #endregion
 
@@ -73,7 +76,7 @@ public class TheMayorBoss : Boss
 
         IntroText = GetComponentInChildren<TextBoxManager>();
 
-        MaxHealth = 100;
+        MaxHealth = 50;
         CurrentHealth = MaxHealth;
         AttackPillar = (GameObject)Resources.Load("Prefabs/Enemies/Boss Attack Pillar");
         ProjectileAttack = (GameObject)Resources.Load("Prefabs/Enemies/Enemy Bullet");
@@ -81,6 +84,9 @@ public class TheMayorBoss : Boss
 
         DestructablePilar = FindObjectOfType<DestructablePilar>();
         DestructablePilar.SetPilarHeight(MayorPilarHeight, 0.25f);
+
+        enemyHealthBar = GameObject.Find("EnemyHealthBar").GetComponent<Slider>();
+        enemyHealthBar.maxValue = MaxHealth;
     }
 
     private void Update()
@@ -99,6 +105,7 @@ public class TheMayorBoss : Boss
         {
             isPilarAlive = !DestructablePilar.DeadPilar;
         }
+        enemyHealthBar.value = CurrentHealth;
     }
 
 
@@ -112,7 +119,8 @@ public class TheMayorBoss : Boss
         AimedBullet bul = Instantiate(ProjectileAttack, SpawnSpotAsProjectile.transform).AddComponent<AimedBullet>();
         bul.SetDestination(2.0f); 
         bul.BulletSpeed = 2.5f;
-        bul.transform.SetParent(null); 
+        bul.transform.SetParent(null);
+        AkSoundEngine.PostEvent("Play_Mayor_RockProjectile", this.gameObject);
     }
 
     private void PilarAttack()
@@ -121,7 +129,8 @@ public class TheMayorBoss : Boss
         MayorPilars attack = go.AddComponent<MayorPilars>();
         float PlayerY = Player.Position.y > 0 ? Player.Position.y  + 5f : (Player.Position.y + 5.0f) * -1; 
         attack.SetPilarHeight(PlayerY, 0.7f);
-        RecentlyRaisedPilar = true; 
+        RecentlyRaisedPilar = true;
+        AkSoundEngine.PostEvent("Play_Mayor_Impacts", this.gameObject);
     }
 
     private void PilarWave()
@@ -130,7 +139,8 @@ public class TheMayorBoss : Boss
         MayorPilars attack = go.AddComponent<MayorPilars>();
         attack.SetPilarHeight(3.0f, 0.1f);
         attack.SetPilarSpeed(0.10f);
-        RecentlyRaisedPilar = true; 
+        RecentlyRaisedPilar = true;
+        AkSoundEngine.PostEvent("Play_Mayor_RockSummon", this.gameObject);
     }
 
     protected override IEnumerator Phase1Attack()
@@ -141,7 +151,7 @@ public class TheMayorBoss : Boss
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
             ShootAtPlayer(); 
             Destroy(FindObjectOfType<MayorPilars>().gameObject);
-            RecentlyRaisedPilar = false; 
+            RecentlyRaisedPilar = false;
         }
         else if (!isPilarAlive && !RecentlyRaisedPilar)
         {
@@ -158,8 +168,9 @@ public class TheMayorBoss : Boss
         {
             PilarAttack();
             yield return new WaitForSecondsRealtime(BaseCooldownTime);
-            ShootAtPlayer(); 
-            Destroy(SpawnSpotOnPlayer.transform.GetChild(0).gameObject);
+            ShootAtPlayer();
+            Destroy(FindObjectOfType<MayorPilars>().gameObject);
+            RecentlyRaisedPilar = false; 
         }
         else if(!isPilarAlive)
         {

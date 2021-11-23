@@ -1,11 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
-	396543629	Play_Player_Falling			\Default Work Unit\Player\Play_Player_Falling	
-	562256996	Play_Player_Jump			\Default Work Unit\Player\Play_Player_Jump	
 	638998366	Play_Player_Heal			\Default Work Unit\Player\Play_Player_Heal	
 	898213950	Stop_Player_LowHealth			\Default Work Unit\Player\Stop_Player_LowHealth	
 	1694127508	Play_Player_GroundSlide			\Default Work Unit\Player\Play_Player_GroundSlide	
+	2213893980	Play_Player_Weapon			\Default Work Unit\Player\Play_Player_Weapon	
 	2301987285	Play_Player_Damaged			\Default Work Unit\Player\Play_Player_Damaged	
-	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 	3238800884	Play_Player_Attack			\Default Work Unit\Player\Play_Player_Attack	
 	3607210104	Stop_Player_Heal			\Default Work Unit\Player\Stop_Player_Heal	
 	3851267176	Play_Player_LowHealth			\Default Work Unit\Player\Play_Player_LowHealth	
@@ -13,46 +11,32 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	180661997	Attack			\Default Work Unit\Player\Attack	
+	3893417221	Weapon			\Default Work Unit\Player\Weapon	
 
 Switch	ID	Name	Switch Group			Notes
 	1731679510	Person	Attack			
 	1930240631	Robot	Attack			
+	756542853	Phil_Weapon	Weapon			
+	782826392	Default	Weapon			
+	3027089830	Mayor_Weapon	Weapon			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2137943	Life			\Default Work Unit\Player\Life	
-	2764240573	Combat			\Default Work Unit\Player\Combat	
-	2782712965	Level			\Default Work Unit\Level	
 
 State	ID	Name	State Group			Notes
 	72790338	Low_Health	Life			
 	655265632	Alive	Life			
 	748895195	None	Life			
 	2044049779	Dead	Life			
-	514064485	Fight	Combat			
-	748895195	None	Combat			
-	2582085496	Exploration	Combat			
-	268254414	Office_Space	Level			
-	363725171	The_Streets	Level			
-	748895195	None	Level			
-	1036396546	The_Hub	Level			
-	1695287547	Hotel_Caput	Level			
-	4265799768	Rooftop	Level			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	754949685	Exploration	Combat	\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Interactive Music\Drum & Bass		
-	884714940	Low_Health	Life	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_LowHealth		
+	884714940	Low_Health	Life	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_LowHealth		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	263702421	Distance_Money			\Default Work Unit\Distance_Money	
-	560269304	Distance_Philanthropist			\Default Work Unit\Distance_Philanthropist	
-	819496709	Distance_Rebel			\Default Work Unit\Distance_Rebel	
-	1011057461	Distance_Bureaucrat			\Default Work Unit\Distance_Bureaucrat	
-	2867040294	Distance_Chief			\Default Work Unit\Distance_Chief	
-	3507896190	Distance_Organizer			\Default Work Unit\Distance_Organizer	
 	3677180323	Health			\Default Work Unit\Health	
-	4111688057	Distance_Mayor			\Default Work Unit\Distance_Mayor	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+<<<<<<< HEAD
 	11636562	Music_ Guitar_02	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_ Guitar_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Interactive Music\Level\Chief+Mayor\The Chief Music Stems\Guitar\Music_ Guitar_02		2730732
 	29575122	Music_ Trumpet_03	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_ Trumpet_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Interactive Music\Level\Org+Money\The Organizer Music Stems\Trumpet\Music_ Trumpet_03		2730732
 	76081364	Player_Falling	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player_Falling_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Falling		49300
@@ -102,4 +86,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	972008963	Music_ Piano_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_ Piano_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Interactive Music\Level\Org+Money\The Money Music Stems\Piano\Music_ Piano_01		2730732
 	986594121	Player_Damaged_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Player_Damaged\Player_Damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damaged\Player_Damaged_01		26924
 	1008752036	Music_ Bass_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Music_ Bass_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\Interactive Music\Drum & Bass\Bass\Music_ Bass_01		2730732
+=======
+	589466	Mayor_Impact_02	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Mayor_Impact_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Mayor_Weapon\Mayor Impacts\Mayor_Impact_02		161200
+	128107613	Mayor_RockSummon	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Mayor_RockSummon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Mayor_Weapon\Mayor_RockSummon		286528
+	153071325	Mayor_RockProjectile	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Mayor_RockProjectile_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Mayor_Weapon\Mayor_RockProjectile		89584
+	202651341	Mayor_Impact_03	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Mayor_Impact_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Mayor_Weapon\Mayor Impacts\Mayor_Impact_03		186742
+	241811837	Player_Damaged_03	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Player_Damaged\Player_Damaged_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Damaged\Player_Damaged_03		26924
+	285891447	Mayor_Impact_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Mayor_Impact_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Mayor_Weapon\Mayor Impacts\Mayor_Impact_01		186742
+	364865366	Demo Player_Footsteps_02	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Footsteps\Demo Player_Footsteps_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Footsteps\Demo Player_Footsteps_02		17968
+	399656267	Demo Player_Footsteps_04	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Footsteps\Demo Player_Footsteps_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Footsteps\Demo Player_Footsteps_04		17968
+	434921525	Demo Player_Footsteps_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Footsteps\Demo Player_Footsteps_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Footsteps\Demo Player_Footsteps_01		17968
+	467343857	Player_AttackProjectile	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Philanthropist_AttackProjectile_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Phil_Weapon\Player_AttackProjectile		94060
+	627206562	Heal	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\ESM_Ancient_Game_Magic_Heal_Buff_Fantasy_Tonal_Accent_Hit_Stab_81CFEAD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Heal\Heal		53560
+	662526332	Player_LowHealth	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Player_LowHealth_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_LowHealth		71680
+	678434978	Demo Player_Footsteps_03	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Footsteps\Demo Player_Footsteps_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Footsteps\Demo Player_Footsteps_03		17968
+	690709086	Demo Player_Footsteps_05	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Footsteps\Demo Player_Footsteps_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Footsteps\Demo Player_Footsteps_05		17968
+	833436760	Player_GroundSlide	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\WhipWhooshSwoosh_S011FO.993_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Weapon\Player_GroundSlide		81984
+	841116670	MainCharacter_Theme (Chorus Loop)	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\MainCharacter_Theme (Chorus Loop)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Heal\MainCharacter_Theme (Chorus Loop)		4337008
+	849162186	Player_Damaged_02	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Player_Damaged\Player_Damaged_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Damaged\Player_Damaged_02		26924
+	897857902	Chimes	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\SPLC-3476_FX_Oneshot_Wind_Chimes_Tonal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Heal\Chimes		1081408
+	986594121	Player_Damaged_01	C:\Users\themo\OneDrive\Documents\GitHub\Project-Chance\Project Chance\Project Chance_WwiseProject\.cache\Windows\SFX\Player\Player_Damaged\Player_Damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Sounds\Player_Damaged\Player_Damaged_01		26924
+>>>>>>> Wayne
 
